@@ -1,4 +1,3 @@
-cat > app.py <<'PY'
 import streamlit as st
 import pandas as pd
 from pathlib import Path
