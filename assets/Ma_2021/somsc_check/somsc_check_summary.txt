@@ -1,0 +1,35 @@
+SOMSC Check Summary for Site: Ma_2021
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,031.72 g C / m²
+Change during Equilibrium Phase: -1,453.13 g C / m²
+Change during Base Phase: -815.94 g C / m²
+Final SOMSC at end of Base Phase: 775.78 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,070.49 g C / m²
+Model is 80.94% lower than observation.
+(Difference: -3,294.71 g C / m²)
+
+--- Experimental Analysis ---
+'ma_2021_ck_somsc' Change: +1.28 g C / m² (End value: 777.79)
+'ma_2021_s_somsc' Change: +192.21 g C / m² (End value: 968.72)
+'ma_2021_sb_somsc' Change: +202.38 g C / m² (End value: 978.89)
+'ma_2021_si_somsc' Change: +192.21 g C / m² (End value: 968.72)
+'ma_2021_sm_somsc' Change: +192.21 g C / m² (End value: 968.72)
+
+Average SOMSC at end of all experimental phases: 932.57 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ma_2021/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

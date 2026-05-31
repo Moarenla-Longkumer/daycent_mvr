@@ -1,0 +1,52 @@
+SOMSC Check Summary for Site: Gopinath_2022
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,245.55 g C / m²
+Change during Equilibrium Phase: -1,750.27 g C / m²
+Change during Base Phase: +94.57 g C / m²
+Final SOMSC at end of Base Phase: 1,592.05 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,618.35 g C / m²
+Model is 39.20% lower than observation.
+(Difference: -1,026.30 g C / m²)
+
+--- Experimental Analysis ---
+'gopinath_2022_trt_ctrl_gg_somsc' Change: -467.70 g C / m² (End value: 1,119.53)
+'gopinath_2022_trt_ctrl_pp_somsc' Change: -382.42 g C / m² (End value: 1,204.81)
+'gopinath_2022_trt_ctrl_sf_somsc' Change: -414.14 g C / m² (End value: 1,173.09)
+'gopinath_2022_trt_int_gg_somsc' Change: -223.28 g C / m² (End value: 1,363.94)
+'gopinath_2022_trt_int_pp_somsc' Change: -139.19 g C / m² (End value: 1,448.03)
+'gopinath_2022_trt_int_sf_somsc' Change: +99.77 g C / m² (End value: 1,686.99)
+'gopinath_2022_trt_org_gg_somsc' Change: -199.10 g C / m² (End value: 1,388.12)
+'gopinath_2022_trt_org_pp_somsc' Change: -96.72 g C / m² (End value: 1,490.50)
+'gopinath_2022_trt_org_sf_somsc' Change: +383.50 g C / m² (End value: 1,970.73)
+
+Average SOMSC at end of all experimental phases: 1,427.30 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking sf (Year: 2019, Day: 355)... SUCCESS: 1611.74
+ -> Checking pp (Year: 2019, Day: 355)... SUCCESS: 1381.02
+ -> Checking gg (Year: 2019, Day: 355)... SUCCESS: 1291.55
+ -> Checking ctrl (Year: 2019, Day: 355)... SUCCESS: 1166.34
+ -> Checking org (Year: 2019, Day: 355)... SUCCESS: 1617.46
+ -> Checking int (Year: 2019, Day: 355)... SUCCESS: 1500.52
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Gopinath_2022/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Gopinath_2022/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Gopinath_2022/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+gopinath_2022_sf_somsc,sf,2019,355,1850.0,1611.739233333333
+gopinath_2022_pp_somsc,pp,2019,355,2053.0,1381.0201333333334
+gopinath_2022_gg_somsc,gg,2019,355,2090.5,1291.549533333333
+gopinath_2022_ctrl_somsc,ctrl,2019,355,1913.0,1166.3364
+gopinath_2022_org_somsc,org,2019,355,2087.5,1617.4570999999999
+gopinath_2022_int_somsc,int,2019,355,1988.5,1500.5154

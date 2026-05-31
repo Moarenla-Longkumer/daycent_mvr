@@ -1,0 +1,52 @@
+SOMSC Check Summary for Site: Kumar_2022
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,630.74 g C / m²
+Change during Equilibrium Phase: -2,438.75 g C / m²
+Change during Base Phase: +56.51 g C / m²
+Final SOMSC at end of Base Phase: 1,253.64 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 5,318.76 g C / m²
+Model is 76.43% lower than observation.
+(Difference: -4,065.12 g C / m²)
+
+--- Experimental Analysis ---
+'kumar_2022_ct-mc_somsc' Change: -353.57 g C / m² (End value: 897.02)
+'kumar_2022_ct-mm_somsc' Change: -388.08 g C / m² (End value: 862.50)
+'kumar_2022_ct-mw_somsc' Change: -338.22 g C / m² (End value: 912.37)
+'kumar_2022_prb-mc_somsc' Change: -16.08 g C / m² (End value: 1,234.51)
+'kumar_2022_prb-mm_somsc' Change: -97.42 g C / m² (End value: 1,153.17)
+'kumar_2022_prb-mw_somsc' Change: -1.74 g C / m² (End value: 1,248.84)
+'kumar_2022_zt-mc_somsc' Change: +87.17 g C / m² (End value: 1,337.76)
+'kumar_2022_zt-mm_somsc' Change: +0.44 g C / m² (End value: 1,251.03)
+'kumar_2022_zt-mw_somsc' Change: +101.41 g C / m² (End value: 1,352.00)
+
+Average SOMSC at end of all experimental phases: 1,138.80 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking zt (Year: 2018, Day: 175)... SUCCESS: 1334.45
+ -> Checking prb (Year: 2018, Day: 175)... SUCCESS: 1230.93
+ -> Checking ct (Year: 2018, Day: 175)... SUCCESS: 905.84
+ -> Checking mm (Year: 2018, Day: 175)... SUCCESS: 1106.26
+ -> Checking mw (Year: 2018, Day: 175)... SUCCESS: 1189.94
+ -> Checking mc (Year: 2018, Day: 175)... SUCCESS: 1175.02
+ -> Checking zt (Year: 2018, Day: 312)... SUCCESS: 1318.93
+ -> Checking prb (Year: 2018, Day: 312)... SUCCESS: 1217.02
+ -> Checking ct (Year: 2018, Day: 312)... SUCCESS: 893.87
+ -> Checking mm (Year: 2018, Day: 312)... SUCCESS: 1093.13
+ -> Checking mw (Year: 2018, Day: 312)... SUCCESS: 1175.73
+ -> Checking mc (Year: 2018, Day: 312)... SUCCESS: 1160.96
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kumar_2022/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

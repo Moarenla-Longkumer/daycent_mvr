@@ -1,0 +1,36 @@
+SOMSC Check Summary for Site: Yadav_2021
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,694.40 g C / m²
+Change during Equilibrium Phase: -3,013.49 g C / m²
+Change during Base Phase: -463.70 g C / m²
+Final SOMSC at end of Base Phase: 2,232.43 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 5,612.12 g C / m²
+Model is 60.22% lower than observation.
+(Difference: -3,379.69 g C / m²)
+
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_zt_rr0 (Year: 2019, Day: 298)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Yadav_2021/Yadav_2021_out/Yadav_2021_TRT_ZT_RR0_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_zt_rr30 (Year: 2019, Day: 298)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Yadav_2021/Yadav_2021_out/Yadav_2021_TRT_ZT_RR30_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_zt_rr60 (Year: 2019, Day: 298)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Yadav_2021/Yadav_2021_out/Yadav_2021_TRT_ZT_RR60_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_zt_rr90 (Year: 2019, Day: 298)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Yadav_2021/Yadav_2021_out/Yadav_2021_TRT_ZT_RR90_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Yadav_2021/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

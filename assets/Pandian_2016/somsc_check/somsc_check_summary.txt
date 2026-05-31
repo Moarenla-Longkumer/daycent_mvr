@@ -1,0 +1,62 @@
+SOMSC Check Summary for Site: Pandian_2016
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 2,200.18 g C / m²
+Change during Equilibrium Phase: -1,500.49 g C / m²
+Change during Base Phase: +288.30 g C / m²
+Final SOMSC at end of Base Phase: 992.99 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 7,416.31 g C / m²
+Model is 86.61% lower than observation.
+(Difference: -6,423.32 g C / m²)
+
+--- Experimental Analysis ---
+'pandian_2016_c_somsc' Change: -130.64 g C / m² (End value: 860.46)
+'pandian_2016_ccp_somsc' Change: -35.24 g C / m² (End value: 955.86)
+'pandian_2016_csb_2.5_somsc' Change: +1,286.87 g C / m² (End value: 2,277.97)
+'pandian_2016_csb_5_somsc' Change: +1,286.87 g C / m² (End value: 2,277.97)
+'pandian_2016_efym_somsc' Change: -35.08 g C / m² (End value: 956.03)
+'pandian_2016_msb_2.5_somsc' Change: +1,090.73 g C / m² (End value: 2,081.84)
+'pandian_2016_msb_5_somsc' Change: +1,090.73 g C / m² (End value: 2,081.84)
+'pandian_2016_pb_2.5_somsc' Change: +1,393.85 g C / m² (End value: 2,384.95)
+'pandian_2016_rsb_2.5_somsc' Change: +1,331.44 g C / m² (End value: 2,322.55)
+
+Average SOMSC at end of all experimental phases: 1,799.94 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking c (Year: 2013, Day: 343)... SUCCESS: 860.88
+ -> Checking ccp (Year: 2013, Day: 343)... SUCCESS: 955.63
+ -> Checking efym (Year: 2013, Day: 343)... SUCCESS: 956.35
+ -> Checking msb_2.5 (Year: 2013, Day: 343)... SUCCESS: 2083.76
+ -> Checking msb_5 (Year: 2013, Day: 343)... SUCCESS: 2083.76
+ -> Checking csb_2.5 (Year: 2013, Day: 343)... SUCCESS: 2280.14
+ -> Checking csb_5 (Year: 2013, Day: 343)... SUCCESS: 2280.14
+ -> Checking rsb_2.5 (Year: 2013, Day: 343)... SUCCESS: 2324.76
+ -> Checking rsb_5 (Year: 2013, Day: 343)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/Pandian_2016_out/Pandian_2016_RSB_5_output/soilc.out FAILED: No matching data found.
+ -> Checking pb_2.5 (Year: 2013, Day: 343)... SUCCESS: 2387.25
+ -> Checking pb_5 (Year: 2013, Day: 343)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/Pandian_2016_out/Pandian_2016_PB_5_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+pandian_2016_c_somsc,c,2013,343,1620.0,860.8808
+pandian_2016_ccp_somsc,ccp,2013,343,1980.0,955.6270999999999
+pandian_2016_efym_somsc,efym,2013,343,1790.0,956.353
+pandian_2016_msb_2.5_somsc,msb_2.5,2013,343,1990.0,2083.7561
+pandian_2016_msb_5_somsc,msb_5,2013,343,2110.0,2083.7561
+pandian_2016_csb_2.5_somsc,csb_2.5,2013,343,1960.0,2280.1351
+pandian_2016_csb_5_somsc,csb_5,2013,343,2070.0,2280.1351
+pandian_2016_rsb_2.5_somsc,rsb_2.5,2013,343,1980.0,2324.7631
+pandian_2016_pb_2.5_somsc,pb_2.5,2013,343,1940.0,2387.2482999999997

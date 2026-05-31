@@ -1,0 +1,40 @@
+SOMSC Check Summary for Site: Meena_2023
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,397.58 g C / m²
+Change during Equilibrium Phase: -2,793.59 g C / m²
+Change during Base Phase: -558.62 g C / m²
+Final SOMSC at end of Base Phase: 2,053.50 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,392.07 g C / m²
+Model is 39.46% lower than observation.
+(Difference: -1,338.57 g C / m²)
+
+--- Experimental Analysis ---
+'meena_2023_t1_somsc' Change: +1,460.06 g C / m² (End value: 3,507.83)
+'meena_2023_t2_somsc' Change: +396.66 g C / m² (End value: 2,444.43)
+'meena_2023_t3_somsc' Change: +332.15 g C / m² (End value: 2,379.92)
+'meena_2023_t4_somsc' Change: +2,094.22 g C / m² (End value: 4,141.99)
+'meena_2023_t5_somsc' Change: +31.52 g C / m² (End value: 2,079.29)
+
+Average SOMSC at end of all experimental phases: 2,910.69 g C / m²
+
+--- Calibration Script Test ---
+Status: FAILED
+Reason: Script exited with error code 1
+
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_somsc.py", line 287, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_somsc.py", line 136, in main
+    target_year = int(target_year)
+                  ^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

@@ -1,0 +1,39 @@
+SOMSC Check Summary for Site: Laskhman_2024
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,685.75 g C / m²
+Change during Equilibrium Phase: -2,515.68 g C / m²
+Change during Base Phase: -391.93 g C / m²
+Final SOMSC at end of Base Phase: 1,785.64 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,852.08 g C / m²
+Model is 63.20% lower than observation.
+(Difference: -3,066.44 g C / m²)
+
+--- Experimental Analysis ---
+'laskhman_2024_t1_somsc' Change: -9.71 g C / m² (End value: 1,771.71)
+'laskhman_2024_t2_somsc' Change: +26.48 g C / m² (End value: 1,807.90)
+'laskhman_2024_t3_somsc' Change: -5.97 g C / m² (End value: 1,775.45)
+'laskhman_2024_t4_somsc' Change: +17.09 g C / m² (End value: 1,798.51)
+
+Average SOMSC at end of all experimental phases: 1,788.39 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2022, Day: 5)... FAILED: No matching data found.
+ -> Checking t2 (Year: 2022, Day: 5)... FAILED: No matching data found.
+ -> Checking t3 (Year: 2022, Day: 5)... FAILED: No matching data found.
+ -> Checking t4 (Year: 2022, Day: 5)... FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Laskhman_2024/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

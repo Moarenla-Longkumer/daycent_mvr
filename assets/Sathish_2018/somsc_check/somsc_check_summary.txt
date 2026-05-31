@@ -1,0 +1,41 @@
+SOMSC Check Summary for Site: Sathish_2018
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,216.96 g C / m²
+Change during Equilibrium Phase: -1,555.13 g C / m²
+Change during Base Phase: -142.80 g C / m²
+Final SOMSC at end of Base Phase: 1,525.05 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,941.46 g C / m²
+Model is 69.14% lower than observation.
+(Difference: -3,416.41 g C / m²)
+
+--- Experimental Analysis ---
+'sathish_2018_t1_somsc' Change: -750.67 g C / m² (End value: 771.49)
+'sathish_2018_t2_somsc' Change: +352.80 g C / m² (End value: 1,874.96)
+'sathish_2018_t3_somsc' Change: +394.39 g C / m² (End value: 1,916.54)
+'sathish_2018_t4_somsc' Change: +420.91 g C / m² (End value: 1,943.06)
+'sathish_2018_t5_somsc' Change: -672.26 g C / m² (End value: 849.90)
+
+Average SOMSC at end of all experimental phases: 1,471.19 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2016, Day: 40)... FAILED: No matching data found.
+ -> Checking t2 (Year: 2016, Day: 40)... FAILED: No matching data found.
+ -> Checking t3 (Year: 2016, Day: 40)... FAILED: No matching data found.
+ -> Checking t4 (Year: 2016, Day: 40)... FAILED: No matching data found.
+ -> Checking t5 (Year: 2016, Day: 40)... FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

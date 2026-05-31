@@ -1,0 +1,51 @@
+SOMSC Check Summary for Site: Usman_2014_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,060.74 g C / m²
+Change during Equilibrium Phase: -2,330.55 g C / m²
+Change during Base Phase: -857.66 g C / m²
+Final SOMSC at end of Base Phase: 1,880.19 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,222.49 g C / m²
+Model is 41.65% lower than observation.
+(Difference: -1,342.30 g C / m²)
+
+--- Experimental Analysis ---
+'usman_2014_reformatted_ct_n0_somsc' Change: -68.53 g C / m² (End value: 1,810.46)
+'usman_2014_reformatted_ct_n100_somsc' Change: -68.33 g C / m² (End value: 1,810.65)
+'usman_2014_reformatted_ct_n150_somsc' Change: -68.34 g C / m² (End value: 1,810.65)
+'usman_2014_reformatted_ct_n200_somsc' Change: -68.22 g C / m² (End value: 1,810.76)
+'usman_2014_reformatted_ct_n50_somsc' Change: -68.41 g C / m² (End value: 1,810.58)
+'usman_2014_reformatted_rt_n0_somsc' Change: -5.60 g C / m² (End value: 1,873.38)
+'usman_2014_reformatted_rt_n100_somsc' Change: -5.24 g C / m² (End value: 1,873.74)
+'usman_2014_reformatted_rt_n150_somsc' Change: -5.27 g C / m² (End value: 1,873.72)
+'usman_2014_reformatted_rt_n200_somsc' Change: -5.27 g C / m² (End value: 1,873.71)
+'usman_2014_reformatted_rt_n50_somsc' Change: -5.34 g C / m² (End value: 1,873.65)
+'usman_2014_reformatted_zt_n0_somsc' Change: -0.79 g C / m² (End value: 1,878.19)
+'usman_2014_reformatted_zt_n100_somsc' Change: +0.60 g C / m² (End value: 1,879.59)
+'usman_2014_reformatted_zt_n150_somsc' Change: +0.58 g C / m² (End value: 1,879.57)
+'usman_2014_reformatted_zt_n200_somsc' Change: +0.59 g C / m² (End value: 1,879.58)
+'usman_2014_reformatted_zt_n50_somsc' Change: +0.52 g C / m² (End value: 1,879.51)
+
+Average SOMSC at end of all experimental phases: 1,854.51 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking zt (Year: 2011, Day: 326)... SUCCESS: 1878.91
+ -> Checking rt (Year: 2011, Day: 326)... SUCCESS: 1873.28
+ -> Checking ct (Year: 2011, Day: 326)... SUCCESS: 1810.28
+ -> Checking zt_n0 (Year: 2011, Day: 326)... SUCCESS: 1877.85
+ -> Checking zt_n50 (Year: 2011, Day: 326)... SUCCESS: 1879.11
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Usman_2014_reformatted/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

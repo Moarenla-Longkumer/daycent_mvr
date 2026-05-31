@@ -1,0 +1,51 @@
+SOMSC Check Summary for Site: Rafique_2012_awagat_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 1,027.00 g C / m²
+Change during Equilibrium Phase: +97.26 g C / m²
+Change during Base Phase: +12.67 g C / m²
+Final SOMSC at end of Base Phase: 1,141.87 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,170.56 g C / m²
+Model is 63.99% lower than observation.
+(Difference: -2,028.69 g C / m²)
+
+--- Experimental Analysis ---
+'rafique_2012_awagat_reformatted_bnm_gm_res_flatbed_somsc' Change: +319.08 g C / m² (End value: 1,459.71)
+'rafique_2012_awagat_reformatted_bnm_gm_res_raisedbed_somsc' Change: +319.08 g C / m² (End value: 1,459.71)
+'rafique_2012_awagat_reformatted_bnm_gm_nores_flatbed_somsc' Change: -139.86 g C / m² (End value: 1,000.77)
+'rafique_2012_awagat_reformatted_bnm_gm_nores_raisedbed_somsc' Change: -139.86 g C / m² (End value: 1,000.77)
+'rafique_2012_awagat_reformatted_bnm_res_flatbed_somsc' Change: +360.11 g C / m² (End value: 1,500.74)
+'rafique_2012_awagat_reformatted_bnm_res_raisedbed_somsc' Change: +360.11 g C / m² (End value: 1,500.74)
+'rafique_2012_awagat_reformatted_bnm_nores_flatbed_somsc' Change: -202.59 g C / m² (End value: 938.04)
+'rafique_2012_awagat_reformatted_bnm_nores_raisedbed_somsc' Change: -202.59 g C / m² (End value: 938.04)
+'rafique_2012_awagat_reformatted_ffu_res_flatbed_somsc' Change: +247.91 g C / m² (End value: 1,388.54)
+'rafique_2012_awagat_reformatted_ffu_res_raisedbed_somsc' Change: +247.91 g C / m² (End value: 1,388.54)
+'rafique_2012_awagat_reformatted_ffu_nores_flatbed_somsc' Change: -206.71 g C / m² (End value: 933.92)
+'rafique_2012_awagat_reformatted_ffu_nores_raisedbed_somsc' Change: -206.71 g C / m² (End value: 933.92)
+'rafique_2012_awagat_reformatted_inm_res_flatbed_somsc' Change: +494.03 g C / m² (End value: 1,634.66)
+'rafique_2012_awagat_reformatted_inm_res_raisedbed_somsc' Change: +494.03 g C / m² (End value: 1,634.66)
+'rafique_2012_awagat_reformatted_inm_nores_flatbed_somsc' Change: -2.67 g C / m² (End value: 1,137.96)
+'rafique_2012_awagat_reformatted_inm_nores_raisedbed_somsc' Change: -2.67 g C / m² (End value: 1,137.96)
+
+Average SOMSC at end of all experimental phases: 1,249.29 g C / m²
+
+--- Calibration Script Test ---
+Status: FAILED
+Reason: Script exited with error code 1
+
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Rafique_2012_awagat_reformatted/scripts/extract_somsc.py", line 287, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Rafique_2012_awagat_reformatted/scripts/extract_somsc.py", line 136, in main
+    target_year = int(target_year)
+                  ^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

@@ -1,0 +1,59 @@
+N2O Check Summary for Site: Lenka_2022
+
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 12
+Rows passing delta rule (sim >= obs): 12
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                       Observation  Observed  Simulated   Difference
+lenka_2022_rt-t1_n2oflux_2008_2012     0.085  7600.6244 +8941811.06%
+lenka_2022_rt-t2_n2oflux_2008_2012     0.111  7602.1659 +6848698.11%
+lenka_2022_rt-t3_n2oflux_2008_2012     0.166  7603.9986 +4580622.05%
+lenka_2022_nt-t1_n2oflux_2008_2012     0.115  6351.1820 +5522666.96%
+lenka_2022_nt-t2_n2oflux_2008_2012     0.143  6353.3760 +4442820.28%
+lenka_2022_nt-t3_n2oflux_2008_2012     0.173  6355.9567 +3673863.41%
+lenka_2022_rt-t1_n2oflux_2009_2013     0.131  5696.8993 +4348678.09%
+lenka_2022_rt-t2_n2oflux_2009_2013     0.161  5701.8029 +3541392.48%
+lenka_2022_rt-t3_n2oflux_2009_2013     0.197  5710.7159 +2898740.56%
+lenka_2022_nt-t1_n2oflux_2009_2013     0.119  4933.7536 +4145911.43%
+lenka_2022_nt-t2_n2oflux_2009_2013     0.154  4942.6577 +3209417.99%
+lenka_2022_nt-t3_n2oflux_2009_2013     0.166  4951.5622 +2982768.80%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 12
+R²: 0.1415
+RMSE: 6227.16
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and period dates in `observations/Lenka_2022_obs.csv`.
+
+
+--- N2O Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+[INFO] N2O observation rows: 12
+ -> rt-t1 period 2008-185 to 2012-296... SUCCESS: sim=7600.6244
+ -> rt-t2 period 2008-185 to 2012-296... SUCCESS: sim=7602.1659
+ -> rt-t3 period 2008-185 to 2012-296... SUCCESS: sim=7603.9986
+ -> nt-t1 period 2008-185 to 2012-296... SUCCESS: sim=6351.1820
+ -> nt-t2 period 2008-185 to 2012-296... SUCCESS: sim=6353.3760
+ -> nt-t3 period 2008-185 to 2012-296... SUCCESS: sim=6355.9567
+ -> rt-t1 period 2009-312 to 2013-170... SUCCESS: sim=5696.8993
+ -> rt-t2 period 2009-312 to 2013-170... SUCCESS: sim=5701.8029
+ -> rt-t3 period 2009-312 to 2013-170... SUCCESS: sim=5710.7159
+ -> nt-t1 period 2009-312 to 2013-170... SUCCESS: sim=4933.7536
+ -> nt-t2 period 2009-312 to 2013-170... SUCCESS: sim=4942.6577
+ -> nt-t3 period 2009-312 to 2013-170... SUCCESS: sim=4951.5622
+
+PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2022/output_n2o.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2022/averaged_n2o_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2022/observed_vs_modeled_n2o.png'

@@ -1,0 +1,57 @@
+SOMSC Check Summary for Site: Sutaria_2010
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,247.74 g C / m²
+Change during Equilibrium Phase: -2,299.64 g C / m²
+Change during Base Phase: -501.41 g C / m²
+Final SOMSC at end of Base Phase: 1,451.13 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,113.04 g C / m²
+Model is 53.39% lower than observation.
+(Difference: -1,661.91 g C / m²)
+
+--- Experimental Analysis ---
+'sutaria_2010_t1_f0_somsc' Change: -204.20 g C / m² (End value: 1,247.13)
+'sutaria_2010_t1_f1_somsc' Change: -204.19 g C / m² (End value: 1,247.15)
+'sutaria_2010_t1_f2_somsc' Change: -154.47 g C / m² (End value: 1,296.87)
+'sutaria_2010_t1_f3_somsc' Change: -103.99 g C / m² (End value: 1,347.35)
+'sutaria_2010_t2_f0_somsc' Change: -185.67 g C / m² (End value: 1,265.67)
+'sutaria_2010_t2_f1_somsc' Change: -185.66 g C / m² (End value: 1,265.68)
+'sutaria_2010_t2_f2_somsc' Change: -135.93 g C / m² (End value: 1,315.41)
+'sutaria_2010_t2_f3_somsc' Change: -85.42 g C / m² (End value: 1,365.92)
+'sutaria_2010_t3_f0_somsc' Change: -313.72 g C / m² (End value: 1,137.62)
+'sutaria_2010_t3_f1_somsc' Change: -313.70 g C / m² (End value: 1,137.64)
+'sutaria_2010_t3_f2_somsc' Change: -254.24 g C / m² (End value: 1,197.10)
+'sutaria_2010_t3_f3_somsc' Change: -194.77 g C / m² (End value: 1,256.56)
+
+Average SOMSC at end of all experimental phases: 1,256.67 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2004, Day: 292)... SUCCESS: 1284.35
+ -> Checking t2 (Year: 2004, Day: 292)... SUCCESS: 1270.75
+ -> Checking t3 (Year: 2004, Day: 292)... SUCCESS: 1181.55
+ -> Checking f0 (Year: 2004, Day: 292)... SUCCESS: 1216.24
+ -> Checking f1 (Year: 2004, Day: 292)... SUCCESS: 1216.26
+ -> Checking f2 (Year: 2004, Day: 292)... SUCCESS: 1269.42
+ -> Checking f3 (Year: 2004, Day: 292)... SUCCESS: 1323.10
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+sutaria_2010_t1_somsc,t1,2004,292,0.0,1284.3468
+sutaria_2010_t2_somsc,t2,2004,292,0.0,1270.7476000000001
+sutaria_2010_t3_somsc,t3,2004,292,0.0,1181.5476250000002
+sutaria_2010_f0_somsc,f0,2004,292,0.0,1216.2407666666668
+sutaria_2010_f1_somsc,f1,2004,292,0.0,1216.2583666666667
+sutaria_2010_f2_somsc,f2,2004,292,0.0,1269.4233666666667
+sutaria_2010_f3_somsc,f3,2004,292,0.0,1323.1047333333333

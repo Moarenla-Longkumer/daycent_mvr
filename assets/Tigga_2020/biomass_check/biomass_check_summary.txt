@@ -1,0 +1,20 @@
+Biomass Check Summary for Site: Tigga_2020
+
+RESULT: CANNOT ASSESS - No biomass/grain observations in the observation file.
+Add biomass/grain rows to the Comparison Sheet, then re-run extract_obs and biomass_check.
+
+
+--- Biomass Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth (cm)', 'target_year', 'target_day', 'soc_calc', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'COMMENT', 'Comment', 'start_target_year', 'start_target_day']
+[ERROR] Missing critical columns: ['value']
+[DEBUG] Rows remaining after filtering: 0
+[DEBUG] ! Found 0 matching rows. No Biomass obs to process in column 'observation_type'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Tigga_2020/output_biomass.txt'
+
+No data available to plot or save.
+--- Script finished. ---

@@ -1,0 +1,38 @@
+SOMSC Check Summary for Site: Sankar_2014_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,626.47 g C / m²
+Change during Equilibrium Phase: -2,685.18 g C / m²
+Change during Base Phase: -767.69 g C / m²
+Final SOMSC at end of Base Phase: 2,198.85 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,770.48 g C / m²
+Model is 41.68% lower than observation.
+(Difference: -1,571.63 g C / m²)
+
+--- Experimental Analysis ---
+'sankar_2014_reformatted_t1_somsc' Change: -772.26 g C / m² (End value: 1,423.99)
+'sankar_2014_reformatted_t2_somsc' Change: -728.45 g C / m² (End value: 1,467.80)
+'sankar_2014_reformatted_t3_somsc' Change: -742.72 g C / m² (End value: 1,453.53)
+'sankar_2014_reformatted_t4_somsc' Change: -666.08 g C / m² (End value: 1,530.16)
+'sankar_2014_reformatted_t5_somsc' Change: -161.82 g C / m² (End value: 2,034.43)
+'sankar_2014_reformatted_t6_somsc' Change: -645.06 g C / m² (End value: 1,551.18)
+'sankar_2014_reformatted_t7_somsc' Change: -136.22 g C / m² (End value: 2,060.03)
+'sankar_2014_reformatted_t8_somsc' Change: -666.08 g C / m² (End value: 1,530.16)
+
+Average SOMSC at end of all experimental phases: 1,631.41 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

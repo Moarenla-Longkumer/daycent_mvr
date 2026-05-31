@@ -1,0 +1,58 @@
+Biomass Check Summary for Site: Zhang_2013
+
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 3
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 3
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+               Observation  Observed  Simulated          Difference
+zhang_2013_ct_cgrain_sw3eg   248.880  172.26768 -30.78% [SHORTFALL]
+zhang_2013_rt_cgrain_sw3eg   243.756  171.44618 -29.66% [SHORTFALL]
+zhang_2013_nt_cgrain_sw3eg   211.166  172.27356 -18.42% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Zhang_2013_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 3
+R²: 0.1547
+RMSE: 64.84 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Zhang_2013_obs.csv`.
+
+
+--- Biomass Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth (cm)', 'target_year', 'target_day', 'value', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'COMMENT', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 3
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/Zhang_2013_out/Zhang_2013_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in CT
+Successfully processed: 'zhang_2013_ct_cgrain_sw3eg'
+    [DEBUG] Checking Treatment Sch: RT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/Zhang_2013_out/Zhang_2013_RT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in RT
+Successfully processed: 'zhang_2013_rt_cgrain_sw3eg'
+    [DEBUG] Checking Treatment Sch: NT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/Zhang_2013_out/Zhang_2013_NT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in NT
+Successfully processed: 'zhang_2013_nt_cgrain_sw3eg'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/observed_vs_modeled_biomass.png'
+--- Script finished. ---

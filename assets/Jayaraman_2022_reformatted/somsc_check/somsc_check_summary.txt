@@ -1,0 +1,49 @@
+SOMSC Check Summary for Site: Jayaraman_2022_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,425.37 g C / m²
+Change during Equilibrium Phase: -2,471.91 g C / m²
+Change during Base Phase: -314.19 g C / m²
+Final SOMSC at end of Base Phase: 2,653.03 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,332.52 g C / m²
+Model is 20.39% lower than observation.
+(Difference: -679.49 g C / m²)
+
+--- Experimental Analysis ---
+'jayaraman_2022_reformatted_ct_mc_somsc' Change: -423.79 g C / m² (End value: 2,224.39)
+'jayaraman_2022_reformatted_ct_sw_somsc' Change: -434.66 g C / m² (End value: 2,213.52)
+'jayaraman_2022_reformatted_nt_mc_somsc' Change: -5.40 g C / m² (End value: 2,642.78)
+'jayaraman_2022_reformatted_nt_sw_somsc' Change: -9.78 g C / m² (End value: 2,638.39)
+'jayaraman_2022_reformatted_rt_mc_somsc' Change: -61.45 g C / m² (End value: 2,586.72)
+'jayaraman_2022_reformatted_rt_sw_somsc' Change: -65.47 g C / m² (End value: 2,582.70)
+
+Average SOMSC at end of all experimental phases: 2,481.42 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct_sw (Year: 2013, Day: 76)... SUCCESS: 2543.93
+ -> Checking rt_sw (Year: 2013, Day: 76)... SUCCESS: 2639.67
+ -> Checking nt_sw (Year: 2013, Day: 76)... SUCCESS: 2643.85
+ -> Checking ct_mc (Year: 2013, Day: 76)... SUCCESS: 2563.95
+ -> Checking rt_mc (Year: 2013, Day: 76)... SUCCESS: 2656.07
+ -> Checking nt_mc (Year: 2013, Day: 76)... SUCCESS: 2661.45
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Jayaraman_2022_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Jayaraman_2022_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Jayaraman_2022_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+jayaraman_2022_reformatted_ct_sw_somsc,ct_sw,2013,76,3048.387097,2543.9331
+jayaraman_2022_reformatted_rt_sw_somsc,rt_sw,2013,76,3120.967742,2639.6746000000003
+jayaraman_2022_reformatted_nt_sw_somsc,nt_sw,2013,76,3858.870968,2643.8525
+jayaraman_2022_reformatted_ct_mc_somsc,ct_mc,2013,76,3084.677419,2563.9517
+jayaraman_2022_reformatted_rt_mc_somsc,rt_mc,2013,76,3677.419355,2656.0738
+jayaraman_2022_reformatted_nt_mc_somsc,nt_mc,2013,76,3314.516129,2661.4507000000003

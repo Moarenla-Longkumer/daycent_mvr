@@ -1,0 +1,58 @@
+SOMSC Check Summary for Site: Parihar_2018_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,991.46 g C / m²
+Change during Equilibrium Phase: -2,493.73 g C / m²
+Change during Base Phase: -258.95 g C / m²
+Final SOMSC at end of Base Phase: 1,248.70 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,238.07 g C / m²
+Model is 61.44% lower than observation.
+(Difference: -1,989.37 g C / m²)
+
+--- Experimental Analysis ---
+'parihar_2018_reformatted_ct_mcs_somsc' Change: -18.06 g C / m² (End value: 1,227.47)
+'parihar_2018_reformatted_ct_mms_somsc' Change: -30.83 g C / m² (End value: 1,214.71)
+'parihar_2018_reformatted_ct_mmumb_somsc' Change: -186.34 g C / m² (End value: 1,059.19)
+'parihar_2018_reformatted_ct_mwmb_somsc' Change: -207.39 g C / m² (End value: 1,038.14)
+'parihar_2018_reformatted_pb_mcs_somsc' Change: +97.18 g C / m² (End value: 1,342.71)
+'parihar_2018_reformatted_pb_mms_somsc' Change: +118.81 g C / m² (End value: 1,364.35)
+'parihar_2018_reformatted_pb_mmumb_somsc' Change: +53.94 g C / m² (End value: 1,299.47)
+'parihar_2018_reformatted_pb_mwmb_somsc' Change: +86.62 g C / m² (End value: 1,332.15)
+'parihar_2018_reformatted_zt_mcs_somsc' Change: +83.62 g C / m² (End value: 1,329.15)
+'parihar_2018_reformatted_zt_mms_somsc' Change: +93.36 g C / m² (End value: 1,338.89)
+'parihar_2018_reformatted_zt_mmumb_somsc' Change: +44.08 g C / m² (End value: 1,289.61)
+'parihar_2018_reformatted_zt_mwmb_somsc' Change: +65.42 g C / m² (End value: 1,310.95)
+
+Average SOMSC at end of all experimental phases: 1,262.23 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking pb (Year: 2013, Day: 190)... SUCCESS: 1351.06
+ -> Checking zt (Year: 2013, Day: 190)... SUCCESS: 1327.15
+ -> Checking ct (Year: 2013, Day: 190)... SUCCESS: 1152.14
+ -> Checking mwmb (Year: 2013, Day: 190)... SUCCESS: 1243.18
+ -> Checking mcs (Year: 2013, Day: 190)... SUCCESS: 1312.51
+ -> Checking mmumb (Year: 2013, Day: 190)... SUCCESS: 1232.16
+ -> Checking mms (Year: 2013, Day: 190)... SUCCESS: 1319.29
+ -> Checking nan (Year: 2013, Day: 190)... FAILED: No schedule files resolved.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+parihar_2018_reformatted_pb_somsc,pb,2013,190,2827.0,1351.064775
+parihar_2018_reformatted_zt_somsc,zt,2013,190,2826.0,1327.149625
+parihar_2018_reformatted_ct_somsc,ct,2013,190,2208.0,1152.136675
+parihar_2018_reformatted_mwmb_somsc,mwmb,2013,190,2750.0,1243.1831333333332
+parihar_2018_reformatted_mcs_somsc,mcs,2013,190,2825.0,1312.5081
+parihar_2018_reformatted_mmumb_somsc,mmumb,2013,190,2425.0,1232.1582333333333
+parihar_2018_reformatted_mms_somsc,mms,2013,190,2479.0,1319.2853

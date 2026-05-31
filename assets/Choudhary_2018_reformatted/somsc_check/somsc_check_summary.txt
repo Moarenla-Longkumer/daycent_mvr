@@ -1,0 +1,61 @@
+SOMSC Check Summary for Site: Choudhary_2018_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,991.46 g C / m²
+Change during Equilibrium Phase: -2,493.73 g C / m²
+Change during Base Phase: -258.95 g C / m²
+Final SOMSC at end of Base Phase: 1,248.70 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,238.07 g C / m²
+Model is 61.44% lower than observation.
+(Difference: -1,989.37 g C / m²)
+
+--- Experimental Analysis ---
+'choudhary_2018_reformatted_ct_cr0_s0_somsc' Change: -106.90 g C / m² (End value: 1,138.63)
+'choudhary_2018_reformatted_ct_cr0_s15_somsc' Change: -107.33 g C / m² (End value: 1,138.20)
+'choudhary_2018_reformatted_ct_cr0_s30_somsc' Change: -107.33 g C / m² (End value: 1,138.20)
+'choudhary_2018_reformatted_ct_cr0_s45_somsc' Change: -107.33 g C / m² (End value: 1,138.20)
+'choudhary_2018_reformatted_ct_cr2_s0_somsc' Change: -20.39 g C / m² (End value: 1,225.14)
+'choudhary_2018_reformatted_ct_cr2_s15_somsc' Change: -17.98 g C / m² (End value: 1,227.55)
+'choudhary_2018_reformatted_ct_cr2_s30_somsc' Change: -17.98 g C / m² (End value: 1,227.55)
+'choudhary_2018_reformatted_ct_cr2_s45_somsc' Change: -17.98 g C / m² (End value: 1,227.55)
+'choudhary_2018_reformatted_ct_cr4_s0_somsc' Change: +63.28 g C / m² (End value: 1,308.81)
+'choudhary_2018_reformatted_ct_cr4_s15_somsc' Change: +66.83 g C / m² (End value: 1,312.36)
+'choudhary_2018_reformatted_ct_cr4_s30_somsc' Change: +66.83 g C / m² (End value: 1,312.36)
+'choudhary_2018_reformatted_ct_cr4_s45_somsc' Change: +66.83 g C / m² (End value: 1,312.36)
+'choudhary_2018_reformatted_zt_cr2_s0_somsc' Change: +89.72 g C / m² (End value: 1,335.25)
+'choudhary_2018_reformatted_zt_cr2_s15_somsc' Change: +90.94 g C / m² (End value: 1,336.47)
+'choudhary_2018_reformatted_zt_cr2_s30_somsc' Change: +90.94 g C / m² (End value: 1,336.47)
+'choudhary_2018_reformatted_zt_cr2_s45_somsc' Change: +90.94 g C / m² (End value: 1,336.47)
+'choudhary_2018_reformatted_zt_cr4_s0_somsc' Change: +174.75 g C / m² (End value: 1,420.28)
+'choudhary_2018_reformatted_zt_cr4_s15_somsc' Change: +176.36 g C / m² (End value: 1,421.89)
+'choudhary_2018_reformatted_zt_cr4_s30_somsc' Change: +176.36 g C / m² (End value: 1,421.89)
+'choudhary_2018_reformatted_zt_cr4_s45_somsc' Change: +176.36 g C / m² (End value: 1,421.89)
+
+Average SOMSC at end of all experimental phases: 1,286.88 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct_cr0 (Year: 2015, Day: 70)... SUCCESS: 1162.87
+ -> Checking ct_cr2 (Year: 2015, Day: 70)... SUCCESS: 1255.47
+ -> Checking ct_cr4 (Year: 2015, Day: 70)... SUCCESS: 1343.77
+ -> Checking zt_cr2 (Year: 2015, Day: 70)... SUCCESS: 1364.59
+ -> Checking zt_cr4 (Year: 2015, Day: 70)... SUCCESS: 1450.82
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Choudhary_2018_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Choudhary_2018_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Choudhary_2018_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+choudhary_2018_reformatted_ct_cr0_somsc,ct_cr0,2015,70,934.525,1162.870975
+choudhary_2018_reformatted_ct_cr2_somsc,ct_cr2,2015,70,986.7,1255.4706999999999
+choudhary_2018_reformatted_ct_cr4_somsc,ct_cr4,2015,70,1038.555,1343.7729
+choudhary_2018_reformatted_zt_cr2_somsc,zt_cr2,2015,70,998.325,1364.590525
+choudhary_2018_reformatted_zt_cr4_somsc,zt_cr4,2015,70,1029.3,1450.81835

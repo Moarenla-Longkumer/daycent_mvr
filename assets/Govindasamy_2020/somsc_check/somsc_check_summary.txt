@@ -1,0 +1,37 @@
+SOMSC Check Summary for Site: Govindasamy_2020
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,450.90 g C / m²
+Change during Equilibrium Phase: -2,402.72 g C / m²
+Change during Base Phase: -1,108.88 g C / m²
+Final SOMSC at end of Base Phase: 1,943.62 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 7,117.11 g C / m²
+Model is 72.69% lower than observation.
+(Difference: -5,173.49 g C / m²)
+
+--- Experimental Analysis ---
+'govindasamy_2020_ct_somsc' Change: -917.01 g C / m² (End value: 1,026.74)
+'govindasamy_2020_nt_somsc' Change: -891.90 g C / m² (End value: 1,051.84)
+
+Average SOMSC at end of all experimental phases: 1,039.29 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking nt (Year: 2017, Day: 215)... SUCCESS: 1058.49
+ -> Checking nt (Year: 2017, Day: 215)... SUCCESS: 1058.49
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Govindasamy_2020/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Govindasamy_2020/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Govindasamy_2020/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+govindasamy_2020_nt_somsc,nt,2017,215,969.0,1058.4948
+govindasamy_2020_nt_somsc,nt,2017,215,815.0,1058.4948

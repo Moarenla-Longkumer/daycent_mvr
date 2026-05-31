@@ -1,0 +1,58 @@
+SOMSC Check Summary for Site: Srinivasarao_2019
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,061.88 g C / m²
+Change during Equilibrium Phase: -2,132.83 g C / m²
+Change during Base Phase: -646.90 g C / m²
+Final SOMSC at end of Base Phase: 1,285.69 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 6,531.41 g C / m²
+Model is 80.32% lower than observation.
+(Difference: -5,245.72 g C / m²)
+
+--- Experimental Analysis ---
+'srinivasarao_2019_t1_somsc' Change: -330.55 g C / m² (End value: 954.82)
+'srinivasarao_2019_t2_somsc' Change: -300.02 g C / m² (End value: 985.35)
+'srinivasarao_2019_t3_somsc' Change: +296.27 g C / m² (End value: 1,581.65)
+'srinivasarao_2019_t4_somsc' Change: +59.40 g C / m² (End value: 1,344.78)
+'srinivasarao_2019_t5_somsc' Change: -53.35 g C / m² (End value: 1,232.02)
+'srinivasarao_2019_t6_somsc' Change: -88.88 g C / m² (End value: 1,196.49)
+'srinivasarao_2019_t7_somsc' Change: -64.56 g C / m² (End value: 1,220.82)
+'srinivasarao_2019_t8_somsc' Change: -135.71 g C / m² (End value: 1,149.66)
+'srinivasarao_2019_t9_somsc' Change: -300.02 g C / m² (End value: 985.35)
+
+Average SOMSC at end of all experimental phases: 1,183.44 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2012, Day: 364)... SUCCESS: 954.74
+ -> Checking t2 (Year: 2012, Day: 364)... SUCCESS: 985.23
+ -> Checking t3 (Year: 2012, Day: 364)... SUCCESS: 1581.64
+ -> Checking t4 (Year: 2012, Day: 364)... SUCCESS: 1344.73
+ -> Checking t5 (Year: 2012, Day: 364)... SUCCESS: 1231.94
+ -> Checking t6 (Year: 2012, Day: 364)... SUCCESS: 1196.42
+ -> Checking t7 (Year: 2012, Day: 364)... SUCCESS: 1220.75
+ -> Checking t8 (Year: 2012, Day: 364)... SUCCESS: 1149.58
+ -> Checking t9 (Year: 2012, Day: 364)... SUCCESS: 985.23
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2019/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2019/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2019/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+srinivasarao_2019_t1_somsc,t1,2012,364,3048.0,954.739
+srinivasarao_2019_t2_somsc,t2,2012,364,3110.0,985.2282
+srinivasarao_2019_t3_somsc,t3,2012,364,3136.0,1581.6392
+srinivasarao_2019_t4_somsc,t4,2012,364,3130.0,1344.7287000000001
+srinivasarao_2019_t5_somsc,t5,2012,364,3186.0,1231.9431
+srinivasarao_2019_t6_somsc,t6,2012,364,3243.0,1196.4178
+srinivasarao_2019_t7_somsc,t7,2012,364,3196.0,1220.7499
+srinivasarao_2019_t8_somsc,t8,2012,364,3140.0,1149.5755
+srinivasarao_2019_t9_somsc,t9,2012,364,3079.0,985.2282

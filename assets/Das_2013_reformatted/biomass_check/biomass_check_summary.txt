@@ -1,0 +1,611 @@
+Biomass Check Summary for Site: Das_2013_reformatted
+
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 32
+Rows passing delta rule (sim >= obs): 4
+Rows with shortfall (sim < obs): 28
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                  Observation  Observed  Simulated          Difference
+          das_2013_reformatted_ctf_aglivc_cot     299.2 286.103050  -4.38% [SHORTFALL]
+          das_2013_reformatted_ctb_aglivc_cot     314.8 286.103050  -9.12% [SHORTFALL]
+          das_2013_reformatted_ztf_aglivc_cot     274.4 304.990825             +11.15%
+          das_2013_reformatted_ztb_aglivc_cot     303.6 313.493808              +3.26%
+         das_2013_reformatted_nres_aglivc_cot     274.4 283.744417              +3.41%
+        das_2013_reformatted_cmres_aglivc_cot     293.2 288.164683  -1.72% [SHORTFALL]
+         das_2013_reformatted_wres_aglivc_cot     302.4 304.317733              +0.63%
+      das_2013_reformatted_cm_wres_aglivc_cot     321.6 310.221700  -3.54% [SHORTFALL]
+      das_2013_reformatted_ctf_aglivc_c6_2011     473.6 219.355025 -53.68% [SHORTFALL]
+      das_2013_reformatted_ctb_aglivc_c6_2011     547.6 219.355025 -59.94% [SHORTFALL]
+      das_2013_reformatted_ztf_aglivc_c6_2011     516.4 274.931700 -46.76% [SHORTFALL]
+      das_2013_reformatted_ztb_aglivc_c6_2011     546.4 278.951500 -48.95% [SHORTFALL]
+     das_2013_reformatted_nres_aglivc_c6_2011     501.2 209.362100 -58.23% [SHORTFALL]
+    das_2013_reformatted_cmres_aglivc_c6_2011     490.4 223.698525 -54.38% [SHORTFALL]
+     das_2013_reformatted_wres_aglivc_c6_2011     525.6 264.027833 -49.77% [SHORTFALL]
+  das_2013_reformatted_cm_wres_aglivc_c6_2011     567.2 284.157150 -49.90% [SHORTFALL]
+        das_2013_reformatted_ctf_aglivc_sw3eg     452.4 358.091081 -20.85% [SHORTFALL]
+        das_2013_reformatted_ctb_aglivc_sw3eg     433.6 358.091081 -17.41% [SHORTFALL]
+        das_2013_reformatted_ztf_aglivc_sw3eg     435.6 331.086650 -23.99% [SHORTFALL]
+        das_2013_reformatted_ztb_aglivc_sw3eg     412.4 325.217056 -21.14% [SHORTFALL]
+       das_2013_reformatted_nres_aglivc_sw3eg     403.2 349.868587 -13.23% [SHORTFALL]
+      das_2013_reformatted_cmres_aglivc_sw3eg     436.0 333.695381 -23.46% [SHORTFALL]
+       das_2013_reformatted_wres_aglivc_sw3eg     438.4 357.874683 -18.37% [SHORTFALL]
+    das_2013_reformatted_cm_wres_aglivc_sw3eg     456.4 336.977931 -26.17% [SHORTFALL]
+    das_2013_reformatted_ctf_aglivc_lent_2012      80.4   3.435100 -95.73% [SHORTFALL]
+    das_2013_reformatted_ctb_aglivc_lent_2012      79.6   3.435100 -95.68% [SHORTFALL]
+    das_2013_reformatted_ztf_aglivc_lent_2012      78.0   3.435100 -95.60% [SHORTFALL]
+    das_2013_reformatted_ztb_aglivc_lent_2012      80.8   3.435100 -95.75% [SHORTFALL]
+   das_2013_reformatted_nres_aglivc_lent_2012      64.8   3.435100 -94.70% [SHORTFALL]
+  das_2013_reformatted_cmres_aglivc_lent_2012      85.2   3.435100 -95.97% [SHORTFALL]
+   das_2013_reformatted_wres_aglivc_lent_2012      82.8   3.435100 -95.85% [SHORTFALL]
+das_2013_reformatted_cm_wres_aglivc_lent_2012      86.0   3.435100 -96.01% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Das_2013_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 32
+R²: 0.6279
+RMSE: 150.35 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+
+--- Biomass Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 32
+    [DEBUG] Checking Treatment Sch: CTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTF_NRES
+    [DEBUG] Checking Treatment Sch: CTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTF_CMRES
+    [DEBUG] Checking Treatment Sch: CTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTF_WRES
+    [DEBUG] Checking Treatment Sch: CTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_ctf_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: CTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: CTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTB_WRES
+    [DEBUG] Checking Treatment Sch: CTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTB_CMRES
+    [DEBUG] Checking Treatment Sch: CTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTB_NRES
+Successfully processed: 'das_2013_reformatted_ctb_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: ZTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTB_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTB_CMRES
+    [DEBUG] Checking Treatment Sch: ZTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTB_NRES
+    [DEBUG] Checking Treatment Sch: ZTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTB_CM_WRES
+Successfully processed: 'das_2013_reformatted_ztf_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: ZTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTF_NRES
+    [DEBUG] Checking Treatment Sch: ZTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTF_CMRES
+    [DEBUG] Checking Treatment Sch: ZTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTF_WRES
+    [DEBUG] Checking Treatment Sch: ZTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_ztb_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: CTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTB_NRES
+    [DEBUG] Checking Treatment Sch: CTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTF_NRES
+    [DEBUG] Checking Treatment Sch: ZTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTB_NRES
+    [DEBUG] Checking Treatment Sch: ZTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTF_NRES
+Successfully processed: 'das_2013_reformatted_nres_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: CTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTF_CMRES
+    [DEBUG] Checking Treatment Sch: ZTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTB_CMRES
+    [DEBUG] Checking Treatment Sch: ZTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTF_CMRES
+    [DEBUG] Checking Treatment Sch: CTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTB_CMRES
+Successfully processed: 'das_2013_reformatted_cmres_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: CM_WRES
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CM_WRES_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTB_WRES
+    [DEBUG] Checking Treatment Sch: CTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTF_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTB_WRES
+Successfully processed: 'das_2013_reformatted_wres_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: CTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: CTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in CTF_CM_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: ZTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 3 data points in ZTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_cm_wres_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: CTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_NRES
+    [DEBUG] Checking Treatment Sch: CTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_CMRES
+    [DEBUG] Checking Treatment Sch: CTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_WRES
+    [DEBUG] Checking Treatment Sch: CTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_ctf_aglivc_c6_2011'
+    [DEBUG] Checking Treatment Sch: CTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: CTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_WRES
+    [DEBUG] Checking Treatment Sch: CTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_CMRES
+    [DEBUG] Checking Treatment Sch: CTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_NRES
+Successfully processed: 'das_2013_reformatted_ctb_aglivc_c6_2011'
+    [DEBUG] Checking Treatment Sch: ZTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_CMRES
+    [DEBUG] Checking Treatment Sch: ZTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_NRES
+    [DEBUG] Checking Treatment Sch: ZTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_CM_WRES
+Successfully processed: 'das_2013_reformatted_ztf_aglivc_c6_2011'
+    [DEBUG] Checking Treatment Sch: ZTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_NRES
+    [DEBUG] Checking Treatment Sch: ZTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_CMRES
+    [DEBUG] Checking Treatment Sch: ZTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_WRES
+    [DEBUG] Checking Treatment Sch: ZTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_ztb_aglivc_c6_2011'
+    [DEBUG] Checking Treatment Sch: CTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_NRES
+    [DEBUG] Checking Treatment Sch: CTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_NRES
+    [DEBUG] Checking Treatment Sch: ZTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_NRES
+    [DEBUG] Checking Treatment Sch: ZTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_NRES
+Successfully processed: 'das_2013_reformatted_nres_aglivc_c6_2011'
+    [DEBUG] Checking Treatment Sch: CTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_CMRES
+    [DEBUG] Checking Treatment Sch: ZTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_CMRES
+    [DEBUG] Checking Treatment Sch: ZTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_CMRES
+    [DEBUG] Checking Treatment Sch: CTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_CMRES
+Successfully processed: 'das_2013_reformatted_cmres_aglivc_c6_2011'
+    [DEBUG] Checking Treatment Sch: CM_WRES
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CM_WRES_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_WRES
+    [DEBUG] Checking Treatment Sch: CTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_WRES
+Successfully processed: 'das_2013_reformatted_wres_aglivc_c6_2011'
+    [DEBUG] Checking Treatment Sch: CTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: CTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_CM_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: ZTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_cm_wres_aglivc_c6_2011'
+    [DEBUG] Checking Treatment Sch: CTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTF_NRES
+    [DEBUG] Checking Treatment Sch: CTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTF_CMRES
+    [DEBUG] Checking Treatment Sch: CTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTF_WRES
+    [DEBUG] Checking Treatment Sch: CTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_ctf_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: CTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: CTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTB_WRES
+    [DEBUG] Checking Treatment Sch: CTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTB_CMRES
+    [DEBUG] Checking Treatment Sch: CTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTB_NRES
+Successfully processed: 'das_2013_reformatted_ctb_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: ZTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTB_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTB_CMRES
+    [DEBUG] Checking Treatment Sch: ZTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTB_NRES
+    [DEBUG] Checking Treatment Sch: ZTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTB_CM_WRES
+Successfully processed: 'das_2013_reformatted_ztf_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: ZTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTF_NRES
+    [DEBUG] Checking Treatment Sch: ZTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTF_CMRES
+    [DEBUG] Checking Treatment Sch: ZTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTF_WRES
+    [DEBUG] Checking Treatment Sch: ZTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_ztb_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: CTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTB_NRES
+    [DEBUG] Checking Treatment Sch: CTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTF_NRES
+    [DEBUG] Checking Treatment Sch: ZTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTB_NRES
+    [DEBUG] Checking Treatment Sch: ZTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTF_NRES
+Successfully processed: 'das_2013_reformatted_nres_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: CTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTF_CMRES
+    [DEBUG] Checking Treatment Sch: ZTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTB_CMRES
+    [DEBUG] Checking Treatment Sch: ZTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTF_CMRES
+    [DEBUG] Checking Treatment Sch: CTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTB_CMRES
+Successfully processed: 'das_2013_reformatted_cmres_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: CM_WRES
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CM_WRES_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTB_WRES
+    [DEBUG] Checking Treatment Sch: CTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTF_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTB_WRES
+Successfully processed: 'das_2013_reformatted_wres_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: CTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: CTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in CTF_CM_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: ZTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 4 data points in ZTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_cm_wres_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: CTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_NRES
+    [DEBUG] Checking Treatment Sch: CTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_CMRES
+    [DEBUG] Checking Treatment Sch: CTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_WRES
+    [DEBUG] Checking Treatment Sch: CTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_ctf_aglivc_lent_2012'
+    [DEBUG] Checking Treatment Sch: CTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: CTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_WRES
+    [DEBUG] Checking Treatment Sch: CTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_CMRES
+    [DEBUG] Checking Treatment Sch: CTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_NRES
+Successfully processed: 'das_2013_reformatted_ctb_aglivc_lent_2012'
+    [DEBUG] Checking Treatment Sch: ZTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_CMRES
+    [DEBUG] Checking Treatment Sch: ZTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_NRES
+    [DEBUG] Checking Treatment Sch: ZTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_CM_WRES
+Successfully processed: 'das_2013_reformatted_ztf_aglivc_lent_2012'
+    [DEBUG] Checking Treatment Sch: ZTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_NRES
+    [DEBUG] Checking Treatment Sch: ZTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_CMRES
+    [DEBUG] Checking Treatment Sch: ZTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_WRES
+    [DEBUG] Checking Treatment Sch: ZTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_ztb_aglivc_lent_2012'
+    [DEBUG] Checking Treatment Sch: CTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_NRES
+    [DEBUG] Checking Treatment Sch: CTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_NRES
+    [DEBUG] Checking Treatment Sch: ZTB_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_NRES
+    [DEBUG] Checking Treatment Sch: ZTF_NRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_NRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_NRES
+Successfully processed: 'das_2013_reformatted_nres_aglivc_lent_2012'
+    [DEBUG] Checking Treatment Sch: CTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_CMRES
+    [DEBUG] Checking Treatment Sch: ZTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_CMRES
+    [DEBUG] Checking Treatment Sch: ZTF_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_CMRES
+    [DEBUG] Checking Treatment Sch: CTB_CMRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CMRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_CMRES
+Successfully processed: 'das_2013_reformatted_cmres_aglivc_lent_2012'
+    [DEBUG] Checking Treatment Sch: CM_WRES
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CM_WRES_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_WRES
+    [DEBUG] Checking Treatment Sch: CTF_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_WRES
+Successfully processed: 'das_2013_reformatted_wres_aglivc_lent_2012'
+    [DEBUG] Checking Treatment Sch: CTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: CTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CTF_CM_WRES
+    [DEBUG] Checking Treatment Sch: ZTB_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTB_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTB_CM_WRES
+    [DEBUG] Checking Treatment Sch: ZTF_CM_WRES
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_ZTF_CM_WRES_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTF_CM_WRES
+Successfully processed: 'das_2013_reformatted_cm_wres_aglivc_lent_2012'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/observed_vs_modeled_biomass.png'
+--- Script finished. ---

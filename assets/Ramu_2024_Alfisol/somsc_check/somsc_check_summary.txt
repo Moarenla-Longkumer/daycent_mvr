@@ -1,0 +1,32 @@
+SOMSC Check Summary for Site: Ramu_2024_Alfisol
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 2,477.06 g C / m²
+Change during Equilibrium Phase: -919.93 g C / m²
+Change during Base Phase: -323.71 g C / m²
+Final SOMSC at end of Base Phase: 1,239.18 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,103.06 g C / m²
+Model is 69.80% lower than observation.
+(Difference: -2,863.88 g C / m²)
+
+--- Experimental Analysis ---
+'ramu_2024_alfisol_t1_alfisol_somsc' Change: -0.63 g C / m² (End value: 1,236.64)
+'ramu_2024_alfisol_t2_alfisol_somsc' Change: +2.82 g C / m² (End value: 1,240.09)
+
+Average SOMSC at end of all experimental phases: 1,238.37 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ramu_2024_Alfisol/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

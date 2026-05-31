@@ -1,0 +1,71 @@
+SOMSC Check Summary for Site: Virk_2017
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 2,154.65 g C / m²
+Change during Equilibrium Phase: -821.07 g C / m²
+Change during Base Phase: -538.08 g C / m²
+Final SOMSC at end of Base Phase: 798.46 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,387.61 g C / m²
+Model is 66.56% lower than observation.
+(Difference: -1,589.15 g C / m²)
+
+--- Experimental Analysis ---
+'virk_2017_trt_ct_n0_somsc' Change: +22.67 g C / m² (End value: 821.58)
+'virk_2017_trt_ct_n100_somsc' Change: +22.67 g C / m² (End value: 821.58)
+'virk_2017_trt_ct_n125_somsc' Change: +22.67 g C / m² (End value: 821.58)
+'virk_2017_trt_ct_n75_somsc' Change: +22.67 g C / m² (End value: 821.58)
+'virk_2017_trt_hs_n0_somsc' Change: +75.99 g C / m² (End value: 874.90)
+'virk_2017_trt_hs_n100_somsc' Change: +75.96 g C / m² (End value: 874.87)
+'virk_2017_trt_hs_n125_somsc' Change: +75.96 g C / m² (End value: 874.87)
+'virk_2017_trt_hs_n75_somsc' Change: +75.97 g C / m² (End value: 874.88)
+'virk_2017_trt_sczt_n0_somsc' Change: +75.99 g C / m² (End value: 874.90)
+'virk_2017_trt_sczt_n100_somsc' Change: +75.96 g C / m² (End value: 874.87)
+'virk_2017_trt_sczt_n125_somsc' Change: +75.96 g C / m² (End value: 874.87)
+'virk_2017_trt_sczt_n75_somsc' Change: +75.97 g C / m² (End value: 874.88)
+
+Average SOMSC at end of all experimental phases: 857.11 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_hs_avg (Year: 2014, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_HS_AVG_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_hs_avg (Year: 2015, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_HS_AVG_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_sczt_avg (Year: 2014, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_SCZT_AVG_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_sczt_avg (Year: 2015, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_SCZT_AVG_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_ct_avg (Year: 2014, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_CT_AVG_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_ct_avg (Year: 2015, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_CT_AVG_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_avg_n0 (Year: 2014, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_AVG_N0_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_avg_n0 (Year: 2015, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_AVG_N0_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_avg_n75 (Year: 2014, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_AVG_N75_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_avg_n75 (Year: 2015, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_AVG_N75_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_avg_n100 (Year: 2014, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_AVG_N100_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_avg_n100 (Year: 2015, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_AVG_N100_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_avg_n125 (Year: 2014, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_AVG_N125_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_avg_n125 (Year: 2015, Day: 309)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/Virk_2017_out/Virk_2017_TRT_AVG_N125_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Virk_2017/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

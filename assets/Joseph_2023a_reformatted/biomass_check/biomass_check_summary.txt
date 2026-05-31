@@ -1,0 +1,159 @@
+Biomass Check Summary for Site: Joseph_2023a_reformatted
+
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 20
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 20
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                 Observation  Observed  Simulated          Difference
+      joseph_2023a_reformatted_ct_aglivc_cot     408.0  237.48195 -41.79% [SHORTFALL]
+    joseph_2023a_reformatted_pnbb_aglivc_cot     416.0  285.58080 -31.35% [SHORTFALL]
+  joseph_2023a_reformatted_pnbb_r_aglivc_cot     476.0  342.48950 -28.05% [SHORTFALL]
+      joseph_2023a_reformatted_fb_aglivc_cot     496.0  272.53900 -45.05% [SHORTFALL]
+    joseph_2023a_reformatted_fb_r_aglivc_cot     628.0  331.19950 -47.26% [SHORTFALL]
+      joseph_2023a_reformatted_ct_cgrain_cot      80.8   58.68150 -27.37% [SHORTFALL]
+    joseph_2023a_reformatted_pnbb_cgrain_cot      94.2   70.66495 -24.98% [SHORTFALL]
+  joseph_2023a_reformatted_pnbb_r_cgrain_cot     116.4   84.75260 -27.19% [SHORTFALL]
+      joseph_2023a_reformatted_fb_cgrain_cot     111.2   63.94060 -42.50% [SHORTFALL]
+    joseph_2023a_reformatted_fb_r_cgrain_cot     135.2   77.78170 -42.47% [SHORTFALL]
+    joseph_2023a_reformatted_ct_aglivc_sw3eg     712.0  349.12915 -50.97% [SHORTFALL]
+  joseph_2023a_reformatted_pnbb_aglivc_sw3eg     774.0  346.90970 -55.18% [SHORTFALL]
+joseph_2023a_reformatted_pnbb_r_aglivc_sw3eg     780.0  332.42065 -57.38% [SHORTFALL]
+    joseph_2023a_reformatted_fb_aglivc_sw3eg     784.0  310.02180 -60.46% [SHORTFALL]
+  joseph_2023a_reformatted_fb_r_aglivc_sw3eg     836.0  305.64170 -63.44% [SHORTFALL]
+    joseph_2023a_reformatted_ct_cgrain_sw3eg     272.8  120.89590 -55.68% [SHORTFALL]
+  joseph_2023a_reformatted_pnbb_cgrain_sw3eg     305.0  120.16730 -60.60% [SHORTFALL]
+joseph_2023a_reformatted_pnbb_r_cgrain_sw3eg     305.6  115.36685 -62.25% [SHORTFALL]
+    joseph_2023a_reformatted_fb_cgrain_sw3eg     318.4  116.81080 -63.31% [SHORTFALL]
+  joseph_2023a_reformatted_fb_r_cgrain_sw3eg     338.4  115.19500 -65.96% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Joseph_2023a_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 20
+R²: 0.8358
+RMSE: 265.87 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+
+--- Biomass Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'uncertainty_type.1', 'uncertainty units.1', 'uncertainty_value.1', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 20
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT
+Successfully processed: 'joseph_2023a_reformatted_ct_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB
+Successfully processed: 'joseph_2023a_reformatted_pnbb_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB_R
+Successfully processed: 'joseph_2023a_reformatted_pnbb_r_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: FB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_FB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FB
+Successfully processed: 'joseph_2023a_reformatted_fb_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: FB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_FB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FB_R
+Successfully processed: 'joseph_2023a_reformatted_fb_r_aglivc_cot'
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT
+Successfully processed: 'joseph_2023a_reformatted_ct_cgrain_cot'
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB
+Successfully processed: 'joseph_2023a_reformatted_pnbb_cgrain_cot'
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB_R
+Successfully processed: 'joseph_2023a_reformatted_pnbb_r_cgrain_cot'
+    [DEBUG] Checking Treatment Sch: FB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_FB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FB
+Successfully processed: 'joseph_2023a_reformatted_fb_cgrain_cot'
+    [DEBUG] Checking Treatment Sch: FB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_FB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FB_R
+Successfully processed: 'joseph_2023a_reformatted_fb_r_cgrain_cot'
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT
+Successfully processed: 'joseph_2023a_reformatted_ct_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB
+Successfully processed: 'joseph_2023a_reformatted_pnbb_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB_R
+Successfully processed: 'joseph_2023a_reformatted_pnbb_r_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: FB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_FB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FB
+Successfully processed: 'joseph_2023a_reformatted_fb_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: FB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_FB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FB_R
+Successfully processed: 'joseph_2023a_reformatted_fb_r_aglivc_sw3eg'
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT
+Successfully processed: 'joseph_2023a_reformatted_ct_cgrain_sw3eg'
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB
+Successfully processed: 'joseph_2023a_reformatted_pnbb_cgrain_sw3eg'
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB_R
+Successfully processed: 'joseph_2023a_reformatted_pnbb_r_cgrain_sw3eg'
+    [DEBUG] Checking Treatment Sch: FB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_FB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FB
+Successfully processed: 'joseph_2023a_reformatted_fb_cgrain_sw3eg'
+    [DEBUG] Checking Treatment Sch: FB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/Joseph_2023a_reformatted_out/Joseph_2023a_reformatted_FB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FB_R
+Successfully processed: 'joseph_2023a_reformatted_fb_r_cgrain_sw3eg'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/observed_vs_modeled_biomass.png'
+--- Script finished. ---

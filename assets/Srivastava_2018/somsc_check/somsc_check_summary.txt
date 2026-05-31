@@ -1,0 +1,57 @@
+SOMSC Check Summary for Site: Srivastava_2018
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,522.63 g C / m²
+Change during Equilibrium Phase: -3,881.76 g C / m²
+Change during Base Phase: +22.11 g C / m²
+Final SOMSC at end of Base Phase: 1,670.24 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,810.74 g C / m²
+Model is 65.28% lower than observation.
+(Difference: -3,140.50 g C / m²)
+
+--- Experimental Analysis ---
+'srivastava_2018_trt_bs_somsc' Change: +3,243.96 g C / m² (End value: 4,909.37)
+'srivastava_2018_trt_control_somsc' Change: -316.67 g C / m² (End value: 1,348.75)
+'srivastava_2018_trt_fym_somsc' Change: +2,666.42 g C / m² (End value: 4,331.83)
+'srivastava_2018_trt_rdf_somsc' Change: -179.15 g C / m² (End value: 1,486.27)
+'srivastava_2018_trt_spmc_somsc' Change: +2,279.30 g C / m² (End value: 3,944.71)
+'srivastava_2018_trt_vc_somsc' Change: +2,277.47 g C / m² (End value: 3,942.88)
+
+Average SOMSC at end of all experimental phases: 3,327.30 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_control (Year: 2013, Day: 20)... SUCCESS: 1383.22
+ -> Checking trt_rdf (Year: 2013, Day: 20)... SUCCESS: 1526.89
+ -> Checking trt_vc (Year: 2013, Day: 20)... SUCCESS: 4016.45
+ -> Checking trt_fym (Year: 2013, Day: 20)... SUCCESS: 4411.25
+ -> Checking trt_bs (Year: 2013, Day: 20)... SUCCESS: 4997.31
+ -> Checking trt_spmc (Year: 2013, Day: 20)... SUCCESS: 4018.36
+ -> Checking trt_vc_gd (Year: 2013, Day: 20)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_fym_gd (Year: 2013, Day: 20)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_bs_gd (Year: 2013, Day: 20)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_spmc_gd (Year: 2013, Day: 20)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+srivastava_2018_trt_control_somsc,trt_control,2013,20,1668.0,1383.2222000000002
+srivastava_2018_trt_rdf_somsc,trt_rdf,2013,20,1974.0,1526.8899000000001
+srivastava_2018_trt_vc_somsc,trt_vc,2013,20,2046.0,4016.4456999999998
+srivastava_2018_trt_fym_somsc,trt_fym,2013,20,2046.0,4411.2508
+srivastava_2018_trt_bs_somsc,trt_bs,2013,20,2046.0,4997.3126
+srivastava_2018_trt_spmc_somsc,trt_spmc,2013,20,2583.0,4018.3601

@@ -1,0 +1,57 @@
+SOMSC Check Summary for Site: Venkatesh_2013
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 6,148.91 g C / m²
+Change during Equilibrium Phase: -4,073.49 g C / m²
+Change during Base Phase: -528.67 g C / m²
+Final SOMSC at end of Base Phase: 1,558.58 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 1,783.84 g C / m²
+Model is 12.63% lower than observation.
+(Difference: -225.26 g C / m²)
+
+--- Experimental Analysis ---
+'venkatesh_2013_mwmc_c_somsc' Change: -481.77 g C / m² (End value: 1,074.09)
+'venkatesh_2013_mwmc_i_somsc' Change: -432.50 g C / m² (End value: 1,123.36)
+'venkatesh_2013_mwmc_o_somsc' Change: +1,229.34 g C / m² (End value: 2,785.20)
+'venkatesh_2013_mwmb_c_somsc' Change: -620.18 g C / m² (End value: 935.68)
+'venkatesh_2013_mwmb_i_somsc' Change: -576.56 g C / m² (End value: 979.30)
+'venkatesh_2013_mwmb_o_somsc' Change: +1,459.47 g C / m² (End value: 3,015.33)
+'venkatesh_2013_mw_c_somsc' Change: -500.69 g C / m² (End value: 1,055.17)
+'venkatesh_2013_mw_i_somsc' Change: -399.42 g C / m² (End value: 1,156.44)
+'venkatesh_2013_mw_o_somsc' Change: +1,153.27 g C / m² (End value: 2,709.13)
+'venkatesh_2013_pw_c_somsc' Change: -540.48 g C / m² (End value: 1,015.38)
+'venkatesh_2013_pw_i_somsc' Change: -502.79 g C / m² (End value: 1,053.07)
+'venkatesh_2013_pw_o_somsc' Change: +1,129.30 g C / m² (End value: 2,685.15)
+
+Average SOMSC at end of all experimental phases: 1,632.28 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking mw (Year: 2010, Day: 121)... SUCCESS: 1650.71
+ -> Checking mwmc (Year: 2010, Day: 121)... SUCCESS: 1676.79
+ -> Checking mwmb (Year: 2010, Day: 121)... SUCCESS: 1671.75
+ -> Checking pw (Year: 2010, Day: 121)... SUCCESS: 1592.83
+ -> Checking c (Year: 2010, Day: 121)... SUCCESS: 1031.01
+ -> Checking i (Year: 2010, Day: 121)... SUCCESS: 1089.44
+ -> Checking o (Year: 2010, Day: 121)... SUCCESS: 2823.60
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Venkatesh_2013/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Venkatesh_2013/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Venkatesh_2013/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+venkatesh_2013_mw_somsc,mw,2010,121,2043.0,1650.7141666666666
+venkatesh_2013_mwmc_somsc,mwmc,2010,121,2244.0,1676.7867999999999
+venkatesh_2013_mwmb_somsc,mwmb,2010,121,2312.0,1671.7464666666667
+venkatesh_2013_pw_somsc,pw,2010,121,2298.0,1592.8309333333334
+venkatesh_2013_c_somsc,c,2010,121,1931.5,1031.013675
+venkatesh_2013_i_somsc,i,2010,121,2261.0,1089.443225
+venkatesh_2013_o_somsc,o,2010,121,2480.5,2823.601875

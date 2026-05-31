@@ -1,0 +1,18 @@
+Biomass Check Summary for Site: Agegnehu_2015
+
+RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
+This is likely because the 'extract_biomass.py' script failed.
+
+
+--- Biomass Extraction Script ---
+Status: FAILED
+Reason: Script exited with error code 1
+
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Agegnehu_2015/scripts/extract_biomass.py", line 382, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Agegnehu_2015/scripts/extract_biomass.py", line 238, in main
+    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
+                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'GNUT'

@@ -1,0 +1,55 @@
+SOMSC Check Summary for Site: Trivedi_2020
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,534.15 g C / m²
+Change during Equilibrium Phase: -3,289.22 g C / m²
+Change during Base Phase: -76.88 g C / m²
+Final SOMSC at end of Base Phase: 2,173.63 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 5,203.61 g C / m²
+Model is 58.23% lower than observation.
+(Difference: -3,029.98 g C / m²)
+
+--- Experimental Analysis ---
+'trivedi_2020_trt_control_somsc' Change: -1,270.50 g C / m² (End value: 898.37)
+'trivedi_2020_trt_fym_somsc' Change: +3,040.10 g C / m² (End value: 5,208.97)
+'trivedi_2020_trt_fympkl_adj_somsc' Change: +2,945.02 g C / m² (End value: 5,113.90)
+'trivedi_2020_trt_fympk_adj_somsc' Change: +3,113.42 g C / m² (End value: 5,282.30)
+'trivedi_2020_trt_n_somsc' Change: -768.30 g C / m² (End value: 1,400.57)
+'trivedi_2020_trt_nl_somsc' Change: -787.97 g C / m² (End value: 1,380.90)
+'trivedi_2020_trt_npk_somsc' Change: -768.35 g C / m² (End value: 1,400.53)
+'trivedi_2020_trt_npkl_somsc' Change: -788.06 g C / m² (End value: 1,380.81)
+
+Average SOMSC at end of all experimental phases: 2,758.29 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_control (Year: 2016, Day: 120)... SUCCESS: 900.04
+ -> Checking trt_n (Year: 2016, Day: 120)... SUCCESS: 1397.18
+ -> Checking trt_fym (Year: 2016, Day: 120)... SUCCESS: 5285.72
+ -> Checking trt_npk (Year: 2016, Day: 120)... SUCCESS: 1397.14
+ -> Checking trt_fympk_adj (Year: 2016, Day: 120)... SUCCESS: 5360.86
+ -> Checking trt_fympkl_adj (Year: 2016, Day: 120)... SUCCESS: 5188.12
+ -> Checking trt_npkl (Year: 2016, Day: 120)... SUCCESS: 1377.86
+ -> Checking trt_nl (Year: 2016, Day: 120)... SUCCESS: 1377.95
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Trivedi_2020/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Trivedi_2020/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Trivedi_2020/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+trivedi_2020_trt_control_somsc,trt_control,2016,120,2777.0,900.0386
+trivedi_2020_trt_n_somsc,trt_n,2016,120,2709.0,1397.1806
+trivedi_2020_trt_fym_somsc,trt_fym,2016,120,4232.0,5285.7249
+trivedi_2020_trt_npk_somsc,trt_npk,2016,120,3634.0,1397.1419
+trivedi_2020_trt_fympk_adj_somsc,trt_fympk_adj,2016,120,4859.0,5360.8644
+trivedi_2020_trt_fympkl_adj_somsc,trt_fympkl_adj,2016,120,4686.0,5188.1214
+trivedi_2020_trt_npkl_somsc,trt_npkl,2016,120,5076.0,1377.8617
+trivedi_2020_trt_nl_somsc,trt_nl,2016,120,3632.0,1377.9494

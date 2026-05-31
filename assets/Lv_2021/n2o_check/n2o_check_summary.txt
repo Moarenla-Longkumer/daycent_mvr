@@ -1,0 +1,65 @@
+N2O Check Summary for Site: Lv_2021
+
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 15
+Rows passing delta rule (sim >= obs): 15
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                    Observation  Observed  Simulated   Difference
+   lv_2021_ck_n2oflux_2012_2012       0.6   210.7215   +35020.25%
+  lv_2021_npk_n2oflux_2012_2012       2.1  3908.9426  +186040.12%
+ lv_2021_npks_n2oflux_2012_2012       2.2  6052.1401  +274997.28%
+ lv_2021_npkm_n2oflux_2012_2012       2.2  3655.3318  +166051.45%
+lv_2021_npkm+_n2oflux_2012_2012       3.8  6538.7858  +171973.31%
+   lv_2021_ck_n2oflux_2012_2013       0.2   535.4917  +267645.85%
+  lv_2021_npk_n2oflux_2012_2013       1.3 11522.4611  +886243.16%
+ lv_2021_npks_n2oflux_2012_2013       1.1 17206.7074 +1564146.13%
+ lv_2021_npkm_n2oflux_2012_2013       1.5 10585.8892  +705625.95%
+lv_2021_npkm+_n2oflux_2012_2013       3.4 17532.5137  +515562.17%
+   lv_2021_ck_n2oflux_2012_2014       0.7   616.9391   +88034.16%
+  lv_2021_npk_n2oflux_2012_2014       1.3 18746.4616 +1441935.51%
+ lv_2021_npks_n2oflux_2012_2014       1.3 28375.7492 +2182649.94%
+ lv_2021_npkm_n2oflux_2012_2014       1.6 17379.1250 +1086095.31%
+lv_2021_npkm+_n2oflux_2012_2014       3.7 25344.1812  +684877.87%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 15
+R²: 0.0986
+RMSE: 14276.57
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and period dates in `observations/Lv_2021_obs.csv`.
+
+
+--- N2O Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+[INFO] N2O observation rows: 15
+ -> ck period 2012-112 to 2012-315... SUCCESS: sim=210.7215
+ -> npk period 2012-112 to 2012-315... SUCCESS: sim=3908.9426
+ -> npks period 2012-112 to 2012-315... SUCCESS: sim=6052.1401
+ -> npkm period 2012-112 to 2012-315... SUCCESS: sim=3655.3318
+ -> npkm+ period 2012-112 to 2012-315... SUCCESS: sim=6538.7858
+ -> ck period 2012-105 to 2013-213... SUCCESS: sim=535.4917
+ -> npk period 2012-105 to 2013-213... SUCCESS: sim=11522.4611
+ -> npks period 2012-105 to 2013-213... SUCCESS: sim=17206.7074
+ -> npkm period 2012-105 to 2013-213... SUCCESS: sim=10585.8892
+ -> npkm+ period 2012-105 to 2013-213... SUCCESS: sim=17532.5137
+ -> ck period 2012-269 to 2014-196... SUCCESS: sim=616.9391
+ -> npk period 2012-269 to 2014-196... SUCCESS: sim=18746.4616
+ -> npks period 2012-269 to 2014-196... SUCCESS: sim=28375.7492
+ -> npkm period 2012-269 to 2014-196... SUCCESS: sim=17379.1250
+ -> npkm+ period 2012-269 to 2014-196... SUCCESS: sim=25344.1812
+
+PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Lv_2021/output_n2o.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Lv_2021/averaged_n2o_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Lv_2021/observed_vs_modeled_n2o.png'

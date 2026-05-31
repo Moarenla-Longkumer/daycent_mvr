@@ -1,0 +1,35 @@
+SOMSC Check Summary for Site: Meena_2024
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,410.68 g C / m²
+Change during Equilibrium Phase: -2,579.05 g C / m²
+Change during Base Phase: -351.10 g C / m²
+Final SOMSC at end of Base Phase: 1,487.08 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,455.95 g C / m²
+Model is 56.97% lower than observation.
+(Difference: -1,968.87 g C / m²)
+
+--- Experimental Analysis ---
+'meena_2024_trt_cacm_somsc' Change: +304.92 g C / m² (End value: 1,789.53)
+'meena_2024_trt_caom_somsc' Change: +1,098.50 g C / m² (End value: 2,583.11)
+'meena_2024_trt_ctcm_somsc' Change: +355.69 g C / m² (End value: 1,840.29)
+'meena_2024_trt_ctom_somsc' Change: +2,098.10 g C / m² (End value: 3,582.71)
+'meena_2024_trt_pops_somsc' Change: +57.10 g C / m² (End value: 1,541.71)
+
+Average SOMSC at end of all experimental phases: 2,267.47 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Meena_2024/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

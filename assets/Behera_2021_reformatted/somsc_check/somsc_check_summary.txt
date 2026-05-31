@@ -1,0 +1,60 @@
+SOMSC Check Summary for Site: Behera_2021_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,667.95 g C / m²
+Change during Equilibrium Phase: -2,161.26 g C / m²
+Change during Base Phase: -321.61 g C / m²
+Final SOMSC at end of Base Phase: 1,195.04 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,102.76 g C / m²
+Model is 61.48% lower than observation.
+(Difference: -1,907.72 g C / m²)
+
+--- Experimental Analysis ---
+'behera_2021_reformatted_ct_cw_somsc' Change: -271.78 g C / m² (End value: 921.35)
+'behera_2021_reformatted_ct_gw_somsc' Change: -318.88 g C / m² (End value: 874.25)
+'behera_2021_reformatted_ct_mw_somsc' Change: -247.49 g C / m² (End value: 945.64)
+'behera_2021_reformatted_ct_pw_somsc' Change: -307.32 g C / m² (End value: 885.81)
+'behera_2021_reformatted_ct_r_cw_somsc' Change: +253.15 g C / m² (End value: 1,446.28)
+'behera_2021_reformatted_ct_r_gw_somsc' Change: +19.50 g C / m² (End value: 1,212.63)
+'behera_2021_reformatted_ct_r_mw_somsc' Change: +291.75 g C / m² (End value: 1,484.87)
+'behera_2021_reformatted_ct_r_pw_somsc' Change: +41.97 g C / m² (End value: 1,235.10)
+'behera_2021_reformatted_ct_r_sw_somsc' Change: +10.04 g C / m² (End value: 1,203.17)
+'behera_2021_reformatted_ct_sw_somsc' Change: -313.85 g C / m² (End value: 879.28)
+'behera_2021_reformatted_zt_cw_somsc' Change: +1.19 g C / m² (End value: 1,194.32)
+'behera_2021_reformatted_zt_gw_somsc' Change: -68.18 g C / m² (End value: 1,124.95)
+'behera_2021_reformatted_zt_mw_somsc' Change: +30.33 g C / m² (End value: 1,223.46)
+'behera_2021_reformatted_zt_pw_somsc' Change: -51.68 g C / m² (End value: 1,141.45)
+'behera_2021_reformatted_zt_r_cw_somsc' Change: +269.51 g C / m² (End value: 1,462.64)
+'behera_2021_reformatted_zt_r_gw_somsc' Change: +89.98 g C / m² (End value: 1,283.11)
+'behera_2021_reformatted_zt_r_mw_somsc' Change: +292.52 g C / m² (End value: 1,485.64)
+'behera_2021_reformatted_zt_r_pw_somsc' Change: +108.61 g C / m² (End value: 1,301.74)
+'behera_2021_reformatted_zt_r_sw_somsc' Change: +90.54 g C / m² (End value: 1,283.67)
+'behera_2021_reformatted_zt_sw_somsc' Change: -59.61 g C / m² (End value: 1,133.51)
+
+Average SOMSC at end of all experimental phases: 1,186.14 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking cw (Year: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking pw (Year: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking gw (Year: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking mw (Year: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking sw (Year: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking ct (Year: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking ct_r (Year: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking zt (Year: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking zt_r (Year: 2014, Day: 110)... FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Behera_2021_reformatted/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

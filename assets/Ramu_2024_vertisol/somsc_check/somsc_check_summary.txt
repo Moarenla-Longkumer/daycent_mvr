@@ -1,0 +1,32 @@
+SOMSC Check Summary for Site: Ramu_2024_vertisol
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,360.78 g C / m²
+Change during Equilibrium Phase: -2,340.21 g C / m²
+Change during Base Phase: -490.87 g C / m²
+Final SOMSC at end of Base Phase: 2,539.22 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,103.06 g C / m²
+Model is 38.11% lower than observation.
+(Difference: -1,563.84 g C / m²)
+
+--- Experimental Analysis ---
+'ramu_2024_vertisol_t1_vertisol_somsc' Change: -0.27 g C / m² (End value: 2,535.65)
+'ramu_2024_vertisol_t2_vertisol_somsc' Change: -0.18 g C / m² (End value: 2,535.74)
+
+Average SOMSC at end of all experimental phases: 2,535.69 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ramu_2024_vertisol/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

@@ -1,0 +1,50 @@
+SOMSC Check Summary for Site: Wagh_2016
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,618.19 g C / m²
+Change during Equilibrium Phase: -2,997.00 g C / m²
+Change during Base Phase: -480.81 g C / m²
+Final SOMSC at end of Base Phase: 2,158.79 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,246.02 g C / m²
+Model is 33.49% lower than observation.
+(Difference: -1,087.23 g C / m²)
+
+--- Experimental Analysis ---
+'wagh_2016_set_ii_t3_somsc' Change: +50.50 g C / m² (End value: 2,205.42)
+'wagh_2016_set_ii_t4_somsc' Change: +94.77 g C / m² (End value: 2,249.70)
+'wagh_2016_set_ii_t6_somsc' Change: +3.11 g C / m² (End value: 2,158.03)
+'wagh_2016_set_i_t1_somsc' Change: -9.39 g C / m² (End value: 2,145.53)
+'wagh_2016_set_i_t3_somsc' Change: +118.67 g C / m² (End value: 2,273.59)
+'wagh_2016_set_i_t4_somsc' Change: +77.72 g C / m² (End value: 2,232.64)
+'wagh_2016_set_i_t6_somsc' Change: +38.44 g C / m² (End value: 2,193.36)
+
+Average SOMSC at end of all experimental phases: 2,208.32 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking set_i (Year: 2013, Day: 354)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/Wagh_2016_out/Wagh_2016_set_i_output/soilc.out FAILED: No matching data found.
+ -> Checking set_ii (Year: 2013, Day: 354)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/Wagh_2016_out/Wagh_2016_set_ii_output/soilc.out FAILED: No matching data found.
+ -> Checking t1 (Year: 2013, Day: 354)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/Wagh_2016_out/Wagh_2016_t1_output/soilc.out FAILED: No matching data found.
+ -> Checking t3 (Year: 2013, Day: 354)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/Wagh_2016_out/Wagh_2016_t3_output/soilc.out FAILED: No matching data found.
+ -> Checking t4 (Year: 2013, Day: 354)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/Wagh_2016_out/Wagh_2016_t4_output/soilc.out FAILED: No matching data found.
+ -> Checking t6 (Year: 2013, Day: 354)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/Wagh_2016_out/Wagh_2016_t6_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

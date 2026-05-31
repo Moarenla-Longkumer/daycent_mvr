@@ -1,0 +1,63 @@
+SOMSC Check Summary for Site: Dinesh_2024
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,047.96 g C / m²
+Change during Equilibrium Phase: -2,521.77 g C / m²
+Change during Base Phase: -257.99 g C / m²
+Final SOMSC at end of Base Phase: 1,278.20 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,493.82 g C / m²
+Model is 63.42% lower than observation.
+(Difference: -2,215.62 g C / m²)
+
+--- Experimental Analysis ---
+'dinesh_2024_trt_zt_nr_33gs_somsc' Change: +541.53 g C / m² (End value: 1,816.52)
+'dinesh_2024_trt_zt_nr_50gs_somsc' Change: +462.78 g C / m² (End value: 1,737.77)
+'dinesh_2024_trt_zt_nr_70gs_somsc' Change: +529.84 g C / m² (End value: 1,804.84)
+'dinesh_2024_trt_zt_nr_rdn_somsc' Change: +617.17 g C / m² (End value: 1,892.17)
+'dinesh_2024_trt_zt_r_33gs_somsc' Change: +574.68 g C / m² (End value: 1,849.67)
+'dinesh_2024_trt_zt_r_50gs_somsc' Change: +484.53 g C / m² (End value: 1,759.52)
+'dinesh_2024_trt_zt_r_70gs_somsc' Change: +489.61 g C / m² (End value: 1,764.61)
+'dinesh_2024_trt_zt_r_rdn_somsc' Change: +570.67 g C / m² (End value: 1,845.66)
+
+Average SOMSC at end of all experimental phases: 1,808.84 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_zt_nr (Year: 2018.0, Day: 185.0)... SUCCESS: 1741.13
+ -> Checking trt_zt_r (Year: 2018.0, Day: 185.0)... SUCCESS: 1735.13
+ -> Checking trt_zt_nr (Year: 2019.0, Day: 185.0)... SUCCESS: 1812.06
+ -> Checking trt_zt_r (Year: 2019.0, Day: 185.0)... SUCCESS: 1804.37
+ -> Checking rdn (Year: 2018.0, Day: 185.0)... SUCCESS: 1785.03
+ -> Checking 33%bn + gs (Year: 2018.0, Day: 185.0)... SUCCESS: 1757.38
+ -> Checking 50%bn + gs (Year: 2018.0, Day: 185.0)... SUCCESS: 1690.81
+ -> Checking 70%bn + gs (Year: 2018.0, Day: 185.0)... SUCCESS: 1719.30
+ -> Checking rdn (Year: 2019.0, Day: 185.0)... SUCCESS: 1864.17
+ -> Checking 33%bn + gs (Year: 2019.0, Day: 185.0)... SUCCESS: 1830.85
+ -> Checking 50%bn + gs (Year: 2019.0, Day: 185.0)... SUCCESS: 1751.58
+ -> Checking 70%bn + gs (Year: 2019.0, Day: 185.0)... SUCCESS: 1786.28
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+dinesh_2024_trt_zt_nr_somsc,trt_zt_nr,2018,185,1860.888,1741.1254250000002
+dinesh_2024_trt_zt_r_somsc,trt_zt_r,2018,185,1919.529,1735.132925
+dinesh_2024_trt_zt_nr_somsc,trt_zt_nr,2019,185,2033.412,1812.0648249999997
+dinesh_2024_trt_zt_r_somsc,trt_zt_r,2019,185,1984.578,1804.3706
+dinesh_2024_rdn_somsc,rdn,2018,185,1881.6225,1785.0279
+dinesh_2024_33%bn + gs_somsc,33%bn + gs,2018,185,1895.475,1757.38105
+dinesh_2024_50%bn + gs_somsc,50%bn + gs,2018,185,1971.54,1690.81005
+dinesh_2024_70%bn + gs_somsc,70%bn + gs,2018,185,1820.25,1719.2977
+dinesh_2024_rdn_somsc,rdn,2019,185,1986.105,1864.1671999999999
+dinesh_2024_33%bn + gs_somsc,33%bn + gs,2019,185,2011.08,1830.84715
+dinesh_2024_50%bn + gs_somsc,50%bn + gs,2019,185,2098.584,1751.5768000000003
+dinesh_2024_70%bn + gs_somsc,70%bn + gs,2019,185,1944.252,1786.2796999999998

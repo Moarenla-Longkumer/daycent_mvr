@@ -1,0 +1,39 @@
+SOMSC Check Summary for Site: Banerjee_2018
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 6,846.83 g C / m²
+Change during Equilibrium Phase: -4,886.60 g C / m²
+Change during Base Phase: +53.65 g C / m²
+Final SOMSC at end of Base Phase: 2,019.63 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,897.70 g C / m²
+Model is 58.76% lower than observation.
+(Difference: -2,878.07 g C / m²)
+
+--- Experimental Analysis ---
+'banerjee_2018_t1_somsc' Change: -116.13 g C / m² (End value: 1,901.47)
+'banerjee_2018_t2_somsc' Change: -89.12 g C / m² (End value: 1,928.48)
+'banerjee_2018_t3_somsc' Change: +150.48 g C / m² (End value: 2,168.07)
+'banerjee_2018_t4_somsc' Change: +388.41 g C / m² (End value: 2,406.00)
+
+Average SOMSC at end of all experimental phases: 2,101.00 g C / m²
+
+--- Calibration Script Test ---
+Status: FAILED
+Reason: Script exited with error code 1
+
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/scripts/extract_somsc.py", line 287, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/scripts/extract_somsc.py", line 136, in main
+    target_year = int(target_year)
+                  ^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

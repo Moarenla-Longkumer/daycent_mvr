@@ -1,0 +1,49 @@
+SOMSC Check Summary for Site: Ghosh_2018
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,081.61 g C / m²
+Change during Equilibrium Phase: -2,061.59 g C / m²
+Change during Base Phase: -554.86 g C / m²
+Final SOMSC at end of Base Phase: 1,468.38 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 8,351.00 g C / m²
+Model is 82.42% lower than observation.
+(Difference: -6,882.62 g C / m²)
+
+--- Experimental Analysis ---
+'ghosh_2018_t1_somsc' Change: -332.89 g C / m² (End value: 1,134.51)
+'ghosh_2018_t2_somsc' Change: -256.23 g C / m² (End value: 1,211.16)
+'ghosh_2018_t3_somsc' Change: +3,174.36 g C / m² (End value: 4,641.75)
+'ghosh_2018_t4_somsc' Change: +1,936.94 g C / m² (End value: 3,404.33)
+'ghosh_2018_t5_somsc' Change: +3.68 g C / m² (End value: 1,471.08)
+'ghosh_2018_t6_somsc' Change: +63.21 g C / m² (End value: 1,530.60)
+
+Average SOMSC at end of all experimental phases: 2,232.24 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2014, Day: 114)... SUCCESS: 1148.67
+ -> Checking t2 (Year: 2014, Day: 114)... SUCCESS: 1221.38
+ -> Checking t3 (Year: 2014, Day: 114)... SUCCESS: 4701.88
+ -> Checking t4 (Year: 2014, Day: 114)... SUCCESS: 3445.48
+ -> Checking t5 (Year: 2014, Day: 114)... SUCCESS: 1486.05
+ -> Checking t6 (Year: 2014, Day: 114)... SUCCESS: 1546.37
+ -> Checking t1 (Year: 2014, Day: 114)... SUCCESS: 1148.67
+ -> Checking t2 (Year: 2014, Day: 114)... SUCCESS: 1221.38
+ -> Checking t3 (Year: 2014, Day: 114)... SUCCESS: 4701.88
+ -> Checking t4 (Year: 2014, Day: 114)... SUCCESS: 3445.48
+ -> Checking t5 (Year: 2014, Day: 114)... SUCCESS: 1486.05
+ -> Checking t6 (Year: 2014, Day: 114)... SUCCESS: 1546.37
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ghosh_2018/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

@@ -1,0 +1,67 @@
+SOMSC Check Summary for Site: Jat_2024
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,119.52 g C / m²
+Change during Equilibrium Phase: -2,313.57 g C / m²
+Change during Base Phase: -281.17 g C / m²
+Final SOMSC at end of Base Phase: 1,531.08 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,846.84 g C / m²
+Model is 60.20% lower than observation.
+(Difference: -2,315.76 g C / m²)
+
+--- Experimental Analysis ---
+'jat_2024_ct − r × cb–m_somsc' Change: -321.00 g C / m² (End value: 1,207.57)
+'jat_2024_ct − r × f–m_somsc' Change: -193.03 g C / m² (End value: 1,335.54)
+'jat_2024_ct − r × gg–m_somsc' Change: -321.98 g C / m² (End value: 1,206.59)
+'jat_2024_ct − r × mz–m_somsc' Change: +65.74 g C / m² (End value: 1,594.31)
+'jat_2024_ct − r × pm–m_somsc' Change: -0.08 g C / m² (End value: 1,528.49)
+'jat_2024_ct − r × s–m_somsc' Change: -292.02 g C / m² (End value: 1,236.55)
+'jat_2024_pb + r × cb–m_somsc' Change: -255.09 g C / m² (End value: 1,273.48)
+'jat_2024_pb + r × f–m_somsc' Change: -121.02 g C / m² (End value: 1,407.55)
+'jat_2024_pb + r × gg–m_somsc' Change: -246.27 g C / m² (End value: 1,282.30)
+'jat_2024_pb + r × mz–m_somsc' Change: +145.45 g C / m² (End value: 1,674.02)
+'jat_2024_pb + r × pm–m_somsc' Change: +63.43 g C / m² (End value: 1,592.00)
+'jat_2024_pb + r × s–m_somsc' Change: -221.64 g C / m² (End value: 1,306.93)
+'jat_2024_zt + r × cb–m_somsc' Change: +0.92 g C / m² (End value: 1,529.49)
+'jat_2024_zt + r × f–m_somsc' Change: -14.33 g C / m² (End value: 1,514.24)
+'jat_2024_zt + r × gg–m_somsc' Change: +9.44 g C / m² (End value: 1,538.01)
+'jat_2024_zt + r × mz–m_somsc' Change: +398.30 g C / m² (End value: 1,926.87)
+'jat_2024_zt + r × pm–m_somsc' Change: +310.56 g C / m² (End value: 1,839.13)
+'jat_2024_zt + r × s–m_somsc' Change: +34.13 g C / m² (End value: 1,562.70)
+
+Average SOMSC at end of all experimental phases: 1,475.32 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking pb + r (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_pb + r_output/soilc.out FAILED: No matching data found.
+ -> Checking zt + r (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_zt + r_output/soilc.out FAILED: No matching data found.
+ -> Checking ct − r (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_ct − r_output/soilc.out FAILED: No matching data found.
+ -> Checking f–m (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_f–m_output/soilc.out FAILED: No matching data found.
+ -> Checking cb–m (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_cb–m_output/soilc.out FAILED: No matching data found.
+ -> Checking gg–m (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_gg–m_output/soilc.out FAILED: No matching data found.
+ -> Checking mz–m (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_mz–m_output/soilc.out FAILED: No matching data found.
+ -> Checking pm–m (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_pm–m_output/soilc.out FAILED: No matching data found.
+ -> Checking s–m (Year: 2021, Day: 99)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/Jat_2024_out/Jat_2024_s–m_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Jat_2024/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

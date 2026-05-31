@@ -1,0 +1,57 @@
+SOMSC Check Summary for Site: Hazra_2019
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,506.17 g C / m²
+Change during Equilibrium Phase: -3,855.46 g C / m²
+Change during Base Phase: -22.49 g C / m²
+Final SOMSC at end of Base Phase: 1,635.35 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,107.64 g C / m²
+Model is 60.19% lower than observation.
+(Difference: -2,472.29 g C / m²)
+
+--- Experimental Analysis ---
+'hazra_2019_mwmc_c_somsc' Change: -688.79 g C / m² (End value: 942.00)
+'hazra_2019_mwmc_inm_somsc' Change: +1,005.89 g C / m² (End value: 2,636.68)
+'hazra_2019_mwmc_npksznb_somsc' Change: -513.17 g C / m² (End value: 1,117.62)
+'hazra_2019_mwmb_c_somsc' Change: -832.66 g C / m² (End value: 798.14)
+'hazra_2019_mwmb_inm_somsc' Change: +446.37 g C / m² (End value: 2,077.16)
+'hazra_2019_mwmb_npksznb_somsc' Change: -634.83 g C / m² (End value: 995.96)
+'hazra_2019_mw_c_somsc' Change: -727.38 g C / m² (End value: 903.41)
+'hazra_2019_mw_inm_somsc' Change: +829.84 g C / m² (End value: 2,460.64)
+'hazra_2019_mw_npksznb_somsc' Change: -498.83 g C / m² (End value: 1,131.96)
+'hazra_2019_pw_c_somsc' Change: -694.47 g C / m² (End value: 936.33)
+'hazra_2019_pw_inm_somsc' Change: +904.24 g C / m² (End value: 2,535.03)
+'hazra_2019_pw_npksznb_somsc' Change: -598.48 g C / m² (End value: 1,032.31)
+
+Average SOMSC at end of all experimental phases: 1,463.94 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking mw (Year: 2016, Day: 95)... SUCCESS: 1512.72
+ -> Checking mwmb (Year: 2016, Day: 95)... SUCCESS: 1304.39
+ -> Checking mwmc (Year: 2016, Day: 95)... SUCCESS: 1581.06
+ -> Checking pw (Year: 2016, Day: 95)... SUCCESS: 1514.44
+ -> Checking c (Year: 2016, Day: 95)... SUCCESS: 901.75
+ -> Checking npksznb (Year: 2016, Day: 95)... SUCCESS: 1067.61
+ -> Checking inm (Year: 2016, Day: 95)... SUCCESS: 2465.10
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Hazra_2019/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Hazra_2019/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Hazra_2019/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+hazra_2019_mw_somsc,mw,2016,95,3.84,1512.7240000000002
+hazra_2019_mwmb_somsc,mwmb,2016,95,4.73,1304.3943333333334
+hazra_2019_mwmc_somsc,mwmc,2016,95,4.44,1581.0593
+hazra_2019_pw_somsc,pw,2016,95,5.35,1514.4374
+hazra_2019_c_somsc,c,2016,95,3.73,901.7507
+hazra_2019_npksznb_somsc,npksznb,2016,95,4.59,1067.6132499999999
+hazra_2019_inm_somsc,inm,2016,95,5.45,2465.097325

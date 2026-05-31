@@ -1,0 +1,13 @@
+N2O Check Summary for Site: Manna_2013
+
+RESULT: CANNOT ASSESS - No N2O flux observations in the observation file.
+Add N2O flux rows to the GHG comparison sheet, then re-run extract_obs and N2O_check.
+Note: year-summary plots were intentionally skipped due to missing N2O observations.
+
+
+--- N2O Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+[INFO] N2O observation rows: 0
+[INFO] No N2O flux rows in observation file. Nothing to compare.

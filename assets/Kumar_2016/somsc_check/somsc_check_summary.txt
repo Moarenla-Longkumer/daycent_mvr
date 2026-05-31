@@ -1,0 +1,111 @@
+SOMSC Check Summary for Site: Kumar_2016
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,450.18 g C / m²
+Change during Equilibrium Phase: -2,796.93 g C / m²
+Change during Base Phase: -386.18 g C / m²
+Final SOMSC at end of Base Phase: 1,270.15 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,856.47 g C / m²
+Model is 67.06% lower than observation.
+(Difference: -2,586.32 g C / m²)
+
+--- Experimental Analysis ---
+'kumar_2016_trt_ca_100np_cr_somsc' Change: +11.81 g C / m² (End value: 1,280.87)
+'kumar_2016_trt_ca_100np_fym_cr_somsc' Change: +430.80 g C / m² (End value: 1,699.86)
+'kumar_2016_trt_ca_100np_fym_nocr_somsc' Change: +430.80 g C / m² (End value: 1,699.86)
+'kumar_2016_trt_ca_100np_nocr_somsc' Change: -1.41 g C / m² (End value: 1,267.65)
+'kumar_2016_trt_ca_125np_cr_somsc' Change: +16.87 g C / m² (End value: 1,285.93)
+'kumar_2016_trt_ca_125np_nocr_somsc' Change: +16.87 g C / m² (End value: 1,285.93)
+'kumar_2016_trt_ca_control_cr_somsc' Change: -26.11 g C / m² (End value: 1,242.95)
+'kumar_2016_trt_ca_control_nocr_somsc' Change: -26.11 g C / m² (End value: 1,242.95)
+'kumar_2016_trt_ct_100np_cr_somsc' Change: -200.85 g C / m² (End value: 1,068.21)
+'kumar_2016_trt_ct_100np_fym_cr_somsc' Change: +335.09 g C / m² (End value: 1,604.15)
+'kumar_2016_trt_ct_100np_fym_nocr_somsc' Change: +335.09 g C / m² (End value: 1,604.15)
+'kumar_2016_trt_ct_100np_nocr_somsc' Change: -200.85 g C / m² (End value: 1,068.21)
+'kumar_2016_trt_ct_125np_cr_somsc' Change: -196.39 g C / m² (End value: 1,072.67)
+'kumar_2016_trt_ct_125np_nocr_somsc' Change: -196.39 g C / m² (End value: 1,072.67)
+'kumar_2016_trt_ct_control_cr_somsc' Change: -222.98 g C / m² (End value: 1,046.08)
+'kumar_2016_trt_ct_control_nocr_somsc' Change: -222.98 g C / m² (End value: 1,046.08)
+
+Average SOMSC at end of all experimental phases: 1,286.76 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_ct_control_nocr (Year: 2007, Day: 154)... SUCCESS: 1167.79
+ -> Checking trt_ct_control_nocr (Year: 2009, Day: 154)... SUCCESS: 1056.79
+ -> Checking trt_ct_100np_nocr (Year: 2007, Day: 154)... SUCCESS: 1173.96
+ -> Checking trt_ct_100np_nocr (Year: 2009, Day: 154)... SUCCESS: 1074.85
+ -> Checking trt_ct_125np_nocr (Year: 2007, Day: 154)... SUCCESS: 1175.30
+ -> Checking trt_ct_125np_nocr (Year: 2009, Day: 154)... SUCCESS: 1078.26
+ -> Checking trt_ct_100np_fym_nocr (Year: 2007, Day: 154)... SUCCESS: 1470.65
+ -> Checking trt_ct_100np_fym_nocr (Year: 2009, Day: 154)... SUCCESS: 1624.19
+ -> Checking trt_ct_control_cr (Year: 2007, Day: 154)... SUCCESS: 1167.79
+ -> Checking trt_ct_control_cr (Year: 2009, Day: 154)... SUCCESS: 1056.79
+ -> Checking trt_ct_100np_cr (Year: 2007, Day: 154)... SUCCESS: 1173.96
+ -> Checking trt_ct_100np_cr (Year: 2009, Day: 154)... SUCCESS: 1074.85
+ -> Checking trt_ct_125np_cr (Year: 2007, Day: 154)... SUCCESS: 1175.30
+ -> Checking trt_ct_125np_cr (Year: 2009, Day: 154)... SUCCESS: 1078.26
+ -> Checking trt_ct_100np_fym_cr (Year: 2007, Day: 154)... SUCCESS: 1470.65
+ -> Checking trt_ct_100np_fym_cr (Year: 2009, Day: 154)... SUCCESS: 1624.19
+ -> Checking trt_ca_control_nocr (Year: 2007, Day: 154)... SUCCESS: 1269.06
+ -> Checking trt_ca_control_nocr (Year: 2009, Day: 154)... SUCCESS: 1258.70
+ -> Checking trt_ca_100np_nocr (Year: 2007, Day: 154)... SUCCESS: 1265.57
+ -> Checking trt_ca_100np_nocr (Year: 2009, Day: 154)... SUCCESS: 1278.03
+ -> Checking trt_ca_125np_nocr (Year: 2007, Day: 154)... SUCCESS: 1281.16
+ -> Checking trt_ca_125np_nocr (Year: 2009, Day: 154)... SUCCESS: 1295.39
+ -> Checking trt_ca_100np_fym_nocr (Year: 2007, Day: 154)... SUCCESS: 1428.13
+ -> Checking trt_ca_100np_fym_nocr (Year: 2009, Day: 154)... SUCCESS: 1693.32
+ -> Checking trt_ca_control_cr (Year: 2007, Day: 154)... SUCCESS: 1269.06
+ -> Checking trt_ca_control_cr (Year: 2009, Day: 154)... SUCCESS: 1258.70
+ -> Checking trt_ca_100np_cr (Year: 2007, Day: 154)... SUCCESS: 1279.68
+ -> Checking trt_ca_100np_cr (Year: 2009, Day: 154)... SUCCESS: 1291.39
+ -> Checking trt_ca_125np_cr (Year: 2007, Day: 154)... SUCCESS: 1281.16
+ -> Checking trt_ca_125np_cr (Year: 2009, Day: 154)... SUCCESS: 1295.39
+ -> Checking trt_ca_100np_fym_cr (Year: 2007, Day: 154)... SUCCESS: 1428.13
+ -> Checking trt_ca_100np_fym_cr (Year: 2009, Day: 154)... SUCCESS: 1693.32
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kumar_2016/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Kumar_2016/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Kumar_2016/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+kumar_2016_trt_ct_control_nocr_somsc,trt_ct_control_nocr,2007,154,662,1167.7904
+kumar_2016_trt_ct_control_nocr_somsc,trt_ct_control_nocr,2009,154,761,1056.7909
+kumar_2016_trt_ct_100np_nocr_somsc,trt_ct_100np_nocr,2007,154,824,1173.9628
+kumar_2016_trt_ct_100np_nocr_somsc,trt_ct_100np_nocr,2009,154,854,1074.8453
+kumar_2016_trt_ct_125np_nocr_somsc,trt_ct_125np_nocr,2007,154,862,1175.3011999999999
+kumar_2016_trt_ct_125np_nocr_somsc,trt_ct_125np_nocr,2009,154,970,1078.2623999999998
+kumar_2016_trt_ct_100np_fym_nocr_somsc,trt_ct_100np_fym_nocr,2007,154,912,1470.6507
+kumar_2016_trt_ct_100np_fym_nocr_somsc,trt_ct_100np_fym_nocr,2009,154,966,1624.1869000000002
+kumar_2016_trt_ct_control_cr_somsc,trt_ct_control_cr,2007,154,770,1167.7904
+kumar_2016_trt_ct_control_cr_somsc,trt_ct_control_cr,2009,154,834,1056.7909
+kumar_2016_trt_ct_100np_cr_somsc,trt_ct_100np_cr,2007,154,874,1173.9628
+kumar_2016_trt_ct_100np_cr_somsc,trt_ct_100np_cr,2009,154,922,1074.8453
+kumar_2016_trt_ct_125np_cr_somsc,trt_ct_125np_cr,2007,154,903,1175.3011999999999
+kumar_2016_trt_ct_125np_cr_somsc,trt_ct_125np_cr,2009,154,972,1078.2623999999998
+kumar_2016_trt_ct_100np_fym_cr_somsc,trt_ct_100np_fym_cr,2007,154,971,1470.6507
+kumar_2016_trt_ct_100np_fym_cr_somsc,trt_ct_100np_fym_cr,2009,154,1056,1624.1869000000002
+kumar_2016_trt_ca_control_nocr_somsc,trt_ca_control_nocr,2007,154,782,1269.0605
+kumar_2016_trt_ca_control_nocr_somsc,trt_ca_control_nocr,2009,154,844,1258.7026
+kumar_2016_trt_ca_100np_nocr_somsc,trt_ca_100np_nocr,2007,154,898,1265.5662
+kumar_2016_trt_ca_100np_nocr_somsc,trt_ca_100np_nocr,2009,154,958,1278.028
+kumar_2016_trt_ca_125np_nocr_somsc,trt_ca_125np_nocr,2007,154,963,1281.1641
+kumar_2016_trt_ca_125np_nocr_somsc,trt_ca_125np_nocr,2009,154,983,1295.3896
+kumar_2016_trt_ca_100np_fym_nocr_somsc,trt_ca_100np_fym_nocr,2007,154,986,1428.1345999999999
+kumar_2016_trt_ca_100np_fym_nocr_somsc,trt_ca_100np_fym_nocr,2009,154,1023,1693.3155
+kumar_2016_trt_ca_control_cr_somsc,trt_ca_control_cr,2007,154,837,1269.0605
+kumar_2016_trt_ca_control_cr_somsc,trt_ca_control_cr,2009,154,882,1258.7026
+kumar_2016_trt_ca_100np_cr_somsc,trt_ca_100np_cr,2007,154,1018,1279.6780999999999
+kumar_2016_trt_ca_100np_cr_somsc,trt_ca_100np_cr,2009,154,1012,1291.3941
+kumar_2016_trt_ca_125np_cr_somsc,trt_ca_125np_cr,2007,154,1048,1281.1641
+kumar_2016_trt_ca_125np_cr_somsc,trt_ca_125np_cr,2009,154,1108,1295.3896
+kumar_2016_trt_ca_100np_fym_cr_somsc,trt_ca_100np_fym_cr,2007,154,1118,1428.1345999999999
+kumar_2016_trt_ca_100np_fym_cr_somsc,trt_ca_100np_fym_cr,2009,154,1156,1693.3155

@@ -1,0 +1,52 @@
+SOMSC Check Summary for Site: Pooniya_2021
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,012.82 g C / m²
+Change during Equilibrium Phase: -2,501.32 g C / m²
+Change during Base Phase: -263.12 g C / m²
+Final SOMSC at end of Base Phase: 1,258.35 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,770.99 g C / m²
+Model is 54.59% lower than observation.
+(Difference: -1,512.64 g C / m²)
+
+--- Experimental Analysis ---
+'pooniya_2021_trt_ct_ffp_somsc' Change: -272.22 g C / m² (End value: 982.95)
+'pooniya_2021_trt_ct_ne_somsc' Change: -274.81 g C / m² (End value: 980.36)
+'pooniya_2021_trt_ct_rdf_somsc' Change: -274.46 g C / m² (End value: 980.71)
+'pooniya_2021_trt_pnb_ffp_somsc' Change: +544.90 g C / m² (End value: 1,800.06)
+'pooniya_2021_trt_pnb_ne_somsc' Change: +542.71 g C / m² (End value: 1,797.88)
+'pooniya_2021_trt_pnb_rdf_somsc' Change: +542.81 g C / m² (End value: 1,797.98)
+'pooniya_2021_trt_ztfb_ffp_somsc' Change: +870.48 g C / m² (End value: 2,125.65)
+'pooniya_2021_trt_ztfb_ne_somsc' Change: +823.66 g C / m² (End value: 2,078.83)
+'pooniya_2021_trt_ztfb_rdf_somsc' Change: +891.27 g C / m² (End value: 2,146.44)
+
+Average SOMSC at end of all experimental phases: 1,632.32 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_ct_avg (Year: 2017, Day: 292)... SUCCESS: 1042.57
+ -> Checking trt_pnb_avg (Year: 2017, Day: 292)... SUCCESS: 1695.02
+ -> Checking trt_ztfb_avg (Year: 2017, Day: 292)... SUCCESS: 1841.39
+ -> Checking trt_avg_ffp (Year: 2017, Day: 292)... SUCCESS: 1536.68
+ -> Checking trt_avg_rdf (Year: 2017, Day: 292)... SUCCESS: 1521.28
+ -> Checking trt_avg_ne (Year: 2017, Day: 292)... SUCCESS: 1521.03
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Pooniya_2021/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Pooniya_2021/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Pooniya_2021/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+pooniya_2021_trt_ct_avg_somsc,trt_ct_avg,2017,292,0.0,1042.5721666666666
+pooniya_2021_trt_pnb_avg_somsc,trt_pnb_avg,2017,292,0.0,1695.0212333333332
+pooniya_2021_trt_ztfb_avg_somsc,trt_ztfb_avg,2017,292,0.0,1841.388866666667
+pooniya_2021_trt_avg_ffp_somsc,trt_avg_ffp,2017,292,0.0,1536.6779666666669
+pooniya_2021_trt_avg_rdf_somsc,trt_avg_rdf,2017,292,0.0,1521.2789
+pooniya_2021_trt_avg_ne_somsc,trt_avg_ne,2017,292,0.0,1521.0254000000002

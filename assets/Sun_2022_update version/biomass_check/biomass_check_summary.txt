@@ -1,0 +1,132 @@
+Biomass Check Summary for Site: Sun_2022_update version
+
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 14
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 14
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                  Observation  Observed  Simulated          Difference
+sun_2022_update version_sc_n0_cgrain_cot_2018 161.00645    64.8686 -59.71% [SHORTFALL]
+sun_2022_update version_sc_n1_cgrain_cot_2018 174.21800   128.5382 -26.22% [SHORTFALL]
+sun_2022_update version_sc_n2_cgrain_cot_2018 176.81620   136.2998 -22.91% [SHORTFALL]
+sun_2022_update version_sc_n3_cgrain_cot_2018 183.19840   144.8186 -20.95% [SHORTFALL]
+sun_2022_update version_fo_n1_cgrain_cot_2018 184.83465   137.7037 -25.50% [SHORTFALL]
+sun_2022_update version_fo_n2_cgrain_cot_2018 186.98625   144.8524 -22.53% [SHORTFALL]
+sun_2022_update version_fo_n3_cgrain_cot_2018 185.56615   150.0872 -19.12% [SHORTFALL]
+sun_2022_update version_sc_n0_cgrain_cot_2019 199.56970    38.3831 -80.77% [SHORTFALL]
+sun_2022_update version_sc_n1_cgrain_cot_2019 219.24705   117.8675 -46.24% [SHORTFALL]
+sun_2022_update version_sc_n2_cgrain_cot_2019 224.35050   129.9939 -42.06% [SHORTFALL]
+sun_2022_update version_sc_n3_cgrain_cot_2019 237.42455   129.9939 -45.25% [SHORTFALL]
+sun_2022_update version_fo_n1_cgrain_cot_2019 229.80375   117.7810 -48.75% [SHORTFALL]
+sun_2022_update version_fo_n2_cgrain_cot_2019 239.18125   130.1928 -45.57% [SHORTFALL]
+sun_2022_update version_fo_n3_cgrain_cot_2019 241.72555   130.1921 -46.14% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sun_2022_update version_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 14
+R²: 0.0155
+RMSE: 89.95 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sun_2022_update version_obs.csv`.
+
+
+--- Biomass Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 16
+    [DEBUG] Checking Treatment Sch: SC_N0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_SC_N0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SC_N0
+Successfully processed: 'sun_2022_update version_sc_n0_cgrain_cot_2018'
+    [DEBUG] Checking Treatment Sch: SC_N1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_SC_N1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SC_N1
+Successfully processed: 'sun_2022_update version_sc_n1_cgrain_cot_2018'
+    [DEBUG] Checking Treatment Sch: SC_N2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_SC_N2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SC_N2
+Successfully processed: 'sun_2022_update version_sc_n2_cgrain_cot_2018'
+    [DEBUG] Checking Treatment Sch: SC_N3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_SC_N3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SC_N3
+Successfully processed: 'sun_2022_update version_sc_n3_cgrain_cot_2018'
+    [DEBUG] Checking Treatment Sch: FO_N0
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N0_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'sun_2022_update version_fo_n0_cgrain_cot_2018'. No data found.
+    [DEBUG] Checking Treatment Sch: FO_N1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FO_N1
+Successfully processed: 'sun_2022_update version_fo_n1_cgrain_cot_2018'
+    [DEBUG] Checking Treatment Sch: FO_N2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FO_N2
+Successfully processed: 'sun_2022_update version_fo_n2_cgrain_cot_2018'
+    [DEBUG] Checking Treatment Sch: FO_N3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FO_N3
+Successfully processed: 'sun_2022_update version_fo_n3_cgrain_cot_2018'
+    [DEBUG] Checking Treatment Sch: SC_N0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_SC_N0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SC_N0
+Successfully processed: 'sun_2022_update version_sc_n0_cgrain_cot_2019'
+    [DEBUG] Checking Treatment Sch: SC_N1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_SC_N1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SC_N1
+Successfully processed: 'sun_2022_update version_sc_n1_cgrain_cot_2019'
+    [DEBUG] Checking Treatment Sch: SC_N2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_SC_N2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SC_N2
+Successfully processed: 'sun_2022_update version_sc_n2_cgrain_cot_2019'
+    [DEBUG] Checking Treatment Sch: SC_N3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_SC_N3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SC_N3
+Successfully processed: 'sun_2022_update version_sc_n3_cgrain_cot_2019'
+    [DEBUG] Checking Treatment Sch: FO_N0
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N0_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'sun_2022_update version_fo_n0_cgrain_cot_2019'. No data found.
+    [DEBUG] Checking Treatment Sch: FO_N1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FO_N1
+Successfully processed: 'sun_2022_update version_fo_n1_cgrain_cot_2019'
+    [DEBUG] Checking Treatment Sch: FO_N2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FO_N2
+Successfully processed: 'sun_2022_update version_fo_n2_cgrain_cot_2019'
+    [DEBUG] Checking Treatment Sch: FO_N3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in FO_N3
+Successfully processed: 'sun_2022_update version_fo_n3_cgrain_cot_2019'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/observed_vs_modeled_biomass.png'
+--- Script finished. ---

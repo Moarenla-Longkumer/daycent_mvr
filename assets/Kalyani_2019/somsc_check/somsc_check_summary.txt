@@ -1,0 +1,49 @@
+SOMSC Check Summary for Site: Kalyani_2019
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,589.76 g C / m²
+Change during Equilibrium Phase: -2,609.12 g C / m²
+Change during Base Phase: -780.67 g C / m²
+Final SOMSC at end of Base Phase: 2,223.56 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,412.65 g C / m²
+Model is 34.84% lower than observation.
+(Difference: -1,189.09 g C / m²)
+
+--- Experimental Analysis ---
+'kalyani_2019_t1_somsc' Change: +245.96 g C / m² (End value: 2,467.03)
+'kalyani_2019_t2_somsc' Change: +148.89 g C / m² (End value: 2,369.96)
+'kalyani_2019_t3_somsc' Change: +492.61 g C / m² (End value: 2,713.67)
+'kalyani_2019_t4_somsc' Change: +296.84 g C / m² (End value: 2,517.91)
+'kalyani_2019_t6_somsc' Change: +129.14 g C / m² (End value: 2,350.21)
+'kalyani_2019_t8_somsc' Change: -0.92 g C / m² (End value: 2,220.15)
+
+Average SOMSC at end of all experimental phases: 2,439.82 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2018, Day: 330)... SUCCESS: 2472.40
+ -> Checking t2 (Year: 2018, Day: 330)... SUCCESS: 2374.91
+ -> Checking t3 (Year: 2018, Day: 330)... SUCCESS: 2719.69
+ -> Checking t4 (Year: 2018, Day: 330)... SUCCESS: 2523.40
+ -> Checking t6 (Year: 2018, Day: 330)... SUCCESS: 2355.07
+ -> Checking t8 (Year: 2018, Day: 330)... SUCCESS: 2224.70
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kalyani_2019/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Kalyani_2019/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Kalyani_2019/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+kalyani_2019_t1_somsc,t1,2018,330,2158.7,2472.4
+kalyani_2019_t2_somsc,t2,2018,330,2129.88,2374.9069
+kalyani_2019_t3_somsc,t3,2018,330,2202.12,2719.6889
+kalyani_2019_t4_somsc,t4,2018,330,2175.77,2523.4033
+kalyani_2019_t6_somsc,t6,2018,330,2175.29,2355.0678
+kalyani_2019_t8_somsc,t8,2018,330,1937.68,2224.703

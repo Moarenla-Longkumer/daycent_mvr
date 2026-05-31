@@ -1,0 +1,47 @@
+SOMSC Check Summary for Site: Dhadli_2016
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 1,586.08 g C / m²
+Change during Equilibrium Phase: -721.14 g C / m²
+Change during Base Phase: -309.12 g C / m²
+Final SOMSC at end of Base Phase: 558.38 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,813.48 g C / m²
+Model is 85.36% lower than observation.
+(Difference: -3,255.10 g C / m²)
+
+--- Experimental Analysis ---
+'dhadli_2016_t1_somsc' Change: -256.88 g C / m² (End value: 300.65)
+'dhadli_2016_t2_somsc' Change: -245.38 g C / m² (End value: 312.15)
+'dhadli_2016_t4_somsc' Change: +4,947.15 g C / m² (End value: 5,504.68)
+'dhadli_2016_t5_somsc' Change: -388.62 g C / m² (End value: 168.91)
+
+Average SOMSC at end of all experimental phases: 1,571.60 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2013, Day: 145)... SUCCESS: 301.43
+ -> Checking t2 (Year: 2013, Day: 145)... SUCCESS: 312.56
+ -> Checking t3 (Year: 2013, Day: 145)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dhadli_2016/Dhadli_2016_out/Dhadli_2016_T3_output/soilc.out FAILED: No matching data found.
+ -> Checking t4 (Year: 2013, Day: 145)... SUCCESS: 5890.14
+ -> Checking t5 (Year: 2013, Day: 145)... SUCCESS: 169.82
+ -> Checking t1 (Year: 2013, Day: 310)... SUCCESS: 309.65
+ -> Checking t2 (Year: 2013, Day: 310)... SUCCESS: 321.94
+ -> Checking t3 (Year: 2013, Day: 310)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dhadli_2016/Dhadli_2016_out/Dhadli_2016_T3_output/soilc.out FAILED: No matching data found.
+ -> Checking t4 (Year: 2013, Day: 310)... SUCCESS: 5666.70
+ -> Checking t5 (Year: 2013, Day: 310)... SUCCESS: 170.42
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Dhadli_2016/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

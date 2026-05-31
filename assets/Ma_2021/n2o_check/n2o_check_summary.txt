@@ -1,0 +1,55 @@
+N2O Check Summary for Site: Ma_2021
+
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 10
+Rows passing delta rule (sim >= obs): 10
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+             Observation  Observed  Simulated Difference
+ma_2021_ck_nan_2017_2017  8.909091  3888.9421 +43551.39%
+ma_2021_ck_nan_2018_2018 11.709091   136.5700  +1066.36%
+ ma_2021_s_nan_2017_2017  6.172727  4232.4676 +68467.22%
+ ma_2021_s_nan_2018_2018  6.618182   192.8801  +2814.40%
+ma_2021_si_nan_2017_2017  6.872727  4232.4676 +61483.52%
+ma_2021_si_nan_2018_2018  7.890909   192.8801  +2344.33%
+ma_2021_sm_nan_2017_2017  7.254545  4232.4676 +58242.29%
+ma_2021_sm_nan_2018_2018  8.718182   192.8801  +2112.39%
+ma_2021_sb_nan_2017_2017  8.081818  2680.0586 +33061.58%
+ma_2021_sb_nan_2018_2018 10.563636  2961.0642 +27930.73%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 10
+R²: 0.1187
+RMSE: 2908.40
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and period dates in `observations/Ma_2021_obs.csv`.
+
+
+--- N2O Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+[INFO] N2O observation rows: 10
+ -> ck period 2017-146 to 2017-300... SUCCESS: sim=3888.9421
+ -> ck period 2018-146 to 2018-300... SUCCESS: sim=136.5700
+ -> s period 2017-146 to 2017-300... SUCCESS: sim=4232.4676
+ -> s period 2018-146 to 2018-300... SUCCESS: sim=192.8801
+ -> si period 2017-146 to 2017-300... SUCCESS: sim=4232.4676
+ -> si period 2018-146 to 2018-300... SUCCESS: sim=192.8801
+ -> sm period 2017-146 to 2017-300... SUCCESS: sim=4232.4676
+ -> sm period 2018-146 to 2018-300... SUCCESS: sim=192.8801
+ -> sb period 2017-146 to 2017-300... SUCCESS: sim=2680.0586
+ -> sb period 2018-146 to 2018-300... SUCCESS: sim=2961.0642
+
+PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Ma_2021/output_n2o.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ma_2021/averaged_n2o_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ma_2021/observed_vs_modeled_n2o.png'

@@ -1,0 +1,67 @@
+SOMSC Check Summary for Site: Chatterjee_2018
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,115.31 g C / m²
+Change during Equilibrium Phase: -1,812.08 g C / m²
+Change during Base Phase: -221.28 g C / m²
+Final SOMSC at end of Base Phase: 1,091.09 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,798.40 g C / m²
+Model is 61.01% lower than observation.
+(Difference: -1,707.31 g C / m²)
+
+--- Experimental Analysis ---
+'chatterjee_2018_i+_m+_n0_somsc' Change: +36.88 g C / m² (End value: 1,125.16)
+'chatterjee_2018_i+_m+_n150_somsc' Change: +82.05 g C / m² (End value: 1,170.34)
+'chatterjee_2018_i+_m+_n75_somsc' Change: +81.71 g C / m² (End value: 1,169.99)
+'chatterjee_2018_i+_m0_n0_somsc' Change: -33.00 g C / m² (End value: 1,055.28)
+'chatterjee_2018_i+_m0_n150_somsc' Change: -28.51 g C / m² (End value: 1,059.77)
+'chatterjee_2018_i+_m0_n75_somsc' Change: -29.04 g C / m² (End value: 1,059.25)
+'chatterjee_2018_i0_m+_n0_somsc' Change: +78.49 g C / m² (End value: 1,166.77)
+'chatterjee_2018_i0_m+_n150_somsc' Change: +66.34 g C / m² (End value: 1,154.62)
+'chatterjee_2018_i0_m+_n75_somsc' Change: +85.13 g C / m² (End value: 1,173.41)
+'chatterjee_2018_i0_m0_n0_somsc' Change: -33.00 g C / m² (End value: 1,055.28)
+'chatterjee_2018_i0_m0_n150_somsc' Change: -28.51 g C / m² (End value: 1,059.77)
+'chatterjee_2018_i0_m0_n75_somsc' Change: -29.04 g C / m² (End value: 1,059.25)
+
+Average SOMSC at end of all experimental phases: 1,109.08 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking i0_m0_n0 (Year: 2013, Day: 299)... SUCCESS: 1060.27
+ -> Checking i0_m0_n75 (Year: 2013, Day: 299)... SUCCESS: 1064.25
+ -> Checking i0_m0_n150 (Year: 2013, Day: 299)... SUCCESS: 1064.77
+ -> Checking i0_m+_n0 (Year: 2013, Day: 299)... SUCCESS: 1171.32
+ -> Checking i0_m+_n75 (Year: 2013, Day: 299)... SUCCESS: 1178.03
+ -> Checking i0_m+_n150 (Year: 2013, Day: 299)... SUCCESS: 1159.26
+ -> Checking i+_m0_n0 (Year: 2013, Day: 299)... SUCCESS: 1060.27
+ -> Checking i+_m0_n75 (Year: 2013, Day: 299)... SUCCESS: 1064.25
+ -> Checking i+_m0_n150 (Year: 2013, Day: 299)... SUCCESS: 1064.77
+ -> Checking i+_m+_n0 (Year: 2013, Day: 299)... SUCCESS: 1128.97
+ -> Checking i+_m+_n75 (Year: 2013, Day: 299)... SUCCESS: 1174.55
+ -> Checking i+_m+_n150 (Year: 2013, Day: 299)... SUCCESS: 1174.89
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Chatterjee_2018/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Chatterjee_2018/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Chatterjee_2018/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+chatterjee_2018_i0_m0_n0_somsc,i0_m0_n0,2013,299,957.2,1060.2705
+chatterjee_2018_i0_m0_n75_somsc,i0_m0_n75,2013,299,968.6,1064.2541999999999
+chatterjee_2018_i0_m0_n150_somsc,i0_m0_n150,2013,299,919.4,1064.7702
+chatterjee_2018_i0_m+_n0_somsc,i0_m+_n0,2013,299,997.6,1171.3223
+chatterjee_2018_i0_m+_n75_somsc,i0_m+_n75,2013,299,1024.05,1178.033
+chatterjee_2018_i0_m+_n150_somsc,i0_m+_n150,2013,299,1048.7,1159.2625
+chatterjee_2018_i+_m0_n0_somsc,i+_m0_n0,2013,299,967.75,1060.2705
+chatterjee_2018_i+_m0_n75_somsc,i+_m0_n75,2013,299,1194.5,1064.2541999999999
+chatterjee_2018_i+_m0_n150_somsc,i+_m0_n150,2013,299,1244.25,1064.7702
+chatterjee_2018_i+_m+_n0_somsc,i+_m+_n0,2013,299,1112.5,1128.9668000000001
+chatterjee_2018_i+_m+_n75_somsc,i+_m+_n75,2013,299,1207.5,1174.5514
+chatterjee_2018_i+_m+_n150_somsc,i+_m+_n150,2013,299,1192.0,1174.8928

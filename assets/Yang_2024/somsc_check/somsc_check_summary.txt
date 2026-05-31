@@ -1,0 +1,49 @@
+SOMSC Check Summary for Site: Yang_2024
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,439.55 g C / m²
+Change during Equilibrium Phase: +302.55 g C / m²
+Change during Base Phase: -2,425.26 g C / m²
+Final SOMSC at end of Base Phase: 1,333.54 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,569.39 g C / m²
+Model is 48.10% lower than observation.
+(Difference: -1,235.85 g C / m²)
+
+--- Experimental Analysis ---
+'yang_2024_mw_somsc' Change: +343.66 g C / m² (End value: 1,677.71)
+'yang_2024_pwm_somsc' Change: +63.30 g C / m² (End value: 1,397.35)
+'yang_2024_rswm_somsc' Change: +32.80 g C / m² (End value: 1,366.85)
+'yang_2024_swm_somsc' Change: +62.76 g C / m² (End value: 1,396.81)
+'yang_2024_smwm_somsc' Change: +102.66 g C / m² (End value: 1,436.71)
+'yang_2024_spwm_somsc' Change: +218.57 g C / m² (End value: 1,552.62)
+
+Average SOMSC at end of all experimental phases: 1,471.34 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking mw (Year: 2022, Day: 277)... SUCCESS: 1667.86
+ -> Checking spwm (Year: 2022, Day: 277)... SUCCESS: 1546.66
+ -> Checking pwm (Year: 2022, Day: 277)... SUCCESS: 1390.85
+ -> Checking swm (Year: 2022, Day: 277)... SUCCESS: 1390.31
+ -> Checking smwm (Year: 2022, Day: 277)... SUCCESS: 1430.32
+ -> Checking rswm (Year: 2022, Day: 277)... SUCCESS: 1357.46
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+yang_2024_mw_somsc,mw,2022,277,4269.0,1667.8571000000002
+yang_2024_spwm_somsc,spwm,2022,277,4508.0,1546.6598
+yang_2024_pwm_somsc,pwm,2022,277,4635.0,1390.8506000000002
+yang_2024_swm_somsc,swm,2022,277,4735.0,1390.3069
+yang_2024_smwm_somsc,smwm,2022,277,4202.0,1430.3238999999999
+yang_2024_rswm_somsc,rswm,2022,277,4066.0,1357.4579

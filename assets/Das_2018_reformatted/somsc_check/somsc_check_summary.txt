@@ -1,0 +1,46 @@
+SOMSC Check Summary for Site: Das_2018_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,991.48 g C / m²
+Change during Equilibrium Phase: -2,419.10 g C / m²
+Change during Base Phase: -341.85 g C / m²
+Final SOMSC at end of Base Phase: 1,240.71 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,238.07 g C / m²
+Model is 61.68% lower than observation.
+(Difference: -1,997.36 g C / m²)
+
+--- Experimental Analysis ---
+'das_2018_reformatted_ct_somsc' Change: -144.03 g C / m² (End value: 1,094.64)
+'das_2018_reformatted_pnbb_somsc' Change: -3.92 g C / m² (End value: 1,234.75)
+'das_2018_reformatted_pnbb_r_somsc' Change: +97.03 g C / m² (End value: 1,335.71)
+'das_2018_reformatted_zt_somsc' Change: -3.64 g C / m² (End value: 1,235.04)
+'das_2018_reformatted_zt_r_somsc' Change: +36.16 g C / m² (End value: 1,274.83)
+
+Average SOMSC at end of all experimental phases: 1,234.99 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct (Year: 2013, Day: 110)... SUCCESS: 1109.02
+ -> Checking pnbb (Year: 2013, Day: 110)... SUCCESS: 1250.76
+ -> Checking pnbb_r (Year: 2013, Day: 110)... SUCCESS: 1345.07
+ -> Checking zt (Year: 2013, Day: 110)... SUCCESS: 1253.87
+ -> Checking zt_r (Year: 2013, Day: 110)... SUCCESS: 1284.14
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+das_2018_reformatted_ct_somsc,ct,2013,110,2884.0,1109.0152
+das_2018_reformatted_pnbb_somsc,pnbb,2013,110,3244.5,1250.7568
+das_2018_reformatted_pnbb_r_somsc,pnbb_r,2013,110,3411.5,1345.0725
+das_2018_reformatted_zt_somsc,zt,2013,110,3319.0,1253.8684
+das_2018_reformatted_zt_r_somsc,zt_r,2013,110,3423.0,1284.1438

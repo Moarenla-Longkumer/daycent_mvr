@@ -1,0 +1,63 @@
+SOMSC Check Summary for Site: Kundu_2013
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 7,962.57 g C / m²
+Change during Equilibrium Phase: -5,285.61 g C / m²
+Change during Base Phase: -132.79 g C / m²
+Final SOMSC at end of Base Phase: 2,565.13 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,578.01 g C / m²
+Model is 28.31% lower than observation.
+(Difference: -1,012.88 g C / m²)
+
+--- Experimental Analysis ---
+'kundu_2013_cs_-b_somsc' Change: -63.34 g C / m² (End value: 2,496.93)
+'kundu_2013_cs_-k_somsc' Change: -63.34 g C / m² (End value: 2,496.93)
+'kundu_2013_cs_-n_somsc' Change: -94.57 g C / m² (End value: 2,465.70)
+'kundu_2013_cs_-p_somsc' Change: -63.34 g C / m² (End value: 2,496.93)
+'kundu_2013_cs_-s_somsc' Change: -63.34 g C / m² (End value: 2,496.93)
+'kundu_2013_cs_-zn_somsc' Change: -63.34 g C / m² (End value: 2,496.93)
+'kundu_2013_cs_control_somsc' Change: -113.55 g C / m² (End value: 2,446.72)
+'kundu_2013_cs_npksznb_somsc' Change: -63.34 g C / m² (End value: 2,496.93)
+'kundu_2013_cv_-b_somsc' Change: -172.76 g C / m² (End value: 2,387.51)
+'kundu_2013_cv_-k_somsc' Change: -172.76 g C / m² (End value: 2,387.51)
+'kundu_2013_cv_-n_somsc' Change: -181.26 g C / m² (End value: 2,379.01)
+'kundu_2013_cv_-p_somsc' Change: -172.76 g C / m² (End value: 2,387.51)
+'kundu_2013_cv_-s_somsc' Change: -172.76 g C / m² (End value: 2,387.51)
+'kundu_2013_cv_-zn_somsc' Change: -172.76 g C / m² (End value: 2,387.51)
+'kundu_2013_cv_control_somsc' Change: -187.56 g C / m² (End value: 2,372.71)
+'kundu_2013_cv_npksznb_somsc' Change: -172.76 g C / m² (End value: 2,387.51)
+
+Average SOMSC at end of all experimental phases: 2,435.67 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking cs_control (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_npksznb (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-n (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-p (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-k (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-s (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-zn (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-b (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_control (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_npksznb (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-n (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-p (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-k (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-s (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-zn (Year: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-b (Year: 2011, Day: 281364)... FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kundu_2013/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

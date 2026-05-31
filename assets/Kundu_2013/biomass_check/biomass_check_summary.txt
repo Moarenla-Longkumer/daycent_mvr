@@ -1,0 +1,30 @@
+Biomass Check Summary for Site: Kundu_2013
+
+RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
+This is likely because the 'extract_biomass.py' script failed.
+
+
+--- Biomass Extraction Script ---
+Status: FAILED
+Reason: Script exited with error code 1
+
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Kundu_2013/scripts/extract_biomass.py", line 382, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Kundu_2013/scripts/extract_biomass.py", line 356, in main
+    r_squared = np.corrcoef(y_obs, y_sim)[0,1]**2
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 3015, in corrcoef
+    c = cov(x, y, rowvar, dtype=dtype)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 2864, in cov
+    avg, w_sum = average(X, axis=1, weights=w, returned=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 576, in average
+    avg = a.mean(axis, **keepdims_kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/numpy/_core/_methods.py", line 132, in _mean
+    ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'

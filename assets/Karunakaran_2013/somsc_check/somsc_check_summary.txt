@@ -1,0 +1,46 @@
+SOMSC Check Summary for Site: Karunakaran_2013
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,128.65 g C / m²
+Change during Equilibrium Phase: -1,584.49 g C / m²
+Change during Base Phase: -1,163.45 g C / m²
+Final SOMSC at end of Base Phase: 1,398.12 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,983.38 g C / m²
+Model is 53.14% lower than observation.
+(Difference: -1,585.26 g C / m²)
+
+--- Experimental Analysis ---
+'karunakaran_2013_ct-b_zt-b_no_r_somsc' Change: -120.41 g C / m² (End value: 1,276.72)
+'karunakaran_2013_ct-b_zt-b_s_r_somsc' Change: -112.02 g C / m² (End value: 1,285.11)
+'karunakaran_2013_ct-b_zt-b_w_s_r_somsc' Change: -87.75 g C / m² (End value: 1,309.38)
+'karunakaran_2013_ct-b_zt-b_w_r_somsc' Change: -96.85 g C / m² (End value: 1,300.28)
+'karunakaran_2013_ct-f_ zt-f_no_r_somsc' Change: -57.06 g C / m² (End value: 1,340.07)
+'karunakaran_2013_ct-f_ zt-f_s_r_somsc' Change: -51.68 g C / m² (End value: 1,345.45)
+'karunakaran_2013_ct-f_ zt-f_w_s_r_somsc' Change: -28.86 g C / m² (End value: 1,368.27)
+'karunakaran_2013_ct-f_ zt-f_w_r_somsc' Change: -33.80 g C / m² (End value: 1,363.34)
+'karunakaran_2013_zt-b_ct-b_no_r_somsc' Change: -120.47 g C / m² (End value: 1,276.66)
+'karunakaran_2013_zt-b_ct-b_s_r_somsc' Change: -111.83 g C / m² (End value: 1,285.30)
+'karunakaran_2013_zt-b_ct-b_w_s_r_somsc' Change: -88.21 g C / m² (End value: 1,308.92)
+'karunakaran_2013_zt-b_ct-b_w_r_somsc' Change: -96.89 g C / m² (End value: 1,300.24)
+'karunakaran_2013_zt-f_ ct-f_no_r_somsc' Change: -60.12 g C / m² (End value: 1,337.02)
+'karunakaran_2013_zt-f_ ct-f_s_r_somsc' Change: -51.16 g C / m² (End value: 1,345.97)
+'karunakaran_2013_zt-f_ ct-f_w_s_r_somsc' Change: -26.89 g C / m² (End value: 1,370.24)
+'karunakaran_2013_zt-f_ ct-f_w_r_somsc' Change: -35.84 g C / m² (End value: 1,361.29)
+
+Average SOMSC at end of all experimental phases: 1,323.39 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

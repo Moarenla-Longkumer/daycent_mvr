@@ -1,0 +1,46 @@
+SOMSC Check Summary for Site: Srinivasarao_2012b_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 2,581.87 g C / m²
+Change during Equilibrium Phase: -683.68 g C / m²
+Change during Base Phase: -246.97 g C / m²
+Final SOMSC at end of Base Phase: 1,657.95 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 5,007.71 g C / m²
+Model is 66.89% lower than observation.
+(Difference: -3,349.76 g C / m²)
+
+--- Experimental Analysis ---
+'srinivasarao_2012b_reformatted_t1_somsc' Change: -579.86 g C / m² (End value: 1,075.04)
+'srinivasarao_2012b_reformatted_t2_somsc' Change: +222.43 g C / m² (End value: 1,877.34)
+'srinivasarao_2012b_reformatted_t3_somsc' Change: +239.18 g C / m² (End value: 1,894.09)
+'srinivasarao_2012b_reformatted_t4_somsc' Change: +247.84 g C / m² (End value: 1,902.75)
+'srinivasarao_2012b_reformatted_t5_somsc' Change: -535.13 g C / m² (End value: 1,119.78)
+
+Average SOMSC at end of all experimental phases: 1,573.80 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2005, Day: 307)... SUCCESS: 1078.09
+ -> Checking t2 (Year: 2005, Day: 307)... SUCCESS: 1884.58
+ -> Checking t3 (Year: 2005, Day: 307)... SUCCESS: 1901.36
+ -> Checking t4 (Year: 2005, Day: 307)... SUCCESS: 1910.08
+ -> Checking t5 (Year: 2005, Day: 307)... SUCCESS: 1123.08
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2012b_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2012b_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2012b_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+srinivasarao_2012b_reformatted_t1_somsc,t1,2005,307,1496.4,1078.0906
+srinivasarao_2012b_reformatted_t2_somsc,t2,2005,307,2410.0,1884.5827
+srinivasarao_2012b_reformatted_t3_somsc,t3,2005,307,2654.4,1901.3561
+srinivasarao_2012b_reformatted_t4_somsc,t4,2005,307,2727.6,1910.0755
+srinivasarao_2012b_reformatted_t5_somsc,t5,2005,307,2106.2,1123.0799

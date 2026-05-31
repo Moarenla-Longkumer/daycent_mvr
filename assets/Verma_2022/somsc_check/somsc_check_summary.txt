@@ -1,0 +1,49 @@
+SOMSC Check Summary for Site: Verma_2022
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,639.17 g C / m²
+Change during Equilibrium Phase: -1,332.62 g C / m²
+Change during Base Phase: -791.73 g C / m²
+Final SOMSC at end of Base Phase: 1,522.64 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 8,322.46 g C / m²
+Model is 81.70% lower than observation.
+(Difference: -6,799.82 g C / m²)
+
+--- Experimental Analysis ---
+'verma_2022_t1_control_somsc' Change: -245.88 g C / m² (End value: 1,272.71)
+'verma_2022_t2_npk100_somsc' Change: -245.88 g C / m² (End value: 1,272.71)
+'verma_2022_t3_npk50_lime_somsc' Change: -245.88 g C / m² (End value: 1,272.71)
+'verma_2022_t4_npk50_vc_somsc' Change: -55.95 g C / m² (End value: 1,462.65)
+'verma_2022_t5_npk50_vc_lime_somsc' Change: -55.95 g C / m² (End value: 1,462.65)
+'verma_2022_t6_organic_somsc' Change: -153.19 g C / m² (End value: 1,365.40)
+
+Average SOMSC at end of all experimental phases: 1,351.47 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1_control (Year: 2015, Day: 282)... SUCCESS: 1295.61
+ -> Checking t2_npk100 (Year: 2015, Day: 282)... SUCCESS: 1295.61
+ -> Checking t3_npk50_lime (Year: 2015, Day: 282)... SUCCESS: 1295.61
+ -> Checking t4_npk50_vc (Year: 2015, Day: 282)... SUCCESS: 1477.86
+ -> Checking t5_npk50_vc_lime (Year: 2015, Day: 282)... SUCCESS: 1477.86
+ -> Checking t6_organic (Year: 2015, Day: 282)... SUCCESS: 1384.86
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Verma_2022/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Verma_2022/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Verma_2022/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+verma_2022_t1_control_somsc,t1_control,2015,282,0,1295.6102
+verma_2022_t2_npk100_somsc,t2_npk100,2015,282,0,1295.6093
+verma_2022_t3_npk50_lime_somsc,t3_npk50_lime,2015,282,0,1295.6091999999999
+verma_2022_t4_npk50_vc_somsc,t4_npk50_vc,2015,282,0,1477.8600000000001
+verma_2022_t5_npk50_vc_lime_somsc,t5_npk50_vc_lime,2015,282,0,1477.8600000000001
+verma_2022_t6_organic_somsc,t6_organic,2015,282,0,1384.8572

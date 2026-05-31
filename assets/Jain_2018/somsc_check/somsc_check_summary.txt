@@ -1,0 +1,64 @@
+SOMSC Check Summary for Site: Jain_2018
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,464.28 g C / m²
+Change during Equilibrium Phase: -2,387.74 g C / m²
+Change during Base Phase: -461.75 g C / m²
+Final SOMSC at end of Base Phase: 1,619.73 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,751.33 g C / m²
+Model is 56.82% lower than observation.
+(Difference: -2,131.60 g C / m²)
+
+--- Experimental Analysis ---
+'jain_2018_trt_pn_gm_gg_somsc' Change: -118.84 g C / m² (End value: 1,498.23)
+'jain_2018_trt_pn_gm_se_somsc' Change: -119.48 g C / m² (End value: 1,497.59)
+'jain_2018_trt_pn_nr_somsc' Change: -73.35 g C / m² (End value: 1,543.72)
+'jain_2018_trt_pw_ct_gm_gg_somsc' Change: -153.59 g C / m² (End value: 1,463.48)
+'jain_2018_trt_pw_ct_gm_se_somsc' Change: -153.59 g C / m² (End value: 1,463.48)
+'jain_2018_trt_pw_ct_nr_somsc' Change: -112.28 g C / m² (End value: 1,504.79)
+'jain_2018_trt_pw_ct_wsi_somsc' Change: -45.49 g C / m² (End value: 1,571.58)
+'jain_2018_trt_pw_zt_gm_gg_somsc' Change: -89.98 g C / m² (End value: 1,527.09)
+'jain_2018_trt_pw_zt_gm_se_somsc' Change: -89.98 g C / m² (End value: 1,527.09)
+'jain_2018_trt_pw_zt_nr_somsc' Change: -43.97 g C / m² (End value: 1,573.10)
+'jain_2018_trt_pw_zt_wsi_somsc' Change: +11.37 g C / m² (End value: 1,628.44)
+
+Average SOMSC at end of all experimental phases: 1,527.14 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_pn_nr (Year: 2012, Day: 300)... SUCCESS: 1567.50
+ -> Checking trt_pn_gm_se (Year: 2012, Day: 300)... SUCCESS: 1520.44
+ -> Checking trt_pn_gm_gg (Year: 2012, Day: 300)... SUCCESS: 1520.70
+ -> Checking trt_pw_ct_nr (Year: 2013, Day: 70)... SUCCESS: 1512.65
+ -> Checking trt_pw_ct_gm_se (Year: 2013, Day: 70)... SUCCESS: 1470.14
+ -> Checking trt_pw_ct_gm_gg (Year: 2013, Day: 70)... SUCCESS: 1470.14
+ -> Checking trt_pw_ct_wsi (Year: 2013, Day: 70)... SUCCESS: 1577.66
+ -> Checking trt_pw_zt_nr (Year: 2013, Day: 70)... SUCCESS: 1583.65
+ -> Checking trt_pw_zt_gm_se (Year: 2013, Day: 70)... SUCCESS: 1535.81
+ -> Checking trt_pw_zt_gm_gg (Year: 2013, Day: 70)... SUCCESS: 1535.81
+ -> Checking trt_pw_zt_wsi (Year: 2013, Day: 70)... SUCCESS: 1637.75
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Jain_2018/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Jain_2018/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Jain_2018/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+jain_2018_trt_pn_nr_somsc,trt_pn_nr,2012,300,2759.4,1567.5041999999999
+jain_2018_trt_pn_gm_se_somsc,trt_pn_gm_se,2012,300,3175.2,1520.4443
+jain_2018_trt_pn_gm_gg_somsc,trt_pn_gm_gg,2012,300,3175.2,1520.6981
+jain_2018_trt_pw_ct_nr_somsc,trt_pw_ct_nr,2013,70,3024.0,1512.6509
+jain_2018_trt_pw_ct_gm_se_somsc,trt_pw_ct_gm_se,2013,70,3099.6,1470.1419999999998
+jain_2018_trt_pw_ct_gm_gg_somsc,trt_pw_ct_gm_gg,2013,70,3061.8,1470.1419999999998
+jain_2018_trt_pw_ct_wsi_somsc,trt_pw_ct_wsi,2013,70,3061.8,1577.656
+jain_2018_trt_pw_zt_nr_somsc,trt_pw_zt_nr,2013,70,3137.4,1583.6549
+jain_2018_trt_pw_zt_gm_se_somsc,trt_pw_zt_gm_se,2013,70,3326.4,1535.8055
+jain_2018_trt_pw_zt_gm_gg_somsc,trt_pw_zt_gm_gg,2013,70,3213.0,1535.8055
+jain_2018_trt_pw_zt_wsi_somsc,trt_pw_zt_wsi,2013,70,3175.2,1637.7512000000002

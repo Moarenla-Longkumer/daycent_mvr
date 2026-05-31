@@ -1,0 +1,66 @@
+N2O Check Summary for Site: Sun_2022_update version
+
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 14
+Rows passing delta rule (sim >= obs): 14
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                Observation  Observed  Simulated   Difference
+sun_2022_update version_sc_n0_nan_2018_2018     0.051   248.5676  +487287.45%
+sun_2022_update version_sc_n1_nan_2018_2018     0.072  1257.9210 +1747012.50%
+sun_2022_update version_sc_n2_nan_2018_2018     0.118  1897.8831 +1608275.51%
+sun_2022_update version_sc_n3_nan_2018_2018     0.132  2532.9321 +1918787.95%
+sun_2022_update version_fo_n1_nan_2018_2018     0.098  1440.1311 +1469421.53%
+sun_2022_update version_fo_n2_nan_2018_2018     0.105  2080.0353 +1980886.00%
+sun_2022_update version_fo_n3_nan_2018_2018     0.145  2719.5687 +1875464.62%
+sun_2022_update version_sc_n0_nan_2019_2019     0.050   163.9680  +327836.00%
+sun_2022_update version_sc_n1_nan_2019_2019     0.078  1179.0267 +1511472.69%
+sun_2022_update version_sc_n2_nan_2019_2019     0.128  1831.9176 +1431085.63%
+sun_2022_update version_sc_n3_nan_2019_2019     0.155  2472.1623 +1594843.42%
+sun_2022_update version_fo_n1_nan_2019_2019     0.109  1140.1902 +1045946.06%
+sun_2022_update version_fo_n2_nan_2019_2019     0.114  1791.6728 +1571542.81%
+sun_2022_update version_fo_n3_nan_2019_2019     0.176  2432.9454 +1382255.34%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 14
+R²: 0.8235
+RMSE: 1827.69
+Status: PASS - R² >= 0.50 with n >= 2.
+
+
+--- N2O Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+[INFO] N2O observation rows: 16
+ -> sc_n0 period 2018-110 to 2018-274... SUCCESS: sim=248.5676
+ -> sc_n1 period 2018-110 to 2018-274... SUCCESS: sim=1257.9210
+ -> sc_n2 period 2018-110 to 2018-274... SUCCESS: sim=1897.8831
+ -> sc_n3 period 2018-110 to 2018-274... SUCCESS: sim=2532.9321
+ -> fo_n0 period 2018-111 to 2018-274... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N0_output/summary.out FAILED.
+ -> fo_n1 period 2018-111 to 2018-274... SUCCESS: sim=1440.1311
+ -> fo_n2 period 2018-111 to 2018-274... SUCCESS: sim=2080.0353
+ -> fo_n3 period 2018-111 to 2018-274... SUCCESS: sim=2719.5687
+ -> sc_n0 period 2019-110 to 2019-274... SUCCESS: sim=163.9680
+ -> sc_n1 period 2019-110 to 2019-274... SUCCESS: sim=1179.0267
+ -> sc_n2 period 2019-110 to 2019-274... SUCCESS: sim=1831.9176
+ -> sc_n3 period 2019-110 to 2019-274... SUCCESS: sim=2472.1623
+ -> fo_n0 period 2019-111 to 2019-274... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/Sun_2022_update version_out/Sun_2022_update version_FO_N0_output/summary.out FAILED.
+ -> fo_n1 period 2019-111 to 2019-274... SUCCESS: sim=1140.1902
+ -> fo_n2 period 2019-111 to 2019-274... SUCCESS: sim=1791.6728
+ -> fo_n3 period 2019-111 to 2019-274... SUCCESS: sim=2432.9454
+
+PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/output_n2o.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/averaged_n2o_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/observed_vs_modeled_n2o.png'

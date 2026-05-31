@@ -1,0 +1,45 @@
+SOMSC Check Summary for Site: Sankar_2011
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,832.39 g C / m²
+Change during Equilibrium Phase: -1,411.32 g C / m²
+Change during Base Phase: -492.05 g C / m²
+Final SOMSC at end of Base Phase: 1,937.75 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 7,078.00 g C / m²
+Model is 72.62% lower than observation.
+(Difference: -5,140.25 g C / m²)
+
+--- Experimental Analysis ---
+'sankar_2011_trt_fym_100npk_somsc' Change: -861.52 g C / m² (End value: 1,075.50)
+'sankar_2011_trt_fym_10t_somsc' Change: -831.50 g C / m² (End value: 1,105.52)
+'sankar_2011_trt_fym_10t_100npk_somsc' Change: -831.14 g C / m² (End value: 1,105.88)
+'sankar_2011_trt_fym_10t_50npk_somsc' Change: -831.27 g C / m² (End value: 1,105.74)
+'sankar_2011_trt_fym_control_somsc' Change: -861.90 g C / m² (End value: 1,075.12)
+'sankar_2011_trt_mr_100npk_somsc' Change: -861.52 g C / m² (End value: 1,075.50)
+'sankar_2011_trt_mr_5t_somsc' Change: -794.65 g C / m² (End value: 1,142.37)
+'sankar_2011_trt_mr_5t_100npk_somsc' Change: -794.27 g C / m² (End value: 1,142.75)
+'sankar_2011_trt_mr_5t_50npk_somsc' Change: -794.41 g C / m² (End value: 1,142.61)
+'sankar_2011_trt_mr_control_somsc' Change: -861.90 g C / m² (End value: 1,075.12)
+
+Average SOMSC at end of all experimental phases: 1,104.61 g C / m²
+
+--- Calibration Script Test ---
+Status: FAILED
+Reason: Script exited with error code 1
+
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/scripts/extract_somsc.py", line 287, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/scripts/extract_somsc.py", line 136, in main
+    target_year = int(target_year)
+                  ^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

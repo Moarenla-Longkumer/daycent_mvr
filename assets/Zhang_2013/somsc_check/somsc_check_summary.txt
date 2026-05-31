@@ -1,0 +1,76 @@
+SOMSC Check Summary for Site: Zhang_2013
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,435.56 g C / m²
+Change during Equilibrium Phase: -833.22 g C / m²
+Change during Base Phase: -1,192.80 g C / m²
+Final SOMSC at end of Base Phase: 1,419.34 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,597.62 g C / m²
+Model is 45.36% lower than observation.
+(Difference: -1,178.28 g C / m²)
+
+--- Experimental Analysis ---
+'zhang_2013_ct_somsc' Change: +319.19 g C / m² (End value: 1,740.32)
+'zhang_2013_nt_somsc' Change: +854.14 g C / m² (End value: 2,275.27)
+'zhang_2013_rt_somsc' Change: +292.96 g C / m² (End value: 1,714.10)
+
+Average SOMSC at end of all experimental phases: 1,909.89 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct (Year: 2005, Day: 275)... SUCCESS: 1537.72
+ -> Checking ct (Year: 2006, Day: 275)... SUCCESS: 1582.16
+ -> Checking ct (Year: 2007, Day: 275)... SUCCESS: 1619.54
+ -> Checking ct (Year: 2008, Day: 275)... SUCCESS: 1652.00
+ -> Checking ct (Year: 2009, Day: 275)... SUCCESS: 1683.56
+ -> Checking ct (Year: 2010, Day: 275)... SUCCESS: 1701.80
+ -> Checking ct (Year: 2011, Day: 275)... SUCCESS: 1728.09
+ -> Checking rt (Year: 2005, Day: 275)... SUCCESS: 1523.88
+ -> Checking rt (Year: 2006, Day: 275)... SUCCESS: 1565.59
+ -> Checking rt (Year: 2007, Day: 275)... SUCCESS: 1600.45
+ -> Checking rt (Year: 2008, Day: 275)... SUCCESS: 1630.78
+ -> Checking rt (Year: 2009, Day: 275)... SUCCESS: 1660.31
+ -> Checking rt (Year: 2010, Day: 275)... SUCCESS: 1677.30
+ -> Checking rt (Year: 2011, Day: 275)... SUCCESS: 1701.80
+ -> Checking nt (Year: 2005, Day: 275)... SUCCESS: 1648.26
+ -> Checking nt (Year: 2006, Day: 275)... SUCCESS: 1741.48
+ -> Checking nt (Year: 2007, Day: 275)... SUCCESS: 1841.68
+ -> Checking nt (Year: 2008, Day: 275)... SUCCESS: 1947.29
+ -> Checking nt (Year: 2009, Day: 275)... SUCCESS: 2052.26
+ -> Checking nt (Year: 2010, Day: 275)... SUCCESS: 2158.50
+ -> Checking nt (Year: 2011, Day: 275)... SUCCESS: 2261.88
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+zhang_2013_ct_somsc,ct,2005,275,3921.0,1537.7233
+zhang_2013_ct_somsc,ct,2006,275,4048.0,1582.1588
+zhang_2013_ct_somsc,ct,2007,275,4425.0,1619.5443
+zhang_2013_ct_somsc,ct,2008,275,4467.0,1652.0014999999999
+zhang_2013_ct_somsc,ct,2009,275,4557.0,1683.5643999999998
+zhang_2013_ct_somsc,ct,2010,275,4839.0,1701.8045000000002
+zhang_2013_ct_somsc,ct,2011,275,4939.0,1728.086
+zhang_2013_rt_somsc,rt,2005,275,3710.0,1523.8813
+zhang_2013_rt_somsc,rt,2006,275,4187.0,1565.5944
+zhang_2013_rt_somsc,rt,2007,275,4291.0,1600.449
+zhang_2013_rt_somsc,rt,2008,275,4374.0,1630.7826
+zhang_2013_rt_somsc,rt,2009,275,4365.0,1660.3098999999997
+zhang_2013_rt_somsc,rt,2010,275,4631.0,1677.2988
+zhang_2013_rt_somsc,rt,2011,275,4707.0,1701.7958
+zhang_2013_nt_somsc,nt,2005,275,3736.0,1648.2571
+zhang_2013_nt_somsc,nt,2006,275,4198.0,1741.4813
+zhang_2013_nt_somsc,nt,2007,275,4330.0,1841.6783
+zhang_2013_nt_somsc,nt,2008,275,4316.0,1947.2876999999999
+zhang_2013_nt_somsc,nt,2009,275,4388.0,2052.2604
+zhang_2013_nt_somsc,nt,2010,275,4723.0,2158.5011
+zhang_2013_nt_somsc,nt,2011,275,4855.0,2261.8841

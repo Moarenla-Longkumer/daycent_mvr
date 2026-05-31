@@ -1,0 +1,56 @@
+SOMSC Check Summary for Site: Chaudhari_2020
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,641.86 g C / m²
+Change during Equilibrium Phase: -2,837.67 g C / m²
+Change during Base Phase: -280.37 g C / m²
+Final SOMSC at end of Base Phase: 1,527.96 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 5,755.17 g C / m²
+Model is 73.45% lower than observation.
+(Difference: -4,227.21 g C / m²)
+
+--- Experimental Analysis ---
+'chaudhari_2020_trt_t1_ct-ct_somsc' Change: -23.13 g C / m² (End value: 1,501.21)
+'chaudhari_2020_trt_t2_ct-zt_somsc' Change: -25.58 g C / m² (End value: 1,498.76)
+'chaudhari_2020_trt_t3_zt-zt_somsc' Change: -26.81 g C / m² (End value: 1,497.53)
+'chaudhari_2020_trt_t4_zt-zt+r_somsc' Change: -26.76 g C / m² (End value: 1,497.59)
+'chaudhari_2020_trt_t5_zt+r-zt+r_somsc' Change: -14.04 g C / m² (End value: 1,510.30)
+
+Average SOMSC at end of all experimental phases: 1,501.08 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_t1_ct-ct (Year: 2017, Day: 292)... SUCCESS: 1510.11
+ -> Checking trt_t2_ct-zt (Year: 2017, Day: 292)... SUCCESS: 1507.62
+ -> Checking trt_t3_zt-zt (Year: 2017, Day: 292)... SUCCESS: 1506.26
+ -> Checking trt_t4_zt-zt+r (Year: 2017, Day: 292)... SUCCESS: 1506.28
+ -> Checking trt_t5_zt+r-zt+r (Year: 2017, Day: 292)... SUCCESS: 1518.25
+ -> Checking trt_t1_ct-ct (Year: 2017, Day: 150)... SUCCESS: 1528.21
+ -> Checking trt_t2_ct-zt (Year: 2017, Day: 150)... SUCCESS: 1525.55
+ -> Checking trt_t3_zt-zt (Year: 2017, Day: 150)... SUCCESS: 1523.61
+ -> Checking trt_t4_zt-zt+r (Year: 2017, Day: 150)... SUCCESS: 1523.61
+ -> Checking trt_t5_zt+r-zt+r (Year: 2017, Day: 150)... SUCCESS: 1532.80
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Chaudhari_2020/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Chaudhari_2020/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Chaudhari_2020/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+chaudhari_2020_trt_t1_ct-ct_somsc,trt_t1_ct-ct,2017,292,0.31,1510.1142
+chaudhari_2020_trt_t2_ct-zt_somsc,trt_t2_ct-zt,2017,292,0.32,1507.6152000000002
+chaudhari_2020_trt_t3_zt-zt_somsc,trt_t3_zt-zt,2017,292,0.29,1506.2642999999998
+chaudhari_2020_trt_t4_zt-zt+r_somsc,trt_t4_zt-zt+r,2017,292,0.33,1506.2820000000002
+chaudhari_2020_trt_t5_zt+r-zt+r_somsc,trt_t5_zt+r-zt+r,2017,292,0.37,1518.2508
+chaudhari_2020_trt_t1_ct-ct_somsc,trt_t1_ct-ct,2017,150,0.32,1528.211
+chaudhari_2020_trt_t2_ct-zt_somsc,trt_t2_ct-zt,2017,150,0.35,1525.5516000000002
+chaudhari_2020_trt_t3_zt-zt_somsc,trt_t3_zt-zt,2017,150,0.34,1523.6051
+chaudhari_2020_trt_t4_zt-zt+r_somsc,trt_t4_zt-zt+r,2017,150,0.36,1523.605
+chaudhari_2020_trt_t5_zt+r-zt+r_somsc,trt_t5_zt+r-zt+r,2017,150,0.4,1532.8031999999998

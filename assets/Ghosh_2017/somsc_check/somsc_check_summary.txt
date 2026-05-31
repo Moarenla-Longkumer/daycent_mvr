@@ -1,0 +1,42 @@
+SOMSC Check Summary for Site: Ghosh_2017
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,460.46 g C / m²
+Change during Equilibrium Phase: -3,826.32 g C / m²
+Change during Base Phase: -23.32 g C / m²
+Final SOMSC at end of Base Phase: 1,617.82 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,505.14 g C / m²
+Model is 64.09% lower than observation.
+(Difference: -2,887.32 g C / m²)
+
+--- Experimental Analysis ---
+'ghosh_2017_m–w–ct_somsc' Change: -517.34 g C / m² (End value: 1,095.94)
+'ghosh_2017_m–w–m–c–ct_somsc' Change: -465.71 g C / m² (End value: 1,147.57)
+'ghosh_2017_m–w–m–c–org_somsc' Change: -114.69 g C / m² (End value: 1,498.59)
+'ghosh_2017_m–w–m–c–rdf_somsc' Change: -350.08 g C / m² (End value: 1,263.20)
+'ghosh_2017_m–w–org_somsc' Change: -127.49 g C / m² (End value: 1,485.79)
+'ghosh_2017_m–w–rdf_somsc' Change: -370.71 g C / m² (End value: 1,242.57)
+
+Average SOMSC at end of all experimental phases: 1,288.94 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking m–w (Year: 2011, Day: 157)... SUCCESS: 1289.82
+ -> Checking m–w–m–c (Year: 2011, Day: 157)... SUCCESS: 1320.53
+ -> Checking ct (Year: 2011, Day: 157)... SUCCESS: 1136.04
+ -> Checking rdf (Year: 2011, Day: 157)... SUCCESS: 1268.10
+ -> Checking org (Year: 2011, Day: 157)... SUCCESS: 1511.38
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ghosh_2017/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

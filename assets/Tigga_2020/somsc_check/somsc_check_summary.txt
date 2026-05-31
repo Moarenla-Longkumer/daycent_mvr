@@ -1,0 +1,50 @@
+SOMSC Check Summary for Site: Tigga_2020
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,294.07 g C / m²
+Change during Equilibrium Phase: -3,219.90 g C / m²
+Change during Base Phase: -438.04 g C / m²
+Final SOMSC at end of Base Phase: 1,639.13 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,445.90 g C / m²
+Model is 63.13% lower than observation.
+(Difference: -2,806.77 g C / m²)
+
+--- Experimental Analysis ---
+'tigga_2020_ct+ri+gi-ffp_somsc' Change: -60.01 g C / m² (End value: 1,578.20)
+'tigga_2020_ct+ri+gi-rdf_somsc' Change: -58.54 g C / m² (End value: 1,579.66)
+'tigga_2020_ct+ri+gi-ssnm_somsc' Change: -60.68 g C / m² (End value: 1,577.52)
+'tigga_2020_ct-rr-ffp_somsc' Change: -182.71 g C / m² (End value: 1,455.50)
+'tigga_2020_ct-rr-rdf_somsc' Change: -182.34 g C / m² (End value: 1,455.87)
+'tigga_2020_ct-rr-ssnm_somsc' Change: -182.76 g C / m² (End value: 1,455.45)
+'tigga_2020_pb+rr+gr-ffp_somsc' Change: +94.32 g C / m² (End value: 1,732.53)
+'tigga_2020_pb+rr+gr-rdf_somsc' Change: +94.86 g C / m² (End value: 1,733.06)
+'tigga_2020_pb+rr+gr-ssnm_somsc' Change: +94.40 g C / m² (End value: 1,732.60)
+'tigga_2020_pb+rr-ffp_somsc' Change: +77.39 g C / m² (End value: 1,715.60)
+'tigga_2020_pb+rr-rdf_somsc' Change: +77.74 g C / m² (End value: 1,715.95)
+'tigga_2020_pb+rr-ssnm_somsc' Change: +76.45 g C / m² (End value: 1,714.66)
+
+Average SOMSC at end of all experimental phases: 1,620.55 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct-rr (Year: 2015, Day: 80)... SUCCESS: 1476.67
+ -> Checking ct+ri+gi (Year: 2015, Day: 80)... SUCCESS: 1604.04
+ -> Checking pb+rr (Year: 2015, Day: 80)... SUCCESS: 1733.03
+ -> Checking pb+rr+gr (Year: 2015, Day: 80)... SUCCESS: 1750.28
+ -> Checking ffp (Year: 2015, Day: 80)... SUCCESS: 1640.94
+ -> Checking rdf (Year: 2015, Day: 80)... SUCCESS: 1641.58
+ -> Checking ssnm (Year: 2015, Day: 80)... SUCCESS: 1640.50
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Tigga_2020/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

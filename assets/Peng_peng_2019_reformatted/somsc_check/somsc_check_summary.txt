@@ -1,0 +1,53 @@
+SOMSC Check Summary for Site: Peng_peng_2019_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,101.63 g C / m²
+Change during Equilibrium Phase: -1,263.79 g C / m²
+Change during Base Phase: -2,190.38 g C / m²
+Final SOMSC at end of Base Phase: 1,655.57 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,865.88 g C / m²
+Model is 65.98% lower than observation.
+(Difference: -3,210.31 g C / m²)
+
+--- Experimental Analysis ---
+'peng_peng_2019_reformatted_ns_ck_somsc' Change: -82.21 g C / m² (End value: 1,575.51)
+'peng_peng_2019_reformatted_ns_npk_somsc' Change: -41.46 g C / m² (End value: 1,616.26)
+'peng_peng_2019_reformatted_ns_om_somsc' Change: +3,901.59 g C / m² (End value: 5,559.31)
+'peng_peng_2019_reformatted_s_ck_somsc' Change: +65.45 g C / m² (End value: 1,723.17)
+'peng_peng_2019_reformatted_s_npk_somsc' Change: +376.92 g C / m² (End value: 2,034.64)
+'peng_peng_2019_reformatted_s_om_somsc' Change: +4,334.15 g C / m² (End value: 5,991.87)
+
+Average SOMSC at end of all experimental phases: 3,083.46 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct_sw_sw_sw (Year: 2013, Day: 76)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/Peng_peng_2019_reformatted_out/Peng_peng_2019_reformatted_CT_SW_SW_SW_output/soilc.out FAILED: No matching data found.
+ -> Checking rt_sw_sw_sw (Year: 2013, Day: 76)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/Peng_peng_2019_reformatted_out/Peng_peng_2019_reformatted_RT_SW_SW_SW_output/soilc.out FAILED: No matching data found.
+ -> Checking ct_sf_sf_sf (Year: 2013, Day: 76)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/Peng_peng_2019_reformatted_out/Peng_peng_2019_reformatted_CT_SF_SF_SF_output/soilc.out FAILED: No matching data found.
+ -> Checking rt_sf_sf_sf (Year: 2013, Day: 76)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/Peng_peng_2019_reformatted_out/Peng_peng_2019_reformatted_RT_SF_SF_SF_output/soilc.out FAILED: No matching data found.
+ -> Checking ct_sf_mc_sf (Year: 2013, Day: 76)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/Peng_peng_2019_reformatted_out/Peng_peng_2019_reformatted_CT_SF_MC_SF_output/soilc.out FAILED: No matching data found.
+ -> Checking rt_sf_mc_sf (Year: 2013, Day: 76)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/Peng_peng_2019_reformatted_out/Peng_peng_2019_reformatted_RT_SF_MC_SF_output/soilc.out FAILED: No matching data found.
+ -> Checking ct_mc_sf_mc (Year: 2013, Day: 76)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/Peng_peng_2019_reformatted_out/Peng_peng_2019_reformatted_CT_MC_SF_MC_output/soilc.out FAILED: No matching data found.
+ -> Checking rt_mc_sf_mc (Year: 2013, Day: 76)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/Peng_peng_2019_reformatted_out/Peng_peng_2019_reformatted_RT_MC_SF_MC_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Peng_peng_2019_reformatted/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

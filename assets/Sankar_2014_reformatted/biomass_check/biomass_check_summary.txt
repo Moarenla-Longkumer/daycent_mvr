@@ -1,0 +1,1048 @@
+Biomass Check Summary for Site: Sankar_2014_reformatted
+
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 168
+Rows passing delta rule (sim >= obs): 155
+Rows with shortfall (sim < obs): 13
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                               Observation  Observed  Simulated          Difference
+sankar_2014_reformatted_t1_cgrain_cot_1987     22.96   113.0053            +392.18%
+sankar_2014_reformatted_t1_cgrain_cot_1989     22.40    45.1546            +101.58%
+sankar_2014_reformatted_t1_cgrain_cot_1989     36.40    45.1546             +24.05%
+sankar_2014_reformatted_t1_cgrain_cot_1990     21.20    62.4595            +194.62%
+sankar_2014_reformatted_t1_cgrain_cot_1991     12.00    47.3089            +294.24%
+sankar_2014_reformatted_t1_cgrain_cot_1993     17.20    45.3868            +163.88%
+sankar_2014_reformatted_t1_cgrain_cot_1993     40.64    45.3868             +11.68%
+sankar_2014_reformatted_t1_cgrain_cot_1995     14.96    41.4251            +176.91%
+sankar_2014_reformatted_t1_cgrain_cot_1996     26.60    37.4340             +40.73%
+sankar_2014_reformatted_t1_cgrain_cot_1997      6.64    42.0746            +533.65%
+sankar_2014_reformatted_t1_cgrain_cot_1998     18.76    44.3198            +136.25%
+sankar_2014_reformatted_t1_cgrain_cot_1998      3.64    44.3198           +1117.58%
+sankar_2014_reformatted_t1_cgrain_cot_2000     22.20    26.8048             +20.74%
+sankar_2014_reformatted_t1_cgrain_cot_2000     24.12    26.8048             +11.13%
+sankar_2014_reformatted_t1_cgrain_cot_2001     11.92    33.8812            +184.24%
+sankar_2014_reformatted_t1_cgrain_cot_2003     13.76    23.1238             +68.05%
+sankar_2014_reformatted_t1_cgrain_cot_2003     10.00    23.1238            +131.24%
+sankar_2014_reformatted_t1_cgrain_cot_2005      5.96    25.0410            +320.15%
+sankar_2014_reformatted_t1_cgrain_cot_2006     25.40    21.6427 -14.79% [SHORTFALL]
+sankar_2014_reformatted_t1_cgrain_cot_2007     36.76    19.9637 -45.69% [SHORTFALL]
+sankar_2014_reformatted_t1_cgrain_cot_2008     19.60    20.2744              +3.44%
+sankar_2014_reformatted_t2_cgrain_cot_1987     33.36   113.0053            +238.74%
+sankar_2014_reformatted_t2_cgrain_cot_1989     30.00    91.1367            +203.79%
+sankar_2014_reformatted_t2_cgrain_cot_1989     51.60    91.1367             +76.62%
+sankar_2014_reformatted_t2_cgrain_cot_1990     34.00   108.4887            +219.08%
+sankar_2014_reformatted_t2_cgrain_cot_1991     18.40    93.7412            +409.46%
+sankar_2014_reformatted_t2_cgrain_cot_1993     25.20    91.9636            +264.93%
+sankar_2014_reformatted_t2_cgrain_cot_1993     65.48    91.9636             +40.45%
+sankar_2014_reformatted_t2_cgrain_cot_1995     18.84    83.4301            +342.83%
+sankar_2014_reformatted_t2_cgrain_cot_1996     34.12    83.0610            +143.44%
+sankar_2014_reformatted_t2_cgrain_cot_1997     16.08    91.1289            +466.72%
+sankar_2014_reformatted_t2_cgrain_cot_1998     25.68   102.6866            +299.87%
+sankar_2014_reformatted_t2_cgrain_cot_1998      8.04   102.6866           +1177.20%
+sankar_2014_reformatted_t2_cgrain_cot_2000     27.24    67.9469            +149.44%
+sankar_2014_reformatted_t2_cgrain_cot_2000     36.16    67.9469             +87.91%
+sankar_2014_reformatted_t2_cgrain_cot_2001     13.00    84.1031            +546.95%
+sankar_2014_reformatted_t2_cgrain_cot_2003     17.64    61.1366            +246.58%
+sankar_2014_reformatted_t2_cgrain_cot_2003     11.88    61.1366            +414.62%
+sankar_2014_reformatted_t2_cgrain_cot_2005      6.84    67.6853            +889.55%
+sankar_2014_reformatted_t2_cgrain_cot_2006     42.84    60.2527             +40.65%
+sankar_2014_reformatted_t2_cgrain_cot_2007     42.20    58.5909             +38.84%
+sankar_2014_reformatted_t2_cgrain_cot_2008     28.28    56.8088            +100.88%
+sankar_2014_reformatted_t3_cgrain_cot_1987     31.40   113.0053            +259.89%
+sankar_2014_reformatted_t3_cgrain_cot_1989     28.40    68.6818            +141.84%
+sankar_2014_reformatted_t3_cgrain_cot_1989     51.20    68.6818             +34.14%
+sankar_2014_reformatted_t3_cgrain_cot_1990     29.60    88.7076            +199.69%
+sankar_2014_reformatted_t3_cgrain_cot_1991     14.80    70.9150            +379.16%
+sankar_2014_reformatted_t3_cgrain_cot_1993     22.80    67.7743            +197.26%
+sankar_2014_reformatted_t3_cgrain_cot_1993     53.52    67.7743             +26.63%
+sankar_2014_reformatted_t3_cgrain_cot_1995     19.96    61.8091            +209.66%
+sankar_2014_reformatted_t3_cgrain_cot_1996     32.80    58.3276             +77.83%
+sankar_2014_reformatted_t3_cgrain_cot_1997     12.88    66.1800            +413.82%
+sankar_2014_reformatted_t3_cgrain_cot_1998     22.24    72.4616            +225.82%
+sankar_2014_reformatted_t3_cgrain_cot_1998      6.48    72.4616           +1018.23%
+sankar_2014_reformatted_t3_cgrain_cot_2000     22.72    45.3960             +99.81%
+sankar_2014_reformatted_t3_cgrain_cot_2000     29.04    45.3960             +56.32%
+sankar_2014_reformatted_t3_cgrain_cot_2001     13.56    58.2281            +329.41%
+sankar_2014_reformatted_t3_cgrain_cot_2003     15.72    40.7760            +159.39%
+sankar_2014_reformatted_t3_cgrain_cot_2003     11.32    40.7760            +260.21%
+sankar_2014_reformatted_t3_cgrain_cot_2005      6.08    44.0995            +625.32%
+sankar_2014_reformatted_t3_cgrain_cot_2006     40.36    39.0748  -3.18% [SHORTFALL]
+sankar_2014_reformatted_t3_cgrain_cot_2007     46.24    37.3057 -19.32% [SHORTFALL]
+sankar_2014_reformatted_t3_cgrain_cot_2008     23.88    37.2502             +55.99%
+sankar_2014_reformatted_t4_cgrain_cot_1987     30.44   112.9941            +271.20%
+sankar_2014_reformatted_t4_cgrain_cot_1989     24.80    65.4090            +163.75%
+sankar_2014_reformatted_t4_cgrain_cot_1989     45.20    65.4090             +44.71%
+sankar_2014_reformatted_t4_cgrain_cot_1990     28.80    85.5794            +197.15%
+sankar_2014_reformatted_t4_cgrain_cot_1991     16.40    67.1181            +309.26%
+sankar_2014_reformatted_t4_cgrain_cot_1993     25.20    65.3449            +159.31%
+sankar_2014_reformatted_t4_cgrain_cot_1993     56.16    65.3449             +16.35%
+sankar_2014_reformatted_t4_cgrain_cot_1995     17.32    58.4355            +237.39%
+sankar_2014_reformatted_t4_cgrain_cot_1996     31.80    55.2123             +73.62%
+sankar_2014_reformatted_t4_cgrain_cot_1997     12.28    63.7194            +418.89%
+sankar_2014_reformatted_t4_cgrain_cot_1998     23.20    69.4197            +199.22%
+sankar_2014_reformatted_t4_cgrain_cot_1998      4.48    69.4197           +1449.55%
+sankar_2014_reformatted_t4_cgrain_cot_2000     26.04    42.7681             +64.24%
+sankar_2014_reformatted_t4_cgrain_cot_2000     35.20    42.7681             +21.50%
+sankar_2014_reformatted_t4_cgrain_cot_2001     15.68    55.8117            +255.94%
+sankar_2014_reformatted_t4_cgrain_cot_2003     15.12    38.6619            +155.70%
+sankar_2014_reformatted_t4_cgrain_cot_2003     11.28    38.6619            +242.75%
+sankar_2014_reformatted_t4_cgrain_cot_2005      6.96    43.0042            +517.88%
+sankar_2014_reformatted_t4_cgrain_cot_2006     32.12    37.2838             +16.08%
+sankar_2014_reformatted_t4_cgrain_cot_2007     42.08    35.9186 -14.64% [SHORTFALL]
+sankar_2014_reformatted_t4_cgrain_cot_2008     24.64    35.9704             +45.98%
+sankar_2014_reformatted_t5_cgrain_cot_1987     27.36   113.0053            +313.03%
+sankar_2014_reformatted_t5_cgrain_cot_1989     26.00    48.0730             +84.90%
+sankar_2014_reformatted_t5_cgrain_cot_1989     45.60    48.0730              +5.42%
+sankar_2014_reformatted_t5_cgrain_cot_1990     30.00    68.0838            +126.95%
+sankar_2014_reformatted_t5_cgrain_cot_1991     18.80    52.3118            +178.25%
+sankar_2014_reformatted_t5_cgrain_cot_1993     24.40    52.7262            +116.09%
+sankar_2014_reformatted_t5_cgrain_cot_1993     65.48    52.7262 -19.48% [SHORTFALL]
+sankar_2014_reformatted_t5_cgrain_cot_1995     17.80    49.1717            +176.25%
+sankar_2014_reformatted_t5_cgrain_cot_1996     31.44    45.1270             +43.53%
+sankar_2014_reformatted_t5_cgrain_cot_1997     17.24    52.6944            +205.65%
+sankar_2014_reformatted_t5_cgrain_cot_1998     24.00    57.2266            +138.44%
+sankar_2014_reformatted_t5_cgrain_cot_1998      4.04    57.2266           +1316.50%
+sankar_2014_reformatted_t5_cgrain_cot_2000     26.96    35.8799             +33.09%
+sankar_2014_reformatted_t5_cgrain_cot_2000     36.44    35.8799  -1.54% [SHORTFALL]
+sankar_2014_reformatted_t5_cgrain_cot_2001     15.08    47.6366            +215.89%
+sankar_2014_reformatted_t5_cgrain_cot_2003     18.24    33.6910             +84.71%
+sankar_2014_reformatted_t5_cgrain_cot_2003     12.32    33.6910            +173.47%
+sankar_2014_reformatted_t5_cgrain_cot_2005      7.96    37.7397            +374.12%
+sankar_2014_reformatted_t5_cgrain_cot_2006     34.64    32.9405  -4.91% [SHORTFALL]
+sankar_2014_reformatted_t5_cgrain_cot_2007     57.20    30.8599 -46.05% [SHORTFALL]
+sankar_2014_reformatted_t5_cgrain_cot_2008     28.52    31.5427             +10.60%
+sankar_2014_reformatted_t6_cgrain_cot_1987     29.20   112.9941            +286.97%
+sankar_2014_reformatted_t6_cgrain_cot_1989     31.20    93.5991            +200.00%
+sankar_2014_reformatted_t6_cgrain_cot_1989     56.00    93.5991             +67.14%
+sankar_2014_reformatted_t6_cgrain_cot_1990     32.80   108.4815            +230.74%
+sankar_2014_reformatted_t6_cgrain_cot_1991     20.40    94.1874            +361.70%
+sankar_2014_reformatted_t6_cgrain_cot_1993     33.60   100.5044            +199.12%
+sankar_2014_reformatted_t6_cgrain_cot_1993     71.80   100.5044             +39.98%
+sankar_2014_reformatted_t6_cgrain_cot_1995     19.80    90.0486            +354.79%
+sankar_2014_reformatted_t6_cgrain_cot_1996     34.64    90.6685            +161.75%
+sankar_2014_reformatted_t6_cgrain_cot_1997     18.72   100.2550            +435.55%
+sankar_2014_reformatted_t6_cgrain_cot_1998     23.36   111.6456            +377.93%
+sankar_2014_reformatted_t6_cgrain_cot_1998      6.96   111.6456           +1504.10%
+sankar_2014_reformatted_t6_cgrain_cot_2000     26.72    75.4633            +182.42%
+sankar_2014_reformatted_t6_cgrain_cot_2000     35.24    75.4633            +114.14%
+sankar_2014_reformatted_t6_cgrain_cot_2001     16.12    92.6921            +475.01%
+sankar_2014_reformatted_t6_cgrain_cot_2003     16.92    68.6016            +305.45%
+sankar_2014_reformatted_t6_cgrain_cot_2003     11.76    68.6016            +483.35%
+sankar_2014_reformatted_t6_cgrain_cot_2005      9.72    76.6051            +688.12%
+sankar_2014_reformatted_t6_cgrain_cot_2006     47.40    68.0136             +43.49%
+sankar_2014_reformatted_t6_cgrain_cot_2007     47.56    66.0147             +38.80%
+sankar_2014_reformatted_t6_cgrain_cot_2008     28.88    64.2731            +122.55%
+sankar_2014_reformatted_t7_cgrain_cot_1987     30.52   113.0053            +270.27%
+sankar_2014_reformatted_t7_cgrain_cot_1989     29.60    81.8361            +176.47%
+sankar_2014_reformatted_t7_cgrain_cot_1989     52.00    81.8361             +57.38%
+sankar_2014_reformatted_t7_cgrain_cot_1990     34.00   105.4340            +210.10%
+sankar_2014_reformatted_t7_cgrain_cot_1991     19.20    87.0801            +353.54%
+sankar_2014_reformatted_t7_cgrain_cot_1993     33.20    87.3061            +162.97%
+sankar_2014_reformatted_t7_cgrain_cot_1993     76.40    87.3061             +14.27%
+sankar_2014_reformatted_t7_cgrain_cot_1995     21.60    79.6637            +268.81%
+sankar_2014_reformatted_t7_cgrain_cot_1996     39.60    78.6632             +98.64%
+sankar_2014_reformatted_t7_cgrain_cot_1997     22.36    88.7984            +297.13%
+sankar_2014_reformatted_t7_cgrain_cot_1998     28.24   100.2117            +254.86%
+sankar_2014_reformatted_t7_cgrain_cot_1998      8.68   100.2117           +1054.51%
+sankar_2014_reformatted_t7_cgrain_cot_2000     27.60    66.4631            +140.81%
+sankar_2014_reformatted_t7_cgrain_cot_2000     38.40    66.4631             +73.08%
+sankar_2014_reformatted_t7_cgrain_cot_2001     17.48    84.2308            +381.87%
+sankar_2014_reformatted_t7_cgrain_cot_2003     22.16    62.0681            +180.09%
+sankar_2014_reformatted_t7_cgrain_cot_2003     14.36    62.0681            +332.23%
+sankar_2014_reformatted_t7_cgrain_cot_2005     10.92    69.6144            +537.49%
+sankar_2014_reformatted_t7_cgrain_cot_2006     49.64    61.7455             +24.39%
+sankar_2014_reformatted_t7_cgrain_cot_2007     69.80    59.6214 -14.58% [SHORTFALL]
+sankar_2014_reformatted_t7_cgrain_cot_2008     30.60    58.9758             +92.73%
+sankar_2014_reformatted_t8_cgrain_cot_1987     27.00   112.9941            +318.50%
+sankar_2014_reformatted_t8_cgrain_cot_1989     28.80    65.4090            +127.11%
+sankar_2014_reformatted_t8_cgrain_cot_1989     54.00    65.4090             +21.13%
+sankar_2014_reformatted_t8_cgrain_cot_1990     33.20    85.5794            +157.77%
+sankar_2014_reformatted_t8_cgrain_cot_1991     20.00    67.1181            +235.59%
+sankar_2014_reformatted_t8_cgrain_cot_1993     32.00    65.3449            +104.20%
+sankar_2014_reformatted_t8_cgrain_cot_1993     69.00    65.3449  -5.30% [SHORTFALL]
+sankar_2014_reformatted_t8_cgrain_cot_1995     20.64    58.4355            +183.12%
+sankar_2014_reformatted_t8_cgrain_cot_1996     32.00    55.2123             +72.54%
+sankar_2014_reformatted_t8_cgrain_cot_1997     16.32    63.7194            +290.44%
+sankar_2014_reformatted_t8_cgrain_cot_1998     23.76    69.4197            +192.17%
+sankar_2014_reformatted_t8_cgrain_cot_1998      5.04    69.4197           +1277.38%
+sankar_2014_reformatted_t8_cgrain_cot_2000     25.24    42.7681             +69.45%
+sankar_2014_reformatted_t8_cgrain_cot_2000     33.60    42.7681             +27.29%
+sankar_2014_reformatted_t8_cgrain_cot_2001     12.00    55.8117            +365.10%
+sankar_2014_reformatted_t8_cgrain_cot_2003     19.08    38.6619            +102.63%
+sankar_2014_reformatted_t8_cgrain_cot_2003     12.84    38.6619            +201.11%
+sankar_2014_reformatted_t8_cgrain_cot_2005      8.56    43.0042            +402.39%
+sankar_2014_reformatted_t8_cgrain_cot_2006     44.40    37.2838 -16.03% [SHORTFALL]
+sankar_2014_reformatted_t8_cgrain_cot_2007     46.96    35.9186 -23.51% [SHORTFALL]
+sankar_2014_reformatted_t8_cgrain_cot_2008     24.92    35.9704             +44.34%
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sankar_2014_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 168
+R²: 0.0168
+RMSE: 46.00 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sankar_2014_reformatted_obs.csv`.
+
+
+--- Biomass Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 168
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1987'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1990'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1991'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1995'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1996'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1997'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2001'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2005'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2006'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2007'
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sankar_2014_reformatted_t1_cgrain_cot_2008'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1987'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1990'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1991'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1995'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1996'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1997'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2001'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2005'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2006'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2007'
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sankar_2014_reformatted_t2_cgrain_cot_2008'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1987'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1990'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1991'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1995'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1996'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1997'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2001'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2005'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2006'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2007'
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sankar_2014_reformatted_t3_cgrain_cot_2008'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1987'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1990'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1991'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1995'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1996'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1997'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2001'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2005'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2006'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2007'
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sankar_2014_reformatted_t4_cgrain_cot_2008'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1987'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1990'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1991'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1995'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1996'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1997'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2001'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2005'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2006'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2007'
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sankar_2014_reformatted_t5_cgrain_cot_2008'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1987'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1990'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1991'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1995'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1996'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1997'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2001'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2005'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2006'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2007'
+    [DEBUG] Checking Treatment Sch: T6
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T6_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T6
+Successfully processed: 'sankar_2014_reformatted_t6_cgrain_cot_2008'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1987'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1990'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1991'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1995'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1996'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1997'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2001'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2005'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2006'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2007'
+    [DEBUG] Checking Treatment Sch: T7
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T7_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T7
+Successfully processed: 'sankar_2014_reformatted_t7_cgrain_cot_2008'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1987'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1989'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1990'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1991'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1993'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1995'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1996'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1997'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_1998'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2000'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2001'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2003'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2005'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2006'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2007'
+    [DEBUG] Checking Treatment Sch: T8
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/Sankar_2014_reformatted_out/Sankar_2014_reformatted_T8_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T8
+Successfully processed: 'sankar_2014_reformatted_t8_cgrain_cot_2008'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sankar_2014_reformatted/observed_vs_modeled_biomass.png'
+--- Script finished. ---

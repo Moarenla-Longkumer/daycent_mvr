@@ -1,0 +1,46 @@
+SOMSC Check Summary for Site: Ishaq_2002_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,682.97 g C / m²
+Change during Equilibrium Phase: -2,068.13 g C / m²
+Change during Base Phase: -436.95 g C / m²
+Final SOMSC at end of Base Phase: 1,183.60 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,931.82 g C / m²
+Model is 69.90% lower than observation.
+(Difference: -2,748.22 g C / m²)
+
+--- Experimental Analysis ---
+'ishaq_2002_reformatted_ct_high_somsc' Change: -120.98 g C / m² (End value: 1,062.50)
+'ishaq_2002_reformatted_ct_low_somsc' Change: -128.83 g C / m² (End value: 1,054.65)
+'ishaq_2002_reformatted_ct_medium_somsc' Change: -121.68 g C / m² (End value: 1,061.80)
+'ishaq_2002_reformatted_dt_high_somsc' Change: -120.98 g C / m² (End value: 1,062.50)
+'ishaq_2002_reformatted_dt_low_somsc' Change: -128.83 g C / m² (End value: 1,054.65)
+'ishaq_2002_reformatted_dt_medium_somsc' Change: -121.68 g C / m² (End value: 1,061.80)
+'ishaq_2002_reformatted_mt_high_somsc' Change: -121.11 g C / m² (End value: 1,062.37)
+'ishaq_2002_reformatted_mt_low_somsc' Change: -128.64 g C / m² (End value: 1,054.84)
+'ishaq_2002_reformatted_mt_medium_somsc' Change: -121.69 g C / m² (End value: 1,061.79)
+
+Average SOMSC at end of all experimental phases: 1,059.65 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking mt (Year: 1998, Day: 120)... SUCCESS: 1071.04
+ -> Checking ct (Year: 1998, Day: 120)... SUCCESS: 1071.07
+ -> Checking dt (Year: 1998, Day: 120)... SUCCESS: 1071.07
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ishaq_2002_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ishaq_2002_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ishaq_2002_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+ishaq_2002_reformatted_mt_somsc,mt,1998,120,1811.1,1071.0420666666666
+ishaq_2002_reformatted_ct_somsc,ct,1998,120,1666.95,1071.0712999999998
+ishaq_2002_reformatted_dt_somsc,dt,1998,120,1710.9,1071.0712999999998

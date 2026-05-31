@@ -1,0 +1,67 @@
+SOMSC Check Summary for Site: Monsefi_2014
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,258.72 g C / m²
+Change during Equilibrium Phase: -1,343.19 g C / m²
+Change during Base Phase: -881.59 g C / m²
+Final SOMSC at end of Base Phase: 1,047.59 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,180.64 g C / m²
+Model is 51.96% lower than observation.
+(Difference: -1,133.05 g C / m²)
+
+--- Experimental Analysis ---
+'monsefi_2014_sctws_wzt_somsc' Change: -43.21 g C / m² (End value: 1,002.15)
+'monsefi_2014_sctws_wztsr_somsc' Change: -32.25 g C / m² (End value: 1,013.10)
+'monsefi_2014_sct_wct_somsc' Change: -155.20 g C / m² (End value: 890.16)
+'monsefi_2014_sct_wzt_somsc' Change: -81.71 g C / m² (End value: 963.64)
+'monsefi_2014_sct_wztsr_somsc' Change: -70.79 g C / m² (End value: 974.56)
+'monsefi_2014_sztws_wct_somsc' Change: -43.70 g C / m² (End value: 1,001.65)
+'monsefi_2014_sztws_wctsr_somsc' Change: -27.27 g C / m² (End value: 1,018.09)
+'monsefi_2014_sztws_wzt_somsc' Change: +12.53 g C / m² (End value: 1,057.89)
+'monsefi_2014_sztws_wztsr_somsc' Change: +19.36 g C / m² (End value: 1,064.72)
+'monsefi_2014_szt_wctsr_somsc' Change: -67.50 g C / m² (End value: 977.86)
+'monsefi_2014_szt_wzt_somsc' Change: -7.08 g C / m² (End value: 1,038.28)
+'monsefi_2014_szt_wztsr_somsc' Change: +0.94 g C / m² (End value: 1,046.30)
+
+Average SOMSC at end of all experimental phases: 1,004.03 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking sct_wct (Year: 2012, Day: 77)... SUCCESS: 899.78
+ -> Checking sct_wzt (Year: 2012, Day: 77)... SUCCESS: 975.59
+ -> Checking szt_wzt (Year: 2012, Day: 77)... SUCCESS: 1051.40
+ -> Checking sctws_wzt (Year: 2012, Day: 77)... SUCCESS: 1012.46
+ -> Checking sct_wztsr (Year: 2012, Day: 77)... SUCCESS: 985.98
+ -> Checking sctws_wztsr (Year: 2012, Day: 77)... SUCCESS: 1023.02
+ -> Checking sztws_wct (Year: 2012, Day: 77)... SUCCESS: 1010.89
+ -> Checking szt_wctsr (Year: 2012, Day: 77)... SUCCESS: 990.24
+ -> Checking sztws_wctsr (Year: 2012, Day: 77)... SUCCESS: 1027.72
+ -> Checking sztws_wzt (Year: 2012, Day: 77)... SUCCESS: 1065.64
+ -> Checking szt_wztsr (Year: 2012, Day: 77)... SUCCESS: 1057.80
+ -> Checking sztws_wztsr (Year: 2012, Day: 77)... SUCCESS: 1071.79
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Monsefi_2014/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Monsefi_2014/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Monsefi_2014/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+monsefi_2014_sct_wct_somsc,sct_wct,2012,77,1039.35,899.7751
+monsefi_2014_sct_wzt_somsc,sct_wzt,2012,77,1019.535,975.5933
+monsefi_2014_szt_wzt_somsc,szt_wzt,2012,77,1039.92,1051.4005
+monsefi_2014_sctws_wzt_somsc,sctws_wzt,2012,77,1047.925,1012.4615
+monsefi_2014_sct_wztsr_somsc,sct_wztsr,2012,77,1047.46,985.9829
+monsefi_2014_sctws_wztsr_somsc,sctws_wztsr,2012,77,1034.28,1023.0183999999999
+monsefi_2014_sztws_wct_somsc,sztws_wct,2012,77,1044.12,1010.8924000000001
+monsefi_2014_szt_wctsr_somsc,szt_wctsr,2012,77,1035.01,990.2393
+monsefi_2014_sztws_wctsr_somsc,sztws_wctsr,2012,77,1049.12,1027.7205
+monsefi_2014_sztws_wzt_somsc,sztws_wzt,2012,77,1062.955,1065.6444000000001
+monsefi_2014_szt_wztsr_somsc,szt_wztsr,2012,77,1018.08,1057.8026
+monsefi_2014_sztws_wztsr_somsc,sztws_wztsr,2012,77,1031.52,1071.7909

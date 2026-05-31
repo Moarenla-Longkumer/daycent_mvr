@@ -1,0 +1,47 @@
+SOMSC Check Summary for Site: Khokhar_2022
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,206.83 g C / m²
+Change during Equilibrium Phase: -1,997.22 g C / m²
+Change during Base Phase: -404.72 g C / m²
+Final SOMSC at end of Base Phase: 808.72 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 5,659.41 g C / m²
+Model is 85.71% lower than observation.
+(Difference: -4,850.69 g C / m²)
+
+--- Experimental Analysis ---
+'khokhar_2022_ct_n1_somsc' Change: +488.46 g C / m² (End value: 1,296.09)
+'khokhar_2022_ct_n2_somsc' Change: +488.95 g C / m² (End value: 1,296.58)
+'khokhar_2022_ct_n3_somsc' Change: -121.96 g C / m² (End value: 685.67)
+'khokhar_2022_rt1_n1_somsc' Change: +488.46 g C / m² (End value: 1,296.09)
+'khokhar_2022_rt1_n2_somsc' Change: +488.95 g C / m² (End value: 1,296.58)
+'khokhar_2022_rt1_n3_somsc' Change: -121.96 g C / m² (End value: 685.67)
+
+Average SOMSC at end of all experimental phases: 1,092.78 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct (Year: 2017, Day: 108)... SUCCESS: 1094.71
+ -> Checking rt1 (Year: 2017, Day: 108)... SUCCESS: 1094.71
+ -> Checking n1 (Year: 2017, Day: 108)... SUCCESS: 1297.22
+ -> Checking n2 (Year: 2017, Day: 108)... SUCCESS: 1297.71
+ -> Checking n3 (Year: 2017, Day: 108)... SUCCESS: 689.21
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Khokhar_2022/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Khokhar_2022/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Khokhar_2022/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+khokhar_2022_ct_somsc,ct,2017,108,1226.1,1094.7131333333334
+khokhar_2022_rt1_somsc,rt1,2017,108,1302.0,1094.7131333333334
+khokhar_2022_n1_somsc,n1,2017,108,1352.61,1297.2206
+khokhar_2022_n2_somsc,n2,2017,108,1353.165,1297.7132000000001
+khokhar_2022_n3_somsc,n3,2017,108,1237.665,689.2056

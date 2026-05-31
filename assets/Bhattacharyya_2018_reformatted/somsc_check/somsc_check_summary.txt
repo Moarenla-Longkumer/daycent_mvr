@@ -1,0 +1,33 @@
+SOMSC Check Summary for Site: Bhattacharyya_2018_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,991.48 g C / m²
+Change during Equilibrium Phase: -2,419.10 g C / m²
+Change during Base Phase: -341.85 g C / m²
+Final SOMSC at end of Base Phase: 1,240.72 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,238.07 g C / m²
+Model is 61.68% lower than observation.
+(Difference: -1,997.35 g C / m²)
+
+--- Experimental Analysis ---
+'bhattacharyya_2018_reformatted_ct_somsc' Change: -199.79 g C / m² (End value: 1,038.88)
+'bhattacharyya_2018_reformatted_pnbb_somsc' Change: -21.12 g C / m² (End value: 1,217.55)
+'bhattacharyya_2018_reformatted_pnbb_r_somsc' Change: +151.88 g C / m² (End value: 1,390.55)
+
+Average SOMSC at end of all experimental phases: 1,215.66 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

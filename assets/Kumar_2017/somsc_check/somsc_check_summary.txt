@@ -1,0 +1,51 @@
+SOMSC Check Summary for Site: Kumar_2017
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 6,851.06 g C / m²
+Change during Equilibrium Phase: -4,518.60 g C / m²
+Change during Base Phase: +149.48 g C / m²
+Final SOMSC at end of Base Phase: 2,482.74 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,618.35 g C / m²
+Model is 5.18% lower than observation.
+(Difference: -135.61 g C / m²)
+
+--- Experimental Analysis ---
+'kumar_2017_trt_absolute_control_somsc' Change: -33.04 g C / m² (End value: 2,448.23)
+'kumar_2017_trt_castor_cake_500kg_somsc' Change: +4.66 g C / m² (End value: 2,485.93)
+'kumar_2017_trt_fym_10t_somsc' Change: +79.21 g C / m² (End value: 2,560.48)
+'kumar_2017_trt_fym_5t_somsc' Change: +34.98 g C / m² (End value: 2,516.25)
+'kumar_2017_trt_fym_5t_neem_cake_500kg_somsc' Change: +6.99 g C / m² (End value: 2,488.26)
+'kumar_2017_trt_neem_cake_500kg_somsc' Change: +3.23 g C / m² (End value: 2,484.50)
+'kumar_2017_trt_vermicompost_2_5t_somsc' Change: +12.87 g C / m² (End value: 2,494.14)
+'kumar_2017_trt_vermicompost_5t_somsc' Change: +34.98 g C / m² (End value: 2,516.25)
+
+Average SOMSC at end of all experimental phases: 2,499.25 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_fym_5t (Year: 2015, Day: 300)... SUCCESS: 2515.73
+ -> Checking trt_vermicompost_2_5t (Year: 2015, Day: 300)... SUCCESS: 2493.61
+ -> Checking trt_fym_10t (Year: 2015, Day: 300)... SUCCESS: 2559.96
+ -> Checking trt_vermicompost_5t (Year: 2015, Day: 300)... SUCCESS: 2515.73
+ -> Checking trt_sunhemp_gm (Year: 2015, Day: 300)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kumar_2017/Kumar_2017_out/Kumar_2017_TRT_SUNHEMP_GM_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_castor_cake_500kg (Year: 2015, Day: 300)... SUCCESS: 2485.41
+ -> Checking trt_fym_p2o5_gm (Year: 2015, Day: 300)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kumar_2017/Kumar_2017_out/Kumar_2017_TRT_FYM_P2O5_GM_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_neem_cake_500kg (Year: 2015, Day: 300)... SUCCESS: 2483.97
+ -> Checking trt_fym_5t_neem_cake_500kg (Year: 2015, Day: 300)... SUCCESS: 2487.55
+ -> Checking trt_absolute_control (Year: 2015, Day: 300)... SUCCESS: 2459.93
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kumar_2017/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

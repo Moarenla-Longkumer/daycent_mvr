@@ -1,0 +1,38 @@
+N2O Check Summary for Site: Bhattacharya_2023
+
+RESULT: CANNOT ASSESS - Comparison CSV not found.
+
+
+--- N2O Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+[INFO] N2O observation rows: 8
+ -> ct r0 period 2021-331 to 2021-103... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_CT_output/summary.out 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R0_output/summary.out FAILED.
+ -> ct r+ period 2021-331 to 2021-103... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_CT_output/summary.out 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R+_output/summary.out FAILED.
+ -> nt r0 period 2021-331 to 2021-103... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_NT_output/summary.out 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R0_output/summary.out FAILED.
+ -> nt r+ period 2021-331 to 2021-103... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_NT_output/summary.out 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R+_output/summary.out FAILED.
+ -> ct r0 period 2022-327 to 2022-101... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_CT_output/summary.out 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R0_output/summary.out FAILED.
+ -> ct r+ period 2022-327 to 2022-101... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_CT_output/summary.out 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R+_output/summary.out FAILED.
+ -> nt r0 period 2022-327 to 2022-101... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_NT_output/summary.out 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R0_output/summary.out FAILED.
+ -> nt r+ period 2022-327 to 2022-101... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_NT_output/summary.out 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R+_output/summary.out FAILED.
+
+PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/output_n2o.txt'
+
+No paired data available to plot or save.

@@ -1,0 +1,59 @@
+SOMSC Check Summary for Site: Hati_2015_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,624.69 g C / m²
+Change during Equilibrium Phase: -3,092.63 g C / m²
+Change during Base Phase: -365.93 g C / m²
+Final SOMSC at end of Base Phase: 2,171.63 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,346.83 g C / m²
+Model is 35.11% lower than observation.
+(Difference: -1,175.20 g C / m²)
+
+--- Experimental Analysis ---
+'hati_2015_reformatted_ct_n150per_somsc' Change: -359.49 g C / m² (End value: 1,807.45)
+'hati_2015_reformatted_ct_n50per_somsc' Change: -391.34 g C / m² (End value: 1,775.60)
+'hati_2015_reformatted_mb_n100per_somsc' Change: +81.18 g C / m² (End value: 2,248.12)
+'hati_2015_reformatted_mb_n150per_somsc' Change: +79.96 g C / m² (End value: 2,246.90)
+'hati_2015_reformatted_mb_n50per_somsc' Change: -210.51 g C / m² (End value: 1,956.43)
+'hati_2015_reformatted_nt_n150per_somsc' Change: +276.59 g C / m² (End value: 2,443.53)
+'hati_2015_reformatted_nt_n50per_somsc' Change: +102.78 g C / m² (End value: 2,269.72)
+'hati_2015_reformatted_rt_n100per_somsc' Change: +350.84 g C / m² (End value: 2,517.78)
+'hati_2015_reformatted_rt_n150per_somsc' Change: +490.52 g C / m² (End value: 2,657.46)
+'hati_2015_reformatted_rt_n50per_somsc' Change: +171.41 g C / m² (End value: 2,338.35)
+
+Average SOMSC at end of all experimental phases: 2,226.14 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct (Year: 2007, Day: 110.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Hati_2015_reformatted/Hati_2015_reformatted_out/Hati_2015_reformatted_CT_N100Per_output/soilc.out SUCCESS: 1800.84
+ -> Checking mb (Year: 2007, Day: 110.0)... SUCCESS: 2156.46
+ -> Checking rt (Year: 2007, Day: 110.0)... SUCCESS: 2498.13
+ -> Checking nt (Year: 2007, Day: 110.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Hati_2015_reformatted/Hati_2015_reformatted_out/Hati_2015_reformatted_NT_N100Per_output/soilc.out SUCCESS: 2325.26
+ -> Checking n50per (Year: 2007, Day: 110.0)... SUCCESS: 2088.63
+ -> Checking n100per (Year: 2007, Day: 110.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Hati_2015_reformatted/Hati_2015_reformatted_out/Hati_2015_reformatted_CT_N100Per_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Hati_2015_reformatted/Hati_2015_reformatted_out/Hati_2015_reformatted_NT_N100Per_output/soilc.out SUCCESS: 2381.55
+ -> Checking n150per (Year: 2007, Day: 110.0)... SUCCESS: 2274.59
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Hati_2015_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Hati_2015_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Hati_2015_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+hati_2015_reformatted_ct_somsc,ct,2007,110,2326.0,1800.83535
+hati_2015_reformatted_mb_somsc,mb,2007,110,2608.0,2156.4579333333336
+hati_2015_reformatted_rt_somsc,rt,2007,110,2485.0,2498.129766666667
+hati_2015_reformatted_nt_somsc,nt,2007,110,2496.0,2325.2635
+hati_2015_reformatted_n50per_somsc,n50per,2007,110,2369.0,2088.628425
+hati_2015_reformatted_n100per_somsc,n100per,2007,110,2531.0,2381.5456000000004
+hati_2015_reformatted_n150per_somsc,n150per,2007,110,2536.0,2274.588975

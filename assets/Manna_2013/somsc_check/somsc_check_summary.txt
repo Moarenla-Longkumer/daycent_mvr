@@ -1,0 +1,56 @@
+SOMSC Check Summary for Site: Manna_2013
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,769.76 g C / m²
+Change during Equilibrium Phase: -2,106.06 g C / m²
+Change during Base Phase: +534.10 g C / m²
+Final SOMSC at end of Base Phase: 3,199.21 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,911.00 g C / m²
+Model is 9.90% higher than observation.
+(Difference: +288.21 g C / m²)
+
+--- Experimental Analysis ---
+'manna_2013_control_somsc' Change: -1,488.32 g C / m² (End value: 1,705.81)
+'manna_2013_n_somsc' Change: -1,474.34 g C / m² (End value: 1,719.80)
+'manna_2013_np_somsc' Change: -1,474.34 g C / m² (End value: 1,719.80)
+'manna_2013_npk_somsc' Change: -1,474.34 g C / m² (End value: 1,719.80)
+'manna_2013_npk+fym_somsc' Change: +2,453.31 g C / m² (End value: 5,647.45)
+
+Average SOMSC at end of all experimental phases: 2,502.53 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking control (Year: 2010, Day: 276)... SUCCESS: 1704.54
+ -> Checking n (Year: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking np (Year: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking npk (Year: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking npk+fym (Year: 2010, Day: 276)... SUCCESS: 5681.20
+ -> Checking control (Year: 2010, Day: 276)... SUCCESS: 1704.54
+ -> Checking n (Year: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking np (Year: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking npk (Year: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking npk+fym (Year: 2010, Day: 276)... SUCCESS: 5681.20
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Manna_2013/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Manna_2013/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Manna_2013/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+manna_2013_control_somsc,control,2010,276,0,1704.5351999999998
+manna_2013_n_somsc,n,2010,276,0,1721.2788
+manna_2013_np_somsc,np,2010,276,0,1721.2788
+manna_2013_npk_somsc,npk,2010,276,0,1721.2788
+manna_2013_npk+fym_somsc,npk+fym,2010,276,0,5681.2041
+manna_2013_control_somsc,control,2010,276,0,1704.5351999999998
+manna_2013_n_somsc,n,2010,276,0,1721.2788
+manna_2013_np_somsc,np,2010,276,0,1721.2788
+manna_2013_npk_somsc,npk,2010,276,0,1721.2788
+manna_2013_npk+fym_somsc,npk+fym,2010,276,0,5681.2041

@@ -1,0 +1,55 @@
+SOMSC Check Summary for Site: Somasundaram_2019_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,577.50 g C / m²
+Change during Equilibrium Phase: -3,060.24 g C / m²
+Change during Base Phase: -346.67 g C / m²
+Final SOMSC at end of Base Phase: 2,176.02 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,246.96 g C / m²
+Model is 32.98% lower than observation.
+(Difference: -1,070.94 g C / m²)
+
+--- Experimental Analysis ---
+'somasundaram_2019_reformatted_ct_mc_sf_mc_somsc' Change: -191.61 g C / m² (End value: 1,979.74)
+'somasundaram_2019_reformatted_ct_sf_mc_sf_somsc' Change: -200.80 g C / m² (End value: 1,970.55)
+'somasundaram_2019_reformatted_ct_sf_sf_sf_somsc' Change: -210.80 g C / m² (End value: 1,960.55)
+'somasundaram_2019_reformatted_ct_sw_sw_sw_somsc' Change: -192.86 g C / m² (End value: 1,978.49)
+'somasundaram_2019_reformatted_rt_mc_sf_mc_somsc' Change: -66.08 g C / m² (End value: 2,105.27)
+'somasundaram_2019_reformatted_rt_sf_mc_sf_somsc' Change: -108.06 g C / m² (End value: 2,063.28)
+'somasundaram_2019_reformatted_rt_sf_sf_sf_somsc' Change: -150.37 g C / m² (End value: 2,020.98)
+'somasundaram_2019_reformatted_rt_sw_sw_sw_somsc' Change: -74.56 g C / m² (End value: 2,096.79)
+
+Average SOMSC at end of all experimental phases: 2,021.96 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct_sw_sw_sw (Year: 2013, Day: 76)... SUCCESS: 2005.11
+ -> Checking rt_sw_sw_sw (Year: 2013, Day: 76)... SUCCESS: 2126.76
+ -> Checking ct_sf_sf_sf (Year: 2013, Day: 76)... SUCCESS: 2000.16
+ -> Checking rt_sf_sf_sf (Year: 2013, Day: 76)... SUCCESS: 2061.22
+ -> Checking ct_sf_mc_sf (Year: 2013, Day: 76)... SUCCESS: 2010.80
+ -> Checking rt_sf_mc_sf (Year: 2013, Day: 76)... SUCCESS: 2103.94
+ -> Checking ct_mc_sf_mc (Year: 2013, Day: 76)... SUCCESS: 2018.28
+ -> Checking rt_mc_sf_mc (Year: 2013, Day: 76)... SUCCESS: 2141.54
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2019_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2019_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2019_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+somasundaram_2019_reformatted_ct_sw_sw_sw_somsc,ct_sw_sw_sw,2013,76,2075.025,2005.107
+somasundaram_2019_reformatted_rt_sw_sw_sw_somsc,rt_sw_sw_sw,2013,76,2107.875,2126.7563
+somasundaram_2019_reformatted_ct_sf_sf_sf_somsc,ct_sf_sf_sf,2013,76,2226.225,2000.1598
+somasundaram_2019_reformatted_rt_sf_sf_sf_somsc,rt_sf_sf_sf,2013,76,2302.125,2061.2212
+somasundaram_2019_reformatted_ct_sf_mc_sf_somsc,ct_sf_mc_sf,2013,76,2400.975,2010.8006
+somasundaram_2019_reformatted_rt_sf_mc_sf_somsc,rt_sf_mc_sf,2013,76,2392.35,2103.9446
+somasundaram_2019_reformatted_ct_mc_sf_mc_somsc,ct_mc_sf_mc,2013,76,2290.8,2018.279
+somasundaram_2019_reformatted_rt_mc_sf_mc_somsc,rt_mc_sf_mc,2013,76,2373.225,2141.5447

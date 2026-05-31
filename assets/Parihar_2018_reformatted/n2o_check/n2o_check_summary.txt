@@ -1,0 +1,49 @@
+N2O Check Summary for Site: Parihar_2018_reformatted
+
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 7
+Rows passing delta rule (sim >= obs): 7
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                     Observation  Observed   Simulated Difference
+   parihar_2018_reformatted_pb_n2oflux_2012_2013     28.27 2609.160750  +9129.43%
+   parihar_2018_reformatted_zt_n2oflux_2012_2013     28.26 2449.857225  +8568.99%
+   parihar_2018_reformatted_ct_n2oflux_2012_2013     22.08 2927.613500 +13159.12%
+ parihar_2018_reformatted_mwmb_n2oflux_2012_2013      4.07 2880.129067 +70664.84%
+  parihar_2018_reformatted_mcs_n2oflux_2012_2013      4.28 1906.157667 +44436.39%
+parihar_2018_reformatted_mmumb_n2oflux_2012_2013      4.28 2839.513500 +66243.77%
+  parihar_2018_reformatted_mms_n2oflux_2012_2013      4.58 3023.041733 +65905.28%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 7
+R²: 0.0033
+RMSE: 2672.77
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and period dates in `observations/Parihar_2018_reformatted_obs.csv`.
+
+
+--- N2O Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+[INFO] N2O observation rows: 7
+ -> pb period 2012-188 to 2013-187... SUCCESS: sim=2609.1608
+ -> zt period 2012-188 to 2013-187... SUCCESS: sim=2449.8572
+ -> ct period 2012-188 to 2013-187... SUCCESS: sim=2927.6135
+ -> mwmb period 2012-188 to 2013-187... SUCCESS: sim=2880.1291
+ -> mcs period 2012-188 to 2013-187... SUCCESS: sim=1906.1577
+ -> mmumb period 2012-188 to 2013-187... SUCCESS: sim=2839.5135
+ -> mms period 2012-188 to 2013-187... SUCCESS: sim=3023.0417
+
+PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/output_n2o.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/averaged_n2o_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/observed_vs_modeled_n2o.png'

@@ -1,0 +1,40 @@
+SOMSC Check Summary for Site: Chinnadurai_2013
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,784.17 g C / m²
+Change during Equilibrium Phase: -1,986.42 g C / m²
+Change during Base Phase: +37.97 g C / m²
+Final SOMSC at end of Base Phase: 1,842.31 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 6,204.94 g C / m²
+Model is 70.31% lower than observation.
+(Difference: -4,362.63 g C / m²)
+
+--- Experimental Analysis ---
+'chinnadurai_2013_control_somsc' Change: -1,280.38 g C / m² (End value: 585.05)
+'chinnadurai_2013_ic_somsc' Change: -1,279.83 g C / m² (End value: 585.60)
+'chinnadurai_2013_om_somsc' Change: -1,347.80 g C / m² (End value: 586.75)
+
+Average SOMSC at end of all experimental phases: 585.80 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking control (Year: 2009, Day: 247)... SUCCESS: 588.55
+ -> Checking om (Year: 2009, Day: 247)... SUCCESS: 590.27
+ -> Checking ic (Year: 2009, Day: 247)... SUCCESS: 589.11
+ -> Checking control (Year: 2010, Day: 247)... SUCCESS: 585.90
+ -> Checking om (Year: 2010, Day: 247)... SUCCESS: 587.60
+ -> Checking ic (Year: 2010, Day: 247)... SUCCESS: 586.45
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Chinnadurai_2013/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

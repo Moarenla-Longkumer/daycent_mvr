@@ -1,0 +1,71 @@
+SOMSC Check Summary for Site: Ram_2013
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,223.26 g C / m²
+Change during Equilibrium Phase: -2,920.58 g C / m²
+Change during Base Phase: -1,099.93 g C / m²
+Final SOMSC at end of Base Phase: 1,207.91 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,681.97 g C / m²
+Model is 54.96% lower than observation.
+(Difference: -1,474.06 g C / m²)
+
+--- Experimental Analysis ---
+'ram_2013_trt_cts_ctw_somsc' Change: +23.23 g C / m² (End value: 1,229.40)
+'ram_2013_trt_cts_fbw_somsc' Change: +23.23 g C / m² (End value: 1,229.40)
+'ram_2013_trt_cts_ntw_somsc' Change: +170.23 g C / m² (End value: 1,376.39)
+'ram_2013_trt_fbs_ctw_somsc' Change: +25.59 g C / m² (End value: 1,231.76)
+'ram_2013_trt_nts_ntw_somsc' Change: +295.69 g C / m² (End value: 1,501.85)
+'ram_2013_trt_nts_sm_ntw_somsc' Change: +372.71 g C / m² (End value: 1,578.87)
+'ram_2013_trt_pbs_pbw_somsc' Change: +23.23 g C / m² (End value: 1,229.40)
+'ram_2013_trt_pbs_sm_pbw_somsc' Change: +110.10 g C / m² (End value: 1,316.26)
+
+Average SOMSC at end of all experimental phases: 1,336.67 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_cts_ctw (Year: 2005, Day: 100)... SUCCESS: 1246.14
+ -> Checking trt_cts_ctw (Year: 2008, Day: 100)... SUCCESS: 1252.09
+ -> Checking trt_cts_ntw (Year: 2005, Day: 100)... SUCCESS: 1319.28
+ -> Checking trt_cts_ntw (Year: 2008, Day: 100)... SUCCESS: 1405.56
+ -> Checking trt_nts_ntw (Year: 2005, Day: 100)... SUCCESS: 1314.36
+ -> Checking trt_nts_ntw (Year: 2008, Day: 100)... SUCCESS: 1519.85
+ -> Checking trt_nts_sm_ntw (Year: 2005, Day: 100)... SUCCESS: 1328.48
+ -> Checking trt_nts_sm_ntw (Year: 2008, Day: 100)... SUCCESS: 1592.44
+ -> Checking trt_cts_fbw (Year: 2005, Day: 100)... SUCCESS: 1246.14
+ -> Checking trt_cts_fbw (Year: 2008, Day: 100)... SUCCESS: 1252.09
+ -> Checking trt_fbs_ctw (Year: 2005, Day: 100)... SUCCESS: 1246.14
+ -> Checking trt_fbs_ctw (Year: 2008, Day: 100)... SUCCESS: 1265.17
+ -> Checking trt_pbs_pbw (Year: 2005, Day: 100)... SUCCESS: 1246.14
+ -> Checking trt_pbs_pbw (Year: 2008, Day: 100)... SUCCESS: 1252.09
+ -> Checking trt_pbs_sm_pbw (Year: 2005, Day: 100)... SUCCESS: 1286.32
+ -> Checking trt_pbs_sm_pbw (Year: 2008, Day: 100)... SUCCESS: 1340.20
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ram_2013/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ram_2013/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ram_2013/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+ram_2013_trt_cts_ctw_somsc,trt_cts_ctw,2005,100,777.6,1246.1385
+ram_2013_trt_cts_ctw_somsc,trt_cts_ctw,2008,100,804.75,1252.0877
+ram_2013_trt_cts_ntw_somsc,trt_cts_ntw,2005,100,788.4,1319.2802
+ram_2013_trt_cts_ntw_somsc,trt_cts_ntw,2008,100,815.85,1405.5593000000001
+ram_2013_trt_nts_ntw_somsc,trt_nts_ntw,2005,100,843.6,1314.3591000000001
+ram_2013_trt_nts_ntw_somsc,trt_nts_ntw,2008,100,877.5,1519.8476999999998
+ram_2013_trt_nts_sm_ntw_somsc,trt_nts_sm_ntw,2005,100,926.1,1328.4781
+ram_2013_trt_nts_sm_ntw_somsc,trt_nts_sm_ntw,2008,100,970.2,1592.4402
+ram_2013_trt_cts_fbw_somsc,trt_cts_fbw,2005,100,777.6,1246.1385
+ram_2013_trt_cts_fbw_somsc,trt_cts_fbw,2008,100,804.75,1252.0877
+ram_2013_trt_fbs_ctw_somsc,trt_fbs_ctw,2005,100,756.0,1246.1386
+ram_2013_trt_fbs_ctw_somsc,trt_fbs_ctw,2008,100,782.55,1265.1667
+ram_2013_trt_pbs_pbw_somsc,trt_pbs_pbw,2005,100,793.65,1246.1386
+ram_2013_trt_pbs_pbw_somsc,trt_pbs_pbw,2008,100,820.8,1252.0877
+ram_2013_trt_pbs_sm_pbw_somsc,trt_pbs_sm_pbw,2005,100,900.9,1286.3157999999999
+ram_2013_trt_pbs_sm_pbw_somsc,trt_pbs_sm_pbw,2008,100,943.8,1340.199

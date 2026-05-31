@@ -1,0 +1,64 @@
+SOMSC Check Summary for Site: Das_2013_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,991.46 g C / m²
+Change during Equilibrium Phase: -2,493.73 g C / m²
+Change during Base Phase: -258.95 g C / m²
+Final SOMSC at end of Base Phase: 1,248.70 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,238.07 g C / m²
+Model is 61.44% lower than observation.
+(Difference: -1,989.37 g C / m²)
+
+--- Experimental Analysis ---
+'das_2013_reformatted_ctb_cmres_somsc' Change: -116.16 g C / m² (End value: 1,129.37)
+'das_2013_reformatted_ctb_cm_wres_somsc' Change: +40.36 g C / m² (End value: 1,285.89)
+'das_2013_reformatted_ctb_nres_somsc' Change: -168.11 g C / m² (End value: 1,077.42)
+'das_2013_reformatted_ctb_wres_somsc' Change: -17.95 g C / m² (End value: 1,227.58)
+'das_2013_reformatted_ctf_cmres_somsc' Change: -116.16 g C / m² (End value: 1,129.37)
+'das_2013_reformatted_ctf_cm_wres_somsc' Change: +40.36 g C / m² (End value: 1,285.89)
+'das_2013_reformatted_ctf_nres_somsc' Change: -168.11 g C / m² (End value: 1,077.42)
+'das_2013_reformatted_ctf_wres_somsc' Change: -17.95 g C / m² (End value: 1,227.58)
+'das_2013_reformatted_ztb_cmres_somsc' Change: +28.90 g C / m² (End value: 1,274.43)
+'das_2013_reformatted_ztb_cm_wres_somsc' Change: +156.91 g C / m² (End value: 1,402.44)
+'das_2013_reformatted_ztb_nres_somsc' Change: -8.82 g C / m² (End value: 1,236.71)
+'das_2013_reformatted_ztb_wres_somsc' Change: +120.19 g C / m² (End value: 1,365.73)
+'das_2013_reformatted_ztf_cmres_somsc' Change: +24.22 g C / m² (End value: 1,269.76)
+'das_2013_reformatted_ztf_cm_wres_somsc' Change: +66.31 g C / m² (End value: 1,311.84)
+'das_2013_reformatted_ztf_nres_somsc' Change: +11.35 g C / m² (End value: 1,256.89)
+'das_2013_reformatted_ztf_wres_somsc' Change: +54.19 g C / m² (End value: 1,299.72)
+
+Average SOMSC at end of all experimental phases: 1,241.13 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ctf (Year: 2012, Day: 222.0)... SUCCESS: 1195.68
+ -> Checking ctb (Year: 2012, Day: 222.0)... SUCCESS: 1195.68
+ -> Checking ztf (Year: 2012, Day: 222.0)... SUCCESS: 1333.98
+ -> Checking ztb (Year: 2012, Day: 222.0)... SUCCESS: 1291.22
+ -> Checking nres (Year: 2012, Day: 222.0)... SUCCESS: 1176.36
+ -> Checking cmres (Year: 2012, Day: 222.0)... SUCCESS: 1214.85
+ -> Checking wres (Year: 2012, Day: 222.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CM_WRES_output/soilc.out SUCCESS: 1288.26
+ -> Checking cm_wres (Year: 2012, Day: 222.0)... SUCCESS: 1333.27
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+das_2013_reformatted_ctf_somsc,ctf,2012,222,3482.0,1195.683925
+das_2013_reformatted_ctb_somsc,ctb,2012,222,3423.0,1195.683925
+das_2013_reformatted_ztf_somsc,ztf,2012,222,3652.0,1333.9789
+das_2013_reformatted_ztb_somsc,ztb,2012,222,3662.0,1291.217325
+das_2013_reformatted_nres_somsc,nres,2012,222,3472.0,1176.356525
+das_2013_reformatted_cmres_somsc,cmres,2012,222,3525.0,1214.85475
+das_2013_reformatted_wres_somsc,wres,2012,222,3582.0,1288.2623333333333
+das_2013_reformatted_cm_wres_somsc,cm_wres,2012,222,3619.0,1333.2701

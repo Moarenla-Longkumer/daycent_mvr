@@ -1,0 +1,59 @@
+SOMSC Check Summary for Site: Saha_2013
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,480.05 g C / m²
+Change during Equilibrium Phase: -1,669.90 g C / m²
+Change during Base Phase: -576.80 g C / m²
+Final SOMSC at end of Base Phase: 1,240.03 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 8,436.06 g C / m²
+Model is 85.30% lower than observation.
+(Difference: -7,196.03 g C / m²)
+
+--- Experimental Analysis ---
+'saha_2013_trt_m0_t1_somsc' Change: -86.21 g C / m² (End value: 1,148.97)
+'saha_2013_trt_m0_t2_somsc' Change: -10.40 g C / m² (End value: 1,224.78)
+'saha_2013_trt_m1_t1_somsc' Change: -49.64 g C / m² (End value: 1,185.54)
+'saha_2013_trt_m1_t2_somsc' Change: +20.14 g C / m² (End value: 1,255.32)
+'saha_2013_trt_m2_t1_somsc' Change: +429.41 g C / m² (End value: 1,664.59)
+'saha_2013_trt_m2_t2_somsc' Change: +429.41 g C / m² (End value: 1,664.59)
+'saha_2013_trt_m3_t1_somsc' Change: +715.30 g C / m² (End value: 1,950.48)
+'saha_2013_trt_m3_t2_somsc' Change: +908.32 g C / m² (End value: 2,143.50)
+'saha_2013_trt_m4_t1_somsc' Change: +350.33 g C / m² (End value: 1,585.51)
+'saha_2013_trt_m4_t2_somsc' Change: +350.33 g C / m² (End value: 1,585.51)
+'saha_2013_trt_m5_t1_somsc' Change: +182.63 g C / m² (End value: 1,417.82)
+'saha_2013_trt_m5_t2_somsc' Change: +182.63 g C / m² (End value: 1,417.82)
+
+Average SOMSC at end of all experimental phases: 1,520.37 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking m0 (Year: 2007, Day: 63)... SUCCESS: 1216.75
+ -> Checking m1 (Year: 2007, Day: 63)... SUCCESS: 1234.29
+ -> Checking m2 (Year: 2007, Day: 63)... SUCCESS: 1506.10
+ -> Checking m3 (Year: 2007, Day: 63)... SUCCESS: 1738.26
+ -> Checking m4 (Year: 2007, Day: 63)... SUCCESS: 1456.56
+ -> Checking m5 (Year: 2007, Day: 63)... SUCCESS: 1355.51
+ -> Checking t1 (Year: 2007, Day: 63)... SUCCESS: 1400.18
+ -> Checking t2 (Year: 2007, Day: 63)... SUCCESS: 1435.64
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Saha_2013/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Saha_2013/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Saha_2013/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+saha_2013_m0_somsc,m0,2007,63,7558.8,1216.7485000000001
+saha_2013_m1_somsc,m1,2007,63,8512.35,1234.2876999999999
+saha_2013_m2_somsc,m2,2007,63,9097.2,1506.0979
+saha_2013_m3_somsc,m3,2007,63,9129.75,1738.2555000000002
+saha_2013_m4_somsc,m4,2007,63,9178.2,1456.5645
+saha_2013_m5_somsc,m5,2007,63,9025.2,1355.5109
+saha_2013_t1_somsc,t1,2007,63,8564.85,1400.1827166666665
+saha_2013_t2_somsc,t2,2007,63,8907.0,1435.6389499999998

@@ -1,0 +1,36 @@
+SOMSC Check Summary for Site: Lenka_2022
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,562.06 g C / m²
+Change during Equilibrium Phase: -3,092.56 g C / m²
+Change during Base Phase: -330.74 g C / m²
+Final SOMSC at end of Base Phase: 2,143.93 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,332.52 g C / m²
+Model is 35.67% lower than observation.
+(Difference: -1,188.59 g C / m²)
+
+--- Experimental Analysis ---
+'lenka_2022_nt-t1_somsc' Change: -7.65 g C / m² (End value: 2,131.58)
+'lenka_2022_nt-t2_somsc' Change: +354.55 g C / m² (End value: 2,493.78)
+'lenka_2022_nt-t3_somsc' Change: +716.81 g C / m² (End value: 2,856.04)
+'lenka_2022_rt-t1_somsc' Change: -218.43 g C / m² (End value: 1,920.80)
+'lenka_2022_rt-t2_somsc' Change: +163.88 g C / m² (End value: 2,303.11)
+'lenka_2022_rt-t3_somsc' Change: +546.50 g C / m² (End value: 2,685.73)
+
+Average SOMSC at end of all experimental phases: 2,398.51 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2022/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

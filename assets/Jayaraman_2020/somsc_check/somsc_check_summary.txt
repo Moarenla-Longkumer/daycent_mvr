@@ -1,0 +1,55 @@
+SOMSC Check Summary for Site: Jayaraman_2020
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,619.68 g C / m²
+Change during Equilibrium Phase: -3,463.99 g C / m²
+Change during Base Phase: +37.61 g C / m²
+Final SOMSC at end of Base Phase: 2,194.79 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,330.86 g C / m²
+Model is 34.11% lower than observation.
+(Difference: -1,136.07 g C / m²)
+
+--- Experimental Analysis ---
+'jayaraman_2020_ct-cs1_somsc' Change: -335.00 g C / m² (End value: 1,856.56)
+'jayaraman_2020_ct-cs3_somsc' Change: -291.08 g C / m² (End value: 1,900.48)
+'jayaraman_2020_ct-cs5_somsc' Change: -322.23 g C / m² (End value: 1,869.33)
+'jayaraman_2020_ct-cs6_somsc' Change: -311.61 g C / m² (End value: 1,879.96)
+'jayaraman_2020_rt-cs1_somsc' Change: -153.89 g C / m² (End value: 2,037.67)
+'jayaraman_2020_rt-cs3_somsc' Change: -215.08 g C / m² (End value: 1,976.48)
+'jayaraman_2020_rt-cs5_somsc' Change: -153.92 g C / m² (End value: 2,037.64)
+'jayaraman_2020_rt-cs6_somsc' Change: -88.34 g C / m² (End value: 2,103.22)
+
+Average SOMSC at end of all experimental phases: 1,957.67 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct (Year: 2014, Day: 76)... SUCCESS: 1912.92
+ -> Checking rt (Year: 2014, Day: 76)... SUCCESS: 2069.31
+ -> Checking ct (Year: 2014, Day: 76)... SUCCESS: 1912.92
+ -> Checking rt (Year: 2014, Day: 76)... SUCCESS: 2069.31
+ -> Checking ct (Year: 2014, Day: 76)... SUCCESS: 1912.92
+ -> Checking rt (Year: 2014, Day: 76)... SUCCESS: 2069.31
+ -> Checking ct (Year: 2014, Day: 76)... SUCCESS: 1912.92
+ -> Checking rt (Year: 2014, Day: 76)... SUCCESS: 2069.31
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Jayaraman_2020/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Jayaraman_2020/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Jayaraman_2020/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+jayaraman_2020_ct_somsc,ct,2014,76,0,1912.924075
+jayaraman_2020_rt_somsc,rt,2014,76,0,2069.310775
+jayaraman_2020_ct_somsc,ct,2014,76,0,1912.924075
+jayaraman_2020_rt_somsc,rt,2014,76,0,2069.310775
+jayaraman_2020_ct_somsc,ct,2014,76,0,1912.924075
+jayaraman_2020_rt_somsc,rt,2014,76,0,2069.310775
+jayaraman_2020_ct_somsc,ct,2014,76,0,1912.924075
+jayaraman_2020_rt_somsc,rt,2014,76,0,2069.310775

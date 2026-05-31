@@ -1,0 +1,49 @@
+SOMSC Check Summary for Site: Suman_2009
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,522.63 g C / m²
+Change during Equilibrium Phase: -3,881.76 g C / m²
+Change during Base Phase: +22.11 g C / m²
+Final SOMSC at end of Base Phase: 1,670.24 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,810.74 g C / m²
+Model is 65.28% lower than observation.
+(Difference: -3,140.50 g C / m²)
+
+--- Experimental Analysis ---
+'suman_2009_trt_bgs_somsc' Change: +1,813.09 g C / m² (End value: 3,478.51)
+'suman_2009_trt_control_somsc' Change: +175.38 g C / m² (End value: 1,840.80)
+'suman_2009_trt_fym_somsc' Change: +1,557.62 g C / m² (End value: 3,223.03)
+'suman_2009_trt_npk_somsc' Change: +504.11 g C / m² (End value: 2,169.53)
+'suman_2009_trt_spmc_somsc' Change: +1,381.61 g C / m² (End value: 3,047.03)
+'suman_2009_trt_vc_somsc' Change: +1,376.48 g C / m² (End value: 3,041.89)
+
+Average SOMSC at end of all experimental phases: 2,800.13 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_control (Year: 2007, Day: 365)... SUCCESS: 1840.80
+ -> Checking trt_npk (Year: 2007, Day: 365)... SUCCESS: 2169.53
+ -> Checking trt_vc (Year: 2007, Day: 365)... SUCCESS: 3041.89
+ -> Checking trt_fym (Year: 2007, Day: 365)... SUCCESS: 3223.03
+ -> Checking trt_bgs (Year: 2007, Day: 365)... SUCCESS: 3478.51
+ -> Checking trt_spmc (Year: 2007, Day: 365)... SUCCESS: 3047.03
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Suman_2009/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Suman_2009/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Suman_2009/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+suman_2009_trt_control_somsc,trt_control,2007,365,2240.0,1840.7973000000002
+suman_2009_trt_npk_somsc,trt_npk,2007,365,2800.0,2169.5274
+suman_2009_trt_vc_somsc,trt_vc,2007,365,3470.0,3041.8909
+suman_2009_trt_fym_somsc,trt_fym,2007,365,3640.0,3223.0334999999995
+suman_2009_trt_bgs_somsc,trt_bgs,2007,365,3530.0,3478.5071999999996
+suman_2009_trt_spmc_somsc,trt_spmc,2007,365,3720.0,3047.0262000000002

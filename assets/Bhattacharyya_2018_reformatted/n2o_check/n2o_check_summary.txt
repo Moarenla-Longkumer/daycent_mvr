@@ -1,0 +1,55 @@
+N2O Check Summary for Site: Bhattacharyya_2018_reformatted
+
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 6
+Rows passing delta rule (sim >= obs): 6
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                            Observation  Observed  Simulated  Difference
+    bhattacharyya_2018_reformatted_ct_n2oflux_2014_2014  0.844675  1585.3695 +187589.81%
+  bhattacharyya_2018_reformatted_pnbb_n2oflux_2014_2014  0.857143  1541.5140 +179743.30%
+bhattacharyya_2018_reformatted_pnbb_r_n2oflux_2014_2014  0.963117  1482.7872 +153857.14%
+    bhattacharyya_2018_reformatted_ct_n2oflux_2014_2015  0.708122   855.2297 +120674.37%
+  bhattacharyya_2018_reformatted_pnbb_n2oflux_2014_2015  0.703046   586.9095  +83380.99%
+bhattacharyya_2018_reformatted_pnbb_r_n2oflux_2014_2015  0.880711   545.7171  +61863.27%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 6
+R²: 0.2978
+RMSE: 1186.79
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and period dates in `observations/Bhattacharyya_2018_reformatted_obs.csv`.
+
+
+--- N2O Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+[INFO] N2O observation rows: 10
+ -> ct period 2014-133 to 2014-299... SUCCESS: sim=1585.3695
+ -> pnbb period 2014-133 to 2014-299... SUCCESS: sim=1541.5140
+ -> pnbb_r period 2014-133 to 2014-299... SUCCESS: sim=1482.7872
+ -> zt period 2014-133 to 2014-299... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_ZT_output/summary.out FAILED.
+ -> zt_r period 2014-133 to 2014-299... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_ZT_R_output/summary.out FAILED.
+ -> ct period 2014-302 to 2015-100... SUCCESS: sim=855.2297
+ -> pnbb period 2014-302 to 2015-100... SUCCESS: sim=586.9095
+ -> pnbb_r period 2014-302 to 2015-100... SUCCESS: sim=545.7171
+ -> zt period 2014-302 to 2015-100... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_ZT_output/summary.out FAILED.
+ -> zt_r period 2014-302 to 2015-100... 
+    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_ZT_R_output/summary.out FAILED.
+
+PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/output_n2o.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/averaged_n2o_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/observed_vs_modeled_n2o.png'

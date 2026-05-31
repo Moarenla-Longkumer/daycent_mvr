@@ -1,0 +1,51 @@
+SOMSC Check Summary for Site: Rafique_2012_shahpur_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 1,472.99 g C / m²
+Change during Equilibrium Phase: +254.70 g C / m²
+Change during Base Phase: +19.73 g C / m²
+Final SOMSC at end of Base Phase: 1,751.73 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,886.82 g C / m²
+Model is 39.32% lower than observation.
+(Difference: -1,135.09 g C / m²)
+
+--- Experimental Analysis ---
+'rafique_2012_shahpur_reformatted_bnm_gm_res_flatbed_somsc' Change: +418.91 g C / m² (End value: 2,169.44)
+'rafique_2012_shahpur_reformatted_bnm_gm_res_raisedbed_somsc' Change: +418.91 g C / m² (End value: 2,169.44)
+'rafique_2012_shahpur_reformatted_bnm_gm_nores_flatbed_somsc' Change: -170.16 g C / m² (End value: 1,580.37)
+'rafique_2012_shahpur_reformatted_bnm_gm_nores_raisedbed_somsc' Change: -170.16 g C / m² (End value: 1,580.37)
+'rafique_2012_shahpur_reformatted_bnm_res_flatbed_somsc' Change: +473.79 g C / m² (End value: 2,224.32)
+'rafique_2012_shahpur_reformatted_bnm_res_raisedbed_somsc' Change: +473.79 g C / m² (End value: 2,224.32)
+'rafique_2012_shahpur_reformatted_bnm_nores_flatbed_somsc' Change: -237.24 g C / m² (End value: 1,513.29)
+'rafique_2012_shahpur_reformatted_bnm_nores_raisedbed_somsc' Change: -237.24 g C / m² (End value: 1,513.29)
+'rafique_2012_shahpur_reformatted_ffu_res_flatbed_somsc' Change: +377.69 g C / m² (End value: 2,128.22)
+'rafique_2012_shahpur_reformatted_ffu_res_raisedbed_somsc' Change: +377.69 g C / m² (End value: 2,128.22)
+'rafique_2012_shahpur_reformatted_ffu_nores_flatbed_somsc' Change: -238.07 g C / m² (End value: 1,512.46)
+'rafique_2012_shahpur_reformatted_ffu_nores_raisedbed_somsc' Change: -238.07 g C / m² (End value: 1,512.46)
+'rafique_2012_shahpur_reformatted_inm_res_flatbed_somsc' Change: +630.28 g C / m² (End value: 2,380.81)
+'rafique_2012_shahpur_reformatted_inm_res_raisedbed_somsc' Change: +630.28 g C / m² (End value: 2,380.81)
+'rafique_2012_shahpur_reformatted_inm_nores_flatbed_somsc' Change: -22.57 g C / m² (End value: 1,727.96)
+'rafique_2012_shahpur_reformatted_inm_nores_raisedbed_somsc' Change: -22.57 g C / m² (End value: 1,727.96)
+
+Average SOMSC at end of all experimental phases: 1,904.61 g C / m²
+
+--- Calibration Script Test ---
+Status: FAILED
+Reason: Script exited with error code 1
+
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Rafique_2012_shahpur_reformatted/scripts/extract_somsc.py", line 287, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Rafique_2012_shahpur_reformatted/scripts/extract_somsc.py", line 136, in main
+    target_year = int(target_year)
+                  ^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

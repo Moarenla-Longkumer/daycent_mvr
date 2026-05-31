@@ -1,0 +1,50 @@
+SOMSC Check Summary for Site: Rudrappa_2006_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,562.41 g C / m²
+Change during Equilibrium Phase: -3,136.85 g C / m²
+Change during Base Phase: -433.92 g C / m²
+Final SOMSC at end of Base Phase: 1,996.58 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,332.52 g C / m²
+Model is 40.09% lower than observation.
+(Difference: -1,335.94 g C / m²)
+
+--- Experimental Analysis ---
+'rudrappa_2006_reformatted_100_npk_somsc' Change: +232.40 g C / m² (End value: 2,225.11)
+'rudrappa_2006_reformatted_100_npk_manure_somsc' Change: +4,133.00 g C / m² (End value: 6,125.70)
+'rudrappa_2006_reformatted_150_npk_somsc' Change: -631.84 g C / m² (End value: 1,360.86)
+'rudrappa_2006_reformatted_50_npk_somsc' Change: -763.88 g C / m² (End value: 1,228.83)
+'rudrappa_2006_reformatted_control_somsc' Change: -1,008.58 g C / m² (End value: 984.13)
+
+Average SOMSC at end of all experimental phases: 2,384.93 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking 50_npk (Year: 2003, Day: 273)... SUCCESS: 1223.99
+ -> Checking 100_npk (Year: 2003, Day: 273)... SUCCESS: 2226.69
+ -> Checking 150_npk (Year: 2003, Day: 273)... SUCCESS: 1352.83
+ -> Checking 100_np (Year: 2003, Day: 273)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Rudrappa_2006_reformatted/Rudrappa_2006_reformatted_out/Rudrappa_2006_reformatted_100_NP_output/soilc.out FAILED: No matching data found.
+ -> Checking 100_n (Year: 2003, Day: 273)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Rudrappa_2006_reformatted/Rudrappa_2006_reformatted_out/Rudrappa_2006_reformatted_100_N_output/soilc.out FAILED: No matching data found.
+ -> Checking 100_npk_manure (Year: 2003, Day: 273)... SUCCESS: 6164.78
+ -> Checking control (Year: 2003, Day: 273)... SUCCESS: 983.45
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Rudrappa_2006_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Rudrappa_2006_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Rudrappa_2006_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+rudrappa_2006_reformatted_50_npk_somsc,50_npk,2003,273,0,1223.9875
+rudrappa_2006_reformatted_100_npk_somsc,100_npk,2003,273,0,2226.6938
+rudrappa_2006_reformatted_150_npk_somsc,150_npk,2003,273,0,1352.8308000000002
+rudrappa_2006_reformatted_100_npk_manure_somsc,100_npk_manure,2003,273,0,6164.7797
+rudrappa_2006_reformatted_control_somsc,control,2003,273,0,983.4477999999999

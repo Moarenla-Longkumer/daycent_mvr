@@ -1,0 +1,39 @@
+SOMSC Check Summary for Site: Anandakumar_2022
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,694.85 g C / m²
+Change during Equilibrium Phase: -2,105.79 g C / m²
+Change during Base Phase: +23.39 g C / m²
+Final SOMSC at end of Base Phase: 1,618.64 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 5,408.97 g C / m²
+Model is 70.07% lower than observation.
+(Difference: -3,790.33 g C / m²)
+
+--- Experimental Analysis ---
+'anandakumar_2022_control_somsc' Change: -1,197.07 g C / m² (End value: 444.34)
+'anandakumar_2022_ic_somsc' Change: -1,194.81 g C / m² (End value: 446.60)
+'anandakumar_2022_inm_somsc' Change: -1,579.45 g C / m² (End value: 458.59)
+'anandakumar_2022_om_somsc' Change: -1,581.71 g C / m² (End value: 456.33)
+
+Average SOMSC at end of all experimental phases: 451.47 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking control (Year: 2018, Day: 230)... SUCCESS: 445.07
+ -> Checking ic (Year: 2018, Day: 230)... SUCCESS: 447.33
+ -> Checking om (Year: 2018, Day: 230)... SUCCESS: 457.11
+ -> Checking inm (Year: 2018, Day: 230)... SUCCESS: 459.38
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Anandakumar_2022/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

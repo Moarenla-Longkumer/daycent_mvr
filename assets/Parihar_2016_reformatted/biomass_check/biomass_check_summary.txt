@@ -1,0 +1,19 @@
+Biomass Check Summary for Site: Parihar_2016_reformatted
+
+RESULT: CANNOT ASSESS - No biomass/grain observations in the observation file.
+Add biomass/grain rows to the Comparison Sheet, then re-run extract_obs and biomass_check.
+
+
+--- Biomass Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'n_obs', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 0
+[DEBUG] ! Found 0 matching rows. No Biomass obs to process in column 'observation_type'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2016_reformatted/output_biomass.txt'
+
+No data available to plot or save.
+--- Script finished. ---

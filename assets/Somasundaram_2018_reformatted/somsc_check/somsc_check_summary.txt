@@ -1,0 +1,43 @@
+SOMSC Check Summary for Site: Somasundaram_2018_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,621.44 g C / m²
+Change during Equilibrium Phase: -2,600.44 g C / m²
+Change during Base Phase: -335.49 g C / m²
+Final SOMSC at end of Base Phase: 2,699.52 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,332.52 g C / m²
+Model is 18.99% lower than observation.
+(Difference: -633.00 g C / m²)
+
+--- Experimental Analysis ---
+'somasundaram_2018_reformatted_ct_mc_somsc' Change: -241.01 g C / m² (End value: 2,453.60)
+'somasundaram_2018_reformatted_ct_sw_somsc' Change: -236.54 g C / m² (End value: 2,458.07)
+'somasundaram_2018_reformatted_nt_mc_somsc' Change: +9.60 g C / m² (End value: 2,704.21)
+'somasundaram_2018_reformatted_nt_sw_somsc' Change: +11.36 g C / m² (End value: 2,705.97)
+'somasundaram_2018_reformatted_rt_mc_somsc' Change: -15.14 g C / m² (End value: 2,679.46)
+'somasundaram_2018_reformatted_rt_sw_somsc' Change: -4.96 g C / m² (End value: 2,689.65)
+
+Average SOMSC at end of all experimental phases: 2,615.16 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct (Year: 2015, Day: 86)... SUCCESS: 2475.34
+ -> Checking rt (Year: 2015, Day: 86)... SUCCESS: 2703.86
+ -> Checking nt (Year: 2015, Day: 86)... SUCCESS: 2718.19
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2018_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2018_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2018_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+somasundaram_2018_reformatted_ct_somsc,ct,2015,86,0,2475.34325
+somasundaram_2018_reformatted_rt_somsc,rt,2015,86,0,2703.86485
+somasundaram_2018_reformatted_nt_somsc,nt,2015,86,0,2718.18885

@@ -1,0 +1,43 @@
+SOMSC Check Summary for Site: Srinivasarao_2021
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,451.56 g C / m²
+Change during Equilibrium Phase: -535.90 g C / m²
+Change during Base Phase: -1,043.43 g C / m²
+Final SOMSC at end of Base Phase: 2,881.21 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,827.92 g C / m²
+Model is 24.73% lower than observation.
+(Difference: -946.71 g C / m²)
+
+--- Experimental Analysis ---
+'srinivasarao_2021_t1_somsc' Change: -737.55 g C / m² (End value: 2,142.66)
+'srinivasarao_2021_t2_somsc' Change: -725.22 g C / m² (End value: 2,154.99)
+'srinivasarao_2021_t3_somsc' Change: +1,181.63 g C / m² (End value: 4,061.84)
+'srinivasarao_2021_t4_somsc' Change: +237.20 g C / m² (End value: 3,117.41)
+
+Average SOMSC at end of all experimental phases: 2,869.23 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 2011, Day: 283)... SUCCESS: 2142.44
+ -> Checking t1 (Year: 2011, Day: 283)... SUCCESS: 2142.44
+ -> Checking t1 (Year: 2011, Day: 283)... SUCCESS: 2142.44
+ -> Checking t1 (Year: 2011, Day: 283)... SUCCESS: 2142.44
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+srinivasarao_2021_t1_somsc,t1,2011,283,2082.9,2142.4446
+srinivasarao_2021_t1_somsc,t1,2011,283,2282.4,2142.4446
+srinivasarao_2021_t1_somsc,t1,2011,283,2513.2,2142.4446
+srinivasarao_2021_t1_somsc,t1,2011,283,2769.8,2142.4446

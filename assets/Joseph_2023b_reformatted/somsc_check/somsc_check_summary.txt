@@ -1,0 +1,44 @@
+SOMSC Check Summary for Site: Joseph_2023b_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,818.39 g C / m²
+Change during Equilibrium Phase: -2,065.04 g C / m²
+Change during Base Phase: -331.86 g C / m²
+Final SOMSC at end of Base Phase: 1,431.18 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,327.95 g C / m²
+Model is 57.00% lower than observation.
+(Difference: -1,896.77 g C / m²)
+
+--- Experimental Analysis ---
+'joseph_2023b_reformatted_ct_somsc' Change: -392.32 g C / m² (End value: 1,035.80)
+'joseph_2023b_reformatted_pnbb_somsc' Change: -110.12 g C / m² (End value: 1,318.01)
+'joseph_2023b_reformatted_pnbb_r_somsc' Change: +194.07 g C / m² (End value: 1,622.20)
+
+Average SOMSC at end of all experimental phases: 1,325.34 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking ct (Year: 2020, Day: 316)... SUCCESS: 1053.80
+ -> Checking pnbb (Year: 2020, Day: 316)... SUCCESS: 1349.97
+ -> Checking pnbb_r (Year: 2020, Day: 316)... SUCCESS: 1663.74
+ -> Checking zt (Year: 2020, Day: 316)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023b_reformatted/Joseph_2023b_reformatted_out/Joseph_2023b_reformatted_ZT_output/soilc.out FAILED: No matching data found.
+ -> Checking zt_r (Year: 2020, Day: 316)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023b_reformatted/Joseph_2023b_reformatted_out/Joseph_2023b_reformatted_ZT_R_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023b_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023b_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023b_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+joseph_2023b_reformatted_ct_somsc,ct,2020,316,1270.440252,1053.799
+joseph_2023b_reformatted_pnbb_somsc,pnbb,2020,316,1468.553459,1349.9722
+joseph_2023b_reformatted_pnbb_r_somsc,pnbb_r,2020,316,1654.08805,1663.7350999999999

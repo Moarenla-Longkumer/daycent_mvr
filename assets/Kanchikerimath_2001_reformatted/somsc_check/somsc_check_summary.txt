@@ -1,0 +1,55 @@
+SOMSC Check Summary for Site: Kanchikerimath_2001_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,341.77 g C / m²
+Change during Equilibrium Phase: -1,675.99 g C / m²
+Change during Base Phase: -264.93 g C / m²
+Final SOMSC at end of Base Phase: 1,405.73 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,212.94 g C / m²
+Model is 56.25% lower than observation.
+(Difference: -1,807.21 g C / m²)
+
+--- Experimental Analysis ---
+'kanchikerimath_2001_reformatted_t1_somsc' Change: -579.53 g C / m² (End value: 823.32)
+'kanchikerimath_2001_reformatted_t10_somsc' Change: -734.05 g C / m² (End value: 668.80)
+'kanchikerimath_2001_reformatted_t2_somsc' Change: -518.95 g C / m² (End value: 883.90)
+'kanchikerimath_2001_reformatted_t3_somsc' Change: -479.08 g C / m² (End value: 923.77)
+'kanchikerimath_2001_reformatted_t8_somsc' Change: +3,582.38 g C / m² (End value: 4,985.23)
+
+Average SOMSC at end of all experimental phases: 1,657.00 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking t1 (Year: 1998, Day: 170)... SUCCESS: 831.15
+ -> Checking t2 (Year: 1998, Day: 170)... SUCCESS: 893.66
+ -> Checking t3 (Year: 1998, Day: 170)... SUCCESS: 934.78
+ -> Checking t4 (Year: 1998, Day: 170)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T4_output/soilc.out FAILED: No matching data found.
+ -> Checking t5 (Year: 1998, Day: 170)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T5_output/soilc.out FAILED: No matching data found.
+ -> Checking t6 (Year: 1998, Day: 170)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T6_output/soilc.out FAILED: No matching data found.
+ -> Checking t7 (Year: 1998, Day: 170)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T7_output/soilc.out FAILED: No matching data found.
+ -> Checking t8 (Year: 1998, Day: 170)... SUCCESS: 5104.05
+ -> Checking t9 (Year: 1998, Day: 170)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T9_output/soilc.out FAILED: No matching data found.
+ -> Checking t10 (Year: 1998, Day: 170)... SUCCESS: 671.69
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+kanchikerimath_2001_reformatted_t1_somsc,t1,1998,170,0.0,831.1469999999999
+kanchikerimath_2001_reformatted_t2_somsc,t2,1998,170,0.0,893.6641
+kanchikerimath_2001_reformatted_t3_somsc,t3,1998,170,0.0,934.7813999999998
+kanchikerimath_2001_reformatted_t8_somsc,t8,1998,170,0.0,5104.0539

@@ -1,0 +1,46 @@
+SOMSC Check Summary for Site: Agegnehu_2015
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 2,962.59 g C / m²
+Change during Equilibrium Phase: -1,875.41 g C / m²
+Change during Base Phase: +274.94 g C / m²
+Final SOMSC at end of Base Phase: 1,364.27 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,203.30 g C / m²
+Model is 67.54% lower than observation.
+(Difference: -2,839.03 g C / m²)
+
+--- Experimental Analysis ---
+'agegnehu_2015_trt_b10_f_somsc' Change: +407.27 g C / m² (End value: 1,767.36)
+'agegnehu_2015_trt_b2_5_com25_f_somsc' Change: +663.17 g C / m² (End value: 2,023.27)
+'agegnehu_2015_trt_com25_f_somsc' Change: +663.17 g C / m² (End value: 2,023.27)
+'agegnehu_2015_trt_combi25_f_somsc' Change: +658.75 g C / m² (End value: 2,018.85)
+'agegnehu_2015_trt_f_ctrl_somsc' Change: -12.07 g C / m² (End value: 1,348.03)
+
+Average SOMSC at end of all experimental phases: 1,836.15 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_f_ctrl (Year: 2014, Day: 172)... SUCCESS: 1361.63
+ -> Checking trt_b10_f (Year: 2014, Day: 172)... SUCCESS: 1791.18
+ -> Checking trt_com25_f (Year: 2014, Day: 172)... SUCCESS: 2053.27
+ -> Checking trt_b2_5_com25_f (Year: 2014, Day: 172)... SUCCESS: 2053.27
+ -> Checking trt_combi25_f (Year: 2014, Day: 172)... SUCCESS: 2048.75
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Agegnehu_2015/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Agegnehu_2015/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Agegnehu_2015/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+agegnehu_2015_trt_f_ctrl_somsc,trt_f_ctrl,2014,172,2204.1,1361.6332000000002
+agegnehu_2015_trt_b10_f_somsc,trt_b10_f,2014,172,2400.0,1791.1814
+agegnehu_2015_trt_com25_f_somsc,trt_com25_f,2014,172,2553.0,2053.2691
+agegnehu_2015_trt_b2_5_com25_f_somsc,trt_b2_5_com25_f,2014,172,2070.6,2053.2691
+agegnehu_2015_trt_combi25_f_somsc,trt_combi25_f,2014,172,3025.8,2048.7489

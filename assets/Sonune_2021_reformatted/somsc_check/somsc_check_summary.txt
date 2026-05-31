@@ -1,0 +1,63 @@
+SOMSC Check Summary for Site: Sonune_2021_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,626.48 g C / m²
+Change during Equilibrium Phase: -2,790.67 g C / m²
+Change during Base Phase: -660.65 g C / m²
+Final SOMSC at end of Base Phase: 2,199.37 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,770.48 g C / m²
+Model is 41.67% lower than observation.
+(Difference: -1,571.11 g C / m²)
+
+--- Experimental Analysis ---
+'sonune_2021_reformatted_ct_t1_somsc' Change: -305.50 g C / m² (End value: 1,891.27)
+'sonune_2021_reformatted_ct_t3_somsc' Change: -81.77 g C / m² (End value: 2,115.00)
+'sonune_2021_reformatted_ct_t4_somsc' Change: +559.92 g C / m² (End value: 2,756.69)
+'sonune_2021_reformatted_ct_t5_somsc' Change: -239.84 g C / m² (End value: 1,956.93)
+'sonune_2021_reformatted_ct_t6_somsc' Change: +46.76 g C / m² (End value: 2,243.53)
+'sonune_2021_reformatted_ct_t7_somsc' Change: -256.15 g C / m² (End value: 1,940.62)
+'sonune_2021_reformatted_ct_t8_somsc' Change: -203.19 g C / m² (End value: 1,993.58)
+'sonune_2021_reformatted_mt_t1_somsc' Change: -129.93 g C / m² (End value: 2,066.84)
+'sonune_2021_reformatted_mt_t3_somsc' Change: +124.66 g C / m² (End value: 2,321.43)
+'sonune_2021_reformatted_mt_t4_somsc' Change: +856.10 g C / m² (End value: 3,052.87)
+'sonune_2021_reformatted_mt_t5_somsc' Change: -55.09 g C / m² (End value: 2,141.68)
+'sonune_2021_reformatted_mt_t6_somsc' Change: +294.76 g C / m² (End value: 2,491.53)
+'sonune_2021_reformatted_mt_t7_somsc' Change: -79.10 g C / m² (End value: 2,117.67)
+'sonune_2021_reformatted_mt_t8_somsc' Change: -13.60 g C / m² (End value: 2,183.17)
+
+Average SOMSC at end of all experimental phases: 2,233.77 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking mt (Year: 2016, Day: 30)... SUCCESS: 2376.90
+ -> Checking ct (Year: 2016, Day: 30)... SUCCESS: 2153.70
+ -> Checking t1 (Year: 2016, Day: 30)... SUCCESS: 2006.96
+ -> Checking t3 (Year: 2016, Day: 30)... SUCCESS: 2250.02
+ -> Checking t4 (Year: 2016, Day: 30)... SUCCESS: 2945.43
+ -> Checking t5 (Year: 2016, Day: 30)... SUCCESS: 2078.69
+ -> Checking t6 (Year: 2016, Day: 30)... SUCCESS: 2404.78
+ -> Checking t7 (Year: 2016, Day: 30)... SUCCESS: 2057.86
+ -> Checking t8 (Year: 2016, Day: 30)... SUCCESS: 2113.35
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sonune_2021_reformatted/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sonune_2021_reformatted/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sonune_2021_reformatted/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+sonune_2021_reformatted_mt_somsc,mt,2016,30,0.0,2376.8951714285718
+sonune_2021_reformatted_ct_somsc,ct,2016,30,0.0,2153.7044
+sonune_2021_reformatted_t1_somsc,t1,2016,30,0.0,2006.9615
+sonune_2021_reformatted_t3_somsc,t3,2016,30,0.0,2250.02215
+sonune_2021_reformatted_t4_somsc,t4,2016,30,0.0,2945.42585
+sonune_2021_reformatted_t5_somsc,t5,2016,30,0.0,2078.69455
+sonune_2021_reformatted_t6_somsc,t6,2016,30,0.0,2404.7802
+sonune_2021_reformatted_t7_somsc,t7,2016,30,0.0,2057.8623500000003
+sonune_2021_reformatted_t8_somsc,t8,2016,30,0.0,2113.3519

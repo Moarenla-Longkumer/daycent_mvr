@@ -1,0 +1,37 @@
+SOMSC Check Summary for Site: Sun_2022_update version
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,626.94 g C / m²
+Change during Equilibrium Phase: -826.54 g C / m²
+Change during Base Phase: -1,379.03 g C / m²
+Final SOMSC at end of Base Phase: 1,431.73 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 11,443.93 g C / m²
+Model is 87.49% lower than observation.
+(Difference: -10,012.20 g C / m²)
+
+--- Experimental Analysis ---
+'sun_2022_update version_fo_n1_somsc' Change: -19.07 g C / m² (End value: 1,414.05)
+'sun_2022_update version_fo_n2_somsc' Change: -19.12 g C / m² (End value: 1,414.00)
+'sun_2022_update version_fo_n3_somsc' Change: -19.32 g C / m² (End value: 1,413.80)
+'sun_2022_update version_sc_n0_somsc' Change: -36.83 g C / m² (End value: 1,396.29)
+'sun_2022_update version_sc_n1_somsc' Change: -26.32 g C / m² (End value: 1,406.80)
+'sun_2022_update version_sc_n2_somsc' Change: -26.32 g C / m² (End value: 1,406.80)
+'sun_2022_update version_sc_n3_somsc' Change: -26.35 g C / m² (End value: 1,406.77)
+
+Average SOMSC at end of all experimental phases: 1,408.36 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sun_2022_update version/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

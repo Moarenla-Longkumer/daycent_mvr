@@ -1,0 +1,34 @@
+SOMSC Check Summary for Site: Pathak_2021
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,635.85 g C / m²
+Change during Equilibrium Phase: -3,080.79 g C / m²
+Change during Base Phase: -242.80 g C / m²
+Final SOMSC at end of Base Phase: 1,315.37 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,500.93 g C / m²
+Model is 62.43% lower than observation.
+(Difference: -2,185.56 g C / m²)
+
+--- Experimental Analysis ---
+'pathak_2021_iii_somsc' Change: +2,611.58 g C / m² (End value: 3,921.67)
+
+Average SOMSC at end of all experimental phases: 3,921.67 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking iii (Year: 2018, Day: 95)... SUCCESS: 4013.79
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Pathak_2021/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Pathak_2021/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Pathak_2021/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+pathak_2021_iii_somsc,iii,2018,95,2574.868421,4013.7947

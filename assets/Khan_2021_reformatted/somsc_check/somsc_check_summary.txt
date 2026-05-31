@@ -1,0 +1,43 @@
+SOMSC Check Summary for Site: Khan_2021_reformatted
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 5,060.74 g C / m²
+Change during Equilibrium Phase: -2,330.55 g C / m²
+Change during Base Phase: -857.66 g C / m²
+Final SOMSC at end of Base Phase: 1,880.19 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 3,222.49 g C / m²
+Model is 41.65% lower than observation.
+(Difference: -1,342.30 g C / m²)
+
+--- Experimental Analysis ---
+'khan_2021_reformatted_mtsi_f1_somsc' Change: +145.04 g C / m² (End value: 2,024.03)
+'khan_2021_reformatted_mtsi_f2_somsc' Change: +144.41 g C / m² (End value: 2,023.39)
+'khan_2021_reformatted_mtsi_f3_somsc' Change: +144.42 g C / m² (End value: 2,023.40)
+'khan_2021_reformatted_mtsi_f4_somsc' Change: +144.39 g C / m² (End value: 2,023.37)
+'khan_2021_reformatted_ztsas_f1_somsc' Change: +172.43 g C / m² (End value: 2,051.42)
+'khan_2021_reformatted_ztsas_f2_somsc' Change: +175.47 g C / m² (End value: 2,054.46)
+'khan_2021_reformatted_ztsas_f3_somsc' Change: +175.95 g C / m² (End value: 2,054.93)
+'khan_2021_reformatted_ztsas_f4_somsc' Change: +176.13 g C / m² (End value: 2,055.12)
+
+Average SOMSC at end of all experimental phases: 2,038.76 g C / m²
+
+--- Calibration Script Test ---
+Status: FAILED
+Reason: Script exited with error code 1
+
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/scripts/extract_somsc.py", line 287, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/scripts/extract_somsc.py", line 137, in main
+    target_day = int(row['target_day'])
+                 ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer
+
+
+--- Averaged SOMSC Comparison Data ---
+NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.

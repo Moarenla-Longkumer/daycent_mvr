@@ -1,0 +1,58 @@
+SOMSC Check Summary for Site: Babu_2016
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,772.01 g C / m²
+Change during Equilibrium Phase: -1,788.64 g C / m²
+Change during Base Phase: +123.42 g C / m²
+Final SOMSC at end of Base Phase: 2,121.96 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,691.51 g C / m²
+Model is 54.77% lower than observation.
+(Difference: -2,569.55 g C / m²)
+
+--- Experimental Analysis ---
+'babu_2016_trt_control_somsc' Change: -1,093.88 g C / m² (End value: 1,024.65)
+'babu_2016_trt_fym4_somsc' Change: -683.33 g C / m² (End value: 1,435.21)
+'babu_2016_trt_fym5_somsc' Change: -608.14 g C / m² (End value: 1,510.39)
+'babu_2016_trt_gns4_somsc' Change: -385.18 g C / m² (End value: 1,733.35)
+'babu_2016_trt_rdf100_somsc' Change: -1,096.42 g C / m² (End value: 1,022.11)
+'babu_2016_trt_rdf100_zn_somsc' Change: -1,093.17 g C / m² (End value: 1,025.37)
+'babu_2016_trt_rdf50_somsc' Change: -1,096.42 g C / m² (End value: 1,022.11)
+'babu_2016_trt_rdf50_fym4_somsc' Change: -683.33 g C / m² (End value: 1,435.21)
+'babu_2016_trt_rdf50_gns4_somsc' Change: -385.18 g C / m² (End value: 1,733.35)
+
+Average SOMSC at end of all experimental phases: 1,326.86 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking trt_control (Year: 2004, Day: 308)... SUCCESS: 1175.87
+ -> Checking trt_rdf100 (Year: 2004, Day: 308)... SUCCESS: 1168.79
+ -> Checking trt_rdf50 (Year: 2004, Day: 308)... SUCCESS: 1168.79
+ -> Checking trt_gns4 (Year: 2004, Day: 308)... SUCCESS: 1797.20
+ -> Checking trt_fym4 (Year: 2004, Day: 308)... SUCCESS: 1541.26
+ -> Checking trt_rdf50_gns4 (Year: 2004, Day: 308)... SUCCESS: 1797.20
+ -> Checking trt_rdf50_fym4 (Year: 2004, Day: 308)... SUCCESS: 1541.25
+ -> Checking trt_rdf100_zn (Year: 2004, Day: 308)... SUCCESS: 1173.70
+ -> Checking trt_fym5 (Year: 2004, Day: 308)... SUCCESS: 1633.15
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Babu_2016/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Babu_2016/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Babu_2016/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+babu_2016_trt_control_somsc,trt_control,2004,308,481.0,1175.8725
+babu_2016_trt_rdf100_somsc,trt_rdf100,2004,308,920.0,1168.7918
+babu_2016_trt_rdf50_somsc,trt_rdf50,2004,308,854.0,1168.7916
+babu_2016_trt_gns4_somsc,trt_gns4,2004,308,920.0,1797.199
+babu_2016_trt_fym4_somsc,trt_fym4,2004,308,951.0,1541.2562
+babu_2016_trt_rdf50_gns4_somsc,trt_rdf50_gns4,2004,308,730.0,1797.1984
+babu_2016_trt_rdf50_fym4_somsc,trt_rdf50_fym4,2004,308,1231.0,1541.2541
+babu_2016_trt_rdf100_zn_somsc,trt_rdf100_zn,2004,308,833.0,1173.6952
+babu_2016_trt_fym5_somsc,trt_fym5,2004,308,1157.0,1633.1515

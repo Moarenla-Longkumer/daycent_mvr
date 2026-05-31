@@ -1,0 +1,40 @@
+SOMSC Check Summary for Site: Lenka_2016
+
+RESULT: OK for Calibration - No major discrepancies found.
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 6,684.08 g C / m²
+Change during Equilibrium Phase: -3,453.59 g C / m²
+Change during Base Phase: -772.32 g C / m²
+Final SOMSC at end of Base Phase: 2,472.68 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 2,616.20 g C / m²
+Model is 5.49% lower than observation.
+(Difference: -143.52 g C / m²)
+
+--- Experimental Analysis ---
+'lenka_2016_inm_somsc' Change: -416.04 g C / m² (End value: 2,052.13)
+'lenka_2016_npk_somsc' Change: -669.67 g C / m² (End value: 1,798.51)
+'lenka_2016_onm_somsc' Change: -159.51 g C / m² (End value: 2,308.67)
+
+Average SOMSC at end of all experimental phases: 2,053.11 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking onm (Year: 2013, Day: 76)... SUCCESS: 2346.13
+ -> Checking npk (Year: 2013, Day: 76)... SUCCESS: 1812.78
+ -> Checking inm (Year: 2013, Day: 76)... SUCCESS: 2077.84
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2016/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2016/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2016/observed_vs_modeled_somsc.png'
+
+
+--- Averaged SOMSC Comparison Data ---
+observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+lenka_2016_onm_somsc,onm,2013,76,0.0,2346.1345
+lenka_2016_npk_somsc,npk,2013,76,0.0,1812.7783
+lenka_2016_inm_somsc,inm,2013,76,0.0,2077.8413
