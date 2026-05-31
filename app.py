@@ -13,9 +13,7 @@ if not inv_path.exists():
 df = pd.read_csv(inv_path).fillna("")
 sites = sorted(df["site"].tolist())
 
-c1, c2 = st.columns([2,1])
-site = c1.selectbox("Select site", sites)
-show_failed = c2.checkbox("Show only failed rows", value=False)
+site = st.selectbox("Select site", sites)
 
 view = df[df["site"] == site].copy()
 row = view.iloc[0]
