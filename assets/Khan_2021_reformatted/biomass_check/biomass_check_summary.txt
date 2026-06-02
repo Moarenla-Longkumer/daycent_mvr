@@ -1,18 +1,286 @@
 Biomass Check Summary for Site: Khan_2021_reformatted
 
-RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
-This is likely because the 'extract_biomass.py' script failed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 18
+Rows passing delta rule (sim >= obs): 14
+Rows with shortfall (sim < obs): 4
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                Observation  Observed  Simulated          Difference
+khan_2021_reformatted_ztsas_cgrain_cot_2012     64.64  88.206950             +36.46%
+khan_2021_reformatted_ztsas_cgrain_cot_2013     89.60  97.866075              +9.23%
+khan_2021_reformatted_ztsas_cgrain_cot_2014     72.04 102.271375             +41.96%
+khan_2021_reformatted_ztsas_cgrain_cot_2015    101.88 107.160850              +5.18%
+khan_2021_reformatted_ztsas_cgrain_cot_2016    123.40  98.477575 -20.20% [SHORTFALL]
+ khan_2021_reformatted_mtsi_cgrain_cot_2012     68.68  88.093725             +28.27%
+ khan_2021_reformatted_mtsi_cgrain_cot_2013     92.12  97.898325              +6.27%
+ khan_2021_reformatted_mtsi_cgrain_cot_2014     76.76 103.705775             +35.10%
+ khan_2021_reformatted_mtsi_cgrain_cot_2015     95.28 106.659275             +11.94%
+ khan_2021_reformatted_mtsi_cgrain_cot_2016    103.16  98.113125  -4.89% [SHORTFALL]
+  khan_2021_reformatted_ztsas_f1_cgrain_cot     73.60  96.858660             +31.60%
+  khan_2021_reformatted_ztsas_f2_cgrain_cot     91.60  99.248480              +8.35%
+  khan_2021_reformatted_ztsas_f3_cgrain_cot    104.28  99.509580  -4.57% [SHORTFALL]
+  khan_2021_reformatted_ztsas_f4_cgrain_cot     93.20  99.569540              +6.83%
+   khan_2021_reformatted_mtsi_f1_cgrain_cot     69.72  96.049020             +37.76%
+   khan_2021_reformatted_mtsi_f2_cgrain_cot     85.72  99.811400             +16.44%
+   khan_2021_reformatted_mtsi_f3_cgrain_cot    103.72  99.855040  -3.73% [SHORTFALL]
+   khan_2021_reformatted_mtsi_f4_cgrain_cot     89.64  99.860720             +11.40%
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Khan_2021_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 18
+R²: 0.2113
+RMSE: 16.92 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Khan_2021_reformatted_obs.csv`.
 
 
 --- Biomass Extraction Script ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/scripts/extract_biomass.py", line 382, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'COT'
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'n_obs', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 18
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F1
+    [DEBUG] Checking Treatment Sch: ZTsas_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F2
+    [DEBUG] Checking Treatment Sch: ZTsas_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F3
+    [DEBUG] Checking Treatment Sch: ZTsas_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F4
+Successfully processed: 'khan_2021_reformatted_ztsas_cgrain_cot_2012'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F1
+    [DEBUG] Checking Treatment Sch: ZTsas_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F2
+    [DEBUG] Checking Treatment Sch: ZTsas_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F3
+    [DEBUG] Checking Treatment Sch: ZTsas_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F4
+Successfully processed: 'khan_2021_reformatted_ztsas_cgrain_cot_2013'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F1
+    [DEBUG] Checking Treatment Sch: ZTsas_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F2
+    [DEBUG] Checking Treatment Sch: ZTsas_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F3
+    [DEBUG] Checking Treatment Sch: ZTsas_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F4
+Successfully processed: 'khan_2021_reformatted_ztsas_cgrain_cot_2014'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F1
+    [DEBUG] Checking Treatment Sch: ZTsas_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F2
+    [DEBUG] Checking Treatment Sch: ZTsas_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F3
+    [DEBUG] Checking Treatment Sch: ZTsas_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F4
+Successfully processed: 'khan_2021_reformatted_ztsas_cgrain_cot_2015'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F1
+    [DEBUG] Checking Treatment Sch: ZTsas_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F2
+    [DEBUG] Checking Treatment Sch: ZTsas_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F3
+    [DEBUG] Checking Treatment Sch: ZTsas_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZTsas_F4
+Successfully processed: 'khan_2021_reformatted_ztsas_cgrain_cot_2016'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F1
+    [DEBUG] Checking Treatment Sch: MTsi_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F2
+    [DEBUG] Checking Treatment Sch: MTsi_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F3
+    [DEBUG] Checking Treatment Sch: MTsi_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F4
+Successfully processed: 'khan_2021_reformatted_mtsi_cgrain_cot_2012'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F1
+    [DEBUG] Checking Treatment Sch: MTsi_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F2
+    [DEBUG] Checking Treatment Sch: MTsi_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F3
+    [DEBUG] Checking Treatment Sch: MTsi_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F4
+Successfully processed: 'khan_2021_reformatted_mtsi_cgrain_cot_2013'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F1
+    [DEBUG] Checking Treatment Sch: MTsi_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F2
+    [DEBUG] Checking Treatment Sch: MTsi_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F3
+    [DEBUG] Checking Treatment Sch: MTsi_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F4
+Successfully processed: 'khan_2021_reformatted_mtsi_cgrain_cot_2014'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F1
+    [DEBUG] Checking Treatment Sch: MTsi_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F2
+    [DEBUG] Checking Treatment Sch: MTsi_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F3
+    [DEBUG] Checking Treatment Sch: MTsi_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F4
+Successfully processed: 'khan_2021_reformatted_mtsi_cgrain_cot_2015'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F1
+    [DEBUG] Checking Treatment Sch: MTsi_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F2
+    [DEBUG] Checking Treatment Sch: MTsi_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F3
+    [DEBUG] Checking Treatment Sch: MTsi_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MTsi_F4
+Successfully processed: 'khan_2021_reformatted_mtsi_cgrain_cot_2016'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in ZTsas_F1
+Successfully processed: 'khan_2021_reformatted_ztsas_f1_cgrain_cot'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in ZTsas_F2
+Successfully processed: 'khan_2021_reformatted_ztsas_f2_cgrain_cot'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in ZTsas_F3
+Successfully processed: 'khan_2021_reformatted_ztsas_f3_cgrain_cot'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZTsas_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_ZTsas_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in ZTsas_F4
+Successfully processed: 'khan_2021_reformatted_ztsas_f4_cgrain_cot'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in MTsi_F1
+Successfully processed: 'khan_2021_reformatted_mtsi_f1_cgrain_cot'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in MTsi_F2
+Successfully processed: 'khan_2021_reformatted_mtsi_f2_cgrain_cot'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in MTsi_F3
+Successfully processed: 'khan_2021_reformatted_mtsi_f3_cgrain_cot'
+    [WARN] Non-numeric target_crop_num 'COT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MTsi_F4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/Khan_2021_reformatted_out/Khan_2021_reformatted_MTsi_F4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in MTsi_F4
+Successfully processed: 'khan_2021_reformatted_mtsi_f4_cgrain_cot'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Khan_2021_reformatted/observed_vs_modeled_biomass.png'
+--- Script finished. ---

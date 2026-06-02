@@ -10,9 +10,9 @@ Reason: Script exited with error code 1
 
 --- Error Output ---
 Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Kundu_2013/scripts/extract_biomass.py", line 382, in <module>
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Kundu_2013/scripts/extract_biomass.py", line 386, in <module>
     main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Kundu_2013/scripts/extract_biomass.py", line 356, in main
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Kundu_2013/scripts/extract_biomass.py", line 360, in main
     r_squared = np.corrcoef(y_obs, y_sim)[0,1]**2
                 ^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py", line 3015, in corrcoef
