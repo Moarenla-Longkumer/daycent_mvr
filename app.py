@@ -2,8 +2,14 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 
+SUMMARY_XLSX = Path("multi_site_qa_qc_summary_20260604.xlsx")
+
 st.set_page_config(layout="wide")
 st.title("DayCent QA/QC Dashboard")
+
+@st.cache_data
+def load_summary_xlsx(path_str: str):
+    return pd.read_excel(path_str)
 
 inv_path = Path("qaqc_inventory.csv")
 if not inv_path.exists():
@@ -34,7 +40,58 @@ def show_img(path_str, label):
     else:
         st.info(f"{label}: not found")
 
-tab1, tab2, tab3 = st.tabs(["SOMSC", "Biomass", "N2O"])
+tab_summary, tab1, tab2, tab3 = st.tabs(
+    ["QA/QC Summary", "SOMSC", "Biomass", "N2O"]
+)
+
+with tab_summary:
+    if not SUMMARY_XLSX.exists():
+        st.warning(f"Summary file not found: {SUMMARY_XLSX.name}")
+    else:
+        summary_df = load_summary_xlsx(str(SUMMARY_XLSX))
+        site_row = summary_df[summary_df["Site name"].astype(str) == site]
+        if site_row.empty:
+            st.info(f"No row in {SUMMARY_XLSX.name} for site '{site}'.")
+        else:
+            sr = site_row.iloc[0]
+            step_cols = [
+                "Copy common",
+                "Extract obs",
+                "Spinup sch",
+                "Treatment sch",
+                "Weather",
+                "GEE",
+                "DayCent run",
+            ]
+            st.markdown("**Pipeline steps**")
+            st.dataframe(
+                sr[step_cols].to_frame("Status").T,
+                use_container_width=True,
+                hide_index=False,
+            )
+            st.markdown("**Model checks**")
+            st.write(
+                {
+                    "Biomass": sr["Biomass"],
+                    "SOMSC": sr["SOMSC"],
+                    "N2O": sr["N2O"],
+                    "Overall": sr["Overall"],
+                }
+            )
+            if pd.notna(sr.get("Comments")) and str(sr["Comments"]).strip():
+                st.markdown("**Comments**")
+                st.text(str(sr["Comments"]))
+            if pd.notna(sr.get("Full log path")) and str(sr["Full log path"]).strip():
+                st.caption(f"Log: `{sr['Full log path']}`")
+
+        with st.expander("All sites (full table)", expanded=False):
+            st.dataframe(summary_df, use_container_width=True, hide_index=True)
+            st.download_button(
+                "Download Excel",
+                data=SUMMARY_XLSX.read_bytes(),
+                file_name=SUMMARY_XLSX.name,
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            )
 
 with tab1:
     show_img(row["somsc_spinup_png"], "somsc_timeseries_spinup.png")
