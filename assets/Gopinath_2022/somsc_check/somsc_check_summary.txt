@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Gopinath_2022
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-39.20%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,245.55 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,592.05 g C / m²
 SoilGrids Observed Value: 2,618.35 g C / m²
 Model is 39.20% lower than observation.
 (Difference: -1,026.30 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'gopinath_2022_trt_ctrl_gg_somsc' Change: -467.70 g C / m² (End value: 1,119.53)
@@ -30,12 +32,12 @@ Average SOMSC at end of all experimental phases: 1,427.30 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking sf (Year: 2019, Day: 355)... SUCCESS: 1611.74
- -> Checking pp (Year: 2019, Day: 355)... SUCCESS: 1381.02
- -> Checking gg (Year: 2019, Day: 355)... SUCCESS: 1291.55
- -> Checking ctrl (Year: 2019, Day: 355)... SUCCESS: 1166.34
- -> Checking org (Year: 2019, Day: 355)... SUCCESS: 1617.46
- -> Checking int (Year: 2019, Day: 355)... SUCCESS: 1500.52
+-> Checking sf (Years: 2019, Day: 355)... SUCCESS: 1611.74
+ -> Checking pp (Years: 2019, Day: 355)... SUCCESS: 1381.02
+ -> Checking gg (Years: 2019, Day: 355)... SUCCESS: 1291.55
+ -> Checking ctrl (Years: 2019, Day: 355)... SUCCESS: 1166.34
+ -> Checking org (Years: 2019, Day: 355)... SUCCESS: 1617.46
+ -> Checking int (Years: 2019, Day: 355)... SUCCESS: 1500.52
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Gopinath_2022/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Gopinath_2022/averaged_somsc_comparison.csv'
@@ -43,7 +45,37 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Gopinath_2022/observed_vs_
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 6
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 6
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+             Observation  Observed   Simulated          Difference
+  gopinath_2022_sf_somsc    1850.0 1611.739233 -12.88% [SHORTFALL]
+  gopinath_2022_pp_somsc    2053.0 1381.020133 -32.73% [SHORTFALL]
+  gopinath_2022_gg_somsc    2090.5 1291.549533 -38.22% [SHORTFALL]
+gopinath_2022_ctrl_somsc    1913.0 1166.336400 -39.03% [SHORTFALL]
+ gopinath_2022_org_somsc    2087.5 1617.457100 -22.52% [SHORTFALL]
+ gopinath_2022_int_somsc    1988.5 1500.515400 -24.54% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Gopinath_2022_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 6
+R²: 0.0019
+RMSE: 600.45 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Gopinath_2022_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 gopinath_2022_sf_somsc,sf,2019,355,1850.0,1611.739233333333
 gopinath_2022_pp_somsc,pp,2019,355,2053.0,1381.0201333333334
 gopinath_2022_gg_somsc,gg,2019,355,2090.5,1291.549533333333

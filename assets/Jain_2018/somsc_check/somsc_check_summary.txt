@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Jain_2018
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-56.82%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,464.28 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,619.73 g C / m²
 SoilGrids Observed Value: 3,751.33 g C / m²
 Model is 56.82% lower than observation.
 (Difference: -2,131.60 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'jain_2018_trt_pn_gm_gg_somsc' Change: -118.84 g C / m² (End value: 1,498.23)
@@ -32,17 +34,17 @@ Average SOMSC at end of all experimental phases: 1,527.14 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking trt_pn_nr (Year: 2012, Day: 300)... SUCCESS: 1567.50
- -> Checking trt_pn_gm_se (Year: 2012, Day: 300)... SUCCESS: 1520.44
- -> Checking trt_pn_gm_gg (Year: 2012, Day: 300)... SUCCESS: 1520.70
- -> Checking trt_pw_ct_nr (Year: 2013, Day: 70)... SUCCESS: 1512.65
- -> Checking trt_pw_ct_gm_se (Year: 2013, Day: 70)... SUCCESS: 1470.14
- -> Checking trt_pw_ct_gm_gg (Year: 2013, Day: 70)... SUCCESS: 1470.14
- -> Checking trt_pw_ct_wsi (Year: 2013, Day: 70)... SUCCESS: 1577.66
- -> Checking trt_pw_zt_nr (Year: 2013, Day: 70)... SUCCESS: 1583.65
- -> Checking trt_pw_zt_gm_se (Year: 2013, Day: 70)... SUCCESS: 1535.81
- -> Checking trt_pw_zt_gm_gg (Year: 2013, Day: 70)... SUCCESS: 1535.81
- -> Checking trt_pw_zt_wsi (Year: 2013, Day: 70)... SUCCESS: 1637.75
+-> Checking trt_pn_nr (Years: 2012, Day: 300)... SUCCESS: 1567.50
+ -> Checking trt_pn_gm_se (Years: 2012, Day: 300)... SUCCESS: 1520.44
+ -> Checking trt_pn_gm_gg (Years: 2012, Day: 300)... SUCCESS: 1520.70
+ -> Checking trt_pw_ct_nr (Years: 2013, Day: 70)... SUCCESS: 1512.65
+ -> Checking trt_pw_ct_gm_se (Years: 2013, Day: 70)... SUCCESS: 1470.14
+ -> Checking trt_pw_ct_gm_gg (Years: 2013, Day: 70)... SUCCESS: 1470.14
+ -> Checking trt_pw_ct_wsi (Years: 2013, Day: 70)... SUCCESS: 1577.66
+ -> Checking trt_pw_zt_nr (Years: 2013, Day: 70)... SUCCESS: 1583.65
+ -> Checking trt_pw_zt_gm_se (Years: 2013, Day: 70)... SUCCESS: 1535.81
+ -> Checking trt_pw_zt_gm_gg (Years: 2013, Day: 70)... SUCCESS: 1535.81
+ -> Checking trt_pw_zt_wsi (Years: 2013, Day: 70)... SUCCESS: 1637.75
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Jain_2018/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Jain_2018/averaged_somsc_comparison.csv'
@@ -50,7 +52,42 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Jain_2018/observed_vs_mode
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 11
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 11
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                    Observation  Observed  Simulated          Difference
+      jain_2018_trt_pn_nr_somsc    2759.4  1567.5042 -43.19% [SHORTFALL]
+   jain_2018_trt_pn_gm_se_somsc    3175.2  1520.4443 -52.12% [SHORTFALL]
+   jain_2018_trt_pn_gm_gg_somsc    3175.2  1520.6981 -52.11% [SHORTFALL]
+   jain_2018_trt_pw_ct_nr_somsc    3024.0  1512.6509 -49.98% [SHORTFALL]
+jain_2018_trt_pw_ct_gm_se_somsc    3099.6  1470.1420 -52.57% [SHORTFALL]
+jain_2018_trt_pw_ct_gm_gg_somsc    3061.8  1470.1420 -51.98% [SHORTFALL]
+  jain_2018_trt_pw_ct_wsi_somsc    3061.8  1577.6560 -48.47% [SHORTFALL]
+   jain_2018_trt_pw_zt_nr_somsc    3137.4  1583.6549 -49.52% [SHORTFALL]
+jain_2018_trt_pw_zt_gm_se_somsc    3326.4  1535.8055 -53.83% [SHORTFALL]
+jain_2018_trt_pw_zt_gm_gg_somsc    3213.0  1535.8055 -52.20% [SHORTFALL]
+  jain_2018_trt_pw_zt_wsi_somsc    3175.2  1637.7512 -48.42% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Jain_2018_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 11
+R²: 0.0003
+RMSE: 1577.36 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Jain_2018_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 jain_2018_trt_pn_nr_somsc,trt_pn_nr,2012,300,2759.4,1567.5041999999999
 jain_2018_trt_pn_gm_se_somsc,trt_pn_gm_se,2012,300,3175.2,1520.4443
 jain_2018_trt_pn_gm_gg_somsc,trt_pn_gm_gg,2012,300,3175.2,1520.6981

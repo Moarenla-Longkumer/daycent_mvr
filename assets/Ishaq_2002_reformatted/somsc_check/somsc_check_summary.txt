@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Ishaq_2002_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-69.90%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,682.97 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,183.60 g C / m²
 SoilGrids Observed Value: 3,931.82 g C / m²
 Model is 69.90% lower than observation.
 (Difference: -2,748.22 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'ishaq_2002_reformatted_ct_high_somsc' Change: -120.98 g C / m² (End value: 1,062.50)
@@ -30,9 +32,9 @@ Average SOMSC at end of all experimental phases: 1,059.65 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking mt (Year: 1998, Day: 120)... SUCCESS: 1071.04
- -> Checking ct (Year: 1998, Day: 120)... SUCCESS: 1071.07
- -> Checking dt (Year: 1998, Day: 120)... SUCCESS: 1071.07
+-> Checking mt (Years: 1998, Day: 120)... SUCCESS: 1071.04
+ -> Checking ct (Years: 1998, Day: 120)... SUCCESS: 1071.07
+ -> Checking dt (Years: 1998, Day: 120)... SUCCESS: 1071.07
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ishaq_2002_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ishaq_2002_reformatted/averaged_somsc_comparison.csv'
@@ -40,7 +42,33 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ishaq_2002_reformatted/obs
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 3
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 3
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                    Observation  Observed   Simulated          Difference
+ishaq_2002_reformatted_mt_somsc   1811.10 1071.042067 -40.86% [SHORTFALL]
+ishaq_2002_reformatted_ct_somsc   1666.95 1071.071300 -35.75% [SHORTFALL]
+ishaq_2002_reformatted_dt_somsc   1710.90 1071.071300 -37.40% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Ishaq_2002_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 3
+R²: 0.9115
+RMSE: 661.35 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 ishaq_2002_reformatted_mt_somsc,mt,1998,120,1811.1,1071.0420666666666
 ishaq_2002_reformatted_ct_somsc,ct,1998,120,1666.95,1071.0712999999998
 ishaq_2002_reformatted_dt_somsc,dt,1998,120,1710.9,1071.0712999999998

@@ -9,9 +9,9 @@ Reason: exit code 1
 
 --- Error Output ---
 Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/scripts/extract_N2O.py", line 267, in <module>
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/scripts/extract_N2O.py", line 320, in <module>
     main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/scripts/extract_N2O.py", line 156, in main
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/scripts/extract_N2O.py", line 209, in main
     sy = int(row["start_target_year"])
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ValueError: cannot convert float NaN to integer

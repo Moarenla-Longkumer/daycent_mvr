@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Moharana_2017
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-45.09%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 653.35 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,410.58 g C / m²
 SoilGrids Observed Value: 2,569.04 g C / m²
 Model is 45.09% lower than observation.
 (Difference: -1,158.46 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'moharana_2017_ba_f_somsc' Change: -545.84 g C / m² (End value: 862.50)
@@ -26,15 +28,15 @@ Average SOMSC at end of all experimental phases: 833.54 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking b (Year: 2014, Day: 118)... 
+-> Checking b (Years: 2014, Day: 118)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Moharana_2017/Moharana_2017_out/Moharana_2017_B_output/soilc.out FAILED: No matching data found.
- -> Checking f (Year: 2014, Day: 118)... 
+ -> Checking f (Years: 2014, Day: 118)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Moharana_2017/Moharana_2017_out/Moharana_2017_F_output/soilc.out FAILED: No matching data found.
- -> Checking ba_f (Year: 2014, Day: 118)... SUCCESS: 863.59
- -> Checking mu_mo (Year: 2014, Day: 118)... SUCCESS: 738.86
- -> Checking ch_gr (Year: 2014, Day: 118)... SUCCESS: 742.69
- -> Checking wh_gg (Year: 2014, Day: 118)... SUCCESS: 822.80
- -> Checking wh_pm (Year: 2014, Day: 118)... SUCCESS: 1010.20
+ -> Checking ba_f (Years: 2014, Day: 118)... SUCCESS: 863.59
+ -> Checking mu_mo (Years: 2014, Day: 118)... SUCCESS: 738.86
+ -> Checking ch_gr (Years: 2014, Day: 118)... SUCCESS: 742.69
+ -> Checking wh_gg (Years: 2014, Day: 118)... SUCCESS: 822.80
+ -> Checking wh_pm (Years: 2014, Day: 118)... SUCCESS: 1010.20
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Moharana_2017/output_somsc.txt'
 
@@ -42,4 +44,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

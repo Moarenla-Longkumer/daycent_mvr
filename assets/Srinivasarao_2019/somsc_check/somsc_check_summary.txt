@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Srinivasarao_2019
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-80.32%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,061.88 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,285.69 g C / m²
 SoilGrids Observed Value: 6,531.41 g C / m²
 Model is 80.32% lower than observation.
 (Difference: -5,245.72 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'srinivasarao_2019_t1_somsc' Change: -330.55 g C / m² (End value: 954.82)
@@ -30,15 +32,15 @@ Average SOMSC at end of all experimental phases: 1,183.44 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1 (Year: 2012, Day: 364)... SUCCESS: 954.74
- -> Checking t2 (Year: 2012, Day: 364)... SUCCESS: 985.23
- -> Checking t3 (Year: 2012, Day: 364)... SUCCESS: 1581.64
- -> Checking t4 (Year: 2012, Day: 364)... SUCCESS: 1344.73
- -> Checking t5 (Year: 2012, Day: 364)... SUCCESS: 1231.94
- -> Checking t6 (Year: 2012, Day: 364)... SUCCESS: 1196.42
- -> Checking t7 (Year: 2012, Day: 364)... SUCCESS: 1220.75
- -> Checking t8 (Year: 2012, Day: 364)... SUCCESS: 1149.58
- -> Checking t9 (Year: 2012, Day: 364)... SUCCESS: 985.23
+-> Checking t1 (Years: 2012, Day: 364)... SUCCESS: 954.74
+ -> Checking t2 (Years: 2012, Day: 364)... SUCCESS: 985.23
+ -> Checking t3 (Years: 2012, Day: 364)... SUCCESS: 1581.64
+ -> Checking t4 (Years: 2012, Day: 364)... SUCCESS: 1344.73
+ -> Checking t5 (Years: 2012, Day: 364)... SUCCESS: 1231.94
+ -> Checking t6 (Years: 2012, Day: 364)... SUCCESS: 1196.42
+ -> Checking t7 (Years: 2012, Day: 364)... SUCCESS: 1220.75
+ -> Checking t8 (Years: 2012, Day: 364)... SUCCESS: 1149.58
+ -> Checking t9 (Years: 2012, Day: 364)... SUCCESS: 985.23
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2019/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2019/averaged_somsc_comparison.csv'
@@ -46,7 +48,40 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2019/observed
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 9
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 9
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+               Observation  Observed  Simulated          Difference
+srinivasarao_2019_t1_somsc    3048.0   954.7390 -68.68% [SHORTFALL]
+srinivasarao_2019_t2_somsc    3110.0   985.2282 -68.32% [SHORTFALL]
+srinivasarao_2019_t3_somsc    3136.0  1581.6392 -49.57% [SHORTFALL]
+srinivasarao_2019_t4_somsc    3130.0  1344.7287 -57.04% [SHORTFALL]
+srinivasarao_2019_t5_somsc    3186.0  1231.9431 -61.33% [SHORTFALL]
+srinivasarao_2019_t6_somsc    3243.0  1196.4178 -63.11% [SHORTFALL]
+srinivasarao_2019_t7_somsc    3196.0  1220.7499 -61.80% [SHORTFALL]
+srinivasarao_2019_t8_somsc    3140.0  1149.5755 -63.39% [SHORTFALL]
+srinivasarao_2019_t9_somsc    3079.0   985.2282 -68.00% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Srinivasarao_2019_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 9
+R²: 0.1852
+RMSE: 1965.08 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Srinivasarao_2019_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 srinivasarao_2019_t1_somsc,t1,2012,364,3048.0,954.739
 srinivasarao_2019_t2_somsc,t2,2012,364,3110.0,985.2282
 srinivasarao_2019_t3_somsc,t3,2012,364,3136.0,1581.6392

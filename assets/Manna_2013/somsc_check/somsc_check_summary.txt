@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Manna_2013
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: OK for Calibration - Base SOMSC meets or exceeds SoilGrids observation.
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,769.76 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 3,199.21 g C / m²
 SoilGrids Observed Value: 2,911.00 g C / m²
 Model is 9.90% higher than observation.
 (Difference: +288.21 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'manna_2013_control_somsc' Change: -1,488.32 g C / m² (End value: 1,705.81)
@@ -26,16 +28,16 @@ Average SOMSC at end of all experimental phases: 2,502.53 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking control (Year: 2010, Day: 276)... SUCCESS: 1704.54
- -> Checking n (Year: 2010, Day: 276)... SUCCESS: 1721.28
- -> Checking np (Year: 2010, Day: 276)... SUCCESS: 1721.28
- -> Checking npk (Year: 2010, Day: 276)... SUCCESS: 1721.28
- -> Checking npk+fym (Year: 2010, Day: 276)... SUCCESS: 5681.20
- -> Checking control (Year: 2010, Day: 276)... SUCCESS: 1704.54
- -> Checking n (Year: 2010, Day: 276)... SUCCESS: 1721.28
- -> Checking np (Year: 2010, Day: 276)... SUCCESS: 1721.28
- -> Checking npk (Year: 2010, Day: 276)... SUCCESS: 1721.28
- -> Checking npk+fym (Year: 2010, Day: 276)... SUCCESS: 5681.20
+-> Checking control (Years: 2010, Day: 276)... SUCCESS: 1704.54
+ -> Checking n (Years: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking np (Years: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking npk (Years: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking npk+fym (Years: 2010, Day: 276)... SUCCESS: 5681.20
+ -> Checking control (Years: 2010, Day: 276)... SUCCESS: 1704.54
+ -> Checking n (Years: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking np (Years: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking npk (Years: 2010, Day: 276)... SUCCESS: 1721.28
+ -> Checking npk+fym (Years: 2010, Day: 276)... SUCCESS: 5681.20
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Manna_2013/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Manna_2013/averaged_somsc_comparison.csv'
@@ -43,14 +45,48 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Manna_2013/observed_vs_mod
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
-manna_2013_control_somsc,control,2010,276,0,1704.5351999999998
-manna_2013_n_somsc,n,2010,276,0,1721.2788
-manna_2013_np_somsc,np,2010,276,0,1721.2788
-manna_2013_npk_somsc,npk,2010,276,0,1721.2788
-manna_2013_npk+fym_somsc,npk+fym,2010,276,0,5681.2041
-manna_2013_control_somsc,control,2010,276,0,1704.5351999999998
-manna_2013_n_somsc,n,2010,276,0,1721.2788
-manna_2013_np_somsc,np,2010,276,0,1721.2788
-manna_2013_npk_somsc,npk,2010,276,0,1721.2788
-manna_2013_npk+fym_somsc,npk+fym,2010,276,0,5681.2041
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 10
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 10
+
+             Observation  Observed  Simulated         Difference
+manna_2013_control_somsc       0.0  1704.5352 FLAG (invalid obs)
+      manna_2013_n_somsc       0.0  1721.2788 FLAG (invalid obs)
+     manna_2013_np_somsc       0.0  1721.2788 FLAG (invalid obs)
+    manna_2013_npk_somsc       0.0  1721.2788 FLAG (invalid obs)
+manna_2013_npk+fym_somsc       0.0  5681.2041 FLAG (invalid obs)
+manna_2013_control_somsc       0.0  1704.5352 FLAG (invalid obs)
+      manna_2013_n_somsc       0.0  1721.2788 FLAG (invalid obs)
+     manna_2013_np_somsc       0.0  1721.2788 FLAG (invalid obs)
+    manna_2013_npk_somsc       0.0  1721.2788 FLAG (invalid obs)
+manna_2013_npk+fym_somsc       0.0  5681.2041 FLAG (invalid obs)
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Manna_2013_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 10
+R²: 0.0000 (flat observations or flat model)
+RMSE: 2968.84 g C / m²
+Status: FLAG - Near-zero variance in observed and/or simulated values.
+Action: Review `.sch` files and observation timing in `observations/Manna_2013_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
+manna_2013_control_somsc,control,2010,276,0.0,1704.5351999999998
+manna_2013_n_somsc,n,2010,276,0.0,1721.2788
+manna_2013_np_somsc,np,2010,276,0.0,1721.2788
+manna_2013_npk_somsc,npk,2010,276,0.0,1721.2788
+manna_2013_npk+fym_somsc,npk+fym,2010,276,0.0,5681.2041
+manna_2013_control_somsc,control,2010,276,0.0,1704.5351999999998
+manna_2013_n_somsc,n,2010,276,0.0,1721.2788
+manna_2013_np_somsc,np,2010,276,0.0,1721.2788
+manna_2013_npk_somsc,npk,2010,276,0.0,1721.2788
+manna_2013_npk+fym_somsc,npk+fym,2010,276,0.0,5681.2041

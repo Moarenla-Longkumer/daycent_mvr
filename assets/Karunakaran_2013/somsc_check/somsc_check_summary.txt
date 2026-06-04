@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Karunakaran_2013
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-53.14%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,128.65 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,398.12 g C / m²
 SoilGrids Observed Value: 2,983.38 g C / m²
 Model is 53.14% lower than observation.
 (Difference: -1,585.26 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'karunakaran_2013_ct-b_zt-b_no_r_somsc' Change: -120.41 g C / m² (End value: 1,276.72)
@@ -37,10 +39,12 @@ Average SOMSC at end of all experimental phases: 1,323.39 g C / m²
 Status: Successful Run
 
 --- Output ---
-Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/output_somsc.txt'
-
-No data available to plot or save.
+[INFO] No SOMSC observation rows found. Creating model-only plot.
+Model-only plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/observed_vs_modeled_somsc.png'
+[INFO] Observed-vs-modelled metrics skipped because observed SOMSC data is missing.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

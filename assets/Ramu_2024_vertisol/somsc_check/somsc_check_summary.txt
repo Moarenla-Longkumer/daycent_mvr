@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Ramu_2024_vertisol
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-38.11%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,360.78 g C / m²
@@ -13,6 +13,8 @@ SoilGrids Observed Value: 4,103.06 g C / m²
 Model is 38.11% lower than observation.
 (Difference: -1,563.84 g C / m²)
 
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
+
 --- Experimental Analysis ---
 'ramu_2024_vertisol_t1_vertisol_somsc' Change: -0.27 g C / m² (End value: 2,535.65)
 'ramu_2024_vertisol_t2_vertisol_somsc' Change: -0.18 g C / m² (End value: 2,535.74)
@@ -23,10 +25,12 @@ Average SOMSC at end of all experimental phases: 2,535.69 g C / m²
 Status: Successful Run
 
 --- Output ---
-Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ramu_2024_vertisol/output_somsc.txt'
-
-No data available to plot or save.
+[INFO] No SOMSC observation rows found. Creating model-only plot.
+Model-only plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ramu_2024_vertisol/observed_vs_modeled_somsc.png'
+[INFO] Observed-vs-modelled metrics skipped because observed SOMSC data is missing.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

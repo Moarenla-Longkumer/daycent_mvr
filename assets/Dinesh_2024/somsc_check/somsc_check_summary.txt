@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Dinesh_2024
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-63.42%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,047.96 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,278.20 g C / m²
 SoilGrids Observed Value: 3,493.82 g C / m²
 Model is 63.42% lower than observation.
 (Difference: -2,215.62 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'dinesh_2024_trt_zt_nr_33gs_somsc' Change: +541.53 g C / m² (End value: 1,816.52)
@@ -29,25 +31,73 @@ Average SOMSC at end of all experimental phases: 1,808.84 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking trt_zt_nr (Year: 2018.0, Day: 185.0)... SUCCESS: 1741.13
- -> Checking trt_zt_r (Year: 2018.0, Day: 185.0)... SUCCESS: 1735.13
- -> Checking trt_zt_nr (Year: 2019.0, Day: 185.0)... SUCCESS: 1812.06
- -> Checking trt_zt_r (Year: 2019.0, Day: 185.0)... SUCCESS: 1804.37
- -> Checking rdn (Year: 2018.0, Day: 185.0)... SUCCESS: 1785.03
- -> Checking 33%bn + gs (Year: 2018.0, Day: 185.0)... SUCCESS: 1757.38
- -> Checking 50%bn + gs (Year: 2018.0, Day: 185.0)... SUCCESS: 1690.81
- -> Checking 70%bn + gs (Year: 2018.0, Day: 185.0)... SUCCESS: 1719.30
- -> Checking rdn (Year: 2019.0, Day: 185.0)... SUCCESS: 1864.17
- -> Checking 33%bn + gs (Year: 2019.0, Day: 185.0)... SUCCESS: 1830.85
- -> Checking 50%bn + gs (Year: 2019.0, Day: 185.0)... SUCCESS: 1751.58
- -> Checking 70%bn + gs (Year: 2019.0, Day: 185.0)... SUCCESS: 1786.28
+-> Checking trt_zt_nr (Years: 2018, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_trt_zt_nr_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_zt_r (Years: 2018, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_trt_zt_r_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_zt_nr (Years: 2019, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_trt_zt_nr_output/soilc.out FAILED: No matching data found.
+ -> Checking trt_zt_r (Years: 2019, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_trt_zt_r_output/soilc.out FAILED: No matching data found.
+ -> Checking rdn (Years: 2018, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_rdn_output/soilc.out FAILED: No matching data found.
+ -> Checking 33%bn + gs (Years: 2018, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_33%bn + gs_output/soilc.out FAILED: No matching data found.
+ -> Checking 50%bn + gs (Years: 2018, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_50%bn + gs_output/soilc.out FAILED: No matching data found.
+ -> Checking 70%bn + gs (Years: 2018, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_70%bn + gs_output/soilc.out FAILED: No matching data found.
+ -> Checking rdn (Years: 2019, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_rdn_output/soilc.out FAILED: No matching data found.
+ -> Checking 33%bn + gs (Years: 2019, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_33%bn + gs_output/soilc.out FAILED: No matching data found.
+ -> Checking 50%bn + gs (Years: 2019, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_50%bn + gs_output/soilc.out FAILED: No matching data found.
+ -> Checking 70%bn + gs (Years: 2019, Day: 185.0)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/Dinesh_2024_out/Dinesh_2024_70%bn + gs_output/soilc.out FAILED: No matching data found.
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/output_somsc.txt'
-Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/averaged_somsc_comparison.csv'
-Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/observed_vs_modeled_somsc.png'
+
+No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 12
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 12
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                 Observation  Observed   Simulated          Difference
+ dinesh_2024_trt_zt_nr_somsc 1860.8880 1741.125425  -6.44% [SHORTFALL]
+  dinesh_2024_trt_zt_r_somsc 1919.5290 1735.132925  -9.61% [SHORTFALL]
+ dinesh_2024_trt_zt_nr_somsc 2033.4120 1812.064825 -10.89% [SHORTFALL]
+  dinesh_2024_trt_zt_r_somsc 1984.5780 1804.370600  -9.08% [SHORTFALL]
+       dinesh_2024_rdn_somsc 1881.6225 1785.027900  -5.13% [SHORTFALL]
+dinesh_2024_33%bn + gs_somsc 1895.4750 1757.381050  -7.29% [SHORTFALL]
+dinesh_2024_50%bn + gs_somsc 1971.5400 1690.810050 -14.24% [SHORTFALL]
+dinesh_2024_70%bn + gs_somsc 1820.2500 1719.297700  -5.55% [SHORTFALL]
+       dinesh_2024_rdn_somsc 1986.1050 1864.167200  -6.14% [SHORTFALL]
+dinesh_2024_33%bn + gs_somsc 2011.0800 1830.847150  -8.96% [SHORTFALL]
+dinesh_2024_50%bn + gs_somsc 2098.5840 1751.576800 -16.54% [SHORTFALL]
+dinesh_2024_70%bn + gs_somsc 1944.2520 1786.279700  -8.13% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Dinesh_2024_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 12
+R²: 0.1556
+RMSE: 191.47 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Dinesh_2024_obs.csv`.
+
 observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
 dinesh_2024_trt_zt_nr_somsc,trt_zt_nr,2018,185,1860.888,1741.1254250000002
 dinesh_2024_trt_zt_r_somsc,trt_zt_r,2018,185,1919.529,1735.132925

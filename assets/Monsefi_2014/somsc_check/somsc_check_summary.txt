@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Monsefi_2014
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-51.96%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,258.72 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,047.59 g C / m²
 SoilGrids Observed Value: 2,180.64 g C / m²
 Model is 51.96% lower than observation.
 (Difference: -1,133.05 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'monsefi_2014_sctws_wzt_somsc' Change: -43.21 g C / m² (End value: 1,002.15)
@@ -33,18 +35,18 @@ Average SOMSC at end of all experimental phases: 1,004.03 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking sct_wct (Year: 2012, Day: 77)... SUCCESS: 899.78
- -> Checking sct_wzt (Year: 2012, Day: 77)... SUCCESS: 975.59
- -> Checking szt_wzt (Year: 2012, Day: 77)... SUCCESS: 1051.40
- -> Checking sctws_wzt (Year: 2012, Day: 77)... SUCCESS: 1012.46
- -> Checking sct_wztsr (Year: 2012, Day: 77)... SUCCESS: 985.98
- -> Checking sctws_wztsr (Year: 2012, Day: 77)... SUCCESS: 1023.02
- -> Checking sztws_wct (Year: 2012, Day: 77)... SUCCESS: 1010.89
- -> Checking szt_wctsr (Year: 2012, Day: 77)... SUCCESS: 990.24
- -> Checking sztws_wctsr (Year: 2012, Day: 77)... SUCCESS: 1027.72
- -> Checking sztws_wzt (Year: 2012, Day: 77)... SUCCESS: 1065.64
- -> Checking szt_wztsr (Year: 2012, Day: 77)... SUCCESS: 1057.80
- -> Checking sztws_wztsr (Year: 2012, Day: 77)... SUCCESS: 1071.79
+-> Checking sct_wct (Years: 2012, Day: 77)... SUCCESS: 899.78
+ -> Checking sct_wzt (Years: 2012, Day: 77)... SUCCESS: 975.59
+ -> Checking szt_wzt (Years: 2012, Day: 77)... SUCCESS: 1051.40
+ -> Checking sctws_wzt (Years: 2012, Day: 77)... SUCCESS: 1012.46
+ -> Checking sct_wztsr (Years: 2012, Day: 77)... SUCCESS: 985.98
+ -> Checking sctws_wztsr (Years: 2012, Day: 77)... SUCCESS: 1023.02
+ -> Checking sztws_wct (Years: 2012, Day: 77)... SUCCESS: 1010.89
+ -> Checking szt_wctsr (Years: 2012, Day: 77)... SUCCESS: 990.24
+ -> Checking sztws_wctsr (Years: 2012, Day: 77)... SUCCESS: 1027.72
+ -> Checking sztws_wzt (Years: 2012, Day: 77)... SUCCESS: 1065.64
+ -> Checking szt_wztsr (Years: 2012, Day: 77)... SUCCESS: 1057.80
+ -> Checking sztws_wztsr (Years: 2012, Day: 77)... SUCCESS: 1071.79
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Monsefi_2014/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Monsefi_2014/averaged_somsc_comparison.csv'
@@ -52,7 +54,43 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Monsefi_2014/observed_vs_m
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 12
+Rows passing delta rule (sim >= obs): 4
+Rows with shortfall (sim < obs): 8
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                   Observation  Observed  Simulated          Difference
+    monsefi_2014_sct_wct_somsc  1039.350   899.7751 -13.43% [SHORTFALL]
+    monsefi_2014_sct_wzt_somsc  1019.535   975.5933  -4.31% [SHORTFALL]
+    monsefi_2014_szt_wzt_somsc  1039.920  1051.4005              +1.10%
+  monsefi_2014_sctws_wzt_somsc  1047.925  1012.4615  -3.38% [SHORTFALL]
+  monsefi_2014_sct_wztsr_somsc  1047.460   985.9829  -5.87% [SHORTFALL]
+monsefi_2014_sctws_wztsr_somsc  1034.280  1023.0184  -1.09% [SHORTFALL]
+  monsefi_2014_sztws_wct_somsc  1044.120  1010.8924  -3.18% [SHORTFALL]
+  monsefi_2014_szt_wctsr_somsc  1035.010   990.2393  -4.33% [SHORTFALL]
+monsefi_2014_sztws_wctsr_somsc  1049.120  1027.7205  -2.04% [SHORTFALL]
+  monsefi_2014_sztws_wzt_somsc  1062.955  1065.6444              +0.25%
+  monsefi_2014_szt_wztsr_somsc  1018.080  1057.8026              +3.90%
+monsefi_2014_sztws_wztsr_somsc  1031.520  1071.7909              +3.90%
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Monsefi_2014_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 12
+R²: 0.0068
+RMSE: 52.82 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Monsefi_2014_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 monsefi_2014_sct_wct_somsc,sct_wct,2012,77,1039.35,899.7751
 monsefi_2014_sct_wzt_somsc,sct_wzt,2012,77,1019.535,975.5933
 monsefi_2014_szt_wzt_somsc,szt_wzt,2012,77,1039.92,1051.4005

@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Chatterjee_2018
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-61.01%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,115.31 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,091.09 g C / m²
 SoilGrids Observed Value: 2,798.40 g C / m²
 Model is 61.01% lower than observation.
 (Difference: -1,707.31 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'chatterjee_2018_i+_m+_n0_somsc' Change: +36.88 g C / m² (End value: 1,125.16)
@@ -33,18 +35,18 @@ Average SOMSC at end of all experimental phases: 1,109.08 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking i0_m0_n0 (Year: 2013, Day: 299)... SUCCESS: 1060.27
- -> Checking i0_m0_n75 (Year: 2013, Day: 299)... SUCCESS: 1064.25
- -> Checking i0_m0_n150 (Year: 2013, Day: 299)... SUCCESS: 1064.77
- -> Checking i0_m+_n0 (Year: 2013, Day: 299)... SUCCESS: 1171.32
- -> Checking i0_m+_n75 (Year: 2013, Day: 299)... SUCCESS: 1178.03
- -> Checking i0_m+_n150 (Year: 2013, Day: 299)... SUCCESS: 1159.26
- -> Checking i+_m0_n0 (Year: 2013, Day: 299)... SUCCESS: 1060.27
- -> Checking i+_m0_n75 (Year: 2013, Day: 299)... SUCCESS: 1064.25
- -> Checking i+_m0_n150 (Year: 2013, Day: 299)... SUCCESS: 1064.77
- -> Checking i+_m+_n0 (Year: 2013, Day: 299)... SUCCESS: 1128.97
- -> Checking i+_m+_n75 (Year: 2013, Day: 299)... SUCCESS: 1174.55
- -> Checking i+_m+_n150 (Year: 2013, Day: 299)... SUCCESS: 1174.89
+-> Checking i0_m0_n0 (Years: 2013, Day: 299)... SUCCESS: 1060.27
+ -> Checking i0_m0_n75 (Years: 2013, Day: 299)... SUCCESS: 1064.25
+ -> Checking i0_m0_n150 (Years: 2013, Day: 299)... SUCCESS: 1064.77
+ -> Checking i0_m+_n0 (Years: 2013, Day: 299)... SUCCESS: 1171.32
+ -> Checking i0_m+_n75 (Years: 2013, Day: 299)... SUCCESS: 1178.03
+ -> Checking i0_m+_n150 (Years: 2013, Day: 299)... SUCCESS: 1159.26
+ -> Checking i+_m0_n0 (Years: 2013, Day: 299)... SUCCESS: 1060.27
+ -> Checking i+_m0_n75 (Years: 2013, Day: 299)... SUCCESS: 1064.25
+ -> Checking i+_m0_n150 (Years: 2013, Day: 299)... SUCCESS: 1064.77
+ -> Checking i+_m+_n0 (Years: 2013, Day: 299)... SUCCESS: 1128.97
+ -> Checking i+_m+_n75 (Years: 2013, Day: 299)... SUCCESS: 1174.55
+ -> Checking i+_m+_n150 (Years: 2013, Day: 299)... SUCCESS: 1174.89
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Chatterjee_2018/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Chatterjee_2018/averaged_somsc_comparison.csv'
@@ -52,7 +54,43 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Chatterjee_2018/observed_v
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 12
+Rows passing delta rule (sim >= obs): 8
+Rows with shortfall (sim < obs): 4
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                     Observation  Observed  Simulated          Difference
+  chatterjee_2018_i0_m0_n0_somsc    957.20  1060.2705             +10.77%
+ chatterjee_2018_i0_m0_n75_somsc    968.60  1064.2542              +9.88%
+chatterjee_2018_i0_m0_n150_somsc    919.40  1064.7702             +15.81%
+  chatterjee_2018_i0_m+_n0_somsc    997.60  1171.3223             +17.41%
+ chatterjee_2018_i0_m+_n75_somsc   1024.05  1178.0330             +15.04%
+chatterjee_2018_i0_m+_n150_somsc   1048.70  1159.2625             +10.54%
+  chatterjee_2018_i+_m0_n0_somsc    967.75  1060.2705              +9.56%
+ chatterjee_2018_i+_m0_n75_somsc   1194.50  1064.2542 -10.90% [SHORTFALL]
+chatterjee_2018_i+_m0_n150_somsc   1244.25  1064.7702 -14.42% [SHORTFALL]
+  chatterjee_2018_i+_m+_n0_somsc   1112.50  1128.9668              +1.48%
+ chatterjee_2018_i+_m+_n75_somsc   1207.50  1174.5514  -2.73% [SHORTFALL]
+chatterjee_2018_i+_m+_n150_somsc   1192.00  1174.8928  -1.44% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Chatterjee_2018_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 12
+R²: 0.0652
+RMSE: 117.76 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Chatterjee_2018_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 chatterjee_2018_i0_m0_n0_somsc,i0_m0_n0,2013,299,957.2,1060.2705
 chatterjee_2018_i0_m0_n75_somsc,i0_m0_n75,2013,299,968.6,1064.2541999999999
 chatterjee_2018_i0_m0_n150_somsc,i0_m0_n150,2013,299,919.4,1064.7702

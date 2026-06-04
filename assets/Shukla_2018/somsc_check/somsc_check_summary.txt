@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Shukla_2018
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-67.48%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,592.74 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,169.20 g C / m²
 SoilGrids Observed Value: 3,595.38 g C / m²
 Model is 67.48% lower than observation.
 (Difference: -2,426.18 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'shukla_2018_t1_m1_n1_somsc' Change: -70.11 g C / m² (End value: 1,095.30)
@@ -47,11 +49,11 @@ Reason: Script exited with error code 1
 
 --- Error Output ---
 Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Shukla_2018/scripts/extract_somsc.py", line 287, in <module>
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Shukla_2018/scripts/extract_somsc.py", line 402, in <module>
     main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Shukla_2018/scripts/extract_somsc.py", line 136, in main
-    target_year = int(target_year)
-                  ^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Shukla_2018/scripts/extract_somsc.py", line 251, in main
+    target_day = int(row['target_day'])
+                 ^^^^^^^^^^^^^^^^^^^^^^
 ValueError: cannot convert float NaN to integer
 
 

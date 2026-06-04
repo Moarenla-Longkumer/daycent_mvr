@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Hazra_2019
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-60.19%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,506.17 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,635.35 g C / m²
 SoilGrids Observed Value: 4,107.64 g C / m²
 Model is 60.19% lower than observation.
 (Difference: -2,472.29 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'hazra_2019_mwmc_c_somsc' Change: -688.79 g C / m² (End value: 942.00)
@@ -33,13 +35,13 @@ Average SOMSC at end of all experimental phases: 1,463.94 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking mw (Year: 2016, Day: 95)... SUCCESS: 1512.72
- -> Checking mwmb (Year: 2016, Day: 95)... SUCCESS: 1304.39
- -> Checking mwmc (Year: 2016, Day: 95)... SUCCESS: 1581.06
- -> Checking pw (Year: 2016, Day: 95)... SUCCESS: 1514.44
- -> Checking c (Year: 2016, Day: 95)... SUCCESS: 901.75
- -> Checking npksznb (Year: 2016, Day: 95)... SUCCESS: 1067.61
- -> Checking inm (Year: 2016, Day: 95)... SUCCESS: 2465.10
+-> Checking mw (Years: 2016, Day: 95)... SUCCESS: 1512.72
+ -> Checking mwmb (Years: 2016, Day: 95)... SUCCESS: 1304.39
+ -> Checking mwmc (Years: 2016, Day: 95)... SUCCESS: 1581.06
+ -> Checking pw (Years: 2016, Day: 95)... SUCCESS: 1514.44
+ -> Checking c (Years: 2016, Day: 95)... SUCCESS: 901.75
+ -> Checking npksznb (Years: 2016, Day: 95)... SUCCESS: 1067.61
+ -> Checking inm (Years: 2016, Day: 95)... SUCCESS: 2465.10
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Hazra_2019/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Hazra_2019/averaged_somsc_comparison.csv'
@@ -47,7 +49,37 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Hazra_2019/observed_vs_mod
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 7
+Rows passing delta rule (sim >= obs): 7
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+             Observation  Observed   Simulated Difference
+     hazra_2019_mw_somsc      3.84 1512.724000 +39293.85%
+   hazra_2019_mwmb_somsc      4.73 1304.394333 +27477.05%
+   hazra_2019_mwmc_somsc      4.44 1581.059300 +35509.44%
+     hazra_2019_pw_somsc      5.35 1514.437400 +28207.24%
+      hazra_2019_c_somsc      3.73  901.750700 +24075.62%
+hazra_2019_npksznb_somsc      4.59 1067.613250 +23159.55%
+    hazra_2019_inm_somsc      5.45 2465.097325 +45131.14%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 7
+R²: 0.4224
+RMSE: 1545.28 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Hazra_2019_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 hazra_2019_mw_somsc,mw,2016,95,3.84,1512.7240000000002
 hazra_2019_mwmb_somsc,mwmb,2016,95,4.73,1304.3943333333334
 hazra_2019_mwmc_somsc,mwmc,2016,95,4.44,1581.0593

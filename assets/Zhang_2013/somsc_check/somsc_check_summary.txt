@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Zhang_2013
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-45.36%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,435.56 g C / m²
@@ -13,6 +13,8 @@ SoilGrids Observed Value: 2,597.62 g C / m²
 Model is 45.36% lower than observation.
 (Difference: -1,178.28 g C / m²)
 
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
+
 --- Experimental Analysis ---
 'zhang_2013_ct_somsc' Change: +319.19 g C / m² (End value: 1,740.32)
 'zhang_2013_nt_somsc' Change: +854.14 g C / m² (End value: 2,275.27)
@@ -24,27 +26,27 @@ Average SOMSC at end of all experimental phases: 1,909.89 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking ct (Year: 2005, Day: 275)... SUCCESS: 1537.72
- -> Checking ct (Year: 2006, Day: 275)... SUCCESS: 1582.16
- -> Checking ct (Year: 2007, Day: 275)... SUCCESS: 1619.54
- -> Checking ct (Year: 2008, Day: 275)... SUCCESS: 1652.00
- -> Checking ct (Year: 2009, Day: 275)... SUCCESS: 1683.56
- -> Checking ct (Year: 2010, Day: 275)... SUCCESS: 1701.80
- -> Checking ct (Year: 2011, Day: 275)... SUCCESS: 1728.09
- -> Checking rt (Year: 2005, Day: 275)... SUCCESS: 1523.88
- -> Checking rt (Year: 2006, Day: 275)... SUCCESS: 1565.59
- -> Checking rt (Year: 2007, Day: 275)... SUCCESS: 1600.45
- -> Checking rt (Year: 2008, Day: 275)... SUCCESS: 1630.78
- -> Checking rt (Year: 2009, Day: 275)... SUCCESS: 1660.31
- -> Checking rt (Year: 2010, Day: 275)... SUCCESS: 1677.30
- -> Checking rt (Year: 2011, Day: 275)... SUCCESS: 1701.80
- -> Checking nt (Year: 2005, Day: 275)... SUCCESS: 1648.26
- -> Checking nt (Year: 2006, Day: 275)... SUCCESS: 1741.48
- -> Checking nt (Year: 2007, Day: 275)... SUCCESS: 1841.68
- -> Checking nt (Year: 2008, Day: 275)... SUCCESS: 1947.29
- -> Checking nt (Year: 2009, Day: 275)... SUCCESS: 2052.26
- -> Checking nt (Year: 2010, Day: 275)... SUCCESS: 2158.50
- -> Checking nt (Year: 2011, Day: 275)... SUCCESS: 2261.88
+-> Checking ct (Years: 2005, Day: 275)... SUCCESS: 1537.72
+ -> Checking ct (Years: 2006, Day: 275)... SUCCESS: 1582.16
+ -> Checking ct (Years: 2007, Day: 275)... SUCCESS: 1619.54
+ -> Checking ct (Years: 2008, Day: 275)... SUCCESS: 1652.00
+ -> Checking ct (Years: 2009, Day: 275)... SUCCESS: 1683.56
+ -> Checking ct (Years: 2010, Day: 275)... SUCCESS: 1701.80
+ -> Checking ct (Years: 2011, Day: 275)... SUCCESS: 1728.09
+ -> Checking rt (Years: 2005, Day: 275)... SUCCESS: 1523.88
+ -> Checking rt (Years: 2006, Day: 275)... SUCCESS: 1565.59
+ -> Checking rt (Years: 2007, Day: 275)... SUCCESS: 1600.45
+ -> Checking rt (Years: 2008, Day: 275)... SUCCESS: 1630.78
+ -> Checking rt (Years: 2009, Day: 275)... SUCCESS: 1660.31
+ -> Checking rt (Years: 2010, Day: 275)... SUCCESS: 1677.30
+ -> Checking rt (Years: 2011, Day: 275)... SUCCESS: 1701.80
+ -> Checking nt (Years: 2005, Day: 275)... SUCCESS: 1648.26
+ -> Checking nt (Years: 2006, Day: 275)... SUCCESS: 1741.48
+ -> Checking nt (Years: 2007, Day: 275)... SUCCESS: 1841.68
+ -> Checking nt (Years: 2008, Day: 275)... SUCCESS: 1947.29
+ -> Checking nt (Years: 2009, Day: 275)... SUCCESS: 2052.26
+ -> Checking nt (Years: 2010, Day: 275)... SUCCESS: 2158.50
+ -> Checking nt (Years: 2011, Day: 275)... SUCCESS: 2261.88
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/averaged_somsc_comparison.csv'
@@ -52,7 +54,52 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/observed_vs_mod
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 21
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 21
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+        Observation  Observed  Simulated          Difference
+zhang_2013_ct_somsc    3921.0  1537.7233 -60.78% [SHORTFALL]
+zhang_2013_ct_somsc    4048.0  1582.1588 -60.92% [SHORTFALL]
+zhang_2013_ct_somsc    4425.0  1619.5443 -63.40% [SHORTFALL]
+zhang_2013_ct_somsc    4467.0  1652.0015 -63.02% [SHORTFALL]
+zhang_2013_ct_somsc    4557.0  1683.5644 -63.06% [SHORTFALL]
+zhang_2013_ct_somsc    4839.0  1701.8045 -64.83% [SHORTFALL]
+zhang_2013_ct_somsc    4939.0  1728.0860 -65.01% [SHORTFALL]
+zhang_2013_rt_somsc    3710.0  1523.8813 -58.93% [SHORTFALL]
+zhang_2013_rt_somsc    4187.0  1565.5944 -62.61% [SHORTFALL]
+zhang_2013_rt_somsc    4291.0  1600.4490 -62.70% [SHORTFALL]
+zhang_2013_rt_somsc    4374.0  1630.7826 -62.72% [SHORTFALL]
+zhang_2013_rt_somsc    4365.0  1660.3099 -61.96% [SHORTFALL]
+zhang_2013_rt_somsc    4631.0  1677.2988 -63.78% [SHORTFALL]
+zhang_2013_rt_somsc    4707.0  1701.7958 -63.85% [SHORTFALL]
+zhang_2013_nt_somsc    3736.0  1648.2571 -55.88% [SHORTFALL]
+zhang_2013_nt_somsc    4198.0  1741.4813 -58.52% [SHORTFALL]
+zhang_2013_nt_somsc    4330.0  1841.6783 -57.47% [SHORTFALL]
+zhang_2013_nt_somsc    4316.0  1947.2877 -54.88% [SHORTFALL]
+zhang_2013_nt_somsc    4388.0  2052.2604 -53.23% [SHORTFALL]
+zhang_2013_nt_somsc    4723.0  2158.5011 -54.30% [SHORTFALL]
+zhang_2013_nt_somsc    4855.0  2261.8841 -53.41% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Zhang_2013_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 21
+R²: 0.2524
+RMSE: 2658.34 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Zhang_2013_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 zhang_2013_ct_somsc,ct,2005,275,3921.0,1537.7233
 zhang_2013_ct_somsc,ct,2006,275,4048.0,1582.1588
 zhang_2013_ct_somsc,ct,2007,275,4425.0,1619.5443

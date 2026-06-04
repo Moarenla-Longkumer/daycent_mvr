@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Srinivasarao_2021
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-24.73%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,451.56 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 2,881.21 g C / m²
 SoilGrids Observed Value: 3,827.92 g C / m²
 Model is 24.73% lower than observation.
 (Difference: -946.71 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'srinivasarao_2021_t1_somsc' Change: -737.55 g C / m² (End value: 2,142.66)
@@ -25,10 +27,10 @@ Average SOMSC at end of all experimental phases: 2,869.23 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1 (Year: 2011, Day: 283)... SUCCESS: 2142.44
- -> Checking t1 (Year: 2011, Day: 283)... SUCCESS: 2142.44
- -> Checking t1 (Year: 2011, Day: 283)... SUCCESS: 2142.44
- -> Checking t1 (Year: 2011, Day: 283)... SUCCESS: 2142.44
+-> Checking t1 (Years: 2011, Day: 283)... SUCCESS: 2142.44
+ -> Checking t1 (Years: 2011, Day: 283)... SUCCESS: 2142.44
+ -> Checking t1 (Years: 2011, Day: 283)... SUCCESS: 2142.44
+ -> Checking t1 (Years: 2011, Day: 283)... SUCCESS: 2142.44
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/averaged_somsc_comparison.csv'
@@ -36,7 +38,35 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/observed
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 4
+Rows passing delta rule (sim >= obs): 1
+Rows with shortfall (sim < obs): 3
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+               Observation  Observed  Simulated          Difference
+srinivasarao_2021_t1_somsc    2082.9  2142.4446              +2.86%
+srinivasarao_2021_t1_somsc    2282.4  2142.4446  -6.13% [SHORTFALL]
+srinivasarao_2021_t1_somsc    2513.2  2142.4446 -14.75% [SHORTFALL]
+srinivasarao_2021_t1_somsc    2769.8  2142.4446 -22.65% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Srinivasarao_2021_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 4
+R²: 0.0000 (flat observations or flat model)
+RMSE: 372.21 g C / m²
+Status: FLAG - Near-zero variance in observed and/or simulated values.
+Action: Review `.sch` files and observation timing in `observations/Srinivasarao_2021_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 srinivasarao_2021_t1_somsc,t1,2011,283,2082.9,2142.4446
 srinivasarao_2021_t1_somsc,t1,2011,283,2282.4,2142.4446
 srinivasarao_2021_t1_somsc,t1,2011,283,2513.2,2142.4446

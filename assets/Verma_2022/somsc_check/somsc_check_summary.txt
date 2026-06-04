@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Verma_2022
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-81.70%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,639.17 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,522.64 g C / m²
 SoilGrids Observed Value: 8,322.46 g C / m²
 Model is 81.70% lower than observation.
 (Difference: -6,799.82 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'verma_2022_t1_control_somsc' Change: -245.88 g C / m² (End value: 1,272.71)
@@ -27,12 +29,12 @@ Average SOMSC at end of all experimental phases: 1,351.47 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1_control (Year: 2015, Day: 282)... SUCCESS: 1295.61
- -> Checking t2_npk100 (Year: 2015, Day: 282)... SUCCESS: 1295.61
- -> Checking t3_npk50_lime (Year: 2015, Day: 282)... SUCCESS: 1295.61
- -> Checking t4_npk50_vc (Year: 2015, Day: 282)... SUCCESS: 1477.86
- -> Checking t5_npk50_vc_lime (Year: 2015, Day: 282)... SUCCESS: 1477.86
- -> Checking t6_organic (Year: 2015, Day: 282)... SUCCESS: 1384.86
+-> Checking t1_control (Years: 2015, Day: 282)... SUCCESS: 1295.61
+ -> Checking t2_npk100 (Years: 2015, Day: 282)... SUCCESS: 1295.61
+ -> Checking t3_npk50_lime (Years: 2015, Day: 282)... SUCCESS: 1295.61
+ -> Checking t4_npk50_vc (Years: 2015, Day: 282)... SUCCESS: 1477.86
+ -> Checking t5_npk50_vc_lime (Years: 2015, Day: 282)... SUCCESS: 1477.86
+ -> Checking t6_organic (Years: 2015, Day: 282)... SUCCESS: 1384.86
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Verma_2022/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Verma_2022/averaged_somsc_comparison.csv'
@@ -40,10 +42,40 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Verma_2022/observed_vs_mod
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
-verma_2022_t1_control_somsc,t1_control,2015,282,0,1295.6102
-verma_2022_t2_npk100_somsc,t2_npk100,2015,282,0,1295.6093
-verma_2022_t3_npk50_lime_somsc,t3_npk50_lime,2015,282,0,1295.6091999999999
-verma_2022_t4_npk50_vc_somsc,t4_npk50_vc,2015,282,0,1477.8600000000001
-verma_2022_t5_npk50_vc_lime_somsc,t5_npk50_vc_lime,2015,282,0,1477.8600000000001
-verma_2022_t6_organic_somsc,t6_organic,2015,282,0,1384.8572
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 6
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 6
+
+                      Observation  Observed  Simulated         Difference
+      verma_2022_t1_control_somsc       0.0  1295.6102 FLAG (invalid obs)
+       verma_2022_t2_npk100_somsc       0.0  1295.6093 FLAG (invalid obs)
+   verma_2022_t3_npk50_lime_somsc       0.0  1295.6092 FLAG (invalid obs)
+     verma_2022_t4_npk50_vc_somsc       0.0  1477.8600 FLAG (invalid obs)
+verma_2022_t5_npk50_vc_lime_somsc       0.0  1477.8600 FLAG (invalid obs)
+      verma_2022_t6_organic_somsc       0.0  1384.8572 FLAG (invalid obs)
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Verma_2022_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 6
+R²: 0.0000 (flat observations or flat model)
+RMSE: 1373.67 g C / m²
+Status: FLAG - Near-zero variance in observed and/or simulated values.
+Action: Review `.sch` files and observation timing in `observations/Verma_2022_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
+verma_2022_t1_control_somsc,t1_control,2015,282,0.0,1295.6102
+verma_2022_t2_npk100_somsc,t2_npk100,2015,282,0.0,1295.6093
+verma_2022_t3_npk50_lime_somsc,t3_npk50_lime,2015,282,0.0,1295.6091999999999
+verma_2022_t4_npk50_vc_somsc,t4_npk50_vc,2015,282,0.0,1477.8600000000001
+verma_2022_t5_npk50_vc_lime_somsc,t5_npk50_vc_lime,2015,282,0.0,1477.8600000000001
+verma_2022_t6_organic_somsc,t6_organic,2015,282,0.0,1384.8572

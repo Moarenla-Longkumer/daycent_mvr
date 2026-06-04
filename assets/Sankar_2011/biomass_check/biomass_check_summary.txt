@@ -4,9 +4,9 @@ RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison 
 
 --- Point-wise delta (obs vs sim) ---
 Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
-Rows in comparison file (n): 10
+Rows in comparison file (n): 5
 Rows passing delta rule (sim >= obs): 0
-Rows with shortfall (sim < obs): 10
+Rows with shortfall (sim < obs): 5
 Rows with zero simulated: 0
 Rows with missing simulated: 0
 Rows with invalid/missing observed (cannot compute %): 0
@@ -17,20 +17,15 @@ Rows with invalid/missing observed (cannot compute %): 0
  sankar_2011_trt_fym_10t_50npk_cgrain_fig_mill_1984 3712.458708    94.6784 -97.45% [SHORTFALL]
 sankar_2011_trt_fym_10t_100npk_cgrain_fig_mill_1984 4501.839877   107.1583 -97.62% [SHORTFALL]
     sankar_2011_trt_fym_100npk_cgrain_fig_mill_1984 2709.804000   106.0415 -96.09% [SHORTFALL]
-    sankar_2011_trt_mr_control_cgrain_fig_mill_1984 4068.161435    81.0061 -98.01% [SHORTFALL]
-         sankar_2011_trt_mr_5t_cgrain_fig_mill_1984 4326.457399    81.5399 -98.12% [SHORTFALL]
-   sankar_2011_trt_mr_5t_50npk_cgrain_fig_mill_1984 4455.605381    94.0144 -97.89% [SHORTFALL]
-     sankar_2011_trt_mr_100npk_cgrain_fig_mill_1984 4584.753363   106.0415 -97.69% [SHORTFALL]
-     sankar_2011_trt_mr_100npk_cgrain_fig_mill_1984 4154.260090   106.0415 -97.45% [SHORTFALL]
 
 Status: FLAG - At least one row failed the delta rule.
 Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sankar_2011_obs.csv`.
 
 --- Treatment fit (obs vs sim) ---
 R² cutoff (minimum for PASS): 0.50
-Paired points (n): 10
-R²: 0.1382
-RMSE: 3724.29 g C / m²
+Paired points (n): 5
+R²: 0.4055
+RMSE: 3140.59 g C / m²
 Status: FLAG - R² < 0.50 (poor obs–sim agreement).
 Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sankar_2011_obs.csv`.
 
@@ -796,8 +791,8 @@ Successfully processed: 'sankar_2011_trt_fym_100npk_cgrain_fig_mill_1984'
     [DEBUG] Checking Treatment Sch: TRT_MR_CONTROL
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_CONTROL_output
     [DEBUG] Sch file exists: True
-    [DEBUG] Found 1 data points in TRT_MR_CONTROL
-Successfully processed: 'sankar_2011_trt_mr_control_cgrain_fig_mill_1984'
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 1984
+-! WARNING: Calculation failed for 'sankar_2011_trt_mr_control_cgrain_fig_mill_1984'. No data found.
     [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
     [DEBUG] Checking Treatment Sch: TRT_MR_CONTROL
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_CONTROL_output
@@ -946,8 +941,8 @@ Successfully processed: 'sankar_2011_trt_mr_control_cgrain_fig_mill_1984'
     [DEBUG] Checking Treatment Sch: TRT_MR_5T
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_5T_output
     [DEBUG] Sch file exists: True
-    [DEBUG] Found 1 data points in TRT_MR_5T
-Successfully processed: 'sankar_2011_trt_mr_5t_cgrain_fig_mill_1984'
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 1984
+-! WARNING: Calculation failed for 'sankar_2011_trt_mr_5t_cgrain_fig_mill_1984'. No data found.
     [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
     [DEBUG] Checking Treatment Sch: TRT_MR_5T
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_5T_output
@@ -1096,8 +1091,8 @@ Successfully processed: 'sankar_2011_trt_mr_5t_cgrain_fig_mill_1984'
     [DEBUG] Checking Treatment Sch: TRT_MR_5T_50NPK
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_5T_50NPK_output
     [DEBUG] Sch file exists: True
-    [DEBUG] Found 1 data points in TRT_MR_5T_50NPK
-Successfully processed: 'sankar_2011_trt_mr_5t_50npk_cgrain_fig_mill_1984'
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 1984
+-! WARNING: Calculation failed for 'sankar_2011_trt_mr_5t_50npk_cgrain_fig_mill_1984'. No data found.
     [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
     [DEBUG] Checking Treatment Sch: TRT_MR_5T_50NPK
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_5T_50NPK_output
@@ -1246,8 +1241,8 @@ Successfully processed: 'sankar_2011_trt_mr_5t_50npk_cgrain_fig_mill_1984'
     [DEBUG] Checking Treatment Sch: TRT_MR_100NPK
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_100NPK_output
     [DEBUG] Sch file exists: True
-    [DEBUG] Found 1 data points in TRT_MR_100NPK
-Successfully processed: 'sankar_2011_trt_mr_100npk_cgrain_fig_mill_1984'
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 1984
+-! WARNING: Calculation failed for 'sankar_2011_trt_mr_100npk_cgrain_fig_mill_1984'. No data found.
     [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
     [DEBUG] Checking Treatment Sch: TRT_MR_100NPK
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_100NPK_output
@@ -1396,8 +1391,8 @@ Successfully processed: 'sankar_2011_trt_mr_100npk_cgrain_fig_mill_1984'
     [DEBUG] Checking Treatment Sch: TRT_MR_100NPK
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_100NPK_output
     [DEBUG] Sch file exists: True
-    [DEBUG] Found 1 data points in TRT_MR_100NPK
-Successfully processed: 'sankar_2011_trt_mr_100npk_cgrain_fig_mill_1984'
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 1984
+-! WARNING: Calculation failed for 'sankar_2011_trt_mr_100npk_cgrain_fig_mill_1984'. No data found.
     [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
     [DEBUG] Checking Treatment Sch: TRT_MR_100NPK
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sankar_2011/Sankar_2011_out/Sankar_2011_TRT_MR_100NPK_output

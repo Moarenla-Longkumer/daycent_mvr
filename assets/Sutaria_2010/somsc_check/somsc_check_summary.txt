@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Sutaria_2010
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-53.39%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,247.74 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,451.13 g C / m²
 SoilGrids Observed Value: 3,113.04 g C / m²
 Model is 53.39% lower than observation.
 (Difference: -1,661.91 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'sutaria_2010_t1_f0_somsc' Change: -204.20 g C / m² (End value: 1,247.13)
@@ -33,13 +35,13 @@ Average SOMSC at end of all experimental phases: 1,256.67 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1 (Year: 2004, Day: 292)... SUCCESS: 1284.35
- -> Checking t2 (Year: 2004, Day: 292)... SUCCESS: 1270.75
- -> Checking t3 (Year: 2004, Day: 292)... SUCCESS: 1181.55
- -> Checking f0 (Year: 2004, Day: 292)... SUCCESS: 1216.24
- -> Checking f1 (Year: 2004, Day: 292)... SUCCESS: 1216.26
- -> Checking f2 (Year: 2004, Day: 292)... SUCCESS: 1269.42
- -> Checking f3 (Year: 2004, Day: 292)... SUCCESS: 1323.10
+-> Checking t1 (Years: 2004, Day: 292)... SUCCESS: 1284.35
+ -> Checking t2 (Years: 2004, Day: 292)... SUCCESS: 1270.75
+ -> Checking t3 (Years: 2004, Day: 292)... SUCCESS: 1181.55
+ -> Checking f0 (Years: 2004, Day: 292)... SUCCESS: 1216.24
+ -> Checking f1 (Years: 2004, Day: 292)... SUCCESS: 1216.26
+ -> Checking f2 (Years: 2004, Day: 292)... SUCCESS: 1269.42
+ -> Checking f3 (Years: 2004, Day: 292)... SUCCESS: 1323.10
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/averaged_somsc_comparison.csv'
@@ -47,7 +49,38 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/observed_vs_m
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 7
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 7
+
+          Observation  Observed   Simulated         Difference
+sutaria_2010_t1_somsc       0.0 1284.346800 FLAG (invalid obs)
+sutaria_2010_t2_somsc       0.0 1270.747600 FLAG (invalid obs)
+sutaria_2010_t3_somsc       0.0 1181.547625 FLAG (invalid obs)
+sutaria_2010_f0_somsc       0.0 1216.240767 FLAG (invalid obs)
+sutaria_2010_f1_somsc       0.0 1216.258367 FLAG (invalid obs)
+sutaria_2010_f2_somsc       0.0 1269.423367 FLAG (invalid obs)
+sutaria_2010_f3_somsc       0.0 1323.104733 FLAG (invalid obs)
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Sutaria_2010_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 7
+R²: 0.0000 (flat observations or flat model)
+RMSE: 1252.48 g C / m²
+Status: FLAG - Near-zero variance in observed and/or simulated values.
+Action: Review `.sch` files and observation timing in `observations/Sutaria_2010_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 sutaria_2010_t1_somsc,t1,2004,292,0.0,1284.3468
 sutaria_2010_t2_somsc,t2,2004,292,0.0,1270.7476000000001
 sutaria_2010_t3_somsc,t3,2004,292,0.0,1181.5476250000002

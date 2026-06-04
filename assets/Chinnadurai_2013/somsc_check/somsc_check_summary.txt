@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Chinnadurai_2013
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-70.31%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,784.17 g C / m²
@@ -13,6 +13,8 @@ SoilGrids Observed Value: 6,204.94 g C / m²
 Model is 70.31% lower than observation.
 (Difference: -4,362.63 g C / m²)
 
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
+
 --- Experimental Analysis ---
 'chinnadurai_2013_control_somsc' Change: -1,280.38 g C / m² (End value: 585.05)
 'chinnadurai_2013_ic_somsc' Change: -1,279.83 g C / m² (End value: 585.60)
@@ -24,12 +26,12 @@ Average SOMSC at end of all experimental phases: 585.80 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking control (Year: 2009, Day: 247)... SUCCESS: 588.55
- -> Checking om (Year: 2009, Day: 247)... SUCCESS: 590.27
- -> Checking ic (Year: 2009, Day: 247)... SUCCESS: 589.11
- -> Checking control (Year: 2010, Day: 247)... SUCCESS: 585.90
- -> Checking om (Year: 2010, Day: 247)... SUCCESS: 587.60
- -> Checking ic (Year: 2010, Day: 247)... SUCCESS: 586.45
+-> Checking control (Years: 2009, Day: 247)... SUCCESS: 588.55
+ -> Checking om (Years: 2009, Day: 247)... SUCCESS: 590.27
+ -> Checking ic (Years: 2009, Day: 247)... SUCCESS: 589.11
+ -> Checking control (Years: 2010, Day: 247)... SUCCESS: 585.90
+ -> Checking om (Years: 2010, Day: 247)... SUCCESS: 587.60
+ -> Checking ic (Years: 2010, Day: 247)... SUCCESS: 586.45
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Chinnadurai_2013/output_somsc.txt'
 
@@ -37,4 +39,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

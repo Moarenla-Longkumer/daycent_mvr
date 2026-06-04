@@ -1,18 +1,710 @@
 Biomass Check Summary for Site: Srivastava_2018
 
-RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
-This is likely because the 'extract_biomass.py' script failed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 54
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 54
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                               Observation  Observed  Simulated           Difference
+srivastava_2018_trt_control_cgrain_sc_2004   1786.10   257.1539  -85.60% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2004   2564.57   464.5737  -81.88% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2004   2584.79   265.1888  -89.74% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2004   2389.33   266.3693  -88.85% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2004   2423.03   262.3947  -89.17% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2004   2537.61   267.0780  -89.48% [SHORTFALL]
+srivastava_2018_trt_control_cgrain_sc_2005   1560.31     0.3993  -99.97% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2005   2631.97     4.8741  -99.81% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2005   2618.49     0.4877  -99.98% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2005   2382.59     0.5022  -99.98% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2005   2372.48     0.4257  -99.98% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2005   2625.23     0.5035  -99.98% [SHORTFALL]
+srivastava_2018_trt_control_cgrain_sc_2006   1408.66     0.0872  -99.99% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2006   2412.92     0.1763  -99.99% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2006   2372.48     0.1049 -100.00% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2006   2301.71     0.1073 -100.00% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2006   2318.56     0.0985 -100.00% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2006   2443.25     0.1089 -100.00% [SHORTFALL]
+srivastava_2018_trt_control_cgrain_sc_2007   1267.12     0.0454 -100.00% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2007   2241.05     0.0866 -100.00% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2007   2177.02     0.0614 -100.00% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2007   2133.21     0.0635 -100.00% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2007   2139.95     0.0563 -100.00% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2007   2271.38     0.0647 -100.00% [SHORTFALL]
+srivastava_2018_trt_control_cgrain_sc_2008   1179.50     0.0471 -100.00% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2008   2166.91     0.1253  -99.99% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2008   2166.91     0.0708 -100.00% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2008   2123.10     0.0739 -100.00% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2008   2129.84     0.0634 -100.00% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2008   2268.01     0.0757 -100.00% [SHORTFALL]
+srivastava_2018_trt_control_cgrain_sc_2009    835.76     0.0445  -99.99% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2009   1813.06     0.1208  -99.99% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2009   1836.65     0.0723 -100.00% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2009   1853.50     0.0758 -100.00% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2009   1846.76     0.0640 -100.00% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2009   1951.23     0.0779 -100.00% [SHORTFALL]
+srivastava_2018_trt_control_cgrain_sc_2010    623.45     0.0404  -99.99% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2010   1718.70     0.0980  -99.99% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2010   1819.80     0.0698 -100.00% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2010   1850.13     0.0734 -100.00% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2010   1833.28     0.0615 -100.00% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2010   1937.75     0.0754 -100.00% [SHORTFALL]
+srivastava_2018_trt_control_cgrain_sc_2011    630.19     0.0380  -99.99% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2011   1718.70     0.1006  -99.99% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2011   1816.43     0.0711 -100.00% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2011   1802.95     0.0751 -100.00% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2011   1792.84     0.0622 -100.00% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2011   1846.76     0.0772 -100.00% [SHORTFALL]
+srivastava_2018_trt_control_cgrain_sc_2012    640.30     0.0360  -99.99% [SHORTFALL]
+    srivastava_2018_trt_rdf_cgrain_sc_2012   1678.26     0.1042  -99.99% [SHORTFALL]
+     srivastava_2018_trt_vc_cgrain_sc_2012   1718.70     0.0739 -100.00% [SHORTFALL]
+    srivastava_2018_trt_fym_cgrain_sc_2012   1735.55     0.0783 -100.00% [SHORTFALL]
+     srivastava_2018_trt_bs_cgrain_sc_2012   1718.70     0.0642 -100.00% [SHORTFALL]
+   srivastava_2018_trt_spmc_cgrain_sc_2012   1806.32     0.0806 -100.00% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Srivastava_2018_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 54
+R²: 0.1031
+RMSE: 1965.77 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Srivastava_2018_obs.csv`.
 
 
 --- Biomass Extraction Script ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/scripts/extract_biomass.py", line 382, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'SC'
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 110
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2004,2005,2006,2007,2008,2009,2010,2011,2012,2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_control_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2004,2005,2006,2007,2008,2009,2010,2011,2012,2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_rdf_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2004,2005,2006,2007,2008,2009,2010,2011,2012,2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2004,2005,2006,2007,2008,2009,2010,2011,2012,2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2004,2005,2006,2007,2008,2009,2010,2011,2012,2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2004,2005,2006,2007,2008,2009,2010,2011,2012,2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2004'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2004'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2004'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2004'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2004'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2004'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2004'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2004'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2004'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2004'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2005'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2005'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2005'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2005'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2005'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2005'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2005'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2005'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2005'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2005'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2006'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2006'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2006'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2006'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2006'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2006'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2006'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2006'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2006'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2006'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2007'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2007'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2007'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2007'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2007'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2007'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2007'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2007'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2007'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2007'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2008'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2008'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2008'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2008'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2008'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2008'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2008'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2008'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2008'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2008'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2009'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2009'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2009'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2009'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2009'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2009'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2009'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2009'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2009'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2009'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2010'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2010'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2010'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2010'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2010'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2010'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2010'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2010'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2010'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2010'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2011'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2011'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2011'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2011'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2011'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2011'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2011'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2011'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2011'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2011'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_CONTROL
+Successfully processed: 'srivastava_2018_trt_control_cgrain_sc_2012'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_RDF
+Successfully processed: 'srivastava_2018_trt_rdf_cgrain_sc_2012'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_VC
+Successfully processed: 'srivastava_2018_trt_vc_cgrain_sc_2012'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_FYM
+Successfully processed: 'srivastava_2018_trt_fym_cgrain_sc_2012'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_BS
+Successfully processed: 'srivastava_2018_trt_bs_cgrain_sc_2012'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in TRT_SPMC
+Successfully processed: 'srivastava_2018_trt_spmc_cgrain_sc_2012'
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2012'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2012'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2012'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2012'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_CONTROL
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_CONTROL_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_control_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_RDF
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_RDF_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_rdf_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2013
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_VC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_VC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_vc_gd_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_FYM_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_FYM_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_fym_gd_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_BS_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_BS_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_bs_gd_cgrain_sc_2013'. No data found.
+    [WARN] Non-numeric target_crop_num 'SC' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: TRT_SPMC_GD
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/Srivastava_2018_out/Srivastava_2018_TRT_SPMC_GD_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'srivastava_2018_trt_spmc_gd_cgrain_sc_2013'. No data found.
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srivastava_2018/observed_vs_modeled_biomass.png'
+--- Script finished. ---

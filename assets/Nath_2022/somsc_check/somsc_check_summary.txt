@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Nath_2022
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-62.32%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,872.51 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,253.97 g C / m²
 SoilGrids Observed Value: 3,327.95 g C / m²
 Model is 62.32% lower than observation.
 (Difference: -2,073.98 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'nath_2022_ct + r + 100 n_somsc' Change: +90.90 g C / m² (End value: 1,341.72)
@@ -25,28 +27,28 @@ Average SOMSC at end of all experimental phases: 1,270.17 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking ct – r + 100 n (Year: 2015, Day: 77)... 
+-> Checking ct – r + 100 n (Years: 2015, Day: 77)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_CT_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_–_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_R_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_100_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_N_output/soilc.out FAILED: No matching data found.
- -> Checking ct + r + 100 n (Year: 2015, Day: 77)... 
+ -> Checking ct + r + 100 n (Years: 2015, Day: 77)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_CT_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_R_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_100_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_N_output/soilc.out FAILED: No matching data found.
- -> Checking zt – r + 100 n (Year: 2015, Day: 77)... 
+ -> Checking zt – r + 100 n (Years: 2015, Day: 77)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_ZT_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_–_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_R_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_100_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_N_output/soilc.out FAILED: No matching data found.
- -> Checking zt + r + 100 n (Year: 2015, Day: 77)... 
+ -> Checking zt + r + 100 n (Years: 2015, Day: 77)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_ZT_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_R_output/soilc.out 
@@ -60,4 +62,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

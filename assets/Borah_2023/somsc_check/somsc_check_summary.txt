@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Borah_2023
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-81.45%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 2,291.35 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 900.11 g C / m²
 SoilGrids Observed Value: 4,852.08 g C / m²
 Model is 81.45% lower than observation.
 (Difference: -3,951.97 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'borah_2023_f0fl0_somsc' Change: -639.54 g C / m² (End value: 257.59)
@@ -29,12 +31,12 @@ Average SOMSC at end of all experimental phases: 561.65 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking f0 (Year: 2018, Day: 164)... SUCCESS: 335.28
- -> Checking f1 (Year: 2018, Day: 164)... SUCCESS: 814.56
- -> Checking fl0 (Year: 2018, Day: 164)... SUCCESS: 513.33
- -> Checking fl1 (Year: 2018, Day: 164)... SUCCESS: 573.34
- -> Checking fl2 (Year: 2018, Day: 164)... SUCCESS: 600.24
- -> Checking fl3 (Year: 2018, Day: 164)... SUCCESS: 612.78
+-> Checking f0 (Years: 2018, Day: 164)... SUCCESS: 335.28
+ -> Checking f1 (Years: 2018, Day: 164)... SUCCESS: 814.56
+ -> Checking fl0 (Years: 2018, Day: 164)... SUCCESS: 513.33
+ -> Checking fl1 (Years: 2018, Day: 164)... SUCCESS: 573.34
+ -> Checking fl2 (Years: 2018, Day: 164)... SUCCESS: 600.24
+ -> Checking fl3 (Years: 2018, Day: 164)... SUCCESS: 612.78
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Borah_2023/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Borah_2023/averaged_somsc_comparison.csv'
@@ -42,10 +44,40 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Borah_2023/observed_vs_mod
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
-borah_2023_f0_somsc,f0,2018,164,2653,335.2846
-borah_2023_f1_somsc,f1,2018,164,2180,814.56185
-borah_2023_fl0_somsc,fl0,2018,164,2064,513.3317999999999
-borah_2023_fl1_somsc,fl1,2018,164,2265,573.33925
-borah_2023_fl2_somsc,fl2,2018,164,2369,600.23915
-borah_2023_fl3_somsc,fl3,2018,164,2448,612.7827
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 6
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 6
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+         Observation  Observed  Simulated          Difference
+ borah_2023_f0_somsc    2653.0  335.28460 -87.36% [SHORTFALL]
+ borah_2023_f1_somsc    2180.0  814.56185 -62.63% [SHORTFALL]
+borah_2023_fl0_somsc    2064.0  513.33180 -75.13% [SHORTFALL]
+borah_2023_fl1_somsc    2265.0  573.33925 -74.69% [SHORTFALL]
+borah_2023_fl2_somsc    2369.0  600.23915 -74.66% [SHORTFALL]
+borah_2023_fl3_somsc    2448.0  612.78270 -74.97% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Borah_2023_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 6
+R²: 0.3186
+RMSE: 1779.47 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Borah_2023_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
+borah_2023_f0_somsc,f0,2018,164,2653.0,335.2846
+borah_2023_f1_somsc,f1,2018,164,2180.0,814.56185
+borah_2023_fl0_somsc,fl0,2018,164,2064.0,513.3317999999999
+borah_2023_fl1_somsc,fl1,2018,164,2265.0,573.33925
+borah_2023_fl2_somsc,fl2,2018,164,2369.0,600.23915
+borah_2023_fl3_somsc,fl3,2018,164,2448.0,612.7827

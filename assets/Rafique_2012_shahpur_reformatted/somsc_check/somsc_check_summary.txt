@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Rafique_2012_shahpur_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-39.32%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 1,472.99 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,751.73 g C / m²
 SoilGrids Observed Value: 2,886.82 g C / m²
 Model is 39.32% lower than observation.
 (Difference: -1,135.09 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'rafique_2012_shahpur_reformatted_bnm_gm_res_flatbed_somsc' Change: +418.91 g C / m² (End value: 2,169.44)
@@ -34,18 +36,32 @@ Model is 39.32% lower than observation.
 Average SOMSC at end of all experimental phases: 1,904.61 g C / m²
 
 --- Calibration Script Test ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Rafique_2012_shahpur_reformatted/scripts/extract_somsc.py", line 287, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Rafique_2012_shahpur_reformatted/scripts/extract_somsc.py", line 136, in main
-    target_year = int(target_year)
-                  ^^^^^^^^^^^^^^^^
-ValueError: cannot convert float NaN to integer
+--- Output ---
+-> Checking ffu_res_flatbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking ffu_nores_flatbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking ffu_res_raisedbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking ffu_nores_raisedbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking bnm_res_flatbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking bnm_nores_flatbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking bnm_res_raisedbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking bnm_nores_raisedbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking inm_res_flatbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking inm_nores_flatbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking inm_res_raisedbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking inm_nores_raisedbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking bnm_gm_res_flatbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking bnm_gm_nores_flatbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking bnm_gm_res_raisedbed (Years: , Day: nan)... FAILED: No valid target years.
+ -> Checking bnm_gm_nores_raisedbed (Years: , Day: nan)... FAILED: No valid target years.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Rafique_2012_shahpur_reformatted/output_somsc.txt'
+
+No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

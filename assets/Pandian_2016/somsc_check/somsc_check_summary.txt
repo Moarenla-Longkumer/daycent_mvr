@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Pandian_2016
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-86.61%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 2,200.18 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 992.99 g C / m²
 SoilGrids Observed Value: 7,416.31 g C / m²
 Model is 86.61% lower than observation.
 (Difference: -6,423.32 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'pandian_2016_c_somsc' Change: -130.64 g C / m² (End value: 860.46)
@@ -30,18 +32,18 @@ Average SOMSC at end of all experimental phases: 1,799.94 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking c (Year: 2013, Day: 343)... SUCCESS: 860.88
- -> Checking ccp (Year: 2013, Day: 343)... SUCCESS: 955.63
- -> Checking efym (Year: 2013, Day: 343)... SUCCESS: 956.35
- -> Checking msb_2.5 (Year: 2013, Day: 343)... SUCCESS: 2083.76
- -> Checking msb_5 (Year: 2013, Day: 343)... SUCCESS: 2083.76
- -> Checking csb_2.5 (Year: 2013, Day: 343)... SUCCESS: 2280.14
- -> Checking csb_5 (Year: 2013, Day: 343)... SUCCESS: 2280.14
- -> Checking rsb_2.5 (Year: 2013, Day: 343)... SUCCESS: 2324.76
- -> Checking rsb_5 (Year: 2013, Day: 343)... 
+-> Checking c (Years: 2013, Day: 343)... SUCCESS: 860.88
+ -> Checking ccp (Years: 2013, Day: 343)... SUCCESS: 955.63
+ -> Checking efym (Years: 2013, Day: 343)... SUCCESS: 956.35
+ -> Checking msb_2.5 (Years: 2013, Day: 343)... SUCCESS: 2083.76
+ -> Checking msb_5 (Years: 2013, Day: 343)... SUCCESS: 2083.76
+ -> Checking csb_2.5 (Years: 2013, Day: 343)... SUCCESS: 2280.14
+ -> Checking csb_5 (Years: 2013, Day: 343)... SUCCESS: 2280.14
+ -> Checking rsb_2.5 (Years: 2013, Day: 343)... SUCCESS: 2324.76
+ -> Checking rsb_5 (Years: 2013, Day: 343)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/Pandian_2016_out/Pandian_2016_RSB_5_output/soilc.out FAILED: No matching data found.
- -> Checking pb_2.5 (Year: 2013, Day: 343)... SUCCESS: 2387.25
- -> Checking pb_5 (Year: 2013, Day: 343)... 
+ -> Checking pb_2.5 (Years: 2013, Day: 343)... SUCCESS: 2387.25
+ -> Checking pb_5 (Years: 2013, Day: 343)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/Pandian_2016_out/Pandian_2016_PB_5_output/soilc.out FAILED: No matching data found.
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/output_somsc.txt'
@@ -50,7 +52,40 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Pandian_2016/observed_vs_m
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 9
+Rows passing delta rule (sim >= obs): 5
+Rows with shortfall (sim < obs): 4
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+               Observation  Observed  Simulated          Difference
+      pandian_2016_c_somsc    1620.0   860.8808 -46.86% [SHORTFALL]
+    pandian_2016_ccp_somsc    1980.0   955.6271 -51.74% [SHORTFALL]
+   pandian_2016_efym_somsc    1790.0   956.3530 -46.57% [SHORTFALL]
+pandian_2016_msb_2.5_somsc    1990.0  2083.7561              +4.71%
+  pandian_2016_msb_5_somsc    2110.0  2083.7561  -1.24% [SHORTFALL]
+pandian_2016_csb_2.5_somsc    1960.0  2280.1351             +16.33%
+  pandian_2016_csb_5_somsc    2070.0  2280.1351             +10.15%
+pandian_2016_rsb_2.5_somsc    1980.0  2324.7631             +17.41%
+ pandian_2016_pb_2.5_somsc    1940.0  2387.2483             +23.05%
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Pandian_2016_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 9
+R²: 0.4800
+RMSE: 557.33 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Pandian_2016_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 pandian_2016_c_somsc,c,2013,343,1620.0,860.8808
 pandian_2016_ccp_somsc,ccp,2013,343,1980.0,955.6270999999999
 pandian_2016_efym_somsc,efym,2013,343,1790.0,956.353

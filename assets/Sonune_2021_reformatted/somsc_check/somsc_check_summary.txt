@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Sonune_2021_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-41.67%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,626.48 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 2,199.37 g C / m²
 SoilGrids Observed Value: 3,770.48 g C / m²
 Model is 41.67% lower than observation.
 (Difference: -1,571.11 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'sonune_2021_reformatted_ct_t1_somsc' Change: -305.50 g C / m² (End value: 1,891.27)
@@ -35,15 +37,15 @@ Average SOMSC at end of all experimental phases: 2,233.77 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking mt (Year: 2016, Day: 30)... SUCCESS: 2376.90
- -> Checking ct (Year: 2016, Day: 30)... SUCCESS: 2153.70
- -> Checking t1 (Year: 2016, Day: 30)... SUCCESS: 2006.96
- -> Checking t3 (Year: 2016, Day: 30)... SUCCESS: 2250.02
- -> Checking t4 (Year: 2016, Day: 30)... SUCCESS: 2945.43
- -> Checking t5 (Year: 2016, Day: 30)... SUCCESS: 2078.69
- -> Checking t6 (Year: 2016, Day: 30)... SUCCESS: 2404.78
- -> Checking t7 (Year: 2016, Day: 30)... SUCCESS: 2057.86
- -> Checking t8 (Year: 2016, Day: 30)... SUCCESS: 2113.35
+-> Checking mt (Years: 2016, Day: 30)... SUCCESS: 2376.90
+ -> Checking ct (Years: 2016, Day: 30)... SUCCESS: 2153.70
+ -> Checking t1 (Years: 2016, Day: 30)... SUCCESS: 2006.96
+ -> Checking t3 (Years: 2016, Day: 30)... SUCCESS: 2250.02
+ -> Checking t4 (Years: 2016, Day: 30)... SUCCESS: 2945.43
+ -> Checking t5 (Years: 2016, Day: 30)... SUCCESS: 2078.69
+ -> Checking t6 (Years: 2016, Day: 30)... SUCCESS: 2404.78
+ -> Checking t7 (Years: 2016, Day: 30)... SUCCESS: 2057.86
+ -> Checking t8 (Years: 2016, Day: 30)... SUCCESS: 2113.35
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sonune_2021_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sonune_2021_reformatted/averaged_somsc_comparison.csv'
@@ -51,7 +53,40 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sonune_2021_reformatted/ob
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 9
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 9
+
+                     Observation  Observed   Simulated         Difference
+sonune_2021_reformatted_mt_somsc       0.0 2376.895171 FLAG (invalid obs)
+sonune_2021_reformatted_ct_somsc       0.0 2153.704400 FLAG (invalid obs)
+sonune_2021_reformatted_t1_somsc       0.0 2006.961500 FLAG (invalid obs)
+sonune_2021_reformatted_t3_somsc       0.0 2250.022150 FLAG (invalid obs)
+sonune_2021_reformatted_t4_somsc       0.0 2945.425850 FLAG (invalid obs)
+sonune_2021_reformatted_t5_somsc       0.0 2078.694550 FLAG (invalid obs)
+sonune_2021_reformatted_t6_somsc       0.0 2404.780200 FLAG (invalid obs)
+sonune_2021_reformatted_t7_somsc       0.0 2057.862350 FLAG (invalid obs)
+sonune_2021_reformatted_t8_somsc       0.0 2113.351900 FLAG (invalid obs)
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Sonune_2021_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 9
+R²: 0.0000 (flat observations or flat model)
+RMSE: 2281.79 g C / m²
+Status: FLAG - Near-zero variance in observed and/or simulated values.
+Action: Review `.sch` files and observation timing in `observations/Sonune_2021_reformatted_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 sonune_2021_reformatted_mt_somsc,mt,2016,30,0.0,2376.8951714285718
 sonune_2021_reformatted_ct_somsc,ct,2016,30,0.0,2153.7044
 sonune_2021_reformatted_t1_somsc,t1,2016,30,0.0,2006.9615

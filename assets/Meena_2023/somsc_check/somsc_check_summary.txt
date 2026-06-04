@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Meena_2023
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-39.46%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,397.58 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 2,053.50 g C / m²
 SoilGrids Observed Value: 3,392.07 g C / m²
 Model is 39.46% lower than observation.
 (Difference: -1,338.57 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'meena_2023_t1_somsc' Change: +1,460.06 g C / m² (End value: 3,507.83)
@@ -28,11 +30,11 @@ Reason: Script exited with error code 1
 
 --- Error Output ---
 Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_somsc.py", line 287, in <module>
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_somsc.py", line 402, in <module>
     main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_somsc.py", line 136, in main
-    target_year = int(target_year)
-                  ^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_somsc.py", line 251, in main
+    target_day = int(row['target_day'])
+                 ^^^^^^^^^^^^^^^^^^^^^^
 ValueError: cannot convert float NaN to integer
 
 

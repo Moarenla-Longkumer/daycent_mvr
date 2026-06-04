@@ -1,18 +1,583 @@
 Biomass Check Summary for Site: Karunakaran_2013
 
-RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
-This is likely because the 'extract_biomass.py' script failed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 16
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 16
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                 Observation  Observed  Simulated          Difference
+karunakaran_2013_ct-b_zt-b_cgrain_sw3eg_2010     167.2 154.453750  -7.62% [SHORTFALL]
+karunakaran_2013_zt-b_ct-b_cgrain_sw3eg_2010     167.2 154.572650  -7.55% [SHORTFALL]
+karunakaran_2013_ct-b_zt-b_cgrain_sw3eg_2011     187.6 177.702025  -5.28% [SHORTFALL]
+karunakaran_2013_zt-b_ct-b_cgrain_sw3eg_2011     187.2 178.065350  -4.88% [SHORTFALL]
+     karunakaran_2013_ct-b_zt-b_cgrain_sbean      80.1  13.368125 -83.31% [SHORTFALL]
+     karunakaran_2013_zt-b_ct-b_cgrain_sbean      80.1  13.368125 -83.31% [SHORTFALL]
+          karunakaran_2013_no_r_cgrain_sbean      75.6  13.368100 -82.32% [SHORTFALL]
+           karunakaran_2013_w_r_cgrain_sbean      81.9  13.368150 -83.68% [SHORTFALL]
+           karunakaran_2013_s_r_cgrain_sbean      81.0  13.368100 -83.50% [SHORTFALL]
+         karunakaran_2013_w_s_r_cgrain_sbean      88.2  13.368150 -84.84% [SHORTFALL]
+     karunakaran_2013_ct-b_zt-b_cgrain_sw3eg     177.6 166.077887  -6.49% [SHORTFALL]
+     karunakaran_2013_zt-b_ct-b_cgrain_sw3eg     177.2 166.319000  -6.14% [SHORTFALL]
+          karunakaran_2013_no_r_cgrain_sw3eg     169.2 166.302375  -1.71% [SHORTFALL]
+           karunakaran_2013_w_r_cgrain_sw3eg     176.4 166.397550  -5.67% [SHORTFALL]
+           karunakaran_2013_s_r_cgrain_sw3eg     182.0 166.161775  -8.70% [SHORTFALL]
+         karunakaran_2013_w_s_r_cgrain_sw3eg     188.4 165.932075 -11.93% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Karunakaran_2013_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 16
+R²: 0.9909
+RMSE: 42.77 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
 
 
 --- Biomass Extraction Script ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/scripts/extract_biomass.py", line 382, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'SW3EG'
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth (cm)', 'target_year', 'target_day', 'value', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'COMMENT', 'Comment', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 24
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'karunakaran_2013_ct-f_ zt-f_cgrain_sw3eg_2010'. No data found.
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'karunakaran_2013_zt-f_ ct-f_cgrain_sw3eg_2010'. No data found.
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT-B_ZT-B_No_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT-B_ZT-B_W_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT-B_ZT-B_S_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT-B_ZT-B_W_S_r
+Successfully processed: 'karunakaran_2013_ct-b_zt-b_cgrain_sw3eg_2010'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT-B_CT-B_No_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT-B_CT-B_W_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT-B_CT-B_S_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT-B_CT-B_W_S_r
+Successfully processed: 'karunakaran_2013_zt-b_ct-b_cgrain_sw3eg_2010'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'karunakaran_2013_ct-f_ zt-f_cgrain_sw3eg_2011'. No data found.
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'karunakaran_2013_zt-f_ ct-f_cgrain_sw3eg_2011'. No data found.
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT-B_ZT-B_No_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT-B_ZT-B_W_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT-B_ZT-B_S_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT-B_ZT-B_W_S_r
+Successfully processed: 'karunakaran_2013_ct-b_zt-b_cgrain_sw3eg_2011'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT-B_CT-B_No_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT-B_CT-B_W_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT-B_CT-B_S_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT-B_CT-B_W_S_r
+Successfully processed: 'karunakaran_2013_zt-b_ct-b_cgrain_sw3eg_2011'
+    [WARN] Non-numeric target_crop_num 'SBEAN' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'karunakaran_2013_ct-f_ zt-f_cgrain_sbean'. No data found.
+    [WARN] Non-numeric target_crop_num 'SBEAN' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'karunakaran_2013_zt-f_ ct-f_cgrain_sbean'. No data found.
+    [WARN] Non-numeric target_crop_num 'SBEAN' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_No_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_W_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_S_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_W_S_r
+Successfully processed: 'karunakaran_2013_ct-b_zt-b_cgrain_sbean'
+    [WARN] Non-numeric target_crop_num 'SBEAN' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_No_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_W_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_S_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_W_S_r
+Successfully processed: 'karunakaran_2013_zt-b_ct-b_cgrain_sbean'
+    [WARN] Non-numeric target_crop_num 'SBEAN' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_No_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_No_r
+Successfully processed: 'karunakaran_2013_no_r_cgrain_sbean'
+    [WARN] Non-numeric target_crop_num 'SBEAN' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_W_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_W_r
+Successfully processed: 'karunakaran_2013_w_r_cgrain_sbean'
+    [WARN] Non-numeric target_crop_num 'SBEAN' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_S_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_S_r
+Successfully processed: 'karunakaran_2013_s_r_cgrain_sbean'
+    [WARN] Non-numeric target_crop_num 'SBEAN' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_W_S_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_W_S_r
+Successfully processed: 'karunakaran_2013_w_s_r_cgrain_sbean'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'karunakaran_2013_ct-f_ zt-f_cgrain_sw3eg'. No data found.
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'karunakaran_2013_zt-f_ ct-f_cgrain_sw3eg'. No data found.
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_No_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_W_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_S_r
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_W_S_r
+Successfully processed: 'karunakaran_2013_ct-b_zt-b_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_No_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_W_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_S_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_W_S_r
+Successfully processed: 'karunakaran_2013_zt-b_ct-b_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_No_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_No_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_No_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_No_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_No_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_No_r
+Successfully processed: 'karunakaran_2013_no_r_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_W_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_W_r
+Successfully processed: 'karunakaran_2013_w_r_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_S_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_S_r
+Successfully processed: 'karunakaran_2013_s_r_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ZT-F_
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-F__output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-F_W_S_r
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-F_W_S_r_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: CT-B_ZT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_CT-B_ZT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT-B_ZT-B_W_S_r
+    [DEBUG] Checking Treatment Sch: ZT-B_CT-B_W_S_r
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/Karunakaran_2013_out/Karunakaran_2013_ZT-B_CT-B_W_S_r_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT-B_CT-B_W_S_r
+Successfully processed: 'karunakaran_2013_w_s_r_cgrain_sw3eg'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Karunakaran_2013/observed_vs_modeled_biomass.png'
+--- Script finished. ---

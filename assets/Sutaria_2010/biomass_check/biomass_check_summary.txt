@@ -1,18 +1,273 @@
 Biomass Check Summary for Site: Sutaria_2010
 
-RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
-This is likely because the 'extract_biomass.py' script failed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 14
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 14
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                       Observation  Observed  Simulated          Difference
+       sutaria_2010_t1_cgrain_gnut    64.170  22.250179 -65.33% [SHORTFALL]
+       sutaria_2010_t2_cgrain_gnut    66.600  22.205436 -66.66% [SHORTFALL]
+       sutaria_2010_t3_cgrain_gnut    65.520  22.336282 -65.91% [SHORTFALL]
+       sutaria_2010_f0_cgrain_gnut    61.695  22.220271 -63.98% [SHORTFALL]
+       sutaria_2010_f1_cgrain_gnut    65.565  22.226681 -66.10% [SHORTFALL]
+       sutaria_2010_f2_cgrain_gnut    68.490  22.273500 -67.48% [SHORTFALL]
+       sutaria_2010_f3_cgrain_gnut    65.970  22.273457 -66.24% [SHORTFALL]
+sutaria_2010_t1_aglivc-cgrain_gnut    95.985  62.463661 -34.92% [SHORTFALL]
+sutaria_2010_t2_aglivc-cgrain_gnut    89.505  62.534675 -30.13% [SHORTFALL]
+sutaria_2010_t3_aglivc-cgrain_gnut    90.000  62.390971 -30.68% [SHORTFALL]
+sutaria_2010_f0_aglivc-cgrain_gnut    90.000  62.400976 -30.67% [SHORTFALL]
+sutaria_2010_f1_aglivc-cgrain_gnut    93.285  62.419100 -33.09% [SHORTFALL]
+sutaria_2010_f2_aglivc-cgrain_gnut    91.260  62.546657 -31.46% [SHORTFALL]
+sutaria_2010_f3_aglivc-cgrain_gnut    92.835  62.546524 -32.63% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sutaria_2010_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 14
+R²: 0.9763
+RMSE: 36.98 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
 
 
 --- Biomass Extraction Script ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/scripts/extract_biomass.py", line 382, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'GNUT'
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 14
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F0
+    [DEBUG] Checking Treatment Sch: T1_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F1
+    [DEBUG] Checking Treatment Sch: T1_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F2
+    [DEBUG] Checking Treatment Sch: T1_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F3
+Successfully processed: 'sutaria_2010_t1_cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F1
+    [DEBUG] Checking Treatment Sch: T2_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F2
+    [DEBUG] Checking Treatment Sch: T2_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F3
+    [DEBUG] Checking Treatment Sch: T3_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F0
+Successfully processed: 'sutaria_2010_t2_cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F0
+    [DEBUG] Checking Treatment Sch: T3_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F1
+    [DEBUG] Checking Treatment Sch: T3_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F2
+    [DEBUG] Checking Treatment Sch: T3_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F3
+Successfully processed: 'sutaria_2010_t3_cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F0
+    [DEBUG] Checking Treatment Sch: T2_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F0
+    [DEBUG] Checking Treatment Sch: T3_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F0
+Successfully processed: 'sutaria_2010_f0_cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F1
+    [DEBUG] Checking Treatment Sch: T2_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F1
+    [DEBUG] Checking Treatment Sch: T3_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F1
+Successfully processed: 'sutaria_2010_f1_cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F2
+    [DEBUG] Checking Treatment Sch: T2_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F2
+    [DEBUG] Checking Treatment Sch: T3_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F2
+Successfully processed: 'sutaria_2010_f2_cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F3
+    [DEBUG] Checking Treatment Sch: T2_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F3
+    [DEBUG] Checking Treatment Sch: T3_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F3
+Successfully processed: 'sutaria_2010_f3_cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F0
+    [DEBUG] Checking Treatment Sch: T1_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F1
+    [DEBUG] Checking Treatment Sch: T1_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F2
+    [DEBUG] Checking Treatment Sch: T1_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F3
+Successfully processed: 'sutaria_2010_t1_aglivc-cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F1
+    [DEBUG] Checking Treatment Sch: T2_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F2
+    [DEBUG] Checking Treatment Sch: T2_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F3
+    [DEBUG] Checking Treatment Sch: T3_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F0
+Successfully processed: 'sutaria_2010_t2_aglivc-cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F0
+    [DEBUG] Checking Treatment Sch: T3_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F1
+    [DEBUG] Checking Treatment Sch: T3_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F2
+    [DEBUG] Checking Treatment Sch: T3_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F3
+Successfully processed: 'sutaria_2010_t3_aglivc-cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F0
+    [DEBUG] Checking Treatment Sch: T2_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F0
+    [DEBUG] Checking Treatment Sch: T3_F0
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F0_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F0
+Successfully processed: 'sutaria_2010_f0_aglivc-cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F1
+    [DEBUG] Checking Treatment Sch: T2_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F1
+    [DEBUG] Checking Treatment Sch: T3_F1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F1
+Successfully processed: 'sutaria_2010_f1_aglivc-cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F2
+    [DEBUG] Checking Treatment Sch: T2_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F2
+    [DEBUG] Checking Treatment Sch: T3_F2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F2
+Successfully processed: 'sutaria_2010_f2_aglivc-cgrain_gnut'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T1_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T1_F3
+    [DEBUG] Checking Treatment Sch: T2_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T2_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T2_F3
+    [DEBUG] Checking Treatment Sch: T3_F3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/Sutaria_2010_out/Sutaria_2010_T3_F3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 7 data points in T3_F3
+Successfully processed: 'sutaria_2010_f3_aglivc-cgrain_gnut'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sutaria_2010/observed_vs_modeled_biomass.png'
+--- Script finished. ---

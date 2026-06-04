@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Banerjee_2018
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-58.76%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 6,846.83 g C / m²
@@ -13,6 +13,8 @@ SoilGrids Observed Value: 4,897.70 g C / m²
 Model is 58.76% lower than observation.
 (Difference: -2,878.07 g C / m²)
 
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
+
 --- Experimental Analysis ---
 'banerjee_2018_t1_somsc' Change: -116.13 g C / m² (End value: 1,901.47)
 'banerjee_2018_t2_somsc' Change: -89.12 g C / m² (End value: 1,928.48)
@@ -22,18 +24,54 @@ Model is 58.76% lower than observation.
 Average SOMSC at end of all experimental phases: 2,101.00 g C / m²
 
 --- Calibration Script Test ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/scripts/extract_somsc.py", line 287, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/scripts/extract_somsc.py", line 136, in main
-    target_year = int(target_year)
-                  ^^^^^^^^^^^^^^^^
-ValueError: cannot convert float NaN to integer
+--- Output ---
+-> Checking t1 (Years: 2014,2015,2016, Day: 34)... SUCCESS: 1960.16
+ -> Checking t2 (Years: 2014,2015,2016, Day: 34)... SUCCESS: 1967.18
+ -> Checking t3 (Years: 2014,2015,2016, Day: 34)... SUCCESS: 2137.15
+ -> Checking t4 (Years: 2014,2015,2016, Day: 34)... SUCCESS: 2306.39
+ -> Checking t5 (Years: 2014,2015,2016, Day: 34)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/Banerjee_2018_out/Banerjee_2018_T5_output/soilc.out FAILED: No matching data found.
+ -> Checking t6 (Years: 2014,2015,2016, Day: 34)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/Banerjee_2018_out/Banerjee_2018_T6_output/soilc.out FAILED: No matching data found.
+ -> Checking t7 (Years: 2014,2015,2016, Day: 34)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/Banerjee_2018_out/Banerjee_2018_T7_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/output_somsc.txt'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Banerjee_2018/observed_vs_modeled_somsc.png'
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 4
+Rows passing delta rule (sim >= obs): 4
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+           Observation  Observed   Simulated Difference
+banerjee_2018_t1_somsc    861.00 1960.164067   +127.66%
+banerjee_2018_t2_somsc    987.00 1967.179833    +99.31%
+banerjee_2018_t3_somsc   1171.35 2137.153633    +82.45%
+banerjee_2018_t4_somsc   1316.25 2306.388633    +75.22%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 4
+R²: 0.9282
+RMSE: 1010.21 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
+banerjee_2018_t1_somsc,t1,"2014,2015,2016",34,861.0,1960.164066666667
+banerjee_2018_t2_somsc,t2,"2014,2015,2016",34,987.0,1967.1798333333334
+banerjee_2018_t3_somsc,t3,"2014,2015,2016",34,1171.35,2137.1536333333333
+banerjee_2018_t4_somsc,t4,"2014,2015,2016",34,1316.25,2306.3886333333335

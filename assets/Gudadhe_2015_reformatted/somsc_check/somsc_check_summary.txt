@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Gudadhe_2015_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-54.67%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,182.77 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 2,385.08 g C / m²
 SoilGrids Observed Value: 5,261.78 g C / m²
 Model is 54.67% lower than observation.
 (Difference: -2,876.70 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'gudadhe_2015_reformatted_t1v1_somsc' Change: -28.61 g C / m² (End value: 2,351.99)
@@ -49,17 +51,17 @@ Average SOMSC at end of all experimental phases: 2,226.49 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1 (Year: 2008, Day: 66)... SUCCESS: 2391.92
- -> Checking t2 (Year: 2008, Day: 66)... SUCCESS: 2232.76
- -> Checking t3 (Year: 2008, Day: 66)... SUCCESS: 2242.60
- -> Checking t4 (Year: 2008, Day: 66)... SUCCESS: 2252.22
- -> Checking t5 (Year: 2008, Day: 66)... SUCCESS: 2261.92
- -> Checking t6 (Year: 2008, Day: 66)... SUCCESS: 2222.74
- -> Checking t7 (Year: 2008, Day: 66)... SUCCESS: 2222.78
- -> Checking v1 (Year: 2008, Day: 66)... SUCCESS: 2260.99
- -> Checking v2 (Year: 2008, Day: 66)... SUCCESS: 2260.99
- -> Checking v3 (Year: 2008, Day: 66)... SUCCESS: 2260.99
- -> Checking v4 (Year: 2008, Day: 66)... SUCCESS: 2260.99
+-> Checking t1 (Years: 2008, Day: 66)... SUCCESS: 2391.92
+ -> Checking t2 (Years: 2008, Day: 66)... SUCCESS: 2232.76
+ -> Checking t3 (Years: 2008, Day: 66)... SUCCESS: 2242.60
+ -> Checking t4 (Years: 2008, Day: 66)... SUCCESS: 2252.22
+ -> Checking t5 (Years: 2008, Day: 66)... SUCCESS: 2261.92
+ -> Checking t6 (Years: 2008, Day: 66)... SUCCESS: 2222.74
+ -> Checking t7 (Years: 2008, Day: 66)... SUCCESS: 2222.78
+ -> Checking v1 (Years: 2008, Day: 66)... SUCCESS: 2260.99
+ -> Checking v2 (Years: 2008, Day: 66)... SUCCESS: 2260.99
+ -> Checking v3 (Years: 2008, Day: 66)... SUCCESS: 2260.99
+ -> Checking v4 (Years: 2008, Day: 66)... SUCCESS: 2260.99
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Gudadhe_2015_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Gudadhe_2015_reformatted/averaged_somsc_comparison.csv'
@@ -67,7 +69,41 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Gudadhe_2015_reformatted/o
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 11
+Rows passing delta rule (sim >= obs): 11
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                      Observation  Observed   Simulated Difference
+gudadhe_2015_reformatted_t1_somsc   1386.90 2391.917925    +72.47%
+gudadhe_2015_reformatted_t2_somsc   1122.00 2232.757000    +99.00%
+gudadhe_2015_reformatted_t3_somsc   1275.75 2242.601350    +75.79%
+gudadhe_2015_reformatted_t4_somsc   1286.40 2252.224625    +75.08%
+gudadhe_2015_reformatted_t5_somsc   1386.90 2261.921750    +63.09%
+gudadhe_2015_reformatted_t6_somsc   1014.30 2222.737300   +119.14%
+gudadhe_2015_reformatted_t7_somsc    883.65 2222.784250   +151.55%
+gudadhe_2015_reformatted_v1_somsc   1122.00 2260.993671   +101.51%
+gudadhe_2015_reformatted_v2_somsc   1183.20 2260.991143    +91.09%
+gudadhe_2015_reformatted_v3_somsc   1113.75 2260.990800   +103.01%
+gudadhe_2015_reformatted_v4_somsc   1235.25 2260.992500    +83.04%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 11
+R²: 0.3844
+RMSE: 1085.36 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Gudadhe_2015_reformatted_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 gudadhe_2015_reformatted_t1_somsc,t1,2008,66,1386.9,2391.9179249999997
 gudadhe_2015_reformatted_t2_somsc,t2,2008,66,1122.0,2232.757
 gudadhe_2015_reformatted_t3_somsc,t3,2008,66,1275.75,2242.60135

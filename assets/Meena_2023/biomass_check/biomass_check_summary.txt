@@ -22,9 +22,9 @@ KeyError: 'treatment_sch_file_name'
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_biomass.py", line 386, in <module>
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_biomass.py", line 516, in <module>
     main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_biomass.py", line 255, in main
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Meena_2023/scripts/extract_biomass.py", line 385, in main
     for sch_name in [s.strip() for s in row['treatment_sch_file_name'].replace(",", " ").split()]:
                                         ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/pandas/core/series.py", line 1133, in __getitem__

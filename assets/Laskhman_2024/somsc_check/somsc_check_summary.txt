@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Laskhman_2024
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-63.20%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,685.75 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,785.64 g C / m²
 SoilGrids Observed Value: 4,852.08 g C / m²
 Model is 63.20% lower than observation.
 (Difference: -3,066.44 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'laskhman_2024_t1_somsc' Change: -9.71 g C / m² (End value: 1,771.71)
@@ -25,10 +27,10 @@ Average SOMSC at end of all experimental phases: 1,788.39 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1 (Year: 2022, Day: 5)... FAILED: No matching data found.
- -> Checking t2 (Year: 2022, Day: 5)... FAILED: No matching data found.
- -> Checking t3 (Year: 2022, Day: 5)... FAILED: No matching data found.
- -> Checking t4 (Year: 2022, Day: 5)... FAILED: No matching data found.
+-> Checking t1 (Years: 2022, Day: 5)... FAILED: No matching data found.
+ -> Checking t2 (Years: 2022, Day: 5)... FAILED: No matching data found.
+ -> Checking t3 (Years: 2022, Day: 5)... FAILED: No matching data found.
+ -> Checking t4 (Years: 2022, Day: 5)... FAILED: No matching data found.
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Laskhman_2024/output_somsc.txt'
 
@@ -36,4 +38,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

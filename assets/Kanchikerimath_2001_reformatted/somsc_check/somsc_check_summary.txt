@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Kanchikerimath_2001_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-56.25%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,341.77 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,405.73 g C / m²
 SoilGrids Observed Value: 3,212.94 g C / m²
 Model is 56.25% lower than observation.
 (Difference: -1,807.21 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'kanchikerimath_2001_reformatted_t1_somsc' Change: -579.53 g C / m² (End value: 823.32)
@@ -26,21 +28,21 @@ Average SOMSC at end of all experimental phases: 1,657.00 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1 (Year: 1998, Day: 170)... SUCCESS: 831.15
- -> Checking t2 (Year: 1998, Day: 170)... SUCCESS: 893.66
- -> Checking t3 (Year: 1998, Day: 170)... SUCCESS: 934.78
- -> Checking t4 (Year: 1998, Day: 170)... 
+-> Checking t1 (Years: 1998, Day: 170)... SUCCESS: 831.15
+ -> Checking t2 (Years: 1998, Day: 170)... SUCCESS: 893.66
+ -> Checking t3 (Years: 1998, Day: 170)... SUCCESS: 934.78
+ -> Checking t4 (Years: 1998, Day: 170)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T4_output/soilc.out FAILED: No matching data found.
- -> Checking t5 (Year: 1998, Day: 170)... 
+ -> Checking t5 (Years: 1998, Day: 170)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T5_output/soilc.out FAILED: No matching data found.
- -> Checking t6 (Year: 1998, Day: 170)... 
+ -> Checking t6 (Years: 1998, Day: 170)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T6_output/soilc.out FAILED: No matching data found.
- -> Checking t7 (Year: 1998, Day: 170)... 
+ -> Checking t7 (Years: 1998, Day: 170)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T7_output/soilc.out FAILED: No matching data found.
- -> Checking t8 (Year: 1998, Day: 170)... SUCCESS: 5104.05
- -> Checking t9 (Year: 1998, Day: 170)... 
+ -> Checking t8 (Years: 1998, Day: 170)... SUCCESS: 5104.05
+ -> Checking t9 (Years: 1998, Day: 170)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/Kanchikerimath_2001_reformatted_out/Kanchikerimath_2001_reformatted_T9_output/soilc.out FAILED: No matching data found.
- -> Checking t10 (Year: 1998, Day: 170)... SUCCESS: 671.69
+ -> Checking t10 (Years: 1998, Day: 170)... SUCCESS: 671.69
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reformatted/averaged_somsc_comparison.csv'
@@ -48,7 +50,35 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Kanchikerimath_2001_reform
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 4
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 4
+
+                             Observation  Observed  Simulated         Difference
+kanchikerimath_2001_reformatted_t1_somsc       0.0   831.1470 FLAG (invalid obs)
+kanchikerimath_2001_reformatted_t2_somsc       0.0   893.6641 FLAG (invalid obs)
+kanchikerimath_2001_reformatted_t3_somsc       0.0   934.7814 FLAG (invalid obs)
+kanchikerimath_2001_reformatted_t8_somsc       0.0  5104.0539 FLAG (invalid obs)
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Kanchikerimath_2001_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 4
+R²: 0.0000 (flat observations or flat model)
+RMSE: 2665.27 g C / m²
+Status: FLAG - Near-zero variance in observed and/or simulated values.
+Action: Review `.sch` files and observation timing in `observations/Kanchikerimath_2001_reformatted_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 kanchikerimath_2001_reformatted_t1_somsc,t1,1998,170,0.0,831.1469999999999
 kanchikerimath_2001_reformatted_t2_somsc,t2,1998,170,0.0,893.6641
 kanchikerimath_2001_reformatted_t3_somsc,t3,1998,170,0.0,934.7813999999998

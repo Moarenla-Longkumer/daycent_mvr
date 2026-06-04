@@ -38,21 +38,20 @@ Status: Successful Run
     [DEBUG] Checking Treatment Sch: CT
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/Zhang_2013_out/Zhang_2013_CT_output
     [DEBUG] Sch file exists: True
-    [DEBUG] Found 5 data points in CT
-Successfully processed: 'zhang_2013_ct_cgrain_sw3eg'
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2005,2006,2007,2008,2009
+-! WARNING: Calculation failed for 'zhang_2013_ct_cgrain_sw3eg'. No data found.
     [DEBUG] Checking Treatment Sch: RT
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/Zhang_2013_out/Zhang_2013_RT_output
     [DEBUG] Sch file exists: True
-    [DEBUG] Found 5 data points in RT
-Successfully processed: 'zhang_2013_rt_cgrain_sw3eg'
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2005,2006,2007,2008,2009
+-! WARNING: Calculation failed for 'zhang_2013_rt_cgrain_sw3eg'. No data found.
     [DEBUG] Checking Treatment Sch: NT
     [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/Zhang_2013_out/Zhang_2013_NT_output
     [DEBUG] Sch file exists: True
-    [DEBUG] Found 5 data points in NT
-Successfully processed: 'zhang_2013_nt_cgrain_sw3eg'
+    [DEBUG] ! Extraction returned 0 points for cgrain in Year(s) 2005,2006,2007,2008,2009
+-! WARNING: Calculation failed for 'zhang_2013_nt_cgrain_sw3eg'. No data found.
 
 PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/output_biomass.txt'
-Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/raw_simulated_points.csv'
-Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/averaged_biomass_comparison.csv'
-Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Zhang_2013/observed_vs_modeled_biomass.png'
+
+No data available to plot or save.
 --- Script finished. ---

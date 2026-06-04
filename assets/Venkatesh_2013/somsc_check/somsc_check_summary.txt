@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Venkatesh_2013
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-12.63%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 6,148.91 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,558.58 g C / m²
 SoilGrids Observed Value: 1,783.84 g C / m²
 Model is 12.63% lower than observation.
 (Difference: -225.26 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'venkatesh_2013_mwmc_c_somsc' Change: -481.77 g C / m² (End value: 1,074.09)
@@ -33,13 +35,13 @@ Average SOMSC at end of all experimental phases: 1,632.28 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking mw (Year: 2010, Day: 121)... SUCCESS: 1650.71
- -> Checking mwmc (Year: 2010, Day: 121)... SUCCESS: 1676.79
- -> Checking mwmb (Year: 2010, Day: 121)... SUCCESS: 1671.75
- -> Checking pw (Year: 2010, Day: 121)... SUCCESS: 1592.83
- -> Checking c (Year: 2010, Day: 121)... SUCCESS: 1031.01
- -> Checking i (Year: 2010, Day: 121)... SUCCESS: 1089.44
- -> Checking o (Year: 2010, Day: 121)... SUCCESS: 2823.60
+-> Checking mw (Years: 2010, Day: 121)... SUCCESS: 1650.71
+ -> Checking mwmc (Years: 2010, Day: 121)... SUCCESS: 1676.79
+ -> Checking mwmb (Years: 2010, Day: 121)... SUCCESS: 1671.75
+ -> Checking pw (Years: 2010, Day: 121)... SUCCESS: 1592.83
+ -> Checking c (Years: 2010, Day: 121)... SUCCESS: 1031.01
+ -> Checking i (Years: 2010, Day: 121)... SUCCESS: 1089.44
+ -> Checking o (Years: 2010, Day: 121)... SUCCESS: 2823.60
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Venkatesh_2013/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Venkatesh_2013/averaged_somsc_comparison.csv'
@@ -47,7 +49,37 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Venkatesh_2013/observed_vs
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 7
+Rows passing delta rule (sim >= obs): 1
+Rows with shortfall (sim < obs): 6
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+              Observation  Observed   Simulated          Difference
+  venkatesh_2013_mw_somsc    2043.0 1650.714167 -19.20% [SHORTFALL]
+venkatesh_2013_mwmc_somsc    2244.0 1676.786800 -25.28% [SHORTFALL]
+venkatesh_2013_mwmb_somsc    2312.0 1671.746467 -27.69% [SHORTFALL]
+  venkatesh_2013_pw_somsc    2298.0 1592.830933 -30.69% [SHORTFALL]
+   venkatesh_2013_c_somsc    1931.5 1031.013675 -46.62% [SHORTFALL]
+   venkatesh_2013_i_somsc    2261.0 1089.443225 -51.82% [SHORTFALL]
+   venkatesh_2013_o_somsc    2480.5 2823.601875             +13.83%
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Venkatesh_2013_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 7
+R²: 0.5099
+RMSE: 725.45 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 venkatesh_2013_mw_somsc,mw,2010,121,2043.0,1650.7141666666666
 venkatesh_2013_mwmc_somsc,mwmc,2010,121,2244.0,1676.7867999999999
 venkatesh_2013_mwmb_somsc,mwmb,2010,121,2312.0,1671.7464666666667

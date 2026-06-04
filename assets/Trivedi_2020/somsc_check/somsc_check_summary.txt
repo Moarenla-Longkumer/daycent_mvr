@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Trivedi_2020
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-58.23%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,534.15 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 2,173.63 g C / m²
 SoilGrids Observed Value: 5,203.61 g C / m²
 Model is 58.23% lower than observation.
 (Difference: -3,029.98 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'trivedi_2020_trt_control_somsc' Change: -1,270.50 g C / m² (End value: 898.37)
@@ -29,14 +31,14 @@ Average SOMSC at end of all experimental phases: 2,758.29 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking trt_control (Year: 2016, Day: 120)... SUCCESS: 900.04
- -> Checking trt_n (Year: 2016, Day: 120)... SUCCESS: 1397.18
- -> Checking trt_fym (Year: 2016, Day: 120)... SUCCESS: 5285.72
- -> Checking trt_npk (Year: 2016, Day: 120)... SUCCESS: 1397.14
- -> Checking trt_fympk_adj (Year: 2016, Day: 120)... SUCCESS: 5360.86
- -> Checking trt_fympkl_adj (Year: 2016, Day: 120)... SUCCESS: 5188.12
- -> Checking trt_npkl (Year: 2016, Day: 120)... SUCCESS: 1377.86
- -> Checking trt_nl (Year: 2016, Day: 120)... SUCCESS: 1377.95
+-> Checking trt_control (Years: 2016, Day: 120)... SUCCESS: 900.04
+ -> Checking trt_n (Years: 2016, Day: 120)... SUCCESS: 1397.18
+ -> Checking trt_fym (Years: 2016, Day: 120)... SUCCESS: 5285.72
+ -> Checking trt_npk (Years: 2016, Day: 120)... SUCCESS: 1397.14
+ -> Checking trt_fympk_adj (Years: 2016, Day: 120)... SUCCESS: 5360.86
+ -> Checking trt_fympkl_adj (Years: 2016, Day: 120)... SUCCESS: 5188.12
+ -> Checking trt_npkl (Years: 2016, Day: 120)... SUCCESS: 1377.86
+ -> Checking trt_nl (Years: 2016, Day: 120)... SUCCESS: 1377.95
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Trivedi_2020/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Trivedi_2020/averaged_somsc_comparison.csv'
@@ -44,7 +46,39 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Trivedi_2020/observed_vs_m
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 8
+Rows passing delta rule (sim >= obs): 3
+Rows with shortfall (sim < obs): 5
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                      Observation  Observed  Simulated          Difference
+   trivedi_2020_trt_control_somsc    2777.0   900.0386 -67.59% [SHORTFALL]
+         trivedi_2020_trt_n_somsc    2709.0  1397.1806 -48.42% [SHORTFALL]
+       trivedi_2020_trt_fym_somsc    4232.0  5285.7249             +24.90%
+       trivedi_2020_trt_npk_somsc    3634.0  1397.1419 -61.55% [SHORTFALL]
+ trivedi_2020_trt_fympk_adj_somsc    4859.0  5360.8644             +10.33%
+trivedi_2020_trt_fympkl_adj_somsc    4686.0  5188.1214             +10.72%
+      trivedi_2020_trt_npkl_somsc    5076.0  1377.8617 -72.86% [SHORTFALL]
+        trivedi_2020_trt_nl_somsc    3632.0  1377.9494 -62.06% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Trivedi_2020_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 8
+R²: 0.3700
+RMSE: 1956.36 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Trivedi_2020_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 trivedi_2020_trt_control_somsc,trt_control,2016,120,2777.0,900.0386
 trivedi_2020_trt_n_somsc,trt_n,2016,120,2709.0,1397.1806
 trivedi_2020_trt_fym_somsc,trt_fym,2016,120,4232.0,5285.7249

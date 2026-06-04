@@ -10,9 +10,9 @@ Reason: Script exited with error code 1
 
 --- Error Output ---
 Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2022/scripts/extract_biomass.py", line 382, in <module>
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2022/scripts/extract_biomass.py", line 516, in <module>
     main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2022/scripts/extract_biomass.py", line 251, in main
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2022/scripts/extract_biomass.py", line 385, in main
     for sch_name in [s.strip() for s in row['treatment_sch_file_name'].replace(",", " ").split()]:
                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'float' object has no attribute 'replace'

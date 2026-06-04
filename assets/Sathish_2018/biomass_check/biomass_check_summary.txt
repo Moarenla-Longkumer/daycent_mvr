@@ -1,18 +1,880 @@
 Biomass Check Summary for Site: Sathish_2018
 
-RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
-This is likely because the 'extract_biomass.py' script failed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 120
+Rows passing delta rule (sim >= obs): 33
+Rows with shortfall (sim < obs): 87
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                         Observation  Observed  Simulated          Difference
+    sathish_2018_t1_cgrain_gnut_1992    58.920    52.6966 -10.56% [SHORTFALL]
+    sathish_2018_t1_cgrain_gnut_1994    29.640    46.2185             +55.93%
+    sathish_2018_t1_cgrain_gnut_1996    21.180    53.6607            +153.36%
+    sathish_2018_t1_cgrain_gnut_1998    14.220    51.5251            +262.34%
+    sathish_2018_t1_cgrain_gnut_2000    10.140    54.0677            +433.21%
+    sathish_2018_t1_cgrain_gnut_2002     2.340    45.8552           +1859.62%
+    sathish_2018_t1_cgrain_gnut_2004    31.920    52.1990             +63.53%
+    sathish_2018_t1_cgrain_gnut_2006    26.700    48.3346             +81.03%
+    sathish_2018_t1_cgrain_gnut_2008    29.640    52.9475             +78.64%
+    sathish_2018_t1_cgrain_gnut_2010    26.100    53.4023            +104.61%
+    sathish_2018_t1_cgrain_gnut_2012    33.660    50.8943             +51.20%
+    sathish_2018_t1_cgrain_gnut_2014    37.140    51.0785             +37.53%
+    sathish_2018_t2_cgrain_gnut_1992   148.620    52.6966 -64.54% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_1994    57.780    46.2421 -19.97% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_1996    83.880    53.7127 -35.96% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_1998    52.860    51.5320  -2.51% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_2000   100.440    54.1584 -46.08% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_2002     9.300    45.9129            +393.69%
+    sathish_2018_t2_cgrain_gnut_2004   113.820    52.2375 -54.11% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_2006    67.920    48.5449 -28.53% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_2008    54.900    53.0225  -3.42% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_2010    52.260    53.7369              +2.83%
+    sathish_2018_t2_cgrain_gnut_2012    65.040    51.0439 -21.52% [SHORTFALL]
+    sathish_2018_t2_cgrain_gnut_2014    74.880    51.1655 -31.67% [SHORTFALL]
+    sathish_2018_t3_cgrain_gnut_1992   129.180    52.6966 -59.21% [SHORTFALL]
+    sathish_2018_t3_cgrain_gnut_1994    60.960    46.2383 -24.15% [SHORTFALL]
+    sathish_2018_t3_cgrain_gnut_1996    90.000    53.7289 -40.30% [SHORTFALL]
+    sathish_2018_t3_cgrain_gnut_1998    33.660    51.5149             +53.04%
+    sathish_2018_t3_cgrain_gnut_2000    87.360    54.1632 -38.00% [SHORTFALL]
+    sathish_2018_t3_cgrain_gnut_2002     7.560    45.9129            +507.31%
+    sathish_2018_t3_cgrain_gnut_2004   105.960    52.2717 -50.67% [SHORTFALL]
+    sathish_2018_t3_cgrain_gnut_2006    50.820    48.5480  -4.47% [SHORTFALL]
+    sathish_2018_t3_cgrain_gnut_2008    48.180    53.0061             +10.02%
+    sathish_2018_t3_cgrain_gnut_2010    49.620    53.7428              +8.31%
+    sathish_2018_t3_cgrain_gnut_2012    79.260    51.0659 -35.57% [SHORTFALL]
+    sathish_2018_t3_cgrain_gnut_2014    86.820    51.1711 -41.06% [SHORTFALL]
+    sathish_2018_t4_cgrain_gnut_1992   121.920    52.6966 -56.78% [SHORTFALL]
+    sathish_2018_t4_cgrain_gnut_1994    54.000    46.2199 -14.41% [SHORTFALL]
+    sathish_2018_t4_cgrain_gnut_1996    75.180    53.7283 -28.53% [SHORTFALL]
+    sathish_2018_t4_cgrain_gnut_1998    26.700    51.4597             +92.73%
+    sathish_2018_t4_cgrain_gnut_2000    70.260    54.1684 -22.90% [SHORTFALL]
+    sathish_2018_t4_cgrain_gnut_2002     8.700    45.9182            +427.80%
+    sathish_2018_t4_cgrain_gnut_2004   107.100    52.2687 -51.20% [SHORTFALL]
+    sathish_2018_t4_cgrain_gnut_2006    48.180    48.5615              +0.79%
+    sathish_2018_t4_cgrain_gnut_2008    41.820    53.0253             +26.79%
+    sathish_2018_t4_cgrain_gnut_2010    57.780    53.7436  -6.99% [SHORTFALL]
+    sathish_2018_t4_cgrain_gnut_2012    65.040    51.0654 -21.49% [SHORTFALL]
+    sathish_2018_t4_cgrain_gnut_2014    90.000    51.1694 -43.15% [SHORTFALL]
+    sathish_2018_t5_cgrain_gnut_1992   123.960    52.6966 -57.49% [SHORTFALL]
+    sathish_2018_t5_cgrain_gnut_1994    41.820    46.2241             +10.53%
+    sathish_2018_t5_cgrain_gnut_1996    47.640    53.7285             +12.78%
+    sathish_2018_t5_cgrain_gnut_1998    16.560    51.4887            +210.92%
+    sathish_2018_t5_cgrain_gnut_2000    28.440    54.1628             +90.45%
+    sathish_2018_t5_cgrain_gnut_2002     3.480    45.9130           +1219.34%
+    sathish_2018_t5_cgrain_gnut_2004    39.780    52.2715             +31.40%
+    sathish_2018_t5_cgrain_gnut_2006    43.260    48.5585             +12.25%
+    sathish_2018_t5_cgrain_gnut_2008    29.880    53.0038             +77.39%
+    sathish_2018_t5_cgrain_gnut_2010    39.180    53.7429             +37.17%
+    sathish_2018_t5_cgrain_gnut_2012    50.820    51.0623              +0.48%
+    sathish_2018_t5_cgrain_gnut_2014    52.860    51.1765  -3.18% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_1993    97.435    38.5671 -60.42% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_1995    54.275    43.9229 -19.07% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_1997    52.130    51.4596  -1.29% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_1999     7.930    34.7996            +338.83%
+sathish_2018_t1_cgrain_fig_mill_2001    37.375    32.7204 -12.45% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_2003    69.550    27.0893 -61.05% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_2005    60.060    19.4726 -67.58% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_2007    17.355    17.6519              +1.71%
+sathish_2018_t1_cgrain_fig_mill_2009    40.560    16.5388 -59.22% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_2011    53.755    13.8434 -74.25% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_2013    20.540    13.6876 -33.36% [SHORTFALL]
+sathish_2018_t1_cgrain_fig_mill_2015    49.010    10.2082 -79.17% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_1993   224.900    44.1993 -80.35% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_1995   239.655    56.7099 -76.34% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_1997   239.135    75.8113 -68.30% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_1999   187.005    52.8868 -71.72% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_2001   140.660    56.1473 -60.08% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_2003   239.135    51.8693 -78.31% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_2005   228.085    47.7045 -79.08% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_2007   110.630    44.8537 -59.46% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_2009   183.300    43.6135 -76.21% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_2011   205.985    38.8918 -81.12% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_2013   117.455    38.4606 -67.26% [SHORTFALL]
+sathish_2018_t2_cgrain_fig_mill_2015   122.200    37.4567 -69.35% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_1993   254.410    72.7882 -71.39% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_1995   255.450    92.6622 -63.73% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_1997   263.900   120.8383 -54.21% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_1999   244.400    76.5354 -68.68% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_2001   185.445    78.2549 -57.80% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_2003   270.205    80.4515 -70.23% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_2005   300.755    73.8528 -75.44% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_2007   128.505    78.6606 -38.79% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_2009   222.300    79.5501 -64.21% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_2011   250.705    70.5898 -71.84% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_2013   154.310    71.9684 -53.36% [SHORTFALL]
+sathish_2018_t3_cgrain_fig_mill_2015   157.495    74.8678 -52.46% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_1993   275.990    95.1708 -65.52% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_1995   297.115   131.9143 -55.60% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_1997   272.350   165.1236 -39.37% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_1999   242.320   100.8628 -58.38% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_2001   205.985    95.8484 -53.47% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_2003   252.330   104.0706 -58.76% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_2005   263.900    87.6181 -66.80% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_2007   178.555   108.9371 -38.99% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_2009   260.715   111.5670 -57.21% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_2011   280.735    96.4855 -65.63% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_2013   211.250   104.7489 -50.41% [SHORTFALL]
+sathish_2018_t4_cgrain_fig_mill_2015   179.075   105.5029 -41.08% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_1993   178.555    90.9387 -49.07% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_1995   212.810   115.0706 -45.93% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_1997   161.200   140.3441 -12.94% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_1999   146.965    89.5214 -39.09% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_2001   112.710    82.0579 -27.20% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_2003   193.830    87.2180 -55.00% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_2005   176.475    67.2906 -61.87% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_2007    94.315    84.7221 -10.17% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_2009   170.690    88.2520 -48.30% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_2011   189.085    77.0428 -59.25% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_2013   133.770    83.3965 -37.66% [SHORTFALL]
+sathish_2018_t5_cgrain_fig_mill_2015   150.670    81.9101 -45.64% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sathish_2018_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 120
+R²: 0.4806
+RMSE: 87.08 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Sathish_2018_obs.csv`.
 
 
 --- Biomass Extraction Script ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/scripts/extract_biomass.py", line 382, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'GNUT'
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth (cm)', 'target_year', 'target_day', 'soc_calc', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'COMMENT', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 120
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_1992'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_1994'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_1996'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_1998'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_2000'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_2002'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_2004'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_2006'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_2008'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_2010'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_2012'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_gnut_2014'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_1992'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_1994'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_1996'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_1998'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_2000'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_2002'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_2004'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_2006'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_2008'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_2010'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_2012'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_gnut_2014'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_1992'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_1994'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_1996'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_1998'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_2000'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_2002'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_2004'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_2006'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_2008'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_2010'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_2012'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_gnut_2014'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_1992'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_1994'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_1996'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_1998'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_2000'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_2002'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_2004'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_2006'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_2008'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_2010'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_2012'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_gnut_2014'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_1992'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_1994'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_1996'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_1998'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_2000'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_2002'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_2004'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_2006'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_2008'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_2010'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_2012'
+    [WARN] Non-numeric target_crop_num 'GNUT' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_gnut_2014'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_1993'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_1995'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_1997'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_1999'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_2001'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_2003'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_2005'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_2007'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_2009'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_2011'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_2013'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T1
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T1_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T1
+Successfully processed: 'sathish_2018_t1_cgrain_fig_mill_2015'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_1993'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_1995'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_1997'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_1999'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_2001'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_2003'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_2005'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_2007'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_2009'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_2011'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_2013'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T2
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T2_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T2
+Successfully processed: 'sathish_2018_t2_cgrain_fig_mill_2015'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_1993'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_1995'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_1997'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_1999'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_2001'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_2003'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_2005'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_2007'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_2009'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_2011'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_2013'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T3
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T3_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T3
+Successfully processed: 'sathish_2018_t3_cgrain_fig_mill_2015'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_1993'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_1995'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_1997'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_1999'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_2001'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_2003'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_2005'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_2007'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_2009'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_2011'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_2013'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T4
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T4_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T4
+Successfully processed: 'sathish_2018_t4_cgrain_fig_mill_2015'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_1993'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_1995'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_1997'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_1999'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_2001'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_2003'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_2005'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_2007'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_2009'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_2011'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_2013'
+    [WARN] Non-numeric target_crop_num 'FIG_MILL' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: T5
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/Sathish_2018_out/Sathish_2018_T5_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in T5
+Successfully processed: 'sathish_2018_t5_cgrain_fig_mill_2015'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Sathish_2018/observed_vs_modeled_biomass.png'
+--- Script finished. ---

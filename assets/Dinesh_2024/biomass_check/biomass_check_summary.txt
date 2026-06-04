@@ -10,12 +10,9 @@ Reason: Script exited with error code 1
 
 --- Error Output ---
 Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/scripts/extract_biomass.py", line 382, in <module>
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/scripts/extract_biomass.py", line 516, in <module>
     main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/scripts/extract_biomass.py", line 231, in main
-    target_years_list = [str(y) for y in sorted([int(y.strip()) for y in str(row['target_year']).split(',')])]
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/scripts/extract_biomass.py", line 231, in <listcomp>
-    target_years_list = [str(y) for y in sorted([int(y.strip()) for y in str(row['target_year']).split(',')])]
-                                                 ^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: '2018.0'
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Dinesh_2024/scripts/extract_biomass.py", line 385, in main
+    for sch_name in [s.strip() for s in row['treatment_sch_file_name'].replace(",", " ").split()]:
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'replace'

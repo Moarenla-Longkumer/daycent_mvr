@@ -1,18 +1,292 @@
 Biomass Check Summary for Site: Yang_2024
 
-RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
-This is likely because the 'extract_biomass.py' script failed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 36
+Rows passing delta rule (sim >= obs): 2
+Rows with shortfall (sim < obs): 34
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                     Observation   Observed  Simulated          Difference
+  yang_2024_mw_cgrain_sw3eg_2018 209.612903   229.8895              +9.67%
+     yang_2024_mw_cgrain_c6_2018 231.995501   219.0806  -5.57% [SHORTFALL]
+  yang_2024_mw_cgrain_sw3eg_2020 328.888889   223.9174 -31.92% [SHORTFALL]
+     yang_2024_mw_cgrain_c6_2020 297.818132   231.1376 -22.39% [SHORTFALL]
+  yang_2024_mw_cgrain_sw3eg_2022 316.898551   237.5246 -25.05% [SHORTFALL]
+     yang_2024_mw_cgrain_c6_2022 376.104581   245.6557 -34.68% [SHORTFALL]
+yang_2024_spwm_cgrain_sw3eg_2018 266.451613   220.8114 -17.13% [SHORTFALL]
+   yang_2024_spwm_cgrain_c6_2018 405.455607   222.5336 -45.12% [SHORTFALL]
+yang_2024_spwm_cgrain_sw3eg_2020 345.555556   199.3020 -42.32% [SHORTFALL]
+   yang_2024_spwm_cgrain_c6_2020 451.823262   223.6538 -50.50% [SHORTFALL]
+yang_2024_spwm_cgrain_sw3eg_2022 371.600000   238.1859 -35.90% [SHORTFALL]
+   yang_2024_spwm_cgrain_c6_2022 498.058530   214.3839 -56.96% [SHORTFALL]
+ yang_2024_pwm_cgrain_sw3eg_2018 240.016129   221.6655  -7.65% [SHORTFALL]
+    yang_2024_pwm_cgrain_c6_2018 386.716121   222.5305 -42.46% [SHORTFALL]
+ yang_2024_pwm_cgrain_sw3eg_2020 360.000000   214.7318 -40.35% [SHORTFALL]
+    yang_2024_pwm_cgrain_c6_2020 471.694241   224.1608 -52.48% [SHORTFALL]
+ yang_2024_pwm_cgrain_sw3eg_2022 367.055072   246.1374 -32.94% [SHORTFALL]
+    yang_2024_pwm_cgrain_c6_2022 503.936262   213.6200 -57.61% [SHORTFALL]
+ yang_2024_swm_cgrain_sw3eg_2018 260.537634   221.1618 -15.11% [SHORTFALL]
+    yang_2024_swm_cgrain_c6_2018 286.325750   222.5252 -22.28% [SHORTFALL]
+ yang_2024_swm_cgrain_sw3eg_2020 368.888889   200.1957 -45.73% [SHORTFALL]
+    yang_2024_swm_cgrain_c6_2020 448.503882   224.0830 -50.04% [SHORTFALL]
+ yang_2024_swm_cgrain_sw3eg_2022 381.281159   238.2941 -37.50% [SHORTFALL]
+    yang_2024_swm_cgrain_c6_2022 485.048234   213.6956 -55.94% [SHORTFALL]
+yang_2024_smwm_cgrain_sw3eg_2018 228.919355   221.2875  -3.33% [SHORTFALL]
+   yang_2024_smwm_cgrain_c6_2018 268.750809   222.5239 -17.20% [SHORTFALL]
+yang_2024_smwm_cgrain_sw3eg_2020 381.111111   216.5710 -43.17% [SHORTFALL]
+   yang_2024_smwm_cgrain_c6_2020 349.341395   224.1647 -35.83% [SHORTFALL]
+yang_2024_smwm_cgrain_sw3eg_2022 347.402899   245.2529 -29.40% [SHORTFALL]
+   yang_2024_smwm_cgrain_c6_2022 406.471949   213.7016 -47.43% [SHORTFALL]
+yang_2024_rswm_cgrain_sw3eg_2018 205.451613   218.9797              +6.58%
+   yang_2024_rswm_cgrain_c6_2018 206.839383   181.3000 -12.35% [SHORTFALL]
+yang_2024_rswm_cgrain_sw3eg_2020 346.666667   212.5686 -38.68% [SHORTFALL]
+   yang_2024_rswm_cgrain_c6_2020 321.360823   235.5571 -26.70% [SHORTFALL]
+yang_2024_rswm_cgrain_sw3eg_2022 309.298551   226.1240 -26.89% [SHORTFALL]
+   yang_2024_rswm_cgrain_c6_2022 360.702111   227.1044 -37.04% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Yang_2024_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 36
+R²: 0.0037
+RMSE: 146.93 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Yang_2024_obs.csv`.
 
 
 --- Biomass Extraction Script ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/scripts/extract_biomass.py", line 382, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'SW3EG'
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'n_obs', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 36
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MW
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_MW_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MW
+Successfully processed: 'yang_2024_mw_cgrain_sw3eg_2018'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MW
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_MW_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MW
+Successfully processed: 'yang_2024_mw_cgrain_c6_2018'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MW
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_MW_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MW
+Successfully processed: 'yang_2024_mw_cgrain_sw3eg_2020'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MW
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_MW_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MW
+Successfully processed: 'yang_2024_mw_cgrain_c6_2020'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MW
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_MW_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MW
+Successfully processed: 'yang_2024_mw_cgrain_sw3eg_2022'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: MW
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_MW_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in MW
+Successfully processed: 'yang_2024_mw_cgrain_c6_2022'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SpWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SpWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SpWM
+Successfully processed: 'yang_2024_spwm_cgrain_sw3eg_2018'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SpWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SpWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SpWM
+Successfully processed: 'yang_2024_spwm_cgrain_c6_2018'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SpWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SpWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SpWM
+Successfully processed: 'yang_2024_spwm_cgrain_sw3eg_2020'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SpWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SpWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SpWM
+Successfully processed: 'yang_2024_spwm_cgrain_c6_2020'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SpWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SpWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SpWM
+Successfully processed: 'yang_2024_spwm_cgrain_sw3eg_2022'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SpWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SpWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SpWM
+Successfully processed: 'yang_2024_spwm_cgrain_c6_2022'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_PWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PWM
+Successfully processed: 'yang_2024_pwm_cgrain_sw3eg_2018'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_PWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PWM
+Successfully processed: 'yang_2024_pwm_cgrain_c6_2018'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_PWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PWM
+Successfully processed: 'yang_2024_pwm_cgrain_sw3eg_2020'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_PWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PWM
+Successfully processed: 'yang_2024_pwm_cgrain_c6_2020'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_PWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PWM
+Successfully processed: 'yang_2024_pwm_cgrain_sw3eg_2022'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_PWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PWM
+Successfully processed: 'yang_2024_pwm_cgrain_c6_2022'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SWM
+Successfully processed: 'yang_2024_swm_cgrain_sw3eg_2018'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SWM
+Successfully processed: 'yang_2024_swm_cgrain_c6_2018'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SWM
+Successfully processed: 'yang_2024_swm_cgrain_sw3eg_2020'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SWM
+Successfully processed: 'yang_2024_swm_cgrain_c6_2020'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SWM
+Successfully processed: 'yang_2024_swm_cgrain_sw3eg_2022'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SWM
+Successfully processed: 'yang_2024_swm_cgrain_c6_2022'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SmWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SmWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SmWM
+Successfully processed: 'yang_2024_smwm_cgrain_sw3eg_2018'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SmWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SmWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SmWM
+Successfully processed: 'yang_2024_smwm_cgrain_c6_2018'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SmWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SmWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SmWM
+Successfully processed: 'yang_2024_smwm_cgrain_sw3eg_2020'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SmWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SmWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SmWM
+Successfully processed: 'yang_2024_smwm_cgrain_c6_2020'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SmWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SmWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SmWM
+Successfully processed: 'yang_2024_smwm_cgrain_sw3eg_2022'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: SmWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_SmWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in SmWM
+Successfully processed: 'yang_2024_smwm_cgrain_c6_2022'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: RSWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_RSWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in RSWM
+Successfully processed: 'yang_2024_rswm_cgrain_sw3eg_2018'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: RSWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_RSWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in RSWM
+Successfully processed: 'yang_2024_rswm_cgrain_c6_2018'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: RSWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_RSWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in RSWM
+Successfully processed: 'yang_2024_rswm_cgrain_sw3eg_2020'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: RSWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_RSWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in RSWM
+Successfully processed: 'yang_2024_rswm_cgrain_c6_2020'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: RSWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_RSWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in RSWM
+Successfully processed: 'yang_2024_rswm_cgrain_sw3eg_2022'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: RSWM
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/Yang_2024_out/Yang_2024_RSWM_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in RSWM
+Successfully processed: 'yang_2024_rswm_cgrain_c6_2022'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/observed_vs_modeled_biomass.png'
+--- Script finished. ---

@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Das_2013_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-61.44%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,991.46 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,248.70 g C / m²
 SoilGrids Observed Value: 3,238.07 g C / m²
 Model is 61.44% lower than observation.
 (Difference: -1,989.37 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'das_2013_reformatted_ctb_cmres_somsc' Change: -116.16 g C / m² (End value: 1,129.37)
@@ -37,15 +39,15 @@ Average SOMSC at end of all experimental phases: 1,241.13 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking ctf (Year: 2012, Day: 222.0)... SUCCESS: 1195.68
- -> Checking ctb (Year: 2012, Day: 222.0)... SUCCESS: 1195.68
- -> Checking ztf (Year: 2012, Day: 222.0)... SUCCESS: 1333.98
- -> Checking ztb (Year: 2012, Day: 222.0)... SUCCESS: 1291.22
- -> Checking nres (Year: 2012, Day: 222.0)... SUCCESS: 1176.36
- -> Checking cmres (Year: 2012, Day: 222.0)... SUCCESS: 1214.85
- -> Checking wres (Year: 2012, Day: 222.0)... 
+-> Checking ctf (Years: 2012, Day: 222.0)... SUCCESS: 1195.68
+ -> Checking ctb (Years: 2012, Day: 222.0)... SUCCESS: 1195.68
+ -> Checking ztf (Years: 2012, Day: 222.0)... SUCCESS: 1333.98
+ -> Checking ztb (Years: 2012, Day: 222.0)... SUCCESS: 1291.22
+ -> Checking nres (Years: 2012, Day: 222.0)... SUCCESS: 1176.36
+ -> Checking cmres (Years: 2012, Day: 222.0)... SUCCESS: 1214.85
+ -> Checking wres (Years: 2012, Day: 222.0)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/Das_2013_reformatted_out/Das_2013_reformatted_CM_WRES_output/soilc.out SUCCESS: 1288.26
- -> Checking cm_wres (Year: 2012, Day: 222.0)... SUCCESS: 1333.27
+ -> Checking cm_wres (Years: 2012, Day: 222.0)... SUCCESS: 1333.27
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/averaged_somsc_comparison.csv'
@@ -53,7 +55,38 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2013_reformatted/obser
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 8
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 8
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                       Observation  Observed   Simulated          Difference
+    das_2013_reformatted_ctf_somsc    3482.0 1195.683925 -65.66% [SHORTFALL]
+    das_2013_reformatted_ctb_somsc    3423.0 1195.683925 -65.07% [SHORTFALL]
+    das_2013_reformatted_ztf_somsc    3652.0 1333.978900 -63.47% [SHORTFALL]
+    das_2013_reformatted_ztb_somsc    3662.0 1291.217325 -64.74% [SHORTFALL]
+   das_2013_reformatted_nres_somsc    3472.0 1176.356525 -66.12% [SHORTFALL]
+  das_2013_reformatted_cmres_somsc    3525.0 1214.854750 -65.54% [SHORTFALL]
+   das_2013_reformatted_wres_somsc    3582.0 1288.262333 -64.04% [SHORTFALL]
+das_2013_reformatted_cm_wres_somsc    3619.0 1333.270100 -63.16% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Das_2013_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 8
+R²: 0.8371
+RMSE: 2298.76 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 das_2013_reformatted_ctf_somsc,ctf,2012,222,3482.0,1195.683925
 das_2013_reformatted_ctb_somsc,ctb,2012,222,3423.0,1195.683925
 das_2013_reformatted_ztf_somsc,ztf,2012,222,3652.0,1333.9789

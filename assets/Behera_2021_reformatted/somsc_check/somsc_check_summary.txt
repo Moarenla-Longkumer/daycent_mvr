@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Behera_2021_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-61.48%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,667.95 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,195.04 g C / m²
 SoilGrids Observed Value: 3,102.76 g C / m²
 Model is 61.48% lower than observation.
 (Difference: -1,907.72 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'behera_2021_reformatted_ct_cw_somsc' Change: -271.78 g C / m² (End value: 921.35)
@@ -41,15 +43,15 @@ Average SOMSC at end of all experimental phases: 1,186.14 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking cw (Year: 2014, Day: 110)... FAILED: No matching data found.
- -> Checking pw (Year: 2014, Day: 110)... FAILED: No matching data found.
- -> Checking gw (Year: 2014, Day: 110)... FAILED: No matching data found.
- -> Checking mw (Year: 2014, Day: 110)... FAILED: No matching data found.
- -> Checking sw (Year: 2014, Day: 110)... FAILED: No matching data found.
- -> Checking ct (Year: 2014, Day: 110)... FAILED: No matching data found.
- -> Checking ct_r (Year: 2014, Day: 110)... FAILED: No matching data found.
- -> Checking zt (Year: 2014, Day: 110)... FAILED: No matching data found.
- -> Checking zt_r (Year: 2014, Day: 110)... FAILED: No matching data found.
+-> Checking cw (Years: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking pw (Years: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking gw (Years: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking mw (Years: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking sw (Years: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking ct (Years: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking ct_r (Years: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking zt (Years: 2014, Day: 110)... FAILED: No matching data found.
+ -> Checking zt_r (Years: 2014, Day: 110)... FAILED: No matching data found.
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Behera_2021_reformatted/output_somsc.txt'
 
@@ -57,4 +59,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

@@ -1,18 +1,292 @@
 Biomass Check Summary for Site: Das_2018_reformatted
 
-RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
-This is likely because the 'extract_biomass.py' script failed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 36
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 36
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                         Observation  Observed  Simulated          Difference
+       das_2018_reformatted_ct_aglivc-cgrain_c6_2010   258.800  113.16360 -56.27% [SHORTFALL]
+     das_2018_reformatted_pnbb_aglivc-cgrain_c6_2010   289.200  119.62930 -58.63% [SHORTFALL]
+   das_2018_reformatted_pnbb_r_aglivc-cgrain_c6_2010   349.600  119.78650 -65.74% [SHORTFALL]
+       das_2018_reformatted_ct_aglivc-cgrain_c6_2011   339.200  108.17610 -68.11% [SHORTFALL]
+     das_2018_reformatted_pnbb_aglivc-cgrain_c6_2011   400.000  119.32010 -70.17% [SHORTFALL]
+   das_2018_reformatted_pnbb_r_aglivc-cgrain_c6_2011   462.400  129.65940 -71.96% [SHORTFALL]
+       das_2018_reformatted_zt_aglivc-cgrain_c6_2011   430.400  105.04570 -75.59% [SHORTFALL]
+     das_2018_reformatted_zt_r_aglivc-cgrain_c6_2011   478.400  104.93030 -78.07% [SHORTFALL]
+       das_2018_reformatted_ct_aglivc-cgrain_c6_2012   331.200  120.22640 -63.70% [SHORTFALL]
+     das_2018_reformatted_pnbb_aglivc-cgrain_c6_2012   308.400  127.59850 -58.63% [SHORTFALL]
+   das_2018_reformatted_pnbb_r_aglivc-cgrain_c6_2012   428.000  141.97630 -66.83% [SHORTFALL]
+       das_2018_reformatted_zt_aglivc-cgrain_c6_2012   397.200  113.99690 -71.30% [SHORTFALL]
+     das_2018_reformatted_zt_r_aglivc-cgrain_c6_2012   482.000  124.92160 -74.08% [SHORTFALL]
+    das_2018_reformatted_ct_aglivc-cgrain_sw3eg_2011   318.000  214.91560 -32.42% [SHORTFALL]
+  das_2018_reformatted_pnbb_aglivc-cgrain_sw3eg_2011   294.600  192.93150 -34.51% [SHORTFALL]
+das_2018_reformatted_pnbb_r_aglivc-cgrain_sw3eg_2011   299.000  183.95550 -38.48% [SHORTFALL]
+    das_2018_reformatted_ct_aglivc-cgrain_sw3eg_2012   300.000  201.30580 -32.90% [SHORTFALL]
+  das_2018_reformatted_pnbb_aglivc-cgrain_sw3eg_2012   288.600  175.82440 -39.08% [SHORTFALL]
+das_2018_reformatted_pnbb_r_aglivc-cgrain_sw3eg_2012   331.600  171.57660 -48.26% [SHORTFALL]
+    das_2018_reformatted_zt_aglivc-cgrain_sw3eg_2012   295.200  198.40390 -32.79% [SHORTFALL]
+  das_2018_reformatted_zt_r_aglivc-cgrain_sw3eg_2012   293.200  192.57920 -34.32% [SHORTFALL]
+    das_2018_reformatted_ct_aglivc-cgrain_sw3eg_2013   350.000  189.73280 -45.79% [SHORTFALL]
+  das_2018_reformatted_pnbb_aglivc-cgrain_sw3eg_2013   311.800  183.58070 -41.12% [SHORTFALL]
+das_2018_reformatted_pnbb_r_aglivc-cgrain_sw3eg_2013   305.000  186.59880 -38.82% [SHORTFALL]
+    das_2018_reformatted_zt_aglivc-cgrain_sw3eg_2013   401.200  159.25780 -60.30% [SHORTFALL]
+  das_2018_reformatted_zt_r_aglivc-cgrain_sw3eg_2013   407.600  155.20390 -61.92% [SHORTFALL]
+                   das_2018_reformatted_ct_cgrain_c6   143.750   84.86710 -40.96% [SHORTFALL]
+                 das_2018_reformatted_pnbb_cgrain_c6   165.000   93.62940 -43.25% [SHORTFALL]
+               das_2018_reformatted_pnbb_r_cgrain_c6   176.250  101.78260 -42.25% [SHORTFALL]
+                   das_2018_reformatted_zt_cgrain_c6   173.750  110.05660 -36.66% [SHORTFALL]
+                 das_2018_reformatted_zt_r_cgrain_c6   181.250  109.93530 -39.35% [SHORTFALL]
+                das_2018_reformatted_ct_cgrain_sw3eg   195.000   95.96740 -50.79% [SHORTFALL]
+              das_2018_reformatted_pnbb_cgrain_sw3eg   186.875   88.43885 -52.67% [SHORTFALL]
+            das_2018_reformatted_pnbb_r_cgrain_sw3eg   195.000   88.27475 -54.73% [SHORTFALL]
+                das_2018_reformatted_zt_cgrain_sw3eg   188.750   88.70850 -53.00% [SHORTFALL]
+              das_2018_reformatted_zt_r_cgrain_sw3eg   200.000   86.29645 -56.85% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Das_2018_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 36
+R²: 0.0914
+RMSE: 191.12 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Das_2018_reformatted_obs.csv`.
 
 
 --- Biomass Extraction Script ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/scripts/extract_biomass.py", line 382, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'C6'
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 36
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT
+Successfully processed: 'das_2018_reformatted_ct_aglivc-cgrain_c6_2010'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB
+Successfully processed: 'das_2018_reformatted_pnbb_aglivc-cgrain_c6_2010'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB_R
+Successfully processed: 'das_2018_reformatted_pnbb_r_aglivc-cgrain_c6_2010'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT
+Successfully processed: 'das_2018_reformatted_ct_aglivc-cgrain_c6_2011'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB
+Successfully processed: 'das_2018_reformatted_pnbb_aglivc-cgrain_c6_2011'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB_R
+Successfully processed: 'das_2018_reformatted_pnbb_r_aglivc-cgrain_c6_2011'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT
+Successfully processed: 'das_2018_reformatted_zt_aglivc-cgrain_c6_2011'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT_R
+Successfully processed: 'das_2018_reformatted_zt_r_aglivc-cgrain_c6_2011'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT
+Successfully processed: 'das_2018_reformatted_ct_aglivc-cgrain_c6_2012'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB
+Successfully processed: 'das_2018_reformatted_pnbb_aglivc-cgrain_c6_2012'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB_R
+Successfully processed: 'das_2018_reformatted_pnbb_r_aglivc-cgrain_c6_2012'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT
+Successfully processed: 'das_2018_reformatted_zt_aglivc-cgrain_c6_2012'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT_R
+Successfully processed: 'das_2018_reformatted_zt_r_aglivc-cgrain_c6_2012'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT
+Successfully processed: 'das_2018_reformatted_ct_aglivc-cgrain_sw3eg_2011'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB
+Successfully processed: 'das_2018_reformatted_pnbb_aglivc-cgrain_sw3eg_2011'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB_R
+Successfully processed: 'das_2018_reformatted_pnbb_r_aglivc-cgrain_sw3eg_2011'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT
+Successfully processed: 'das_2018_reformatted_ct_aglivc-cgrain_sw3eg_2012'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB
+Successfully processed: 'das_2018_reformatted_pnbb_aglivc-cgrain_sw3eg_2012'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB_R
+Successfully processed: 'das_2018_reformatted_pnbb_r_aglivc-cgrain_sw3eg_2012'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT
+Successfully processed: 'das_2018_reformatted_zt_aglivc-cgrain_sw3eg_2012'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT_R
+Successfully processed: 'das_2018_reformatted_zt_r_aglivc-cgrain_sw3eg_2012'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT
+Successfully processed: 'das_2018_reformatted_ct_aglivc-cgrain_sw3eg_2013'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB
+Successfully processed: 'das_2018_reformatted_pnbb_aglivc-cgrain_sw3eg_2013'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB_R
+Successfully processed: 'das_2018_reformatted_pnbb_r_aglivc-cgrain_sw3eg_2013'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT
+Successfully processed: 'das_2018_reformatted_zt_aglivc-cgrain_sw3eg_2013'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT_R
+Successfully processed: 'das_2018_reformatted_zt_r_aglivc-cgrain_sw3eg_2013'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in CT
+Successfully processed: 'das_2018_reformatted_ct_cgrain_c6'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB
+Successfully processed: 'das_2018_reformatted_pnbb_cgrain_c6'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in PNBB_R
+Successfully processed: 'das_2018_reformatted_pnbb_r_cgrain_c6'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT
+Successfully processed: 'das_2018_reformatted_zt_cgrain_c6'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 1 data points in ZT_R
+Successfully processed: 'das_2018_reformatted_zt_r_cgrain_c6'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in CT
+Successfully processed: 'das_2018_reformatted_ct_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB
+Successfully processed: 'das_2018_reformatted_pnbb_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in PNBB_R
+Successfully processed: 'das_2018_reformatted_pnbb_r_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT
+Successfully processed: 'das_2018_reformatted_zt_cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/Das_2018_reformatted_out/Das_2018_reformatted_ZT_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 2 data points in ZT_R
+Successfully processed: 'das_2018_reformatted_zt_r_cgrain_sw3eg'
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Das_2018_reformatted/observed_vs_modeled_biomass.png'
+--- Script finished. ---

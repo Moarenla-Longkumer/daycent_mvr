@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Khokhar_2022
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-85.71%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,206.83 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 808.72 g C / m²
 SoilGrids Observed Value: 5,659.41 g C / m²
 Model is 85.71% lower than observation.
 (Difference: -4,850.69 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'khokhar_2022_ct_n1_somsc' Change: +488.46 g C / m² (End value: 1,296.09)
@@ -27,11 +29,11 @@ Average SOMSC at end of all experimental phases: 1,092.78 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking ct (Year: 2017, Day: 108)... SUCCESS: 1094.71
- -> Checking rt1 (Year: 2017, Day: 108)... SUCCESS: 1094.71
- -> Checking n1 (Year: 2017, Day: 108)... SUCCESS: 1297.22
- -> Checking n2 (Year: 2017, Day: 108)... SUCCESS: 1297.71
- -> Checking n3 (Year: 2017, Day: 108)... SUCCESS: 689.21
+-> Checking ct (Years: 2017, Day: 108)... SUCCESS: 1094.71
+ -> Checking rt1 (Years: 2017, Day: 108)... SUCCESS: 1094.71
+ -> Checking n1 (Years: 2017, Day: 108)... SUCCESS: 1297.22
+ -> Checking n2 (Years: 2017, Day: 108)... SUCCESS: 1297.71
+ -> Checking n3 (Years: 2017, Day: 108)... SUCCESS: 689.21
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Khokhar_2022/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Khokhar_2022/averaged_somsc_comparison.csv'
@@ -39,7 +41,35 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Khokhar_2022/observed_vs_m
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 5
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 5
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+           Observation  Observed   Simulated          Difference
+ khokhar_2022_ct_somsc  1226.100 1094.713133 -10.72% [SHORTFALL]
+khokhar_2022_rt1_somsc  1302.000 1094.713133 -15.92% [SHORTFALL]
+ khokhar_2022_n1_somsc  1352.610 1297.220600  -4.10% [SHORTFALL]
+ khokhar_2022_n2_somsc  1353.165 1297.713200  -4.10% [SHORTFALL]
+ khokhar_2022_n3_somsc  1237.665  689.205600 -44.31% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Khokhar_2022_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 5
+R²: 0.5987
+RMSE: 270.99 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 khokhar_2022_ct_somsc,ct,2017,108,1226.1,1094.7131333333334
 khokhar_2022_rt1_somsc,rt1,2017,108,1302.0,1094.7131333333334
 khokhar_2022_n1_somsc,n1,2017,108,1352.61,1297.2206

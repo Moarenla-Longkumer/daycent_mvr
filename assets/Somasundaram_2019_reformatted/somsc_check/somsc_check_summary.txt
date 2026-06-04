@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Somasundaram_2019_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-32.98%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,577.50 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 2,176.02 g C / m²
 SoilGrids Observed Value: 3,246.96 g C / m²
 Model is 32.98% lower than observation.
 (Difference: -1,070.94 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'somasundaram_2019_reformatted_ct_mc_sf_mc_somsc' Change: -191.61 g C / m² (End value: 1,979.74)
@@ -29,14 +31,14 @@ Average SOMSC at end of all experimental phases: 2,021.96 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking ct_sw_sw_sw (Year: 2013, Day: 76)... SUCCESS: 2005.11
- -> Checking rt_sw_sw_sw (Year: 2013, Day: 76)... SUCCESS: 2126.76
- -> Checking ct_sf_sf_sf (Year: 2013, Day: 76)... SUCCESS: 2000.16
- -> Checking rt_sf_sf_sf (Year: 2013, Day: 76)... SUCCESS: 2061.22
- -> Checking ct_sf_mc_sf (Year: 2013, Day: 76)... SUCCESS: 2010.80
- -> Checking rt_sf_mc_sf (Year: 2013, Day: 76)... SUCCESS: 2103.94
- -> Checking ct_mc_sf_mc (Year: 2013, Day: 76)... SUCCESS: 2018.28
- -> Checking rt_mc_sf_mc (Year: 2013, Day: 76)... SUCCESS: 2141.54
+-> Checking ct_sw_sw_sw (Years: 2013, Day: 76)... SUCCESS: 2005.11
+ -> Checking rt_sw_sw_sw (Years: 2013, Day: 76)... SUCCESS: 2126.76
+ -> Checking ct_sf_sf_sf (Years: 2013, Day: 76)... SUCCESS: 2000.16
+ -> Checking rt_sf_sf_sf (Years: 2013, Day: 76)... SUCCESS: 2061.22
+ -> Checking ct_sf_mc_sf (Years: 2013, Day: 76)... SUCCESS: 2010.80
+ -> Checking rt_sf_mc_sf (Years: 2013, Day: 76)... SUCCESS: 2103.94
+ -> Checking ct_mc_sf_mc (Years: 2013, Day: 76)... SUCCESS: 2018.28
+ -> Checking rt_mc_sf_mc (Years: 2013, Day: 76)... SUCCESS: 2141.54
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2019_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2019_reformatted/averaged_somsc_comparison.csv'
@@ -44,7 +46,39 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2019_reformat
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 8
+Rows passing delta rule (sim >= obs): 1
+Rows with shortfall (sim < obs): 7
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                    Observation  Observed  Simulated          Difference
+somasundaram_2019_reformatted_ct_sw_sw_sw_somsc  2075.025  2005.1070  -3.37% [SHORTFALL]
+somasundaram_2019_reformatted_rt_sw_sw_sw_somsc  2107.875  2126.7563              +0.90%
+somasundaram_2019_reformatted_ct_sf_sf_sf_somsc  2226.225  2000.1598 -10.15% [SHORTFALL]
+somasundaram_2019_reformatted_rt_sf_sf_sf_somsc  2302.125  2061.2212 -10.46% [SHORTFALL]
+somasundaram_2019_reformatted_ct_sf_mc_sf_somsc  2400.975  2010.8006 -16.25% [SHORTFALL]
+somasundaram_2019_reformatted_rt_sf_mc_sf_somsc  2392.350  2103.9446 -12.06% [SHORTFALL]
+somasundaram_2019_reformatted_ct_mc_sf_mc_somsc  2290.800  2018.2790 -11.90% [SHORTFALL]
+somasundaram_2019_reformatted_rt_mc_sf_mc_somsc  2373.225  2141.5447  -9.76% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Somasundaram_2019_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 8
+R²: 0.0311
+RMSE: 244.37 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Somasundaram_2019_reformatted_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 somasundaram_2019_reformatted_ct_sw_sw_sw_somsc,ct_sw_sw_sw,2013,76,2075.025,2005.107
 somasundaram_2019_reformatted_rt_sw_sw_sw_somsc,rt_sw_sw_sw,2013,76,2107.875,2126.7563
 somasundaram_2019_reformatted_ct_sf_sf_sf_somsc,ct_sf_sf_sf,2013,76,2226.225,2000.1598

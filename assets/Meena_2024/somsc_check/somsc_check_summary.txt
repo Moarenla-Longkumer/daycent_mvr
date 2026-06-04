@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Meena_2024
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-56.97%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,410.68 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,487.08 g C / m²
 SoilGrids Observed Value: 3,455.95 g C / m²
 Model is 56.97% lower than observation.
 (Difference: -1,968.87 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'meena_2024_trt_cacm_somsc' Change: +304.92 g C / m² (End value: 1,789.53)
@@ -26,10 +28,12 @@ Average SOMSC at end of all experimental phases: 2,267.47 g C / m²
 Status: Successful Run
 
 --- Output ---
-Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Meena_2024/output_somsc.txt'
-
-No data available to plot or save.
+[INFO] No SOMSC observation rows found. Creating model-only plot.
+Model-only plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Meena_2024/observed_vs_modeled_somsc.png'
+[INFO] Observed-vs-modelled metrics skipped because observed SOMSC data is missing.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

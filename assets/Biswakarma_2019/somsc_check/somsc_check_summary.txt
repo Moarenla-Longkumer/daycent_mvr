@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Biswakarma_2019
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-56.24%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,879.59 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,453.35 g C / m²
 SoilGrids Observed Value: 3,321.06 g C / m²
 Model is 56.24% lower than observation.
 (Difference: -1,867.71 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'biswakarma_2019_ct_ffp_somsc' Change: -236.33 g C / m² (End value: 1,214.09)
@@ -33,27 +35,27 @@ Average SOMSC at end of all experimental phases: 1,313.51 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking pnb (Year: 2021, Day: 98)... 
+-> Checking pnb (Years: 2021, Day: 98)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_PNB_half_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_RFA_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_+_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_CR_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_FFP_output/soilc.out SUCCESS: 1243.79
- -> Checking zt-fb (Year: 2021, Day: 98)... 
+ -> Checking zt-fb (Years: 2021, Day: 98)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_ZT-FB_half_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_RFA_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_+_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_CR_output/soilc.out SUCCESS: 1478.71
- -> Checking ct (Year: 2021, Day: 98)... 
+ -> Checking ct (Years: 2021, Day: 98)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_CT_half_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_RFA_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_+_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_CR_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_NE_output/soilc.out SUCCESS: 1243.79
- -> Checking ffp (Year: 2021, Day: 98)... SUCCESS: 1311.80
- -> Checking rfa (Year: 2021, Day: 98)... SUCCESS: 1322.11
- -> Checking ne (Year: 2021, Day: 98)... SUCCESS: 1327.58
- -> Checking half rfa + cr (Year: 2021, Day: 98)... 
+ -> Checking ffp (Years: 2021, Day: 98)... SUCCESS: 1311.80
+ -> Checking rfa (Years: 2021, Day: 98)... SUCCESS: 1322.11
+ -> Checking ne (Years: 2021, Day: 98)... SUCCESS: 1327.58
+ -> Checking half rfa + cr (Years: 2021, Day: 98)... 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_CT_half_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_RFA_output/soilc.out 
     [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Biswakarma_2019/Biswakarma_2019_out/Biswakarma_2019_+_output/soilc.out 
@@ -73,4 +75,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

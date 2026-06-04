@@ -1,7 +1,8 @@
 Biomass Check Summary for Site: Wagh_2016
 
-RESULT: CANNOT ASSESS - No biomass/grain observations in the observation file.
-Add biomass/grain rows to the Comparison Sheet, then re-run extract_obs and biomass_check.
+RESULT: MODEL ONLY - No biomass/grain observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled biomass plots were generated from DayCent output.
+Add biomass/grain rows to the Comparison Sheet if biomass calibration metrics are needed.
 
 
 --- Biomass Extraction Script ---
@@ -10,11 +11,8 @@ Status: Successful Run
 --- Output ---
 --- Script started (with upgraded functions). ---
 [DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name 1', 'treatment_sch_file_name 2', 'treatment_sch_file_name 3', 'treatment_sch_file_name 4', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth (cm)', 'target_year', 'target_day', 'soc_calc', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'COMMENT', 'Comment', 'start_target_year', 'start_target_day']
-[ERROR] Missing critical columns: ['value']
 [DEBUG] Rows remaining after filtering: 0
 [DEBUG] ! Found 0 matching rows. No Biomass obs to process in column 'observation_type'
-
-PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/output_biomass.txt'
-
-No data available to plot or save.
---- Script finished. ---
+[INFO] No Biomass observation rows found. Creating model-only plot.
+Model-only plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Wagh_2016/observed_vs_modeled_biomass.png'
+[INFO] Observed-vs-modelled metrics skipped because observed Biomass data is missing.

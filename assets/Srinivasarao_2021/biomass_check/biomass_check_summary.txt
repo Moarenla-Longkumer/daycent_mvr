@@ -10,9 +10,29 @@ Reason: Script exited with error code 1
 
 --- Error Output ---
 Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/scripts/extract_biomass.py", line 382, in <module>
+  File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'treatment_sch_file_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/scripts/extract_biomass.py", line 516, in <module>
     main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'GNUT'
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2021/scripts/extract_biomass.py", line 385, in main
+    for sch_name in [s.strip() for s in row['treatment_sch_file_name'].replace(",", " ").split()]:
+                                        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/pandas/core/series.py", line 1133, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/pandas/core/series.py", line 1249, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/DAYCENT/venv_new/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'treatment_sch_file_name'

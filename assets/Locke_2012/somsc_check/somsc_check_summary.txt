@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Locke_2012
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-73.62%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,547.52 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,699.74 g C / m²
 SoilGrids Observed Value: 6,443.86 g C / m²
 Model is 73.62% lower than observation.
 (Difference: -4,744.12 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'locke_2012_mt_clover_somsc' Change: +44.85 g C / m² (End value: 1,743.56)
@@ -27,96 +29,96 @@ Average SOMSC at end of all experimental phases: 1,679.80 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking nan (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking nan (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking nan (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking clover (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking clover (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking clover (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking rye (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking rye (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking rye (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking nan (Year: 2002, Day: 118)... SUCCESS: 1661.70
- -> Checking nan (Year: 2002, Day: 118)... SUCCESS: 1661.70
- -> Checking nan (Year: 2002, Day: 118)... SUCCESS: 1661.70
- -> Checking clover (Year: 2002, Day: 118)... SUCCESS: 1663.64
- -> Checking clover (Year: 2002, Day: 118)... SUCCESS: 1663.64
- -> Checking clover (Year: 2002, Day: 118)... SUCCESS: 1663.64
- -> Checking rye (Year: 2002, Day: 118)... SUCCESS: 1663.30
- -> Checking rye (Year: 2002, Day: 118)... SUCCESS: 1663.30
- -> Checking rye (Year: 2002, Day: 118)... SUCCESS: 1663.30
- -> Checking nan (Year: 2003, Day: 118)... SUCCESS: 1646.59
- -> Checking nan (Year: 2003, Day: 118)... SUCCESS: 1646.59
- -> Checking nan (Year: 2003, Day: 118)... SUCCESS: 1646.59
- -> Checking clover (Year: 2003, Day: 118)... SUCCESS: 1672.35
- -> Checking clover (Year: 2003, Day: 118)... SUCCESS: 1672.35
- -> Checking clover (Year: 2003, Day: 118)... SUCCESS: 1672.35
- -> Checking rye (Year: 2003, Day: 118)... SUCCESS: 1661.11
- -> Checking rye (Year: 2003, Day: 118)... SUCCESS: 1661.11
- -> Checking rye (Year: 2003, Day: 118)... SUCCESS: 1661.11
- -> Checking nan (Year: 2004, Day: 118)... SUCCESS: 1630.59
- -> Checking nan (Year: 2004, Day: 118)... SUCCESS: 1630.59
- -> Checking nan (Year: 2004, Day: 118)... SUCCESS: 1630.59
- -> Checking clover (Year: 2004, Day: 118)... SUCCESS: 1682.73
- -> Checking clover (Year: 2004, Day: 118)... SUCCESS: 1682.73
- -> Checking clover (Year: 2004, Day: 118)... SUCCESS: 1682.73
- -> Checking rye (Year: 2004, Day: 118)... SUCCESS: 1665.28
- -> Checking rye (Year: 2004, Day: 118)... SUCCESS: 1665.28
- -> Checking rye (Year: 2004, Day: 118)... SUCCESS: 1665.28
- -> Checking nan (Year: 2005, Day: 118)... SUCCESS: 1614.15
- -> Checking nan (Year: 2005, Day: 118)... SUCCESS: 1614.15
- -> Checking nan (Year: 2005, Day: 118)... SUCCESS: 1614.15
- -> Checking clover (Year: 2005, Day: 118)... SUCCESS: 1699.93
- -> Checking clover (Year: 2005, Day: 118)... SUCCESS: 1699.93
- -> Checking clover (Year: 2005, Day: 118)... SUCCESS: 1699.93
- -> Checking rye (Year: 2005, Day: 118)... SUCCESS: 1673.17
- -> Checking rye (Year: 2005, Day: 118)... SUCCESS: 1673.17
- -> Checking rye (Year: 2005, Day: 118)... SUCCESS: 1673.17
- -> Checking nan (Year: 2006, Day: 118)... SUCCESS: 1602.06
- -> Checking nan (Year: 2006, Day: 118)... SUCCESS: 1602.06
- -> Checking nan (Year: 2006, Day: 118)... SUCCESS: 1602.06
- -> Checking clover (Year: 2006, Day: 118)... SUCCESS: 1725.49
- -> Checking clover (Year: 2006, Day: 118)... SUCCESS: 1725.49
- -> Checking clover (Year: 2006, Day: 118)... SUCCESS: 1725.49
- -> Checking rye (Year: 2006, Day: 118)... SUCCESS: 1689.21
- -> Checking rye (Year: 2006, Day: 118)... SUCCESS: 1689.21
- -> Checking rye (Year: 2006, Day: 118)... SUCCESS: 1689.21
- -> Checking nt (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking nt (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking nt (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking mt (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking mt (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking mt (Year: 2001, Day: 118)... SUCCESS: 1676.61
- -> Checking nt (Year: 2002, Day: 118)... SUCCESS: 1668.47
- -> Checking nt (Year: 2002, Day: 118)... SUCCESS: 1668.47
- -> Checking nt (Year: 2002, Day: 118)... SUCCESS: 1668.47
- -> Checking mt (Year: 2002, Day: 118)... SUCCESS: 1657.29
- -> Checking mt (Year: 2002, Day: 118)... SUCCESS: 1657.29
- -> Checking mt (Year: 2002, Day: 118)... SUCCESS: 1657.29
- -> Checking nt (Year: 2003, Day: 118)... SUCCESS: 1668.25
- -> Checking nt (Year: 2003, Day: 118)... SUCCESS: 1668.25
- -> Checking nt (Year: 2003, Day: 118)... SUCCESS: 1668.25
- -> Checking mt (Year: 2003, Day: 118)... SUCCESS: 1651.78
- -> Checking mt (Year: 2003, Day: 118)... SUCCESS: 1651.78
- -> Checking mt (Year: 2003, Day: 118)... SUCCESS: 1651.78
- -> Checking nt (Year: 2004, Day: 118)... SUCCESS: 1669.05
- -> Checking nt (Year: 2004, Day: 118)... SUCCESS: 1669.05
- -> Checking nt (Year: 2004, Day: 118)... SUCCESS: 1669.05
- -> Checking mt (Year: 2004, Day: 118)... SUCCESS: 1650.02
- -> Checking mt (Year: 2004, Day: 118)... SUCCESS: 1650.02
- -> Checking mt (Year: 2004, Day: 118)... SUCCESS: 1650.02
- -> Checking nt (Year: 2005, Day: 118)... SUCCESS: 1672.50
- -> Checking nt (Year: 2005, Day: 118)... SUCCESS: 1672.50
- -> Checking nt (Year: 2005, Day: 118)... SUCCESS: 1672.50
- -> Checking mt (Year: 2005, Day: 118)... SUCCESS: 1652.33
- -> Checking mt (Year: 2005, Day: 118)... SUCCESS: 1652.33
- -> Checking mt (Year: 2005, Day: 118)... SUCCESS: 1652.33
- -> Checking nt (Year: 2006, Day: 118)... SUCCESS: 1680.90
- -> Checking nt (Year: 2006, Day: 118)... SUCCESS: 1680.90
- -> Checking nt (Year: 2006, Day: 118)... SUCCESS: 1680.90
- -> Checking mt (Year: 2006, Day: 118)... SUCCESS: 1663.60
- -> Checking mt (Year: 2006, Day: 118)... SUCCESS: 1663.60
- -> Checking mt (Year: 2006, Day: 118)... SUCCESS: 1663.60
+-> Checking nan (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking nan (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking nan (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking clover (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking clover (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking clover (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking rye (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking rye (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking rye (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking nan (Years: 2002, Day: 118)... SUCCESS: 1661.70
+ -> Checking nan (Years: 2002, Day: 118)... SUCCESS: 1661.70
+ -> Checking nan (Years: 2002, Day: 118)... SUCCESS: 1661.70
+ -> Checking clover (Years: 2002, Day: 118)... SUCCESS: 1663.64
+ -> Checking clover (Years: 2002, Day: 118)... SUCCESS: 1663.64
+ -> Checking clover (Years: 2002, Day: 118)... SUCCESS: 1663.64
+ -> Checking rye (Years: 2002, Day: 118)... SUCCESS: 1663.30
+ -> Checking rye (Years: 2002, Day: 118)... SUCCESS: 1663.30
+ -> Checking rye (Years: 2002, Day: 118)... SUCCESS: 1663.30
+ -> Checking nan (Years: 2003, Day: 118)... SUCCESS: 1646.59
+ -> Checking nan (Years: 2003, Day: 118)... SUCCESS: 1646.59
+ -> Checking nan (Years: 2003, Day: 118)... SUCCESS: 1646.59
+ -> Checking clover (Years: 2003, Day: 118)... SUCCESS: 1672.35
+ -> Checking clover (Years: 2003, Day: 118)... SUCCESS: 1672.35
+ -> Checking clover (Years: 2003, Day: 118)... SUCCESS: 1672.35
+ -> Checking rye (Years: 2003, Day: 118)... SUCCESS: 1661.11
+ -> Checking rye (Years: 2003, Day: 118)... SUCCESS: 1661.11
+ -> Checking rye (Years: 2003, Day: 118)... SUCCESS: 1661.11
+ -> Checking nan (Years: 2004, Day: 118)... SUCCESS: 1630.59
+ -> Checking nan (Years: 2004, Day: 118)... SUCCESS: 1630.59
+ -> Checking nan (Years: 2004, Day: 118)... SUCCESS: 1630.59
+ -> Checking clover (Years: 2004, Day: 118)... SUCCESS: 1682.73
+ -> Checking clover (Years: 2004, Day: 118)... SUCCESS: 1682.73
+ -> Checking clover (Years: 2004, Day: 118)... SUCCESS: 1682.73
+ -> Checking rye (Years: 2004, Day: 118)... SUCCESS: 1665.28
+ -> Checking rye (Years: 2004, Day: 118)... SUCCESS: 1665.28
+ -> Checking rye (Years: 2004, Day: 118)... SUCCESS: 1665.28
+ -> Checking nan (Years: 2005, Day: 118)... SUCCESS: 1614.15
+ -> Checking nan (Years: 2005, Day: 118)... SUCCESS: 1614.15
+ -> Checking nan (Years: 2005, Day: 118)... SUCCESS: 1614.15
+ -> Checking clover (Years: 2005, Day: 118)... SUCCESS: 1699.93
+ -> Checking clover (Years: 2005, Day: 118)... SUCCESS: 1699.93
+ -> Checking clover (Years: 2005, Day: 118)... SUCCESS: 1699.93
+ -> Checking rye (Years: 2005, Day: 118)... SUCCESS: 1673.17
+ -> Checking rye (Years: 2005, Day: 118)... SUCCESS: 1673.17
+ -> Checking rye (Years: 2005, Day: 118)... SUCCESS: 1673.17
+ -> Checking nan (Years: 2006, Day: 118)... SUCCESS: 1602.06
+ -> Checking nan (Years: 2006, Day: 118)... SUCCESS: 1602.06
+ -> Checking nan (Years: 2006, Day: 118)... SUCCESS: 1602.06
+ -> Checking clover (Years: 2006, Day: 118)... SUCCESS: 1725.49
+ -> Checking clover (Years: 2006, Day: 118)... SUCCESS: 1725.49
+ -> Checking clover (Years: 2006, Day: 118)... SUCCESS: 1725.49
+ -> Checking rye (Years: 2006, Day: 118)... SUCCESS: 1689.21
+ -> Checking rye (Years: 2006, Day: 118)... SUCCESS: 1689.21
+ -> Checking rye (Years: 2006, Day: 118)... SUCCESS: 1689.21
+ -> Checking nt (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking nt (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking nt (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking mt (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking mt (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking mt (Years: 2001, Day: 118)... SUCCESS: 1676.61
+ -> Checking nt (Years: 2002, Day: 118)... SUCCESS: 1668.47
+ -> Checking nt (Years: 2002, Day: 118)... SUCCESS: 1668.47
+ -> Checking nt (Years: 2002, Day: 118)... SUCCESS: 1668.47
+ -> Checking mt (Years: 2002, Day: 118)... SUCCESS: 1657.29
+ -> Checking mt (Years: 2002, Day: 118)... SUCCESS: 1657.29
+ -> Checking mt (Years: 2002, Day: 118)... SUCCESS: 1657.29
+ -> Checking nt (Years: 2003, Day: 118)... SUCCESS: 1668.25
+ -> Checking nt (Years: 2003, Day: 118)... SUCCESS: 1668.25
+ -> Checking nt (Years: 2003, Day: 118)... SUCCESS: 1668.25
+ -> Checking mt (Years: 2003, Day: 118)... SUCCESS: 1651.78
+ -> Checking mt (Years: 2003, Day: 118)... SUCCESS: 1651.78
+ -> Checking mt (Years: 2003, Day: 118)... SUCCESS: 1651.78
+ -> Checking nt (Years: 2004, Day: 118)... SUCCESS: 1669.05
+ -> Checking nt (Years: 2004, Day: 118)... SUCCESS: 1669.05
+ -> Checking nt (Years: 2004, Day: 118)... SUCCESS: 1669.05
+ -> Checking mt (Years: 2004, Day: 118)... SUCCESS: 1650.02
+ -> Checking mt (Years: 2004, Day: 118)... SUCCESS: 1650.02
+ -> Checking mt (Years: 2004, Day: 118)... SUCCESS: 1650.02
+ -> Checking nt (Years: 2005, Day: 118)... SUCCESS: 1672.50
+ -> Checking nt (Years: 2005, Day: 118)... SUCCESS: 1672.50
+ -> Checking nt (Years: 2005, Day: 118)... SUCCESS: 1672.50
+ -> Checking mt (Years: 2005, Day: 118)... SUCCESS: 1652.33
+ -> Checking mt (Years: 2005, Day: 118)... SUCCESS: 1652.33
+ -> Checking mt (Years: 2005, Day: 118)... SUCCESS: 1652.33
+ -> Checking nt (Years: 2006, Day: 118)... SUCCESS: 1680.90
+ -> Checking nt (Years: 2006, Day: 118)... SUCCESS: 1680.90
+ -> Checking nt (Years: 2006, Day: 118)... SUCCESS: 1680.90
+ -> Checking mt (Years: 2006, Day: 118)... SUCCESS: 1663.60
+ -> Checking mt (Years: 2006, Day: 118)... SUCCESS: 1663.60
+ -> Checking mt (Years: 2006, Day: 118)... SUCCESS: 1663.60
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Locke_2012/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Locke_2012/averaged_somsc_comparison.csv'
@@ -124,7 +126,120 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Locke_2012/observed_vs_mod
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 90
+Rows passing delta rule (sim >= obs): 90
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+            Observation  Observed   Simulated Difference
+   locke_2012_nan_somsc  161.0070 1676.609700   +941.33%
+   locke_2012_nan_somsc  257.1930 1676.609700   +551.89%
+   locke_2012_nan_somsc  815.4900 1676.609700   +105.60%
+locke_2012_clover_somsc  185.5040 1676.609700   +803.81%
+locke_2012_clover_somsc  275.0940 1676.609700   +509.47%
+locke_2012_clover_somsc  822.1200 1676.609700   +103.94%
+   locke_2012_rye_somsc  158.5080 1676.609700   +957.74%
+   locke_2012_rye_somsc  269.8920 1676.609700   +521.22%
+   locke_2012_rye_somsc  835.3800 1676.609700   +100.70%
+   locke_2012_nan_somsc  192.3720 1661.700000   +763.80%
+   locke_2012_nan_somsc  291.6945 1661.700000   +469.67%
+   locke_2012_nan_somsc  951.4050 1661.700000    +74.66%
+locke_2012_clover_somsc  261.3920 1663.640400   +536.45%
+locke_2012_clover_somsc  325.6860 1663.640400   +410.81%
+locke_2012_clover_somsc  938.0600 1663.640400    +77.35%
+   locke_2012_rye_somsc  199.2060 1663.296350   +734.96%
+   locke_2012_rye_somsc  302.0220 1663.296350   +450.72%
+   locke_2012_rye_somsc  921.0600 1663.296350    +80.59%
+   locke_2012_nan_somsc  244.6470 1646.585250   +573.05%
+   locke_2012_nan_somsc  288.5580 1646.585250   +470.63%
+   locke_2012_nan_somsc  888.6750 1646.585250    +85.29%
+locke_2012_clover_somsc  324.6320 1672.345350   +415.15%
+locke_2012_clover_somsc  322.5240 1672.345350   +418.52%
+locke_2012_clover_somsc  927.5200 1672.345350    +80.30%
+   locke_2012_rye_somsc  254.8980 1661.112900   +551.68%
+   locke_2012_rye_somsc  314.8740 1661.112900   +427.55%
+   locke_2012_rye_somsc  899.6400 1661.112900    +84.64%
+   locke_2012_nan_somsc  271.8300 1630.586800   +499.86%
+   locke_2012_nan_somsc  341.8785 1630.586800   +376.95%
+   locke_2012_nan_somsc  815.4900 1630.586800    +99.95%
+locke_2012_clover_somsc  360.4680 1682.727950   +366.82%
+locke_2012_clover_somsc  360.4680 1682.727950   +366.82%
+locke_2012_clover_somsc  906.4400 1682.727950    +85.64%
+   locke_2012_rye_somsc  385.5600 1665.281450   +331.91%
+   locke_2012_rye_somsc  343.7910 1665.281450   +384.39%
+   locke_2012_rye_somsc  856.8000 1665.281450    +94.36%
+   locke_2012_nan_somsc  336.6510 1614.151500   +379.47%
+   locke_2012_nan_somsc  310.5135 1614.151500   +419.83%
+   locke_2012_nan_somsc  825.9450 1614.151500    +95.43%
+locke_2012_clover_somsc  425.8160 1699.932350   +299.22%
+locke_2012_clover_somsc  363.6300 1699.932350   +367.49%
+locke_2012_clover_somsc  874.8200 1699.932350    +94.32%
+   locke_2012_rye_somsc  389.8440 1673.166100   +329.19%
+   locke_2012_rye_somsc  347.0040 1673.166100   +382.17%
+   locke_2012_rye_somsc  846.0900 1673.166100    +97.75%
+   locke_2012_nan_somsc  317.8320 1602.060850   +404.06%
+   locke_2012_nan_somsc  332.4690 1602.060850   +381.87%
+   locke_2012_nan_somsc  825.9450 1602.060850    +93.97%
+locke_2012_clover_somsc  402.6280 1725.485750   +328.56%
+locke_2012_clover_somsc  395.2500 1725.485750   +336.56%
+locke_2012_clover_somsc  864.2800 1725.485750    +99.64%
+   locke_2012_rye_somsc  406.9800 1689.212450   +315.06%
+   locke_2012_rye_somsc  388.7730 1689.212450   +334.50%
+   locke_2012_rye_somsc  888.9300 1689.212450    +90.03%
+    locke_2012_nt_somsc  173.5020 1676.609700   +866.33%
+    locke_2012_nt_somsc  269.8920 1676.609700   +521.22%
+    locke_2012_nt_somsc  867.5100 1676.609700    +93.27%
+    locke_2012_mt_somsc  163.0980 1676.609700   +927.98%
+    locke_2012_mt_somsc  266.6025 1676.609700   +528.88%
+    locke_2012_mt_somsc  784.1250 1676.609700   +113.82%
+    locke_2012_nt_somsc  242.0460 1668.470400   +589.32%
+    locke_2012_nt_somsc  305.2350 1668.470400   +446.62%
+    locke_2012_nt_somsc  953.1900 1668.470400    +75.04%
+    locke_2012_mt_somsc  194.4630 1657.287433   +752.24%
+    locke_2012_mt_somsc  307.3770 1657.287433   +439.17%
+    locke_2012_mt_somsc  920.0400 1657.287433    +80.13%
+    locke_2012_nt_somsc  295.5960 1668.251100   +464.37%
+    locke_2012_nt_somsc  305.2350 1668.251100   +446.55%
+    locke_2012_nt_somsc  921.0600 1668.251100    +81.12%
+    locke_2012_mt_somsc  255.1020 1651.777900   +547.50%
+    locke_2012_mt_somsc  310.5135 1651.777900   +431.95%
+    locke_2012_mt_somsc  899.1300 1651.777900    +83.71%
+    locke_2012_nt_somsc  411.2640 1669.049067   +305.83%
+    locke_2012_nt_somsc  359.8560 1669.049067   +363.81%
+    locke_2012_nt_somsc  824.6700 1669.049067   +102.39%
+    locke_2012_mt_somsc  269.7390 1650.015067   +511.71%
+    locke_2012_mt_somsc  338.7420 1650.015067   +387.10%
+    locke_2012_mt_somsc  899.1300 1650.015067    +83.51%
+    locke_2012_nt_somsc  443.3940 1672.501000   +277.20%
+    locke_2012_nt_somsc  337.3650 1672.501000   +395.75%
+    locke_2012_nt_somsc  846.0900 1672.501000    +97.67%
+    locke_2012_mt_somsc  326.1960 1652.332300   +406.55%
+    locke_2012_mt_somsc  341.8785 1652.332300   +383.31%
+    locke_2012_mt_somsc  846.8550 1652.332300    +95.11%
+    locke_2012_nt_somsc  417.6900 1680.902900   +302.43%
+    locke_2012_nt_somsc  353.4300 1680.902900   +375.60%
+    locke_2012_nt_somsc  835.3800 1680.902900   +101.21%
+    locke_2012_mt_somsc  334.5600 1663.603133   +397.25%
+    locke_2012_mt_somsc  388.9260 1663.603133   +327.74%
+    locke_2012_mt_somsc  878.2200 1663.603133    +89.43%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 90
+R²: 0.0014
+RMSE: 1200.44 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Locke_2012_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 locke_2012_nan_somsc,nan,2001,118,161.007,1676.6097
 locke_2012_nan_somsc,nan,2001,118,257.193,1676.6097
 locke_2012_nan_somsc,nan,2001,118,815.49,1676.6097

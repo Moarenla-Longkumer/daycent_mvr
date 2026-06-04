@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Yang_2024
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-48.10%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,439.55 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,333.54 g C / m²
 SoilGrids Observed Value: 2,569.39 g C / m²
 Model is 48.10% lower than observation.
 (Difference: -1,235.85 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'yang_2024_mw_somsc' Change: +343.66 g C / m² (End value: 1,677.71)
@@ -27,12 +29,12 @@ Average SOMSC at end of all experimental phases: 1,471.34 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking mw (Year: 2022, Day: 277)... SUCCESS: 1667.86
- -> Checking spwm (Year: 2022, Day: 277)... SUCCESS: 1546.66
- -> Checking pwm (Year: 2022, Day: 277)... SUCCESS: 1390.85
- -> Checking swm (Year: 2022, Day: 277)... SUCCESS: 1390.31
- -> Checking smwm (Year: 2022, Day: 277)... SUCCESS: 1430.32
- -> Checking rswm (Year: 2022, Day: 277)... SUCCESS: 1357.46
+-> Checking mw (Years: 2022, Day: 277)... SUCCESS: 1667.86
+ -> Checking spwm (Years: 2022, Day: 277)... SUCCESS: 1546.66
+ -> Checking pwm (Years: 2022, Day: 277)... SUCCESS: 1390.85
+ -> Checking swm (Years: 2022, Day: 277)... SUCCESS: 1390.31
+ -> Checking smwm (Years: 2022, Day: 277)... SUCCESS: 1430.32
+ -> Checking rswm (Years: 2022, Day: 277)... SUCCESS: 1357.46
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/averaged_somsc_comparison.csv'
@@ -40,7 +42,37 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Yang_2024/observed_vs_mode
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 6
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 6
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+         Observation  Observed  Simulated          Difference
+  yang_2024_mw_somsc    4269.0  1667.8571 -60.93% [SHORTFALL]
+yang_2024_spwm_somsc    4508.0  1546.6598 -65.69% [SHORTFALL]
+ yang_2024_pwm_somsc    4635.0  1390.8506 -69.99% [SHORTFALL]
+ yang_2024_swm_somsc    4735.0  1390.3069 -70.64% [SHORTFALL]
+yang_2024_smwm_somsc    4202.0  1430.3239 -65.96% [SHORTFALL]
+yang_2024_rswm_somsc    4066.0  1357.4579 -66.61% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Yang_2024_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 6
+R²: 0.0122
+RMSE: 2951.42 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Yang_2024_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 yang_2024_mw_somsc,mw,2022,277,4269.0,1667.8571000000002
 yang_2024_spwm_somsc,spwm,2022,277,4508.0,1546.6598
 yang_2024_pwm_somsc,pwm,2022,277,4635.0,1390.8506000000002

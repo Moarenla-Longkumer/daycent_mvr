@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Chary_2019
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-52.67%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,035.73 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,527.28 g C / m²
 SoilGrids Observed Value: 3,226.80 g C / m²
 Model is 52.67% lower than observation.
 (Difference: -1,699.52 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'chary_2019_bb_c_somsc' Change: -312.22 g C / m² (End value: 1,216.54)
@@ -69,54 +71,54 @@ Average SOMSC at end of all experimental phases: 1,334.95 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking sc_c (Year: 2005, Day: 282)... SUCCESS: 1239.64
- -> Checking sc_rdf (Year: 2005, Day: 282)... SUCCESS: 1245.55
- -> Checking sc_inm (Year: 2005, Day: 282)... SUCCESS: 1386.14
- -> Checking sc_o (Year: 2005, Day: 282)... SUCCESS: 1398.15
- -> Checking ss_c (Year: 2005, Day: 282)... SUCCESS: 1190.79
- -> Checking ss_rdf (Year: 2005, Day: 282)... SUCCESS: 1190.81
- -> Checking ss_inm (Year: 2005, Day: 282)... SUCCESS: 1529.25
- -> Checking ss_o (Year: 2005, Day: 282)... SUCCESS: 1344.30
- -> Checking sg_c (Year: 2005, Day: 282)... SUCCESS: 1157.90
- -> Checking sg_rdf (Year: 2005, Day: 282)... SUCCESS: 1157.92
- -> Checking sg_inm (Year: 2005, Day: 282)... SUCCESS: 1361.18
- -> Checking sg_o (Year: 2005, Day: 282)... SUCCESS: 1309.85
- -> Checking bg_c (Year: 2005, Day: 264)... SUCCESS: 1161.17
- -> Checking bg_rdf (Year: 2005, Day: 264)... SUCCESS: 1182.87
- -> Checking bg_inm (Year: 2005, Day: 264)... SUCCESS: 1361.64
- -> Checking bg_o (Year: 2005, Day: 264)... SUCCESS: 1318.12
- -> Checking bb_c (Year: 2005, Day: 264)... SUCCESS: 1220.53
- -> Checking bb_rdf (Year: 2005, Day: 264)... SUCCESS: 1259.03
- -> Checking bb_inm (Year: 2005, Day: 264)... SUCCESS: 1665.39
- -> Checking bb_o (Year: 2005, Day: 264)... SUCCESS: 1385.59
- -> Checking bc_c (Year: 2005, Day: 264)... SUCCESS: 1245.93
- -> Checking bc_rdf (Year: 2005, Day: 264)... SUCCESS: 1271.87
- -> Checking bc_inm (Year: 2005, Day: 264)... SUCCESS: 1689.48
- -> Checking bc_o (Year: 2005, Day: 264)... SUCCESS: 1409.80
- -> Checking cac_c (Year: 2006, Day: 114)... SUCCESS: 1286.84
- -> Checking cac_rdf (Year: 2006, Day: 114)... SUCCESS: 1313.76
- -> Checking cac_inm (Year: 2006, Day: 114)... SUCCESS: 1740.47
- -> Checking cac_o (Year: 2006, Day: 114)... SUCCESS: 1451.56
- -> Checking caca_c (Year: 2006, Day: 114)... SUCCESS: 1332.65
- -> Checking caca_rdf (Year: 2006, Day: 114)... SUCCESS: 1332.93
- -> Checking caca_inm (Year: 2006, Day: 114)... SUCCESS: 1763.22
- -> Checking caca_o (Year: 2006, Day: 114)... SUCCESS: 1461.41
- -> Checking cag_c (Year: 2006, Day: 114)... SUCCESS: 1223.60
- -> Checking cag_rdf (Year: 2006, Day: 114)... SUCCESS: 1224.94
- -> Checking cag_inm (Year: 2006, Day: 114)... SUCCESS: 1413.07
- -> Checking cag_o (Year: 2006, Day: 114)... SUCCESS: 1363.32
- -> Checking cg_c (Year: 2005, Day: 294)... SUCCESS: 1231.72
- -> Checking cg_rdf (Year: 2005, Day: 294)... SUCCESS: 1207.57
- -> Checking cg_inm (Year: 2005, Day: 294)... SUCCESS: 1395.75
- -> Checking cg_o (Year: 2005, Day: 294)... SUCCESS: 1359.41
- -> Checking cc_c (Year: 2005, Day: 294)... SUCCESS: 1280.15
- -> Checking cc_rdf (Year: 2005, Day: 294)... SUCCESS: 1290.70
- -> Checking cc_inm (Year: 2005, Day: 294)... SUCCESS: 1716.90
- -> Checking cc_o (Year: 2005, Day: 294)... SUCCESS: 1442.51
- -> Checking gg_c (Year: 2005, Day: 249)... SUCCESS: 1139.02
- -> Checking gg_rdf (Year: 2005, Day: 249)... SUCCESS: 1139.02
- -> Checking gg_inm (Year: 2005, Day: 249)... SUCCESS: 1268.11
- -> Checking gg_o (Year: 2005, Day: 249)... SUCCESS: 1289.61
+-> Checking sc_c (Years: 2005, Day: 282)... SUCCESS: 1239.64
+ -> Checking sc_rdf (Years: 2005, Day: 282)... SUCCESS: 1245.55
+ -> Checking sc_inm (Years: 2005, Day: 282)... SUCCESS: 1386.14
+ -> Checking sc_o (Years: 2005, Day: 282)... SUCCESS: 1398.15
+ -> Checking ss_c (Years: 2005, Day: 282)... SUCCESS: 1190.79
+ -> Checking ss_rdf (Years: 2005, Day: 282)... SUCCESS: 1190.81
+ -> Checking ss_inm (Years: 2005, Day: 282)... SUCCESS: 1529.25
+ -> Checking ss_o (Years: 2005, Day: 282)... SUCCESS: 1344.30
+ -> Checking sg_c (Years: 2005, Day: 282)... SUCCESS: 1157.90
+ -> Checking sg_rdf (Years: 2005, Day: 282)... SUCCESS: 1157.92
+ -> Checking sg_inm (Years: 2005, Day: 282)... SUCCESS: 1361.18
+ -> Checking sg_o (Years: 2005, Day: 282)... SUCCESS: 1309.85
+ -> Checking bg_c (Years: 2005, Day: 264)... SUCCESS: 1161.17
+ -> Checking bg_rdf (Years: 2005, Day: 264)... SUCCESS: 1182.87
+ -> Checking bg_inm (Years: 2005, Day: 264)... SUCCESS: 1361.64
+ -> Checking bg_o (Years: 2005, Day: 264)... SUCCESS: 1318.12
+ -> Checking bb_c (Years: 2005, Day: 264)... SUCCESS: 1220.53
+ -> Checking bb_rdf (Years: 2005, Day: 264)... SUCCESS: 1259.03
+ -> Checking bb_inm (Years: 2005, Day: 264)... SUCCESS: 1665.39
+ -> Checking bb_o (Years: 2005, Day: 264)... SUCCESS: 1385.59
+ -> Checking bc_c (Years: 2005, Day: 264)... SUCCESS: 1245.93
+ -> Checking bc_rdf (Years: 2005, Day: 264)... SUCCESS: 1271.87
+ -> Checking bc_inm (Years: 2005, Day: 264)... SUCCESS: 1689.48
+ -> Checking bc_o (Years: 2005, Day: 264)... SUCCESS: 1409.80
+ -> Checking cac_c (Years: 2006, Day: 114)... SUCCESS: 1286.84
+ -> Checking cac_rdf (Years: 2006, Day: 114)... SUCCESS: 1313.76
+ -> Checking cac_inm (Years: 2006, Day: 114)... SUCCESS: 1740.47
+ -> Checking cac_o (Years: 2006, Day: 114)... SUCCESS: 1451.56
+ -> Checking caca_c (Years: 2006, Day: 114)... SUCCESS: 1332.65
+ -> Checking caca_rdf (Years: 2006, Day: 114)... SUCCESS: 1332.93
+ -> Checking caca_inm (Years: 2006, Day: 114)... SUCCESS: 1763.22
+ -> Checking caca_o (Years: 2006, Day: 114)... SUCCESS: 1461.41
+ -> Checking cag_c (Years: 2006, Day: 114)... SUCCESS: 1223.60
+ -> Checking cag_rdf (Years: 2006, Day: 114)... SUCCESS: 1224.94
+ -> Checking cag_inm (Years: 2006, Day: 114)... SUCCESS: 1413.07
+ -> Checking cag_o (Years: 2006, Day: 114)... SUCCESS: 1363.32
+ -> Checking cg_c (Years: 2005, Day: 294)... SUCCESS: 1231.72
+ -> Checking cg_rdf (Years: 2005, Day: 294)... SUCCESS: 1207.57
+ -> Checking cg_inm (Years: 2005, Day: 294)... SUCCESS: 1395.75
+ -> Checking cg_o (Years: 2005, Day: 294)... SUCCESS: 1359.41
+ -> Checking cc_c (Years: 2005, Day: 294)... SUCCESS: 1280.15
+ -> Checking cc_rdf (Years: 2005, Day: 294)... SUCCESS: 1290.70
+ -> Checking cc_inm (Years: 2005, Day: 294)... SUCCESS: 1716.90
+ -> Checking cc_o (Years: 2005, Day: 294)... SUCCESS: 1442.51
+ -> Checking gg_c (Years: 2005, Day: 249)... SUCCESS: 1139.02
+ -> Checking gg_rdf (Years: 2005, Day: 249)... SUCCESS: 1139.02
+ -> Checking gg_inm (Years: 2005, Day: 249)... SUCCESS: 1268.11
+ -> Checking gg_o (Years: 2005, Day: 249)... SUCCESS: 1289.61
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Chary_2019/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Chary_2019/averaged_somsc_comparison.csv'
@@ -124,7 +126,79 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Chary_2019/observed_vs_mod
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 48
+Rows passing delta rule (sim >= obs): 46
+Rows with shortfall (sim < obs): 2
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+              Observation  Observed  Simulated         Difference
+    chary_2019_sc_c_somsc   1102.95  1239.6421            +12.39%
+  chary_2019_sc_rdf_somsc   1236.15  1245.5508             +0.76%
+  chary_2019_sc_inm_somsc   1213.80  1386.1431            +14.20%
+    chary_2019_sc_o_somsc   1062.00  1398.1472            +31.65%
+    chary_2019_ss_c_somsc   1061.10  1190.7863            +12.22%
+  chary_2019_ss_rdf_somsc   1035.45  1190.8069            +15.00%
+  chary_2019_ss_inm_somsc   1070.10  1529.2498            +42.91%
+    chary_2019_ss_o_somsc    957.00  1344.3002            +40.47%
+    chary_2019_sg_c_somsc   1102.95  1157.9011             +4.98%
+  chary_2019_sg_rdf_somsc   1162.05  1157.9191 -0.36% [SHORTFALL]
+  chary_2019_sg_inm_somsc   1070.10  1361.1833            +27.20%
+    chary_2019_sg_o_somsc   1069.50  1309.8472            +22.47%
+    chary_2019_bg_c_somsc   1041.60  1161.1712            +11.48%
+  chary_2019_bg_rdf_somsc   1044.00  1182.8748            +13.30%
+  chary_2019_bg_inm_somsc   1088.85  1361.6441            +25.05%
+    chary_2019_bg_o_somsc   1148.40  1318.1230            +14.78%
+    chary_2019_bb_c_somsc   1004.40  1220.5317            +21.52%
+  chary_2019_bb_rdf_somsc    947.70  1259.0298            +32.85%
+  chary_2019_bb_inm_somsc   1121.25  1665.3851            +48.53%
+    chary_2019_bb_o_somsc   1207.50  1385.5855            +14.75%
+    chary_2019_bc_c_somsc   1171.35  1245.9348             +6.37%
+  chary_2019_bc_rdf_somsc   1107.00  1271.8739            +14.89%
+  chary_2019_bc_inm_somsc   1179.75  1689.4775            +43.21%
+    chary_2019_bc_o_somsc   1203.60  1409.8000            +17.13%
+   chary_2019_cac_c_somsc    985.80  1286.8350            +30.54%
+ chary_2019_cac_rdf_somsc   1078.80  1313.7592            +21.78%
+ chary_2019_cac_inm_somsc   1097.40  1740.4694            +58.60%
+   chary_2019_cac_o_somsc   1060.20  1451.5634            +36.91%
+  chary_2019_caca_c_somsc    969.90  1332.6477            +37.40%
+chary_2019_caca_rdf_somsc   1089.00  1332.9304            +22.40%
+chary_2019_caca_inm_somsc   1170.00  1763.2248            +50.70%
+  chary_2019_caca_o_somsc   1069.50  1461.4082            +36.64%
+   chary_2019_cag_c_somsc    988.20  1223.5966            +23.82%
+ chary_2019_cag_rdf_somsc   1071.00  1224.9371            +14.37%
+ chary_2019_cag_inm_somsc   1062.00  1413.0731            +33.06%
+   chary_2019_cag_o_somsc   1145.70  1363.3208            +18.99%
+    chary_2019_cg_c_somsc   1062.00  1231.7188            +15.98%
+  chary_2019_cg_rdf_somsc   1070.55  1207.5727            +12.80%
+  chary_2019_cg_inm_somsc   1276.50  1395.7490             +9.34%
+    chary_2019_cg_o_somsc   1067.85  1359.4084            +27.30%
+    chary_2019_cc_c_somsc   1087.50  1280.1513            +17.72%
+  chary_2019_cc_rdf_somsc   1044.30  1290.7031            +23.60%
+  chary_2019_cc_inm_somsc   1173.00  1716.8991            +46.37%
+    chary_2019_cc_o_somsc   1155.75  1442.5102            +24.81%
+    chary_2019_gg_c_somsc   1190.70  1139.0172 -4.34% [SHORTFALL]
+  chary_2019_gg_rdf_somsc   1138.50  1139.0184             +0.05%
+  chary_2019_gg_inm_somsc   1138.50  1268.1150            +11.38%
+    chary_2019_gg_o_somsc   1128.60  1289.6131            +14.27%
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Chary_2019_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 48
+R²: 0.0611
+RMSE: 287.92 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Chary_2019_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 chary_2019_sc_c_somsc,sc_c,2005,282,1102.95,1239.6421
 chary_2019_sc_rdf_somsc,sc_rdf,2005,282,1236.15,1245.5508
 chary_2019_sc_inm_somsc,sc_inm,2005,282,1213.8,1386.1431

@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Surendran_2016
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-80.36%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,355.56 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,272.12 g C / m²
 SoilGrids Observed Value: 6,476.71 g C / m²
 Model is 80.36% lower than observation.
 (Difference: -5,204.59 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'surendran_2016_trt_t1_s1_somsc' Change: -13.71 g C / m² (End value: 1,255.96)
@@ -27,11 +29,11 @@ Average SOMSC at end of all experimental phases: 1,319.35 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1 (Year: 2010, Day: 165)... SUCCESS: 1345.34
- -> Checking t2 (Year: 2010, Day: 165)... SUCCESS: 1297.87
- -> Checking t3 (Year: 2010, Day: 165)... SUCCESS: 1312.48
- -> Checking s1 (Year: 2010, Day: 165)... SUCCESS: 1239.25
- -> Checking s2 (Year: 2010, Day: 165)... SUCCESS: 1397.87
+-> Checking t1 (Years: 2010, Day: 165)... SUCCESS: 1345.34
+ -> Checking t2 (Years: 2010, Day: 165)... SUCCESS: 1297.87
+ -> Checking t3 (Years: 2010, Day: 165)... SUCCESS: 1312.48
+ -> Checking s1 (Years: 2010, Day: 165)... SUCCESS: 1239.25
+ -> Checking s2 (Years: 2010, Day: 165)... SUCCESS: 1397.87
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Surendran_2016/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Surendran_2016/averaged_somsc_comparison.csv'
@@ -39,7 +41,36 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Surendran_2016/observed_vs
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 5
+Rows passing delta rule (sim >= obs): 2
+Rows with shortfall (sim < obs): 3
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+            Observation    Observed  Simulated         Difference
+surendran_2016_t1_somsc 1459.046989 1345.33800 -7.79% [SHORTFALL]
+surendran_2016_t2_somsc 1368.644902 1297.86935 -5.17% [SHORTFALL]
+surendran_2016_t3_somsc 1372.462204 1312.47655 -4.37% [SHORTFALL]
+surendran_2016_s1_somsc  974.033764 1239.24930            +27.23%
+surendran_2016_s2_somsc 1219.341094 1397.87330            +14.64%
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Surendran_2016_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 5
+R²: 0.2381
+RMSE: 157.32 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Surendran_2016_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 surendran_2016_t1_somsc,t1,2010,165,1459.046989,1345.338
 surendran_2016_t2_somsc,t2,2010,165,1368.644902,1297.86935
 surendran_2016_t3_somsc,t3,2010,165,1372.462204,1312.4765499999999

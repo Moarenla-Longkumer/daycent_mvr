@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Parihar_2018_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-61.44%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,991.46 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,248.70 g C / m²
 SoilGrids Observed Value: 3,238.07 g C / m²
 Model is 61.44% lower than observation.
 (Difference: -1,989.37 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'parihar_2018_reformatted_ct_mcs_somsc' Change: -18.06 g C / m² (End value: 1,227.47)
@@ -33,14 +35,14 @@ Average SOMSC at end of all experimental phases: 1,262.23 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking pb (Year: 2013, Day: 190)... SUCCESS: 1351.06
- -> Checking zt (Year: 2013, Day: 190)... SUCCESS: 1327.15
- -> Checking ct (Year: 2013, Day: 190)... SUCCESS: 1152.14
- -> Checking mwmb (Year: 2013, Day: 190)... SUCCESS: 1243.18
- -> Checking mcs (Year: 2013, Day: 190)... SUCCESS: 1312.51
- -> Checking mmumb (Year: 2013, Day: 190)... SUCCESS: 1232.16
- -> Checking mms (Year: 2013, Day: 190)... SUCCESS: 1319.29
- -> Checking nan (Year: 2013, Day: 190)... FAILED: No schedule files resolved.
+-> Checking pb (Years: 2013, Day: 190)... SUCCESS: 1351.06
+ -> Checking zt (Years: 2013, Day: 190)... SUCCESS: 1327.15
+ -> Checking ct (Years: 2013, Day: 190)... SUCCESS: 1152.14
+ -> Checking mwmb (Years: 2013, Day: 190)... SUCCESS: 1243.18
+ -> Checking mcs (Years: 2013, Day: 190)... SUCCESS: 1312.51
+ -> Checking mmumb (Years: 2013, Day: 190)... SUCCESS: 1232.16
+ -> Checking mms (Years: 2013, Day: 190)... SUCCESS: 1319.29
+ -> Checking nan (Years: 2013, Day: 190)... FAILED: No schedule files resolved.
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/averaged_somsc_comparison.csv'
@@ -48,7 +50,37 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Parihar_2018_reformatted/o
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 7
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 7
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                         Observation  Observed   Simulated          Difference
+   parihar_2018_reformatted_pb_somsc    2827.0 1351.064775 -52.21% [SHORTFALL]
+   parihar_2018_reformatted_zt_somsc    2826.0 1327.149625 -53.04% [SHORTFALL]
+   parihar_2018_reformatted_ct_somsc    2208.0 1152.136675 -47.82% [SHORTFALL]
+ parihar_2018_reformatted_mwmb_somsc    2750.0 1243.183133 -54.79% [SHORTFALL]
+  parihar_2018_reformatted_mcs_somsc    2825.0 1312.508100 -53.54% [SHORTFALL]
+parihar_2018_reformatted_mmumb_somsc    2425.0 1232.158233 -49.19% [SHORTFALL]
+  parihar_2018_reformatted_mms_somsc    2479.0 1319.285300 -46.78% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Parihar_2018_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 7
+R²: 0.6184
+RMSE: 1355.71 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 parihar_2018_reformatted_pb_somsc,pb,2013,190,2827.0,1351.064775
 parihar_2018_reformatted_zt_somsc,zt,2013,190,2826.0,1327.149625
 parihar_2018_reformatted_ct_somsc,ct,2013,190,2208.0,1152.136675

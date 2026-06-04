@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Joseph_2023a_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-57.02%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,818.35 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,430.20 g C / m²
 SoilGrids Observed Value: 3,327.95 g C / m²
 Model is 57.02% lower than observation.
 (Difference: -1,897.75 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'joseph_2023a_reformatted_ct_somsc' Change: -421.27 g C / m² (End value: 1,005.86)
@@ -26,11 +28,11 @@ Average SOMSC at end of all experimental phases: 1,415.88 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking ct (Year: 2021, Day: 326.0)... SUCCESS: 1004.68
- -> Checking pnbb (Year: 2021, Day: 326.0)... SUCCESS: 1306.68
- -> Checking pnbb_r (Year: 2021, Day: 326.0)... SUCCESS: 1625.73
- -> Checking fb (Year: 2021, Day: 326.0)... SUCCESS: 1428.55
- -> Checking fb_r (Year: 2021, Day: 326.0)... SUCCESS: 1716.94
+-> Checking ct (Years: 2021, Day: 326.0)... SUCCESS: 1004.68
+ -> Checking pnbb (Years: 2021, Day: 326.0)... SUCCESS: 1306.68
+ -> Checking pnbb_r (Years: 2021, Day: 326.0)... SUCCESS: 1625.73
+ -> Checking fb (Years: 2021, Day: 326.0)... SUCCESS: 1428.55
+ -> Checking fb_r (Years: 2021, Day: 326.0)... SUCCESS: 1716.94
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/averaged_somsc_comparison.csv'
@@ -38,7 +40,35 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Joseph_2023a_reformatted/o
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 5
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 5
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                          Observation  Observed  Simulated          Difference
+    joseph_2023a_reformatted_ct_somsc 2468.2840  1004.6780 -59.30% [SHORTFALL]
+  joseph_2023a_reformatted_pnbb_somsc 2925.3735  1306.6769 -55.33% [SHORTFALL]
+joseph_2023a_reformatted_pnbb_r_somsc 3206.1565  1625.7273 -49.29% [SHORTFALL]
+    joseph_2023a_reformatted_fb_somsc 2820.8960  1428.5455 -49.36% [SHORTFALL]
+  joseph_2023a_reformatted_fb_r_somsc 3212.6870  1716.9376 -46.56% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Joseph_2023a_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 5
+R²: 0.9157
+RMSE: 1512.35 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 joseph_2023a_reformatted_ct_somsc,ct,2021,326,2468.284,1004.6780000000001
 joseph_2023a_reformatted_pnbb_somsc,pnbb,2021,326,2925.3735,1306.6769
 joseph_2023a_reformatted_pnbb_r_somsc,pnbb_r,2021,326,3206.1565,1625.7273

@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Somasundaram_2018_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-18.99%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,621.44 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 2,699.52 g C / m²
 SoilGrids Observed Value: 3,332.52 g C / m²
 Model is 18.99% lower than observation.
 (Difference: -633.00 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'somasundaram_2018_reformatted_ct_mc_somsc' Change: -241.01 g C / m² (End value: 2,453.60)
@@ -27,9 +29,9 @@ Average SOMSC at end of all experimental phases: 2,615.16 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking ct (Year: 2015, Day: 86)... SUCCESS: 2475.34
- -> Checking rt (Year: 2015, Day: 86)... SUCCESS: 2703.86
- -> Checking nt (Year: 2015, Day: 86)... SUCCESS: 2718.19
+-> Checking ct (Years: 2015, Day: 86)... SUCCESS: 2475.34
+ -> Checking rt (Years: 2015, Day: 86)... SUCCESS: 2703.86
+ -> Checking nt (Years: 2015, Day: 86)... SUCCESS: 2718.19
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2018_reformatted/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2018_reformatted/averaged_somsc_comparison.csv'
@@ -37,7 +39,34 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Somasundaram_2018_reformat
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
-somasundaram_2018_reformatted_ct_somsc,ct,2015,86,0,2475.34325
-somasundaram_2018_reformatted_rt_somsc,rt,2015,86,0,2703.86485
-somasundaram_2018_reformatted_nt_somsc,nt,2015,86,0,2718.18885
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 3
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 3
+
+                           Observation  Observed  Simulated         Difference
+somasundaram_2018_reformatted_ct_somsc       0.0 2475.34325 FLAG (invalid obs)
+somasundaram_2018_reformatted_rt_somsc       0.0 2703.86485 FLAG (invalid obs)
+somasundaram_2018_reformatted_nt_somsc       0.0 2718.18885 FLAG (invalid obs)
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Somasundaram_2018_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 3
+R²: 0.0000 (flat observations or flat model)
+RMSE: 2634.82 g C / m²
+Status: FLAG - Near-zero variance in observed and/or simulated values.
+Action: Review `.sch` files and observation timing in `observations/Somasundaram_2018_reformatted_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
+somasundaram_2018_reformatted_ct_somsc,ct,2015,86,0.0,2475.34325
+somasundaram_2018_reformatted_rt_somsc,rt,2015,86,0.0,2703.86485
+somasundaram_2018_reformatted_nt_somsc,nt,2015,86,0.0,2718.18885

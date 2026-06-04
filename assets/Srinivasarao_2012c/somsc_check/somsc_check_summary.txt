@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Srinivasarao_2012c
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-24.47%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,550.87 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 3,214.24 g C / m²
 SoilGrids Observed Value: 4,255.42 g C / m²
 Model is 24.47% lower than observation.
 (Difference: -1,041.18 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'srinivasarao_2012c_t1_somsc' Change: -560.23 g C / m² (End value: 2,649.86)
@@ -28,13 +30,13 @@ Average SOMSC at end of all experimental phases: 2,760.39 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking t1 (Year: 2007, Day: 63)... SUCCESS: 2674.04
- -> Checking t2 (Year: 2007, Day: 63)... SUCCESS: 2788.33
- -> Checking t3 (Year: 2007, Day: 63)... SUCCESS: 2857.08
- -> Checking t4 (Year: 2007, Day: 63)... SUCCESS: 2706.66
- -> Checking t5 (Year: 2007, Day: 63)... SUCCESS: 2962.60
- -> Checking t6 (Year: 2007, Day: 63)... SUCCESS: 2471.37
- -> Checking t7 (Year: 2007, Day: 63)... SUCCESS: 2993.18
+-> Checking t1 (Years: 2007, Day: 63)... SUCCESS: 2674.04
+ -> Checking t2 (Years: 2007, Day: 63)... SUCCESS: 2788.33
+ -> Checking t3 (Years: 2007, Day: 63)... SUCCESS: 2857.08
+ -> Checking t4 (Years: 2007, Day: 63)... SUCCESS: 2706.66
+ -> Checking t5 (Years: 2007, Day: 63)... SUCCESS: 2962.60
+ -> Checking t6 (Years: 2007, Day: 63)... SUCCESS: 2471.37
+ -> Checking t7 (Years: 2007, Day: 63)... SUCCESS: 2993.18
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2012c/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2012c/averaged_somsc_comparison.csv'
@@ -42,7 +44,37 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Srinivasarao_2012c/observe
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 7
+Rows passing delta rule (sim >= obs): 7
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                Observation  Observed  Simulated Difference
+srinivasarao_2012c_t1_somsc    1959.6  2674.0443    +36.46%
+srinivasarao_2012c_t2_somsc    2183.6  2788.3292    +27.69%
+srinivasarao_2012c_t3_somsc    2335.0  2857.0845    +22.36%
+srinivasarao_2012c_t4_somsc    2394.4  2706.6642    +13.04%
+srinivasarao_2012c_t5_somsc    2594.8  2962.6043    +14.17%
+srinivasarao_2012c_t6_somsc    2308.4  2471.3651     +7.06%
+srinivasarao_2012c_t7_somsc    2628.0  2993.1839    +13.90%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 7
+R²: 0.3677
+RMSE: 469.26 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Srinivasarao_2012c_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 srinivasarao_2012c_t1_somsc,t1,2007,63,1959.6,2674.0443
 srinivasarao_2012c_t2_somsc,t2,2007,63,2183.6,2788.3292
 srinivasarao_2012c_t3_somsc,t3,2007,63,2335.0,2857.0845

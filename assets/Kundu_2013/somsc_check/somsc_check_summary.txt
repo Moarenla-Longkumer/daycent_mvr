@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Kundu_2013
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-28.31%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 7,962.57 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 2,565.13 g C / m²
 SoilGrids Observed Value: 3,578.01 g C / m²
 Model is 28.31% lower than observation.
 (Difference: -1,012.88 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'kundu_2013_cs_-b_somsc' Change: -63.34 g C / m² (End value: 2,496.93)
@@ -37,22 +39,22 @@ Average SOMSC at end of all experimental phases: 2,435.67 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking cs_control (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cs_npksznb (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cs_-n (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cs_-p (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cs_-k (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cs_-s (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cs_-zn (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cs_-b (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cv_control (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cv_npksznb (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cv_-n (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cv_-p (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cv_-k (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cv_-s (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cv_-zn (Year: 2011, Day: 281364)... FAILED: No matching data found.
- -> Checking cv_-b (Year: 2011, Day: 281364)... FAILED: No matching data found.
+-> Checking cs_control (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_npksznb (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-n (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-p (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-k (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-s (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-zn (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cs_-b (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_control (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_npksznb (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-n (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-p (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-k (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-s (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-zn (Years: 2011, Day: 281364)... FAILED: No matching data found.
+ -> Checking cv_-b (Years: 2011, Day: 281364)... FAILED: No matching data found.
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kundu_2013/output_somsc.txt'
 
@@ -60,4 +62,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

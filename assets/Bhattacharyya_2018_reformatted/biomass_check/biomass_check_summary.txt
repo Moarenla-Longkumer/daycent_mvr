@@ -1,18 +1,102 @@
 Biomass Check Summary for Site: Bhattacharyya_2018_reformatted
 
-RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
-This is likely because the 'extract_biomass.py' script failed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 6
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 6
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                                              Observation  Observed  Simulated          Difference
+       bhattacharyya_2018_reformatted_ct_aglivc-cgrain_c6    317.28  180.08506 -43.24% [SHORTFALL]
+     bhattacharyya_2018_reformatted_pnbb_aglivc-cgrain_c6    348.96  194.71574 -44.20% [SHORTFALL]
+   bhattacharyya_2018_reformatted_pnbb_r_aglivc-cgrain_c6    406.92  216.31474 -46.84% [SHORTFALL]
+    bhattacharyya_2018_reformatted_ct_aglivc-cgrain_sw3eg    305.20  220.98066 -27.59% [SHORTFALL]
+  bhattacharyya_2018_reformatted_pnbb_aglivc-cgrain_sw3eg    307.44  203.84434 -33.70% [SHORTFALL]
+bhattacharyya_2018_reformatted_pnbb_r_aglivc-cgrain_sw3eg    321.48  203.45946 -36.71% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Bhattacharyya_2018_reformatted_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 6
+R²: 0.0568
+RMSE: 135.83 g C / m²
+Status: FLAG - R² < 0.50 (poor obs–sim agreement).
+Action: Review treatment `.sch` files, `target_year` / `target_day`, `target_crop`, and `target_variable` in `observations/Bhattacharyya_2018_reformatted_obs.csv`.
 
 
 --- Biomass Extraction Script ---
-Status: FAILED
-Reason: Script exited with error code 1
+Status: Successful Run
 
---- Error Output ---
-Traceback (most recent call last):
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/scripts/extract_biomass.py", line 382, in <module>
-    main()
-  File "/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/scripts/extract_biomass.py", line 238, in main
-    target_crop_num = None if pd.isna(target_crop_num_raw) or target_crop_num_raw == 0 else int(target_crop_num_raw)
-                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'C6'
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth', 'target_year', 'target_day', 'value', 'units', 'n_obs', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 10
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in CT
+Successfully processed: 'bhattacharyya_2018_reformatted_ct_aglivc-cgrain_c6'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in PNBB
+Successfully processed: 'bhattacharyya_2018_reformatted_pnbb_aglivc-cgrain_c6'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in PNBB_R
+Successfully processed: 'bhattacharyya_2018_reformatted_pnbb_r_aglivc-cgrain_c6'
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_ZT_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'bhattacharyya_2018_reformatted_zt_aglivc-cgrain_c6'. No data found.
+    [WARN] Non-numeric target_crop_num 'C6' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT_R
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_ZT_R_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'bhattacharyya_2018_reformatted_zt_r_aglivc-cgrain_c6'. No data found.
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: CT
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_CT_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in CT
+Successfully processed: 'bhattacharyya_2018_reformatted_ct_aglivc-cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_PNBB_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in PNBB
+Successfully processed: 'bhattacharyya_2018_reformatted_pnbb_aglivc-cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: PNBB_R
+    [DEBUG] Folder exists: True | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_PNBB_R_output
+    [DEBUG] Sch file exists: True
+    [DEBUG] Found 5 data points in PNBB_R
+Successfully processed: 'bhattacharyya_2018_reformatted_pnbb_r_aglivc-cgrain_sw3eg'
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_ZT_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'bhattacharyya_2018_reformatted_zt_aglivc-cgrain_sw3eg'. No data found.
+    [WARN] Non-numeric target_crop_num 'SW3EG' ignored (expected an integer crop index).
+    [DEBUG] Checking Treatment Sch: ZT_R
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/Bhattacharyya_2018_reformatted_out/Bhattacharyya_2018_reformatted_ZT_R_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'bhattacharyya_2018_reformatted_zt_r_aglivc-cgrain_sw3eg'. No data found.
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/output_biomass.txt'
+Raw simulated data points saved to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/raw_simulated_points.csv'
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/averaged_biomass_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharyya_2018_reformatted/observed_vs_modeled_biomass.png'
+--- Script finished. ---

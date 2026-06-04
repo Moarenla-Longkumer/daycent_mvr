@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Kumar_2022
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-76.43%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,630.74 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,253.64 g C / m²
 SoilGrids Observed Value: 5,318.76 g C / m²
 Model is 76.43% lower than observation.
 (Difference: -4,065.12 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'kumar_2022_ct-mc_somsc' Change: -353.57 g C / m² (End value: 897.02)
@@ -30,18 +32,18 @@ Average SOMSC at end of all experimental phases: 1,138.80 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking zt (Year: 2018, Day: 175)... SUCCESS: 1334.45
- -> Checking prb (Year: 2018, Day: 175)... SUCCESS: 1230.93
- -> Checking ct (Year: 2018, Day: 175)... SUCCESS: 905.84
- -> Checking mm (Year: 2018, Day: 175)... SUCCESS: 1106.26
- -> Checking mw (Year: 2018, Day: 175)... SUCCESS: 1189.94
- -> Checking mc (Year: 2018, Day: 175)... SUCCESS: 1175.02
- -> Checking zt (Year: 2018, Day: 312)... SUCCESS: 1318.93
- -> Checking prb (Year: 2018, Day: 312)... SUCCESS: 1217.02
- -> Checking ct (Year: 2018, Day: 312)... SUCCESS: 893.87
- -> Checking mm (Year: 2018, Day: 312)... SUCCESS: 1093.13
- -> Checking mw (Year: 2018, Day: 312)... SUCCESS: 1175.73
- -> Checking mc (Year: 2018, Day: 312)... SUCCESS: 1160.96
+-> Checking zt (Years: 2018, Day: 175)... SUCCESS: 1334.45
+ -> Checking prb (Years: 2018, Day: 175)... SUCCESS: 1230.93
+ -> Checking ct (Years: 2018, Day: 175)... SUCCESS: 905.84
+ -> Checking mm (Years: 2018, Day: 175)... SUCCESS: 1106.26
+ -> Checking mw (Years: 2018, Day: 175)... SUCCESS: 1189.94
+ -> Checking mc (Years: 2018, Day: 175)... SUCCESS: 1175.02
+ -> Checking zt (Years: 2018, Day: 312)... SUCCESS: 1318.93
+ -> Checking prb (Years: 2018, Day: 312)... SUCCESS: 1217.02
+ -> Checking ct (Years: 2018, Day: 312)... SUCCESS: 893.87
+ -> Checking mm (Years: 2018, Day: 312)... SUCCESS: 1093.13
+ -> Checking mw (Years: 2018, Day: 312)... SUCCESS: 1175.73
+ -> Checking mc (Years: 2018, Day: 312)... SUCCESS: 1160.96
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Kumar_2022/output_somsc.txt'
 
@@ -49,4 +51,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

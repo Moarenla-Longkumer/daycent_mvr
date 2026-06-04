@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Ghosh_2006
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-68.59%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 4,452.00 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,600.19 g C / m²
 SoilGrids Observed Value: 5,094.10 g C / m²
 Model is 68.59% lower than observation.
 (Difference: -3,493.91 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'ghosh_2006_trt_fallow_chickpea_0.5np_somsc' Change: -238.85 g C / m² (End value: 1,361.41)
@@ -61,10 +63,12 @@ Average SOMSC at end of all experimental phases: 1,317.89 g C / m²
 Status: Successful Run
 
 --- Output ---
-Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Ghosh_2006/output_somsc.txt'
-
-No data available to plot or save.
+[INFO] No SOMSC observation rows found. Creating model-only plot.
+Model-only plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Ghosh_2006/observed_vs_modeled_somsc.png'
+[INFO] Observed-vs-modelled metrics skipped because observed SOMSC data is missing.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

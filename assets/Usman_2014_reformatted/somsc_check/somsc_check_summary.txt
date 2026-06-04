@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Usman_2014_reformatted
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-41.65%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 5,060.74 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,880.19 g C / m²
 SoilGrids Observed Value: 3,222.49 g C / m²
 Model is 41.65% lower than observation.
 (Difference: -1,342.30 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'usman_2014_reformatted_ct_n0_somsc' Change: -68.53 g C / m² (End value: 1,810.46)
@@ -36,11 +38,11 @@ Average SOMSC at end of all experimental phases: 1,854.51 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking zt (Year: 2011, Day: 326)... SUCCESS: 1878.91
- -> Checking rt (Year: 2011, Day: 326)... SUCCESS: 1873.28
- -> Checking ct (Year: 2011, Day: 326)... SUCCESS: 1810.28
- -> Checking zt_n0 (Year: 2011, Day: 326)... SUCCESS: 1877.85
- -> Checking zt_n50 (Year: 2011, Day: 326)... SUCCESS: 1879.11
+-> Checking zt (Years: 2011, Day: 326)... SUCCESS: 1878.91
+ -> Checking rt (Years: 2011, Day: 326)... SUCCESS: 1873.28
+ -> Checking ct (Years: 2011, Day: 326)... SUCCESS: 1810.28
+ -> Checking zt_n0 (Years: 2011, Day: 326)... SUCCESS: 1877.85
+ -> Checking zt_n50 (Years: 2011, Day: 326)... SUCCESS: 1879.11
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Usman_2014_reformatted/output_somsc.txt'
 
@@ -48,4 +50,6 @@ No data available to plot or save.
 
 
 --- Averaged SOMSC Comparison Data ---
-NOTE: 'averaged_somsc_comparison.csv' not found. This may be because the 'extract_somsc.py' script failed or does not produce this file.
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

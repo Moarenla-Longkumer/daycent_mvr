@@ -1,6 +1,6 @@
 SOMSC Check Summary for Site: Meena_2015
 
-RESULT: OK for Calibration - No major discrepancies found.
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-36.48%).
 
 --- Spinup Analysis ---
 Initial SOMSC (Year 0): 3,052.83 g C / m²
@@ -12,6 +12,8 @@ Final SOMSC at end of Base Phase: 1,215.45 g C / m²
 SoilGrids Observed Value: 1,913.51 g C / m²
 Model is 36.48% lower than observation.
 (Difference: -698.06 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
 --- Experimental Analysis ---
 'meena_2015_trt_mcg_ct_inc_somsc' Change: -137.30 g C / m² (End value: 1,078.05)
@@ -37,14 +39,14 @@ Average SOMSC at end of all experimental phases: 1,162.80 g C / m²
 Status: Successful Run
 
 --- Output ---
--> Checking trt_group_mmg (Year: 2007, Day: 176)... SUCCESS: 1167.81
- -> Checking trt_group_mcg (Year: 2007, Day: 176)... SUCCESS: 1168.93
- -> Checking trt_group_mlg (Year: 2007, Day: 176)... SUCCESS: 1173.14
- -> Checking trt_group_mwg (Year: 2007, Day: 176)... SUCCESS: 1198.62
- -> Checking trt_group_ct_rem (Year: 2007, Day: 176)... SUCCESS: 1021.02
- -> Checking trt_group_ct_inc (Year: 2007, Day: 176)... SUCCESS: 1114.57
- -> Checking trt_group_zt_rem (Year: 2007, Day: 176)... SUCCESS: 1253.72
- -> Checking trt_group_zt_mul (Year: 2007, Day: 176)... SUCCESS: 1319.20
+-> Checking trt_group_mmg (Years: 2007, Day: 176)... SUCCESS: 1167.81
+ -> Checking trt_group_mcg (Years: 2007, Day: 176)... SUCCESS: 1168.93
+ -> Checking trt_group_mlg (Years: 2007, Day: 176)... SUCCESS: 1173.14
+ -> Checking trt_group_mwg (Years: 2007, Day: 176)... SUCCESS: 1198.62
+ -> Checking trt_group_ct_rem (Years: 2007, Day: 176)... SUCCESS: 1021.02
+ -> Checking trt_group_ct_inc (Years: 2007, Day: 176)... SUCCESS: 1114.57
+ -> Checking trt_group_zt_rem (Years: 2007, Day: 176)... SUCCESS: 1253.72
+ -> Checking trt_group_zt_mul (Years: 2007, Day: 176)... SUCCESS: 1319.20
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Meena_2015/output_somsc.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Meena_2015/averaged_somsc_comparison.csv'
@@ -52,7 +54,38 @@ Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Meena_2015/observed_vs_mod
 
 
 --- Averaged SOMSC Comparison Data ---
-observation_name,treatment_name,target_year,target_day,observed_value,simulated_value_avg
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 8
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 8
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                      Observation  Observed   Simulated          Difference
+   meena_2015_trt_group_mmg_somsc  1297.125 1167.814325  -9.97% [SHORTFALL]
+   meena_2015_trt_group_mcg_somsc  1568.835 1168.931100 -25.49% [SHORTFALL]
+   meena_2015_trt_group_mlg_somsc  1358.775 1173.141050 -13.66% [SHORTFALL]
+   meena_2015_trt_group_mwg_somsc  1434.150 1198.616275 -16.42% [SHORTFALL]
+meena_2015_trt_group_ct_rem_somsc  1209.360 1021.017050 -15.57% [SHORTFALL]
+meena_2015_trt_group_ct_inc_somsc  1430.460 1114.568900 -22.08% [SHORTFALL]
+meena_2015_trt_group_zt_rem_somsc  1480.500 1253.721100 -15.32% [SHORTFALL]
+meena_2015_trt_group_zt_mul_somsc  1556.700 1319.195700 -15.26% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Meena_2015_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 8
+R²: 0.5429
+RMSE: 252.41 g C / m²
+Status: PASS - R² >= 0.50 with n >= 2.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
 meena_2015_trt_group_mmg_somsc,trt_group_mmg,2007,176,1297.125,1167.8143249999998
 meena_2015_trt_group_mcg_somsc,trt_group_mcg,2007,176,1568.835,1168.9311
 meena_2015_trt_group_mlg_somsc,trt_group_mlg,2007,176,1358.775,1173.1410500000002
