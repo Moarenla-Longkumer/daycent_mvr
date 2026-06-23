@@ -15,6 +15,20 @@ Model is 67.54% lower than observation.
 
 Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
+--- Treatment SOMSC Change Summary ---
+Source: soilc.out (som1c(2) + som2c(2) + som3c)
+Treatments assessed (n): 5
+Experiments with SOMSC increase: 4, SOMSC decrease: 1
+
+SOMSC Increase (g C / m²):
+  + TRT_B10_F (+407.27)
+  + TRT_B2_5_COM25_F (+663.17)
+  + TRT_COM25_F (+663.17)
+  + TRT_COMBI25_F (+658.75)
+
+SOMSC Decrease (g C / m²):
+  - TRT_F_CTRL (-12.07)
+
 --- Experimental Analysis ---
 'agegnehu_2015_trt_b10_f_somsc' Change: +407.27 g C / m² (End value: 1,767.36)
 'agegnehu_2015_trt_b2_5_com25_f_somsc' Change: +663.17 g C / m² (End value: 2,023.27)

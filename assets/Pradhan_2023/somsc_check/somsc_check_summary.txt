@@ -1,0 +1,82 @@
+SOMSC Check Summary for Site: Pradhan_2023
+
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-45.98%).
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 4,755.31 g C / m²
+Change during Equilibrium Phase: -1,866.97 g C / m²
+Change during Base Phase: -653.10 g C / m²
+Final SOMSC at end of Base Phase: 2,247.61 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 4,160.96 g C / m²
+Model is 45.98% lower than observation.
+(Difference: -1,913.35 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
+
+--- Experimental Analysis ---
+'pradhan_2023_rb × n1_somsc' Change: +19.47 g C / m² (End value: 2,261.60)
+'pradhan_2023_rb × n2_somsc' Change: +19.48 g C / m² (End value: 2,261.61)
+'pradhan_2023_rb × n3_somsc' Change: +19.54 g C / m² (End value: 2,261.67)
+'pradhan_2023_rr × n1_somsc' Change: +419.00 g C / m² (End value: 2,661.14)
+'pradhan_2023_rr × n2_somsc' Change: +418.31 g C / m² (End value: 2,660.44)
+'pradhan_2023_rr × n3_somsc' Change: +425.35 g C / m² (End value: 2,667.49)
+
+Average SOMSC at end of all experimental phases: 2,462.33 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking rb (Years: 2022, Day: 12)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N1_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N2_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N3_output/soilc.out FAILED: No matching data found.
+ -> Checking rr (Years: 2022, Day: 12)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N1_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N2_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N3_output/soilc.out FAILED: No matching data found.
+ -> Checking n1 (Years: 2022, Day: 12)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N1_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N1_output/soilc.out FAILED: No matching data found.
+ -> Checking n2 (Years: 2022, Day: 12)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N2_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N2_output/soilc.out FAILED: No matching data found.
+ -> Checking n3 (Years: 2022, Day: 12)... 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N3_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output/soilc.out 
+    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N3_output/soilc.out FAILED: No matching data found.
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

@@ -1,0 +1,43 @@
+SOMSC Check Summary for Site: Aravindh_2023_Coimbatore
+
+RESULT: Model NEEDS INVESTIGATION - Base SOMSC is below SoilGrids observation (-70.01%).
+
+--- Spinup Analysis ---
+Initial SOMSC (Year 0): 3,684.83 g C / m²
+Change during Equilibrium Phase: -1,991.73 g C / m²
+Change during Base Phase: -91.03 g C / m²
+Final SOMSC at end of Base Phase: 1,608.52 g C / m²
+
+--- SoilGrids Comparison ---
+SoilGrids Observed Value: 5,363.65 g C / m²
+Model is 70.01% lower than observation.
+(Difference: -3,755.13 g C / m²)
+
+Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
+
+--- Experimental Analysis ---
+'aravindh_2023_coimbatore_c_1_somsc' Change: -1,165.56 g C / m² (End value: 440.26)
+'aravindh_2023_coimbatore_ic_1_somsc' Change: -1,165.17 g C / m² (End value: 440.66)
+'aravindh_2023_coimbatore_inm_1_somsc' Change: -1,163.73 g C / m² (End value: 442.10)
+'aravindh_2023_coimbatore_om_1_somsc' Change: -1,164.12 g C / m² (End value: 441.71)
+
+Average SOMSC at end of all experimental phases: 441.18 g C / m²
+
+--- Calibration Script Test ---
+Status: Successful Run
+
+--- Output ---
+-> Checking c_1 (Years: 2017, Day: 125.0)... SUCCESS: 441.56
+ -> Checking ic_1 (Years: 2017, Day: 125.0)... SUCCESS: 441.96
+ -> Checking om_1 (Years: 2017, Day: 125.0)... SUCCESS: 443.02
+ -> Checking inm_1 (Years: 2017, Day: 125.0)... SUCCESS: 443.41
+
+Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Aravindh_2023_Coimbatore/output_somsc.txt'
+
+No data available to plot or save.
+
+
+--- Averaged SOMSC Comparison Data ---
+RESULT: MODEL ONLY - No SOMSC observations in the observation file.
+Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
+Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.

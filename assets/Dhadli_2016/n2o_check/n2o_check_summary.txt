@@ -1,27 +1,29 @@
 N2O Check Summary for Site: Dhadli_2016
 
-RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+RESULT: NEEDS INVESTIGATION - One or more points overestimate observed N2O by more than 50% and/or invalid comparison rows (see Point-wise delta).
 
 --- Point-wise delta (obs vs sim) ---
-Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rule: PASS if percent_diff <= 50% (underestimation always passes); FLAG if percent_diff > 50% (overestimation). Invalid rows (sim=0, missing sim, obs=0/missing) are flagged separately.
+Overestimation limit (percent_diff > 50%): FLAG
 Rows in comparison file (n): 8
-Rows passing delta rule (sim >= obs): 8
-Rows with shortfall (sim < obs): 0
+Rows passing delta rule (percent_diff <= 50%): 0
+Rows overestimating by more than 50%: 8
 Rows with zero simulated: 0
 Rows with missing simulated: 0
 Rows with invalid/missing observed (cannot compute %): 0
 
-                     Observation  Observed  Simulated Difference
-dhadli_2016_t1_n2oflux_2013_2013      5.55  1011.4674 +18124.64%
-dhadli_2016_t2_n2oflux_2013_2013      5.99  1716.0773 +28549.04%
-dhadli_2016_t4_n2oflux_2013_2013      5.90  1693.3948 +28601.61%
-dhadli_2016_t5_n2oflux_2013_2013      2.37    43.6879  +1743.37%
-dhadli_2016_t1_n2oflux_2013_2014      2.35   627.1790 +26588.47%
-dhadli_2016_t2_n2oflux_2013_2014      2.70   968.2949 +35762.77%
-dhadli_2016_t4_n2oflux_2013_2014      2.65   919.2873 +34590.09%
-dhadli_2016_t5_n2oflux_2013_2014      1.66     9.3015   +460.33%
+                     Observation  Observed  Simulated             Difference
+dhadli_2016_t1_n2oflux_2013_2013      5.55  1011.4674 +18124.64% [OVER >50%]
+dhadli_2016_t2_n2oflux_2013_2013      5.99  1716.0773 +28549.04% [OVER >50%]
+dhadli_2016_t4_n2oflux_2013_2013      5.90  1693.3948 +28601.61% [OVER >50%]
+dhadli_2016_t5_n2oflux_2013_2013      2.37    43.6879  +1743.37% [OVER >50%]
+dhadli_2016_t1_n2oflux_2013_2014      2.35   627.1790 +26588.47% [OVER >50%]
+dhadli_2016_t2_n2oflux_2013_2014      2.70   968.2949 +35762.77% [OVER >50%]
+dhadli_2016_t4_n2oflux_2013_2014      2.65   919.2873 +34590.09% [OVER >50%]
+dhadli_2016_t5_n2oflux_2013_2014      1.66     9.3015   +460.33% [OVER >50%]
 
-Status: PASS - No shortfalls; simulated meets or exceeds observed.
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files and period dates (start_target_year/day, target_year/day) in `observations/Dhadli_2016_obs.csv`.
 
 --- Treatment fit (obs vs sim) ---
 R² cutoff (minimum for PASS): 0.50

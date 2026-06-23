@@ -1,42 +1,17 @@
 N2O Check Summary for Site: Nath_2022
 
-RESULT: CANNOT ASSESS - Comparison CSV not found.
+RESULT: CANNOT ASSESS - Comparison CSV not found (extract_N2O failed).
 
 
 --- N2O Extraction Script ---
-Status: Successful Run
+Status: FAILED
+Reason: exit code 1
 
---- Output ---
-[INFO] N2O observation rows: 4
- -> ct – r + 100 n period 2013-317 to 2015-77... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_CT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_–_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_R_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_100_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_N_output/summary.out FAILED.
- -> ct + r + 100 n period 2013-317 to 2015-77... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_CT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_R_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_100_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_N_output/summary.out FAILED.
- -> zt – r + 100 n period 2013-317 to 2015-77... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_ZT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_–_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_R_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_100_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_N_output/summary.out FAILED.
- -> zt + r + 100 n period 2013-317 to 2015-77... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_ZT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_R_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_+_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_100_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/Nath_2022_out/Nath_2022_N_output/summary.out FAILED.
-
-PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/output_n2o.txt'
-
-No paired data available to plot or save.
+--- Error Output ---
+Traceback (most recent call last):
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/scripts/extract_N2O.py", line 320, in <module>
+    main()
+  File "/Users/mac/DAYCENT/daycent_sites/sites/Nath_2022/scripts/extract_N2O.py", line 209, in main
+    sy = int(row["start_target_year"])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer

@@ -1,6 +1,35 @@
 N2O Check Summary for Site: Bhattacharya_2023
 
-RESULT: CANNOT ASSESS - Comparison CSV not found.
+RESULT: OK for Calibration - All points have simulated >= observed (no shortfalls).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 8
+Rows passing delta rule (sim >= obs): 8
+Rows with shortfall (sim < obs): 0
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+                              Observation  Observed  Simulated  Difference
+bhattacharya_2023_ct r0_n2oflux_2020_2021     0.057   401.7178 +704668.07%
+bhattacharya_2023_ct r+_n2oflux_2020_2021     0.068   311.3448 +457760.00%
+bhattacharya_2023_nt r0_n2oflux_2020_2021     0.072   295.7122 +410611.39%
+bhattacharya_2023_nt r+_n2oflux_2020_2021     0.075   224.4319 +299142.53%
+bhattacharya_2023_ct r0_n2oflux_2021_2022     0.063   476.5670 +756355.56%
+bhattacharya_2023_ct r+_n2oflux_2021_2022     0.070   410.7528 +586689.71%
+bhattacharya_2023_nt r0_n2oflux_2021_2022     0.071   385.0841 +542271.97%
+bhattacharya_2023_nt r+_n2oflux_2021_2022     0.074   294.7890 +398263.51%
+
+Status: PASS - No shortfalls; simulated meets or exceeds observed.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 8
+R²: 0.4820
+RMSE: 358.25
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and period dates in `observations/Bhattacharya_2023_obs.csv`.
 
 
 --- N2O Extraction Script ---
@@ -8,31 +37,15 @@ Status: Successful Run
 
 --- Output ---
 [INFO] N2O observation rows: 8
- -> ct r0 period 2021-331 to 2021-103... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_CT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R0_output/summary.out FAILED.
- -> ct r+ period 2021-331 to 2021-103... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_CT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R+_output/summary.out FAILED.
- -> nt r0 period 2021-331 to 2021-103... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_NT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R0_output/summary.out FAILED.
- -> nt r+ period 2021-331 to 2021-103... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_NT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R+_output/summary.out FAILED.
- -> ct r0 period 2022-327 to 2022-101... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_CT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R0_output/summary.out FAILED.
- -> ct r+ period 2022-327 to 2022-101... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_CT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R+_output/summary.out FAILED.
- -> nt r0 period 2022-327 to 2022-101... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_NT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R0_output/summary.out FAILED.
- -> nt r+ period 2022-327 to 2022-101... 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_NT_output/summary.out 
-    [WARN] Missing /Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/Bhattacharya_2023_out/Bhattacharya_2023_R+_output/summary.out FAILED.
+ -> ct r0 period 2020-331 to 2021-103... SUCCESS: sim=401.7178
+ -> ct r+ period 2020-331 to 2021-103... SUCCESS: sim=311.3448
+ -> nt r0 period 2020-331 to 2021-103... SUCCESS: sim=295.7122
+ -> nt r+ period 2020-331 to 2021-103... SUCCESS: sim=224.4319
+ -> ct r0 period 2021-327 to 2022-101... SUCCESS: sim=476.5670
+ -> ct r+ period 2021-327 to 2022-101... SUCCESS: sim=410.7528
+ -> nt r0 period 2021-327 to 2022-101... SUCCESS: sim=385.0841
+ -> nt r+ period 2021-327 to 2022-101... SUCCESS: sim=294.7890
 
 PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/output_n2o.txt'
-
-No paired data available to plot or save.
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/averaged_n2o_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Bhattacharya_2023/observed_vs_modeled_n2o.png'

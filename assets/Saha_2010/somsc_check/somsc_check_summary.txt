@@ -15,34 +15,71 @@ Model is 62.54% lower than observation.
 
 Rule: FAIL if model < observation; PASS if model >= observation. Any positive gap passes (no upper limit).
 
+--- Experimental Analysis ---
+'saha_2010_trt_ct_ri_somsc' Change: -96.58 g C / m² (End value: 1,148.01)
+'saha_2010_trt_ct_rm_somsc' Change: -134.05 g C / m² (End value: 1,110.54)
+'saha_2010_trt_zt_rm_somsc' Change: -30.88 g C / m² (End value: 1,213.71)
+'saha_2010_trt_zt_rr_somsc' Change: -13.40 g C / m² (End value: 1,231.19)
+
+Average SOMSC at end of all experimental phases: 1,175.86 g C / m²
 
 --- Calibration Script Test ---
 Status: Successful Run
 
 --- Output ---
--> Checking trt_ct_rm (Years: 2006, Day: 291)... 
-    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/Saha_2010_out/Saha_2010_TRT_CT_RM_output/soilc.out FAILED: No matching data found.
- -> Checking trt_ct_ri (Years: 2006, Day: 291)... 
-    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/Saha_2010_out/Saha_2010_TRT_CT_RI_output/soilc.out FAILED: No matching data found.
- -> Checking trt_zt_rm (Years: 2006, Day: 291)... 
-    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/Saha_2010_out/Saha_2010_TRT_ZT_RM_output/soilc.out FAILED: No matching data found.
- -> Checking trt_zt_rr (Years: 2006, Day: 291)... 
-    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/Saha_2010_out/Saha_2010_TRT_ZT_RR_output/soilc.out FAILED: No matching data found.
- -> Checking trt_ct_rm (Years: 2007, Day: 76)... 
-    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/Saha_2010_out/Saha_2010_TRT_CT_RM_output/soilc.out FAILED: No matching data found.
- -> Checking trt_ct_ri (Years: 2007, Day: 76)... 
-    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/Saha_2010_out/Saha_2010_TRT_CT_RI_output/soilc.out FAILED: No matching data found.
- -> Checking trt_zt_rm (Years: 2007, Day: 76)... 
-    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/Saha_2010_out/Saha_2010_TRT_ZT_RM_output/soilc.out FAILED: No matching data found.
- -> Checking trt_zt_rr (Years: 2007, Day: 76)... 
-    [WARN] File missing: /Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/Saha_2010_out/Saha_2010_TRT_ZT_RR_output/soilc.out FAILED: No matching data found.
+-> Checking trt_ct_rm (Years: 2006, Day: 291)... SUCCESS: 1146.00
+ -> Checking trt_ct_ri (Years: 2006, Day: 291)... SUCCESS: 1170.58
+ -> Checking trt_zt_rm (Years: 2006, Day: 291)... SUCCESS: 1222.07
+ -> Checking trt_zt_rr (Years: 2006, Day: 291)... SUCCESS: 1231.08
+ -> Checking trt_ct_rm (Years: 2007, Day: 76)... SUCCESS: 1130.12
+ -> Checking trt_ct_ri (Years: 2007, Day: 76)... SUCCESS: 1168.38
+ -> Checking trt_zt_rm (Years: 2007, Day: 76)... SUCCESS: 1236.38
+ -> Checking trt_zt_rr (Years: 2007, Day: 76)... SUCCESS: 1251.06
 
 Standard PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/output_somsc.txt'
-
-No data available to plot or save.
+Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/averaged_somsc_comparison.csv'
+Plot saved to '/Users/mac/DAYCENT/daycent_sites/sites/Saha_2010/observed_vs_modeled_somsc.png'
 
 
 --- Averaged SOMSC Comparison Data ---
-RESULT: MODEL ONLY - No SOMSC observations in the observation file.
-Observed-vs-modelled metrics were skipped, but modelled SOMSC plots were generated from DayCent output.
-Add SOMSC rows to the observation file if SOMSC calibration metrics are needed.
+RESULT: NEEDS INVESTIGATION - Model below observation and/or invalid comparison rows (see Point-wise delta).
+
+--- Point-wise delta (obs vs sim) ---
+Rule: FAIL if simulated < observed (percent_diff < 0); PASS if simulated >= observed. Any positive gap passes (no upper limit).
+Rows in comparison file (n): 8
+Rows passing delta rule (sim >= obs): 0
+Rows with shortfall (sim < obs): 8
+Rows with zero simulated: 0
+Rows with missing simulated: 0
+Rows with invalid/missing observed (cannot compute %): 0
+
+              Observation  Observed  Simulated          Difference
+saha_2010_trt_ct_rm_somsc   1305.00  1146.0026 -12.18% [SHORTFALL]
+saha_2010_trt_ct_ri_somsc   1370.25  1170.5786 -14.57% [SHORTFALL]
+saha_2010_trt_zt_rm_somsc   1291.05  1222.0707  -5.34% [SHORTFALL]
+saha_2010_trt_zt_rr_somsc   1447.20  1231.0835 -14.93% [SHORTFALL]
+saha_2010_trt_ct_rm_somsc   1382.40  1130.1153 -18.25% [SHORTFALL]
+saha_2010_trt_ct_ri_somsc   1376.10  1168.3750 -15.10% [SHORTFALL]
+saha_2010_trt_zt_rm_somsc   1504.80  1236.3789 -17.84% [SHORTFALL]
+saha_2010_trt_zt_rr_somsc   1480.05  1251.0607 -15.47% [SHORTFALL]
+
+Status: FLAG - At least one row failed the delta rule.
+Action: Review treatment `.sch` files, `target_year` / `target_day`, and `target_variable` in `observations/Saha_2010_obs.csv`.
+
+--- Treatment fit (obs vs sim) ---
+R² cutoff (minimum for PASS): 0.50
+Paired points (n): 8
+R²: 0.3478
+RMSE: 208.54 g C / m²
+Status: FLAG - R² < 0.50.
+Action: Review `.sch` files and observation timing in `observations/Saha_2010_obs.csv`.
+
+observation_name,treatment_name,target_years,target_day,observed_value,simulated_value_avg
+saha_2010_trt_ct_rm_somsc,trt_ct_rm,2006,291,1305.0,1146.0026
+saha_2010_trt_ct_ri_somsc,trt_ct_ri,2006,291,1370.25,1170.5786
+saha_2010_trt_zt_rm_somsc,trt_zt_rm,2006,291,1291.05,1222.0707
+saha_2010_trt_zt_rr_somsc,trt_zt_rr,2006,291,1447.2,1231.0835
+saha_2010_trt_ct_rm_somsc,trt_ct_rm,2007,76,1382.4,1130.1153
+saha_2010_trt_ct_ri_somsc,trt_ct_ri,2007,76,1376.1,1168.375
+saha_2010_trt_zt_rm_somsc,trt_zt_rm,2007,76,1504.8,1236.3789
+saha_2010_trt_zt_rr_somsc,trt_zt_rr,2007,76,1480.05,1251.0607

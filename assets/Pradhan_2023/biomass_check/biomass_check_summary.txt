@@ -1,0 +1,131 @@
+Biomass Check Summary for Site: Pradhan_2023
+
+RESULT: CANNOT ASSESS - 'averaged_biomass_comparison.csv' was not found.
+Fix observations / re-run extract_biomass.py.
+
+
+--- Biomass Extraction Script ---
+Status: Successful Run
+
+--- Output ---
+--- Script started (with upgraded functions). ---
+[DEBUG] Observation Columns Detected: ['site_name', 'treatment_name', 'treatment_sch_file_name', 'observation_name', 'observation_description', 'observation_type', 'target_variable', 'target_crop', 'target_crop_num', 'depth (cm)', 'target_year', 'target_day', 'soc_calc', 'units', 'uncertainty_type', 'uncertainty units', 'uncertainty_value', 'n_obs', 'COMMENT', 'start_target_year', 'start_target_day']
+[DEBUG] Rows remaining after filtering: 5
+    [DEBUG] Checking Treatment Sch: RB
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N1
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N1_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: RB
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N2
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N2_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: RB
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N3
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N3_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'pradhan_2023_rb_cgrain_sc'. No data found.
+    [DEBUG] Checking Treatment Sch: RR
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N1
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N1_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: RR
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N2
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N2_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: RR
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N3
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N3_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'pradhan_2023_rr_cgrain_sc'. No data found.
+    [DEBUG] Checking Treatment Sch: RB
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N1
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N1_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: RR
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N1
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N1_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'pradhan_2023_n1_cgrain_sc'. No data found.
+    [DEBUG] Checking Treatment Sch: RB
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N2
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N2_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: RR
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N2
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N2_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'pradhan_2023_n2_cgrain_sc'. No data found.
+    [DEBUG] Checking Treatment Sch: RB
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RB_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N3
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N3_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: RR
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_RR_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: ×
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_×_output
+    [DEBUG] Sch file exists: False
+    [DEBUG] Checking Treatment Sch: N3
+    [DEBUG] Folder exists: False | Path: /Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/Pradhan_2023_out/Pradhan_2023_N3_output
+    [DEBUG] Sch file exists: False
+-! WARNING: Calculation failed for 'pradhan_2023_n3_cgrain_sc'. No data found.
+
+PEST++ output file written to '/Users/mac/DAYCENT/daycent_sites/sites/Pradhan_2023/output_biomass.txt'
+
+No data available to plot or save.
+--- Script finished. ---

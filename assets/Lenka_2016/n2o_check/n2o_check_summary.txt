@@ -12,20 +12,20 @@ Rows with missing simulated: 0
 Rows with invalid/missing observed (cannot compute %): 0
 
                      Observation  Observed  Simulated Difference
-lenka_2016_onm_n2oflux_2012_2013      1.20   339.9979 +28233.16%
-lenka_2016_npk_n2oflux_2012_2013      1.02   735.3802 +71996.10%
-lenka_2016_inm_n2oflux_2012_2013      1.36   433.2554 +31757.01%
-lenka_2016_onm_n2oflux_2012_2013      1.22   339.9979 +27768.68%
-lenka_2016_npk_n2oflux_2012_2013      1.15   735.3802 +63846.10%
-lenka_2016_inm_n2oflux_2012_2013      1.36   433.2554 +31757.01%
+lenka_2016_onm_n2oflux_2012_2013      1.20   299.1989 +24833.24%
+lenka_2016_npk_n2oflux_2012_2013      1.02   664.8213 +65078.56%
+lenka_2016_inm_n2oflux_2012_2013      1.36   392.0803 +28729.43%
+lenka_2016_onm_n2oflux_2012_2013      1.22   299.1989 +24424.50%
+lenka_2016_npk_n2oflux_2012_2013      1.15   664.8213 +57710.55%
+lenka_2016_inm_n2oflux_2012_2013      1.36   392.0803 +28729.43%
 
 Status: PASS - No shortfalls; simulated meets or exceeds observed.
 
 --- Treatment fit (obs vs sim) ---
 R² cutoff (minimum for PASS): 0.50
 Paired points (n): 6
-R²: 0.4325
-RMSE: 529.31
+R²: 0.4152
+RMSE: 476.80
 Status: FLAG - R² < 0.50.
 Action: Review `.sch` files and period dates in `observations/Lenka_2016_obs.csv`.
 
@@ -35,12 +35,12 @@ Status: Successful Run
 
 --- Output ---
 [INFO] N2O observation rows: 6
- -> onm period 2012-311 to 2013-73... SUCCESS: sim=339.9979
- -> npk period 2012-311 to 2013-73... SUCCESS: sim=735.3802
- -> inm period 2012-311 to 2013-73... SUCCESS: sim=433.2554
- -> onm period 2012-311 to 2013-73... SUCCESS: sim=339.9979
- -> npk period 2012-311 to 2013-73... SUCCESS: sim=735.3802
- -> inm period 2012-311 to 2013-73... SUCCESS: sim=433.2554
+ -> onm period 2012-312 to 2013-72... SUCCESS: sim=299.1989
+ -> npk period 2012-312 to 2013-72... SUCCESS: sim=664.8213
+ -> inm period 2012-312 to 2013-72... SUCCESS: sim=392.0803
+ -> onm period 2012-312 to 2013-72... SUCCESS: sim=299.1989
+ -> npk period 2012-312 to 2013-72... SUCCESS: sim=664.8213
+ -> inm period 2012-312 to 2013-72... SUCCESS: sim=392.0803
 
 PEST++ output written to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2016/output_n2o.txt'
 Averaged comparison data saved to '/Users/mac/DAYCENT/daycent_sites/sites/Lenka_2016/averaged_n2o_comparison.csv'
